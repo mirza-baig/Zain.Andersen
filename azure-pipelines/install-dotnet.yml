@@ -1,0 +1,14 @@
+trigger: none
+
+pool:
+  name: Enterprise Web
+
+stages:
+- stage: Test
+  jobs:
+  - job: Test
+    steps:
+    - task: UseDotNet@2
+      displayName: "Install .Net Core"
+      inputs:
+        version: '6.x'

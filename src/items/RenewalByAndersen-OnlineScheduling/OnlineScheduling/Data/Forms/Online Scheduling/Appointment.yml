@@ -1,0 +1,37 @@
+﻿---
+ID: "acb095d7-7c7a-434c-94bc-f032eef61ac1"
+Parent: "3f53969c-7227-4df6-a910-fb6921bc148e"
+Template: "c4442680-1100-4626-a469-acc318e25cbf"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Appointment
+BranchID: "7d8d11ec-a27e-4f43-b608-b07e879a122d"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 598
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{3602B70A-505F-4311-8F2D-C18BC00C1F62}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T174213Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0bc26597-553f-445c-a31f-69b13c32fbad"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Schedule Appointment
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240318T153448Z
+    - ID: "e748d375-a937-474f-893b-51c2b5ea5835"
+      Hint: includeInSteps
+      Value: 1

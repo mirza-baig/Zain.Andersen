@@ -1,0 +1,37 @@
+﻿---
+ID: "3cd6d110-22c1-4823-ab6b-32e1ef312ecc"
+Parent: "659f7267-c04c-4106-b492-4cf1fe7397f9"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Settings/Insert Options/Forms Folder/RbA Forms Submit Actions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240217T172902Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e1567c6c-eda4-4f95-8f05-4aa9563243f7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240217T172947Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{A99BB3C4-5418-43BB-A157-CC1D9E982FE6}">
+            <conditions>
+              <condition
+                id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+                uid="E3D22BE81CBC4014A633547B23237FEF"
+                templateid="{6DAD441F-58D9-40A0-A119-C8D990B0484D}" />
+            </conditions>
+          </rule>
+        </ruleset>

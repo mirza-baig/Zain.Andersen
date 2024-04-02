@@ -1,0 +1,38 @@
+﻿---
+ID: "89533915-8964-4a75-bb7f-e58ba764f0fe"
+Parent: "6eb80001-837b-4e7f-91a8-7b7ca7a9470b"
+Template: "6eb80001-837b-4e7f-91a8-7b7ca7a9470b"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Folding Door Sizing Calculator/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/calculator.png
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{AE1A5D2A-1EC0-46CE-9167-2C803B8B750A}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230615T021224Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8eb8c7f7-e9f0-4c33-a44a-c6198e5def99"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230615T024623Z

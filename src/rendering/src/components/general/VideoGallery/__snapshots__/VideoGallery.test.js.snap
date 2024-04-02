@@ -1,0 +1,476 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/videogallery"
+  id="id1695242607"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12"
+      >
+        <div
+          class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+        >
+          <h2>
+            Video Gallery QA Headline
+          </h2>
+        </div>
+      </div>
+      <div
+        class="col-span-12 h-[1px] bg-gray"
+      />
+      <div>
+        <div
+          class="relative"
+        >
+          <div
+            class=""
+            style="position: relative; overflow: hidden; width: 100%; padding-top: 56.25%;"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+        tabindex="0"
+      >
+        <div>
+          <div>
+            <h4>
+              Eyebrow
+            </h4>
+          </div>
+          <div
+            class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+          >
+            <h3>
+              Headline Goes Here
+            </h3>
+          </div>
+          <div
+            class="text-theme-body text-body mb-s"
+          >
+            <div
+              class="body-copy"
+            >
+              <div>
+                Call Center, Community Involvement, Culture, Intern Experience, Marketing, Nontraditional Marketing, Office, Operations, Production, Sales, Veterans/Military
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class=""
+          tabindex="0"
+        >
+          <div
+            class="relative"
+          >
+            <div
+              class="relative mx-auto hidden md:block aspect-picture  "
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Image"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="relative w-full md:hidden"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Image"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black"
+            >
+              <span />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>
+                Eyebrow
+              </h4>
+            </div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+            >
+              <h3>
+                Headline Goes Here
+              </h3>
+            </div>
+            <div
+              class="text-theme-body text-body mb-s"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Call Center, Community Involvement, Culture, Intern Experience, Marketing, Nontraditional Marketing, Office, Operations, Production, Sales, Veterans/Military
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          tabindex="0"
+        >
+          <div
+            class="relative"
+          >
+            <div
+              class="relative mx-auto hidden md:block aspect-picture  "
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="relative w-full md:hidden"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black"
+            >
+              <span />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>
+                Eyebrow
+              </h4>
+            </div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+            >
+              <h3>
+                Headline Goes Here
+              </h3>
+            </div>
+            <div
+              class="text-theme-body text-body mb-s"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Call Center, Community Involvement, Culture, Intern Experience, Marketing, Nontraditional Marketing, Office, Operations, Production, Sales, Veterans/Military
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          tabindex="0"
+        >
+          <div
+            class="relative"
+          >
+            <div
+              class="relative mx-auto hidden md:block aspect-picture  "
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="relative w-full md:hidden"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black"
+            >
+              <span />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>
+                Eyebrow
+              </h4>
+            </div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+            >
+              <h3>
+                Headline Goes Here
+              </h3>
+            </div>
+            <div
+              class="text-theme-body text-body mb-s"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Call Center, Community Involvement, Culture, Intern Experience, Marketing, Nontraditional Marketing, Office, Operations, Production, Sales, Veterans/Military
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          tabindex="0"
+        >
+          <div
+            class="relative"
+          >
+            <div
+              class="relative mx-auto hidden md:block aspect-picture  "
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="relative w-full md:hidden"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black"
+            >
+              <span />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>
+                Eyebrow
+              </h4>
+            </div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+            >
+              <h3>
+                Headline Goes Here
+              </h3>
+            </div>
+            <div
+              class="text-theme-body text-body mb-s"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Call Center, Community Involvement, Culture, Intern Experience, Marketing, Nontraditional Marketing, Office, Operations, Production, Sales, Veterans/Military
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class=""
+          tabindex="0"
+        >
+          <div
+            class="relative"
+          >
+            <div
+              class="relative mx-auto hidden md:block aspect-picture  "
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="relative w-full md:hidden"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-black"
+            >
+              <span />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h4>
+                Eyebrow
+              </h4>
+            </div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+            >
+              <h3>
+                Headline Goes Here
+              </h3>
+            </div>
+            <div
+              class="text-theme-body text-body mb-s"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Call Center, Community Involvement, Culture, Intern Experience, Marketing, Nontraditional Marketing, Office, Operations, Production, Sales, Veterans/Military
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          class=""
+          disabled=""
+        >
+          <span />
+        </button>
+        <div>
+          <button
+            class=""
+          >
+            1
+          </button>
+        </div>
+        <div>
+          <button
+            class=""
+          >
+            2
+          </button>
+        </div>
+        <div>
+          <button
+            class=""
+          >
+            3
+          </button>
+        </div>
+        <div>
+          <button
+            class=""
+          >
+            4
+          </button>
+        </div>
+        <div>
+          <button
+            class=""
+          >
+            5
+          </button>
+        </div>
+        <button
+          class=""
+        >
+          <span />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+`;

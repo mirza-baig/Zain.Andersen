@@ -1,0 +1,10 @@
+﻿---
+Role: |
+  sitecore\RbA Talent Approver
+MemberOf:
+  Role: |
+    sitecore\Sitecore Client Advanced Publishing
+  Role: |
+    sitecore\Author
+  Role: |
+    sitecore\Sitecore Client Designing

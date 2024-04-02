@@ -1,0 +1,23 @@
+﻿---
+ID: "355529d6-5722-48cb-8a02-ec356f5263d8"
+Parent: "8106506f-c78e-43ec-8c71-62f0fe69f98d"
+Template: "4aaa5f48-2f4b-42e2-89cc-a4a92896d011"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/How Can We Help You/How can we help you/Tiles
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T185952Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7498dd7f-4bb1-4d54-ae2a-f2ae5b62700c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240112T185952Z

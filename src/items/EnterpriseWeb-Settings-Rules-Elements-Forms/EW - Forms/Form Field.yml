@@ -1,0 +1,34 @@
+﻿---
+ID: "182292e6-16d8-442b-bc90-b544402f25b7"
+Parent: "1eceddd7-2422-45ba-b852-5d6ba86d0379"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Forms/Form Field"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231003T191230Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9acc7bd7-fce9-4d77-b83e-8576b0d40ef5"
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: "where the [fieldname,,,specific] field [operatorid,StringOperator,,compares to] [value,,,specific value]"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231003T191254Z

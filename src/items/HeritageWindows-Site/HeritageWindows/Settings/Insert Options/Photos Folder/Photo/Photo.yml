@@ -1,0 +1,26 @@
+﻿---
+ID: "e63e30b3-d5cb-4067-b1ef-8dcf898c7f55"
+Parent: "ddd4f57d-e7e0-4a94-9bc7-273c1fedb8e9"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Settings/Insert Options/Photos Folder/Photo/Photo
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230721T114612Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38f66f91-8de3-46e1-bf63-6180e6ea5792"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: "{2AC3A258-2F0A-4081-BB8E-F00E281D4311}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230727T113219Z

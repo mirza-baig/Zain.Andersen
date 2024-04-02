@@ -1,0 +1,8 @@
+﻿---
+Role: |
+  sitecore\RbA Approver
+MemberOf:
+  Role: |
+    sitecore\Sitecore Client Authoring
+  Role: |
+    sitecore\RbA Author

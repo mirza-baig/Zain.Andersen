@@ -1,0 +1,38 @@
+﻿---
+ID: "b8bc0afe-83f3-4499-9800-e74f0e76a145"
+Parent: "3cb9e78b-cee4-40b3-a98d-b670326a8b60"
+Template: "3cb9e78b-cee4-40b3-a98d-b670326a8b60"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/AndersenWindows/FieldSets/Forms/_Error/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231009T054839Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "27df56de-0fea-4d80-bd32-8ffc9ad0e3c4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231009T054855Z
+    - ID: "fd1b9f49-d441-453a-91c5-53935115e233"
+      Hint: errorMessage
+      Value: <p>Error while processing your request.</p>

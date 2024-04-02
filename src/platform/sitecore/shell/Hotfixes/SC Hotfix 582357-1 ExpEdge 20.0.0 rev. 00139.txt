@@ -1,0 +1,1 @@
+574731  [Edge] en language is set in the item url instead of actual language value in GenerateUrl and GetFieldJsonValue methods

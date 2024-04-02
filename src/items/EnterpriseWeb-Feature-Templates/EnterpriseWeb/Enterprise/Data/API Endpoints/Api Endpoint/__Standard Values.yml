@@ -1,0 +1,26 @@
+﻿---
+ID: "74f6bb19-bd15-4465-b7e3-d72aaf479c58"
+Parent: "f30aac0a-4117-4783-9620-891ae7e95093"
+Template: "f30aac0a-4117-4783-9620-891ae7e95093"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Data/API Endpoints/Api Endpoint/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231004T154750Z
+    - ID: "67ca1284-a2b1-4776-9aba-646fea705e92"
+      Hint: endpointName
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "316b1bf5-3bfc-4e2d-88a3-29c799f1b8a4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231004T154755Z

@@ -1,0 +1,27 @@
+﻿---
+ID: "07581591-f3c6-495f-ae6c-cc289ccccdb1"
+Parent: "d2931197-d6e8-458c-b8cf-beb0cad88230"
+Template: "529f4403-cad3-4c3a-bdd8-7a18475fe44d"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/API Keys
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231003T205813Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "35b5b6ba-fe3b-46d5-8efb-d1a9c10c7259"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231030T204813Z

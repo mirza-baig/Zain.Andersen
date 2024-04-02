@@ -1,0 +1,33 @@
+﻿---
+ID: "fb1cbeaf-e2c9-4009-a5f9-5f3d5c49bf24"
+Parent: "66f692ef-ab7b-4423-931f-35558daf9150"
+Template: "e43bce6c-c44d-49ec-8347-e76dbab1bdcd"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/Global/Data Sources/Geography/States/Iowa
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170817T194223Z
+    - ID: "6c92925a-6718-4fc4-993f-8e0295504eec"
+      Hint: Abbreviation
+      Value: IA
+    - ID: "713d8ced-4863-44a5-8ce3-ba3380c7642c"
+      Hint: FullName
+      Value: Iowa
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df483234-9402-43dc-8754-6f079af0da1a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20190301T232812Z

@@ -1,0 +1,27 @@
+﻿---
+ID: "62b32cf6-bc58-48a4-8fcb-b453545ac69d"
+Parent: "3179cd1d-5731-4553-8609-4adacd56f462"
+Template: "47a35e04-43ae-48a7-881c-6334ea26f4a4"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/StormDoors/Settings/Facets
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230403T134515Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "44d3022b-5226-4f51-a2d8-720dbe719cef"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240103T160958Z

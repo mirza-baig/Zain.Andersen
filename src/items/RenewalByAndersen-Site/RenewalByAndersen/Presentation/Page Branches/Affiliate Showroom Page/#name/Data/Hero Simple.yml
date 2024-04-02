@@ -1,0 +1,23 @@
+﻿---
+ID: "70fadb61-adaf-48f3-83aa-212d867cebfa"
+Parent: "468f866e-8b5d-4d31-9c4f-95f86c8526d2"
+Template: "26715daa-b9e1-4f96-803f-e07fcbf620de"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Affiliate Showroom Page/$name/Data/Hero Simple
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240226T092715Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "266dd19f-ca3c-4bf7-9946-2e3260def488"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240226T092715Z

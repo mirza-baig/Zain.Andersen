@@ -1,0 +1,45 @@
+﻿---
+ID: "bd6e6fc4-6d01-4fdb-b3b7-3c8bb3df4e41"
+Parent: "0fb68d46-8887-4246-9738-dfcc6162ea54"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Hero/Hero Product Tabs/Hero Product Tab Item/Content/ph-components"
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "datasource=query:./ancestor::*[@@templateid='{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}']|query:$site/data/components&ExcludeTemplatesForSelection={5844117C-21D4-4642-B025-BB62374BE182},{8B70967E-A2AC-4F92-A099-2584E1D30523},{08F94231-3F06-4FB3-B7E7-165CEC0767D4}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Treelist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Components
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230227T173754Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b6b9f385-f287-4300-9bb1-3a56182debcb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231102T103707Z

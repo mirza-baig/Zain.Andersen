@@ -1,0 +1,1 @@
+575223  Possible IndexOutOfRangeException in EdgeItemPublishStatus.ParseAndAddMetadataToCache

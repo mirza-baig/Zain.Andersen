@@ -1,0 +1,50 @@
+﻿---
+ID: "4e9c55e5-10a2-49dd-9884-afd07b53b992"
+Parent: "4a363579-2835-4288-bec6-24bae6e0b911"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Data/Affiliates/Datasources/Event/Event/endDate
+SharedFields:
+- ID: "21828437-ea4b-40a1-8c61-4ce60ea41db6"
+  Hint: Validate Button
+  Value: "{99103093-39D2-410E-9EDD-B8FBF83BD87B}"
+- ID: "337e20e1-999a-4eea-85ad-b58a03ae75cc"
+  Hint: Quick Action Bar
+  Value: "{99103093-39D2-410E-9EDD-B8FBF83BD87B}"
+- ID: "53c432c4-7122-4e2d-8296-db4184fd1735"
+  Hint: Workflow
+  Value: "{99103093-39D2-410E-9EDD-B8FBF83BD87B}"
+- ID: "9c903e29-650d-4af2-b9bd-526d5c14a1a5"
+  Hint: Validator Bar
+  Value: "{99103093-39D2-410E-9EDD-B8FBF83BD87B}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Datetime
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: End Date
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20190717T184647Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jglass
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "74c00d26-b7e9-4f48-bb99-3ba169740017"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240130T152405Z

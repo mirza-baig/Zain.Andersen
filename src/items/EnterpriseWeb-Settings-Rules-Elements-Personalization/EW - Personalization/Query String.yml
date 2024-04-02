@@ -1,0 +1,38 @@
+﻿---
+ID: "a8d1fc15-811c-4856-9414-899eb158039b"
+Parent: "3efaa90c-6d4b-4d60-a214-d330ff4f64b6"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Personalization/Query String"
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150420T141946Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "36076a72-79e9-42a7-8a6d-2f311298dfab"
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: "where the query string [key,,,key] [operatorid,StringOperator,,compares to]  [value,,,value] "
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230811T131659Z

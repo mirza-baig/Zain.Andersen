@@ -1,0 +1,39 @@
+﻿---
+ID: "4ecdf5b7-0b3c-48fb-af5c-6fe991852de8"
+Parent: "e99d0c0b-879f-461b-82f9-ade9b291ad94"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenLuminaire/Presentation/Available Renderings/Product
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {3A7B14FC-8161-4BCF-B95A-1F1AACDCE7B8}
+    {E67BB036-39EA-4498-B911-209B7647AB35}
+    {723DE59C-9816-4AF7-A5A8-57B05F52D4BD}
+    {6BF7B148-C10B-475F-A051-12CD650EE808}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221221T200409Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5eb8bd1d-bc89-436a-a333-a687309b5139"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dboeser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230530T164317Z

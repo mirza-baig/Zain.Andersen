@@ -1,0 +1,26 @@
+﻿---
+ID: "af040fc7-e375-481b-82b1-a1d87087bb88"
+Parent: "77a9b0ac-0a73-486d-93d4-c29839172420"
+Template: "6f0f9b58-daec-4c55-a519-36b3207d109c"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/Global/Facets/People
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230725T132217Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "386b2828-9317-41f5-a89a-6535ca286d1e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c5c5443e-ae24-4a7e-8691-4238d55e5494"
+      Hint: queryIdentifier
+      Value: people
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231030T204234Z

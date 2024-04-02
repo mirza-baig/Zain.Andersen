@@ -1,0 +1,1 @@
+572939  Connector to Edge: On Prod and Pre-Prod publishing fails - fix resiliency of connector

@@ -1,0 +1,38 @@
+﻿---
+ID: "51ae17ac-9a47-488b-b37e-c7aa9ab2937d"
+Parent: "a2272b85-3bf1-4d69-ae29-b9c7a44742c1"
+Template: "f90052a5-b4e6-4e6d-9812-1e1b88a6fcea"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Rendering/Hide Item or Rendering"
+SharedFields:
+- ID: "ff55d5a7-6d4b-4cd1-83e0-bac268073f66"
+  Hint: Type
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20080925T193109Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "34074623-9253-4f6b-a83e-313f48b095e2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230830T225255Z
+    - ID: "eeb36a3b-40d9-4af5-862a-de257b84dca3"
+      Hint: Text
+      Value: hide item or rendering

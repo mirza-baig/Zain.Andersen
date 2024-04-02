@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\RbA Web Master
+MemberOf:
+  Role: |
+    sitecore\EntWeb Master

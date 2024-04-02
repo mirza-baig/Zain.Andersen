@@ -1,0 +1,8 @@
+﻿---
+Role: |
+  sitecore\RbA Read Only
+MemberOf:
+  Role: |
+    sitecore\Sitecore Client Designing
+  Role: |
+    sitecore\Author

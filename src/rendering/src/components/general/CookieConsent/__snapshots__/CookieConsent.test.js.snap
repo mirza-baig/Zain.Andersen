@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/cookieconsent"
+  id="id1695242607"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="theme-black fixed bottom-0 left-0 right-0 z-10 col-span-12 place-items-center bg-theme-bg"
+      >
+        <div
+          class="grid-rows-auto grid grid-cols-2 place-items-center px-m ml:px-l lg:px-m ml:mx-auto ml:max-w-screen-lg min-h-[75px]  ml:grid-cols-12 ml:place-items-start my-s"
+        >
+          <div
+            class="col-span-2 text-center ml:col-span-9 ml:text-left mb-m ml:mb-0 self-center"
+          >
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-white text-s ml:text-m font-heavy"
+            >
+              <h2>
+                Cookies help us improve your website experience. By using our website, you agree to our use of cookies.
+              </h2>
+            </div>
+            <div
+              class="text-white text-body font-regular mt-xxs"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Lorem ipsum dolor amit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-span-2 place-content-center ml:col-span-3 ml:place-self-end ml:self-center"
+          >
+            <div
+              class="flex flex-col ml:flex-row justify-center items-center font-heavy mb-0 gap-y-6 ml:gap-0"
+            >
+              <div>
+                <a
+                  aria-label="Accept (Opens in a new tab)"
+                  class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed mr-s"
+                  data-gtm-click=""
+                  data-gtm-dl-event="cta_click"
+                  href=""
+                  rel="noopener noreferrer"
+                  role="link"
+                  tabindex="0"
+                  target="_blank"
+                >
+                  Accept
+                  <span
+                    class="sr-only"
+                  >
+                     (Opens in a new tab)
+                  </span>
+                </a>
+              </div>
+              <div
+                class="!mb-0 mb-s flex items-start md:flex-row md:items-center"
+              >
+                <button
+                  class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray"
+                >
+                  Learn More
+                   
+                  <span
+                    class="ml-xxs"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="absolute top-3 right-3 text-white"
+            title="btn-close"
+          >
+            <span />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

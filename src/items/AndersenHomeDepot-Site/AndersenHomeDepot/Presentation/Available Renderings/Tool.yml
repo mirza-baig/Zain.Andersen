@@ -1,0 +1,41 @@
+﻿---
+ID: "f5d904bd-2805-406b-924f-7260a751fd9d"
+Parent: "2db41b8c-604c-4c55-8e8a-222d57cfef0c"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenHomeDepot/Presentation/Available Renderings/Tool
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {353B291B-0266-4E62-B663-72F6AE511F25}
+    {CB20A467-8FC7-4DF4-B6B3-1F05AE3FA387}
+    {197C73E3-5B4A-46F6-BB79-B439AD0F3E13}
+    {6FFE5EBC-494D-47EB-B603-1B614593D5FE}
+    {0F99F8F9-397D-4F50-A873-1CD1C6ACBF2B}
+    {5D5476EC-7685-430F-B858-C79A096929E2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230418T163302Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f9ffc976-fe81-4133-a511-6f48883bf9ab"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230707T124138Z

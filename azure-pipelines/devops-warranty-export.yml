@@ -1,0 +1,132 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger: none
+
+schedules:
+- cron: '00 12 * * 1'
+  displayName: At 06:00AM on every Monday
+  branches:
+    include:
+    - main
+
+parameters:
+- name: fromDate
+  displayName: From date - mm/dd/yyyy
+  type: string
+  default: ' '
+- name: toDate
+  displayName: To date - mm/dd/yyyy
+  type: string
+  default: ' '
+
+variables:
+- group: Warranty Export - prod
+- group: SendGrid API Key - Enterprise Web
+- group: SQL Database - prodentwb1sql1
+
+stages:
+- stage: WarrantyExport
+  pool:
+    name: Enterprise Web
+  jobs:
+  - job: WarrantyExport
+    displayName: "Warranty Export"
+    steps:
+    - checkout: none
+    - task: PowerShell@2
+      displayName: "Install PS Modules"
+      inputs:
+        targetType: inline
+        script: |
+          Write-Host "Installing needed PowerShell modules..." -ForegroundColor DarkGray
+          if (Get-PackageProvider -ListAvailable -Name NuGet) {
+            Write-Host "##[section]PowerShell package provider 'NuGet' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell package provider 'NuGet'..."
+            Install-PackageProvider -Name NuGet -Scope CurrentUser -Verbose
+          }
+          if (Get-Module -ListAvailable -Name SQLServer) {
+          Write-Host "PowerShell module 'SQLServer' already installed." -ForegroundColor DarkGreen
+          } else {
+            Write-Host "Installing PowerShell module 'SQLServer'..." -ForegroundColor DarkYellow
+            Install-Module -Name SQLServer -Scope CurrentUser -Force -Verbose
+          }
+
+    - task: PowerShell@2
+      displayName: "Create CSV and Send Email"
+      inputs:
+        targetType: inline
+        script: |
+          Write-Host "Creating CSV file..."
+
+          If (([string]::IsNullOrWhitespace("${{ parameters.fromDate }}") -and ![string]::IsNullOrWhitespace("${{ parameters.toDate }}")) -or (![string]::IsNullOrWhitespace("${{ parameters.fromDate }}") -and [string]::IsNullOrWhitespace("${{ parameters.toDate }}")))
+          {
+          throw "Must provide both FromDate and ToDate if either is specified."
+          }
+
+          $runDate = Get-Date
+
+          # Configure our query range, defaulting to last week Monday if none provided
+          If (![string]::IsNullOrWhitespace("${{ parameters.fromDate }}") -or ![string]::IsNullOrWhitespace("${{ parameters.toDate }}"))
+          {
+          $runFromDate = [DateTime]::Parse("${{ parameters.fromDate }}").Date
+          $runToDate = [DateTime]::Parse("${{ parameters.toDate }}").Date
+          Write-Host "Date range provided $($runFromDate.ToString("MM/dd/yyyy")) - $($runToDate.ToString("MM/dd/yyyy"))."
+          }
+          else
+          {
+          $offset = $runDate.DayOfWeek + 6 # 0 = Sunday, 1 = Monday, 2 = Tuesday, ... so last Monday = value + 6 days ago
+          $runFromDate = $runDate.AddDays(-$offset)
+          $runToDate = $runFromDate.AddDays(7)
+          Write-Host "No date range provided, defaulting to $($runFromDate.ToString("MM/dd/yyyy")) - $($runToDate.ToString("MM/dd/yyyy"))."
+          }
+
+          # Determine the file name
+          $fileName = "WarrantyExport-" + $runFromDate.ToString("yyyyMMdd") + "-" + $runToDate.ToString("yyyyMMdd") + ".csv"
+          Write-Host "Will output to file named $fileName"
+
+          Write-Host "Connecting to the database..."
+          $databaseServer = "$(Database.prodentwb1sql1.Server)"
+          $databaseUsername = "$(Database.prodentwb1sql1.Username)"
+          $databasePassword = "$(Database.prodentwb1sql1.Password)"
+          $connectionString = "Server=tcp:$databaseServer;Database=prod_external;User ID=$databaseUsername;Password=$databasePassword;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;"
+          $database = New-Object System.Data.SqlClient.SqlConnection($connectionString)
+          [void]$database.Open()
+
+          Write-Host "Selecting warranty registrations in the date range..."
+          $sqlQuery = @"
+          SELECT WH.WarrantyHeaderId, WH.FirstName, WH.LastName, WH.Email, WH.Address1, WH.City, WH.State, WH.Zip, WH.Country, WH.Telephone, WH.CreatedDate, WL.ProductType, WL.ProductSeries, WL.Quantity, WL.InstallationDate, WH.CreatedDate
+          FROM [dbo].[AwWarrantyHeaders] AS WH INNER JOIN
+          [dbo].[AwWarrantyLines] AS WL ON WH.WarrantyHeaderId = WL.WarrantyHeaderId
+          WHERE (WH.CreatedDate >= @fromDate and WH.CreatedDate < @toDate)
+          ORDER BY WH.CreatedDate, WH.WarrantyHeaderId
+          "@
+
+          $sqlCommand = New-Object System.Data.SqlClient.SqlCommand($sqlQuery, $database)
+          [void]$sqlCommand.Parameters.AddWithValue("fromDate", $runFromDate.Date)
+          [void]$sqlCommand.Parameters.AddWithValue("toDate", $runToDate.Date)
+
+          $sqlAdapter = New-Object System.Data.SqlClient.SqlDataAdapter
+          $sqlAdapter.SelectCommand = $sqlCommand
+
+          #Creating Dataset
+          $dataSet = New-Object System.Data.DataSet
+          [void]$sqlAdapter.Fill($dataSet)
+
+          Write-Host "Generating CSV file..."
+          $dataSet.Tables[0] | Export-Csv -Path $filename -NoTypeInformation
+
+          # Send email
+          $emailTo = "$(WarrantyExport.EmailTo)"
+          Write-Host "Sending Will output to file named $fileName"
+
+
+          $emailToSplit = $emailTo.Split(";")
+          $subject = "Warranty export for $($runFromDate.ToString("MM/dd/yyyy")) - $($runToDate.ToString("MM/dd/yyyy"))."
+          $body = "Attached is the warranty export for $($runFromDate.ToString("MM/dd/yyyy")) - $($runToDate.ToString("MM/dd/yyyy"))."
+          $securePassword = ConvertTo-SecureString -String "$(SendGrid.ApiKey.Production)" -AsPlainText -Force
+          $credentials = New-Object System.Management.Automation.PSCredential ("apikey", $securePassword)
+          Write-Host "Emailing the CSV file to $emailToSplit ..."
+          Send-MailMessage -From AWWebDevelopers@andersencorp.com -To $emailToSplit -Subject $subject -Body $body -Attachments $fileName -SmtpServer "smtp.sendgrid.net" -Credential $credentials -Port 587 -UseSsl
+
+          Write-Host "Done."

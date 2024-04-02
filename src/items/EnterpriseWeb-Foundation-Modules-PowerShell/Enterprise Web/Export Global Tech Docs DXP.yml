@@ -1,0 +1,133 @@
+﻿---
+ID: "9e3d038d-7d06-4060-b08a-3d11647a3a67"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Export Global Tech Docs DXP
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    
+    function parseItems($data, $fieldName = 'Title', $type = '') {
+        if ([string]::IsNullOrEmpty($data)) {
+            return "";
+        }
+        else {
+    #        write-host("$data" + $data)
+    #        write-host( $fieldName)
+    #        write-host( $type)
+            $lookupItems = $data.split('|')
+            $val = ""
+            foreach ($lookup in $lookupItems) {
+     #           write-host("$lookup" + $lookup)
+                if (![string]::IsNullOrEmpty($lookup)) {
+                    $facet = Get-Item $lookup
+     #               write-host($facet.ID)
+                    if ($type -eq 'property') {
+                        $val += $facet.$fieldName + ","
+                    }
+                    else {
+                        $val += $facet[$fieldName] + ","
+                    }
+                }
+            }    
+            return $val.Substring(0, $val.Length - 1);
+        }    
+    }
+    
+    function getMediaId($id)
+    {
+        try{
+            return (Get-Item $id).Id;
+        }
+        catch{
+            return "";
+        }
+        
+    }
+    
+    $techDocRoot = Get-Item "/sitecore/content/AndersenCorporation/AndersenWindows/Global/Technical Documents"
+    
+    $tecDocs = $techDocRoot.Axes.GetDescendants() | Where-Object { $_.TemplateName -eq 'Technical Document' } 
+    
+    $result = New-Object System.Collections.Generic.List[PSObject]
+        
+    foreach ($item in $tecDocs) {
+        
+        #write-host((Get-Item $item['File']).Id)
+    
+        $obj = New-Object PSObject @{
+            documentId              = $item.id;
+            documentName            = $item.name;
+            documentPath            = $item.Paths.FullPath;
+            documentEyebrow         = $item['documentEyebrow'];
+            documentTitle           = $item['documentTitle'];
+            documentDescription     = $item['documentDescription'];
+            documentNumber          = $item['documentNumber'];
+            documentType            = parseItems $item['documentType'];
+            documentSite            = parseItems $item['documentSite'] 'Name' 'property';
+            documentLanguage        = parseItems $item['documentLanguage'];
+            document                = getMediaId($item['document']);
+            documentFile            = $item['document'];
+            productSeries           = parseItems $item['productSeries'];
+            windowType              = parseItems $item['windowType'];
+            doorType                = parseItems $item['doorType'];
+            productOptions          = parseItems $item['productOptions'];
+            awningType              = parseItems $item['awningType'];
+            casementType            = parseItems $item['casementType'];
+            doubleHungType          = parseItems $item['doubleHungType'];
+            specialtyType           = parseItems $item['specialtyType'];
+            stormDoorType           = parseItems $item['stormDoorType'];
+            doorSwing               = parseItems $item['doorSwing'];
+            productStatus           = parseItems $item['productStatus'];
+            productBrand            = parseItems $item['productBrand'];
+            environmentDocumentType = parseItems $item['environmentDocumentType'];
+            installationMethods     = parseItems $item['installationMethods'];
+            installationGuideType   = parseItems $item['installationGuideType'];
+            performanceDocumentType = parseItems $item['performanceDocumentType'];
+            serviceGuideType        = parseItems $item['serviceGuideType'];
+            sizingDocumentType      = parseItems $item['sizingDocumentType'];
+            joiningType             = parseItems $item['joiningType'];
+        } 
+        $result.Add($obj)
+    }
+    
+    $result | Show-ListView -Property documentId, documentName, documentPath, documentEyebrow, documentTitle, documentDescription, documentNumber, documentType, documentSite, documentLanguage, document, documentFile, productSeries, windowType, doorType, productOptions, awningType, casementType, doubleHungType, specialtyType, stormDoorType, doorSwing, productStatus, productBrand, environmentDocumentType, installationMethods, installationGuideType, performanceDocumentType, serviceGuideType, sizingDocumentType, joiningType
+    
+    #$result | Show-ListView $reportProps -Property @{ Name = “Name”; Expression = { $_.documentTitle } },
+    #   @{ Name = “Path”; Expression = { $_.documentDescription} },
+    #  @{ Name = “ID”; Expression = { $_.documentEyebrow} }
+    
+    #$item = Get-Item "{3B3BE6D1-499C-4A34-830C-964B1867F08A}"
+    #write-host ($item.description)
+    #write-host ($item["page type"])
+    
+    #$tecDocs | Show-ListView -Property Name, Title, Description
+    
+    #$tecDocs | Show-ListView -Property @{Label="documentTitle"; Expression={$_.Title} }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230828T215737Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "17ca4363-6743-481e-b9d3-bb5d97329b54"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230828T215737Z

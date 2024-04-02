@@ -1,0 +1,23 @@
+﻿---
+ID: "a4b1803d-2752-474b-8193-fcee7df570e8"
+Parent: "5dccaf20-be0a-4242-9cff-deb9c7380cb3"
+Template: "5dccaf20-be0a-4242-9cff-deb9c7380cb3"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/AndersenWindows/BaseTemplates/_Base AW Page/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230714T114705Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "962670ac-c091-4ce0-b796-3120f2f2e59d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230714T114705Z

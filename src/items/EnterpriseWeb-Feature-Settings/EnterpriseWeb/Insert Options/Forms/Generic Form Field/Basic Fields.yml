@@ -1,0 +1,39 @@
+﻿---
+ID: "7b75b396-387c-48fb-9270-d7b684f7d10f"
+Parent: "66edef71-9fac-412a-b17f-8c662672d1fb"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Forms/Generic Form Field/Basic Fields
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230221T203527Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f4a7750f-f5d4-410b-b7a9-084e7e376fc7"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {1478DC82-0220-48EC-9E5C-269A89B6932A}
+        {0E87D9F7-C36A-42C7-BEE4-00A50B3BDEDE}
+        {8ECF3529-24EF-4384-A9E1-5C24E7F2CB51}
+        {45ACEAE2-F114-43AE-8426-714F7AF7AC2B}
+        {1ADBC0A2-A0A9-4341-B752-6B91F903E9B0}
+        {A1D62E74-51C3-4BDD-8547-1ECE87422EC9}
+        {F59CDC6B-C0DD-4C34-9EA3-6A25ED8C67E5}
+        {B01E7CAE-D802-4AE5-9742-BDCDA546554B}
+        {C5DB4EF7-746F-44C1-A564-55A405DF748E}
+        {4FD88841-D725-4815-8B03-6EA12C956C18}
+        {62D234CA-1C65-4699-8BFE-339C28D92761}
+        {353EA57B-C16E-4079-92DB-F169461ACD5E}
+        {78AB6AEC-5DF4-490D-B9FD-AECF481B3323}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T203211Z

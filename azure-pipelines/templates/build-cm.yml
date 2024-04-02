@@ -1,0 +1,25 @@
+parameters:
+  buildConfiguration: ''
+
+steps:
+- checkout: self
+  lfs: true
+  persistCredentials: true
+
+- task: NuGetToolInstaller@1
+  displayName: Install Nuget CLI
+
+- task: NuGetCommand@2
+  displayName: NuGet Restore
+  inputs:
+    restoreSolution: EnterpriseWeb.sln
+    feedsToUse: config
+    nugetConfigPath: $(Build.SourcesDirectory)\nuget.config
+
+- task: VSBuild@1
+  displayName: Build Solution
+  inputs:
+    solution: $(Build.SourcesDirectory)\src\platform\Platform.csproj
+    msbuildArgs: /p:DeployonBuild=true /p:PublishProfile=DevOps
+    configuration: ${{ parameters.buildConfiguration }}
+    platform: AnyCPU

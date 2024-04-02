@@ -1,0 +1,31 @@
+﻿---
+ID: "15492cc6-6e8b-4de0-808a-10433a8691a1"
+Parent: "5f28a8e0-52d9-42fb-9fcb-6cb9ca9ff2da"
+Template: "10ffc85c-56a6-4a99-953c-56bb3405c1e6"
+Path: "/sitecore/templates/Branches/Feature/EnterpriseWeb/AndersenWindows/Data/Videos/Gallery Video - YouTube/$name/$name"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230620T131915Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b61da744-1995-4d26-a15c-8ffd5b1a7870"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230620T131915Z

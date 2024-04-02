@@ -1,0 +1,23 @@
+﻿---
+ID: "786a46f9-e503-41a6-bf0b-b5e39cc1229c"
+Parent: "32e8d729-bf24-4321-9e2c-91a090ef6bb9"
+Template: "47a35e04-43ae-48a7-881c-6334ea26f4a4"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Settings/Facets
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240109T154910Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "af44a630-d5b6-4081-948f-0e02ae932074"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240109T154910Z

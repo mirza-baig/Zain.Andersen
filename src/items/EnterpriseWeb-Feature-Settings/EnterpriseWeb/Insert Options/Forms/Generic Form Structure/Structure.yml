@@ -1,0 +1,32 @@
+﻿---
+ID: "1b4f2fe6-cffb-4226-8d45-d5808c384125"
+Parent: "f3078bc2-c2b5-443a-9f9f-6626293300dd"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Forms/Generic Form Structure/Structure
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230221T203859Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "33ce64f2-caf7-44ae-8181-35104ef31e5b"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {38F8E205-C367-494C-877E-57344F0F0FFD}
+        {7D8D11EC-A27E-4F43-B608-B07E879A122D}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230813T045947Z

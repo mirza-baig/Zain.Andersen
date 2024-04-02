@@ -1,0 +1,31 @@
+﻿---
+ID: "1b0ad3d2-a926-41f8-9397-e144579f3913"
+Parent: "3561cc27-5716-4aec-bac7-8ad1f7bf2bc8"
+Template: "3561cc27-5716-4aec-bac7-8ad1f7bf2bc8"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Perfect Match/Perfect Match Carousel/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231106T224636Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\jhuynh
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jhuynh
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0ac969f3-5225-4ae9-84af-d26247c18cb0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jhuynh
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231106T224636Z

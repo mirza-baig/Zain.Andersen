@@ -1,0 +1,26 @@
+﻿---
+ID: "86953ba2-f5cd-4c27-937c-ddec9901fd46"
+Parent: "65539978-a997-4986-857f-bda0d843869f"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Settings/Insert Options/Elements Folder/Element/Social
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230106T171340Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9cdddd67-1e26-486c-96a7-ab34a31615ab"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: "{0A3F014A-F0AE-48D9-AC2E-5C78FA7D034C}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231004T105057Z

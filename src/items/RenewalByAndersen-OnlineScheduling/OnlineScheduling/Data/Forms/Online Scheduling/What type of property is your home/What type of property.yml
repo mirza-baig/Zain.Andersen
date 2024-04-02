@@ -1,0 +1,45 @@
+﻿---
+ID: "230a0b9c-423b-4c20-8130-08662aeea106"
+Parent: "a0e0dfa7-af78-4072-a778-90629218c48d"
+Template: "81abdbfe-9b8f-4552-b072-a3cff5887f68"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/What type of property is your home/What type of property
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 275
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T202128Z
+    - ID: "264a6df3-824f-4a5d-a50e-608a50ddc6b4"
+      Hint: datasource
+      Value: "{8851B8B1-0408-44DE-BF6C-C90F35F507E8}"
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{0266B091-D20B-4AD9-9D41-264C534BE485}"
+    - ID: "4837961f-794e-4c40-beac-68df9cef9f41"
+      Hint: subLabel
+      Value: (select one)
+    - ID: "8760bb3b-bd1c-4ef8-b0b2-6bffd769c0cf"
+      Hint: buttonsPerRows
+      Value: "{E84642CB-7A4F-431A-8895-B01A1930EEFA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "24d0e9e6-552a-4fc0-be0e-92cb9d4ebe1b"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: "windowsproblems-property type"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: "What type of property is your home?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240228T215751Z

@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/helpfullinks"
+  id="id1695242607"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12 pt-l pb-s md:pb-ml -mx-m px-m ml:px-xxl bg-light-gray"
+      >
+        <div
+          class="items-top font-sans [&_a:hover]:underline text-theme-text pb-s text-sm-m md:text-m font-heavy md:text-center"
+        >
+          <h2>
+            Helpful Links
+          </h2>
+        </div>
+        <div
+          class="flex flex-col md:flex-row md:flex-wrap md:gap-m md:justify-center"
+        >
+          <div
+            class="mb-xxs md:mb-0"
+          >
+            <div
+              class="mb-s flex items-start md:flex-row md:items-center"
+            >
+              <a
+                aria-label="Home Page (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray !whitespace-pre-wrap !leading-ml !text-text-link"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/"
+                role="link"
+                tabindex="0"
+                target="_blank"
+                title=""
+              >
+                Home Page
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="mb-xxs md:mb-0"
+          >
+            <div
+              class="mb-s flex items-start md:flex-row md:items-center"
+            >
+              <a
+                aria-label="Components (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray !whitespace-pre-wrap !leading-ml !text-text-link"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/Components"
+                rel="noopener noreferrer"
+                role="link"
+                tabindex="0"
+                target="_blank"
+                title=""
+              >
+                Components
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="mb-xxs md:mb-0"
+          >
+            <div
+              class="mb-s flex items-start md:flex-row md:items-center"
+            >
+              <a
+                aria-label="Media Link (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray !whitespace-pre-wrap !leading-ml !text-text-link"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="https://edge.sitecorecloud.io/andersencorporation-m9n8s20s/media/Project/AndersenCorporation/AndersenWindows/AndersenWindows/Bay-Bow-Window-900x900.jpg"
+                rel="noopener noreferrer"
+                role="link"
+                tabindex="0"
+                target="_blank"
+              >
+                Media Link
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="mb-xxs md:mb-0"
+          >
+            <div
+              class="mb-s flex items-start md:flex-row md:items-center"
+            >
+              <a
+                aria-label="Batch 1 Components"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray !whitespace-pre-wrap !leading-ml !text-text-link"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/Components/Batch1/"
+                role="link"
+                tabindex="0"
+                target=""
+                title=""
+              >
+                Batch 1 Components
+                <span
+                  class="ml-xxs"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="mb-xxs md:mb-0"
+          >
+            <div
+              class="mb-s flex items-start md:flex-row md:items-center"
+            >
+              <a
+                aria-label="Batch 2 Components"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray !whitespace-pre-wrap !leading-ml !text-text-link"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/Components/Batch2"
+                role="link"
+                tabindex="0"
+                target=""
+                title=""
+              >
+                Batch 2 Components
+                <span
+                  class="ml-xxs"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,809 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`black renders correctly 1`] = `
+<section
+  data-component="promo/promofeaturedmedia"
+  id="Promo Featured Media"
+>
+  <div
+    class="w-full theme-black bg-theme-bg"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-0 gap-x-0 "
+    >
+      <div
+        class="order-first col-span-12"
+      >
+        <div
+          class="relative hidden md:block aspect-hero   "
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 56.25% 0px 0px 0px;"
+            />
+            <img
+              alt="Unsplash Source"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="relative w-full md:hidden"
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 56.25% 0px 0px 0px;"
+            />
+            <img
+              alt="Unsplash Source"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+      <div
+        class="col-span-12 flex flex-col lg:flex-row"
+      >
+        <div
+          class="lg:w-3/4 my-auto mt-0 flex flex-col mx-l lg:mx-xl pt-s pb-xs lg:pb-s lg:mr-xxl lg:pr-xl"
+        >
+          <div
+            class=""
+          >
+            <div
+              class="font-sans text-theme-text text-small uppercase font-heavy mb-2"
+            >
+              <h3>
+                Featured Media Sub Heading Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-6"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Description of product with 
+                  <a
+                    href="google.com"
+                  >
+                    link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-xs lg:text-xs font-medium mb-2"
+            >
+              <h3>
+                Featured Media Headline Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-3"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, justo eget vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus vel metus. Quisque eu ornare ante, et gravida mauris.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-12 flex flex-col lg:flex-row items-start text-xs font-heavy mb-s flex items-start md:flex-row md:items-center md:space-x-4"
+            >
+              <a
+                aria-label="Learn More (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray lg:mr-3 lg:first:ml-0 lg:last:mr-0 bg-theme-bg mr-m"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/"
+                rel="noopener noreferrer"
+                role="link"
+                tabindex="0"
+                target="_blank"
+                title=""
+              >
+                Learn More
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/4 mx-l lg:mx-0 pb-xs lg:pb-0"
+        >
+          <div
+            class=""
+          />
+          <div
+            class="my-auto mt-0 flex flex-col px-l pl-0 lg:pt-s lg:pr-xl pb-0"
+          >
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight One
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight Two
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight Three
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`gray renders correctly 1`] = `
+<section
+  data-component="promo/promofeaturedmedia"
+  id="Promo Featured Media"
+>
+  <div
+    class="w-full theme-gray bg-light-gray"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-0 gap-x-0 "
+    >
+      <div
+        class="order-first col-span-12"
+      >
+        <div
+          class="relative hidden md:block aspect-hero   "
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 56.25% 0px 0px 0px;"
+            />
+            <img
+              alt="Unsplash Source"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="relative w-full md:hidden"
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 56.25% 0px 0px 0px;"
+            />
+            <img
+              alt="Unsplash Source"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+      <div
+        class="col-span-12 flex flex-col lg:flex-row"
+      >
+        <div
+          class="lg:w-3/4 my-auto mt-0 flex flex-col mx-l lg:mx-xl pt-s pb-xs lg:pb-s lg:mr-xxl lg:pr-xl"
+        >
+          <div
+            class=""
+          >
+            <div
+              class="font-sans text-theme-text text-small uppercase font-heavy mb-2"
+            >
+              <h3>
+                Featured Media Sub Heading Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-6"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Description of product with 
+                  <a
+                    href="google.com"
+                  >
+                    link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-xs lg:text-xs font-medium mb-2"
+            >
+              <h3>
+                Featured Media Headline Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-3"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, justo eget vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus vel metus. Quisque eu ornare ante, et gravida mauris.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-12 flex flex-col lg:flex-row items-start text-xs font-heavy mb-s flex items-start md:flex-row md:items-center md:space-x-4"
+            >
+              <a
+                aria-label="Learn More (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray lg:mr-3 lg:first:ml-0 lg:last:mr-0 bg-theme-bg mr-m"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/"
+                role="link"
+                tabindex="0"
+                target="_blank"
+                title=""
+              >
+                Learn More
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/4 mx-l lg:mx-0 pb-xs lg:pb-0"
+        >
+          <div
+            class=""
+          />
+          <div
+            class="my-auto mt-0 flex flex-col px-l pl-0 lg:pt-s lg:pr-xl pb-0"
+          >
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight One
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight Two
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight Three
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="promo/promofeaturedmedia"
+  id="Promo Featured Media"
+>
+  <div
+    class="w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-0 gap-x-0 "
+    >
+      <div
+        class="order-first col-span-12"
+      >
+        <div
+          class="relative hidden md:block aspect-hero   "
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 56.25% 0px 0px 0px;"
+            />
+            <img
+              alt="Unsplash Source"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="relative w-full md:hidden"
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 56.25% 0px 0px 0px;"
+            />
+            <img
+              alt="Unsplash Source"
+              data-nimg="responsive"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+      <div
+        class="col-span-12 flex flex-col lg:flex-row"
+      >
+        <div
+          class="lg:w-3/4 my-auto mt-0 flex flex-col mx-l lg:mx-xl pt-s pb-xs lg:pb-s lg:mr-xxl lg:pr-xl"
+        >
+          <div
+            class=""
+          >
+            <div
+              class="font-sans text-theme-text text-small uppercase font-heavy mb-2"
+            >
+              <h3>
+                Featured Media Sub Heading Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-6"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Description of product with 
+                  <a
+                    href="google.com"
+                  >
+                    link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-xs lg:text-xs font-medium mb-2"
+            >
+              <h3>
+                Featured Media Headline Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-3"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, justo eget vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus vel metus. Quisque eu ornare ante, et gravida mauris.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-12 flex flex-col lg:flex-row items-start text-xs font-heavy mb-s flex items-start md:flex-row md:items-center md:space-x-4"
+            >
+              <a
+                aria-label="Learn More (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray lg:mr-3 lg:first:ml-0 lg:last:mr-0 bg-theme-bg mr-m"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/"
+                role="link"
+                tabindex="0"
+                target="_blank"
+                title=""
+              >
+                Learn More
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/4 mx-l lg:mx-0 pb-xs lg:pb-0"
+        >
+          <div
+            class=""
+          />
+          <div
+            class="my-auto mt-0 flex flex-col px-l pl-0 lg:pt-s lg:pr-xl pb-0"
+          >
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Architecture Style
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Cape Cod
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Project Location
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Minneapolis, MN
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Installation Time
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  7 Days
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`video renders correctly 1`] = `
+<section
+  data-component="promo/promofeaturedmedia"
+  id="Promo Featured Media"
+>
+  <div
+    class="lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-0 gap-x-0 "
+    >
+      <div
+        class="order-first col-span-12"
+      >
+        <div
+          class="relative"
+        >
+          <div
+            class=""
+            style="position: relative; overflow: hidden; width: 100%; padding-top: 56.25%;"
+          />
+        </div>
+      </div>
+      <div
+        class="col-span-12 flex flex-col lg:flex-row"
+      >
+        <div
+          class="lg:w-3/4 my-auto mt-0 flex flex-col mx-l lg:mx-xl pt-s pb-xs lg:pb-s lg:mr-xxl lg:pr-xl"
+        >
+          <div
+            class=""
+          >
+            <div
+              class="font-sans text-theme-text text-small uppercase font-heavy mb-2"
+            >
+              <h3>
+                Featured Media Sub Heading Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-6"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Description of product with 
+                  <a
+                    href="google.com"
+                  >
+                    link
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-xs lg:text-xs font-medium mb-2"
+            >
+              <h3>
+                Featured Media Headline Text
+              </h3>
+            </div>
+            <div
+              class="text-theme-body mb-3"
+            >
+              <div
+                class="body-copy"
+              >
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, justo eget vehicula vestibulum, enim enim suscipit lectus, et sagittis nibh risus vel metus. Quisque eu ornare ante, et gravida mauris.
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-span-12 flex flex-col lg:flex-row items-start text-xs font-heavy mb-s flex items-start md:flex-row md:items-center md:space-x-4"
+            >
+              <a
+                aria-label="Learn More (Opens in a new tab)"
+                class="hover:decoration-theme-btn-decoration flex w-fit items-center whitespace-normal font-sans text-text-link font-heavy text-theme-text hover:underline hover:underline-offset-8 disabled:border-gray disabled:text-gray lg:mr-3 lg:first:ml-0 lg:last:mr-0 bg-theme-bg mr-m"
+                data-gtm-click=""
+                data-gtm-dl-event="cta_click"
+                href="/"
+                rel="noopener noreferrer"
+                role="link"
+                tabindex="0"
+                target="_blank"
+                title=""
+              >
+                Learn More
+                <span
+                  class="ml-xxs"
+                />
+                <span
+                  class="sr-only"
+                >
+                   (Opens in a new tab)
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-1/4 mx-l lg:mx-0 pb-xs lg:pb-0"
+        >
+          <div
+            class=""
+          />
+          <div
+            class="my-auto mt-0 flex flex-col px-l pl-0 lg:pt-s lg:pr-xl pb-0"
+          >
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight One
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight Two
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+            <div
+              class=""
+            >
+              <div
+                class="text-theme-text text-small uppercase font-heavy font-sans py-2 border-gray border-t"
+              >
+                <h3>
+                  Highlight Three
+                </h3>
+              </div>
+              <div
+                class="body-copy"
+              >
+                <div
+                  class="text-theme-body text-small mb-s"
+                >
+                  Lorem ipsum
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

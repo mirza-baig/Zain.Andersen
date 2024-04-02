@@ -1,0 +1,23 @@
+﻿---
+ID: "e3f3eb26-2544-4616-bd6a-1174794eee34"
+Parent: "219d3fa3-fa99-4e01-a2bb-e82b22b18665"
+Template: "7dcf5d52-57c1-49b3-b452-f27f980d51e3"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Settings/Insert Options
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240108T145752Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a0df94b8-116f-43d2-8bb0-e1a330957981"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T145752Z

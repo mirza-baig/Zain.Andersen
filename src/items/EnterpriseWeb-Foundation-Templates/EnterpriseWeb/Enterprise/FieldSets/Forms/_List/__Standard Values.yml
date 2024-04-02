@@ -1,0 +1,69 @@
+﻿---
+ID: "64e78f31-9eb2-4de4-ba73-c7000eec8ae1"
+Parent: "87d721c6-37c2-4434-83f7-4eb6a4c0ed04"
+Template: "87d721c6-37c2-4434-83f7-4eb6a4c0ed04"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/FieldSets/Forms/_List/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230820T181329Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e4df9d04-e399-4b9b-a148-e71a53d34dec"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c08ff4e0-a54f-425d-afdd-e4a2accbc8ef"
+      Hint: displayFieldName
+      Value: title
+    - ID: "ca2e3318-c230-415e-b055-163be5542fa3"
+      Hint: valueFieldName
+      Value: value
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230925T192327Z
+- Language: "en-CA"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231106T111844Z
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{998F4A8C-E357-4E2D-9071-AB2ADDFA8283}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "be29e444-3e74-4c1a-97c5-b4075d86c0c2"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: $ewNameKebab
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c08ff4e0-a54f-425d-afdd-e4a2accbc8ef"
+      Hint: displayFieldName
+      Value: title
+    - ID: "ca2e3318-c230-415e-b055-163be5542fa3"
+      Hint: valueFieldName
+      Value: value
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: $name
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231106T112005Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "55776727-bca2-4c69-a645-ea3f31bf316e"
+Parent: "4ff548a5-fc8f-4ee1-8f60-1bb560c9c9e9"
+Template: "4ff548a5-fc8f-4ee1-8f60-1bb560c9c9e9"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Elements/Button Card Item/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230221T211019Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c0cc946c-d489-41cf-9d2d-0a7c56a88590"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230820T130247Z

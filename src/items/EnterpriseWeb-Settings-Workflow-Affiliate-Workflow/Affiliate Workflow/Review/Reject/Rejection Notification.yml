@@ -1,0 +1,31 @@
+﻿---
+ID: "2e968e82-c03c-46df-a6e4-031af943b3ad"
+Parent: "8b46bd50-6f87-4b04-ba1e-6cb3e2ec3ebd"
+Template: "66882e97-c8aa-4e37-8901-7a8aa35ed2ed"
+Path: /sitecore/system/Workflows/Affiliate Workflow/Review/Reject/Rejection Notification
+SharedFields:
+- ID: "a291a22b-99e2-46bb-a27b-8ec744275396"
+  Hint: Type
+  Value: Platform.Foundation.Core.Workflow.Actions.NotifyReject, Platform
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171221T143402Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0188aa4c-46ea-44ee-9f12-369a5fc9598c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240321T060726Z

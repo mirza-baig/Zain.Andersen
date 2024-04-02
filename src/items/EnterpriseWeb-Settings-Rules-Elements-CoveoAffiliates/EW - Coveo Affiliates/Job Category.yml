@@ -1,0 +1,38 @@
+﻿---
+ID: "b51238f8-d4ea-4e7c-80eb-fa05d1db3410"
+Parent: "c368ae8b-912a-4900-aa51-d7ce8e8a5ff1"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Coveo Affiliates/Job Category"
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: Platform.Foundation.Core.Rules.Coveo.Conditions.Items.JobCategoryCondition,Platform
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240103T104036Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "27d3fef2-ff12-4f29-86d0-13fa83818760"
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: where the category of jobs match with the category of current job item 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240205T111537Z

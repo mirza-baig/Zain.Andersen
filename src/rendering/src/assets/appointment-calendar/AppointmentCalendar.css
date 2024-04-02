@@ -1,0 +1,102 @@
+.p-calendar ,
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled),
+.p-yearpicker-year:not(.p-disabled):not(.p-highlight),
+.p-monthpicker-month:not(.p-disabled):not(.p-highlight) {    
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--colors-gray), var(--tw-border-opacity));
+    border-width: 1px;
+}
+
+.p-calendar {
+    border-width: 2px;
+}
+
+.p-datepicker {
+    color: rgb(var(--colors-dark-gray));
+    width: 390px !important;   
+}
+
+.p-datepicker:not(.p-disabled) table td span:not(.p-disabled) { 
+    margin-bottom: 4px;
+}
+
+.p-datepicker table td > span.p-highlight,
+.p-yearpicker-year.p-highlight,
+.p-monthpicker-month.p-highlight,
+.p-yearpicker-year:not(.p-disabled):not(.p-highlight):hover,
+.p-monthpicker-month:not(.p-disabled):not(.p-highlight):hover,
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):hover,
+.p-datepicker:not(.p-disabled) table td span:not(.p-highlight):not(.p-disabled):focus {
+    background-color: var(--theme-btn-bg);
+    color: var(--theme-btn-text);
+    border-width: 1px;
+    box-shadow: 0 0 0 0;
+}
+
+.p-datepicker-prev {
+    float: right;
+    right: 55px;
+    top: 40px;
+}
+
+.p-datepicker-next {
+    float: right;
+    bottom: 20px;
+    right: 25px;
+}
+
+.p-datepicker table td {
+    padding: 0 0 0 2px;  
+}
+
+.p-datepicker table td > span {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.p-datepicker table th > span,
+.p-datepicker-next,
+.p-datepicker-prev,
+.p-datepicker-title {
+    --tw-text-opacity: 1;
+    color: rgba(var(--colors-black), var(--tw-text-opacity));
+}
+
+.p-datepicker-calendar-container {
+    padding: 25px 10px; 
+}
+
+.p-datepicker .p-yearpicker .p-yearpicker-year,
+.p-datepicker .p-monthpicker .p-monthpicker-month {
+    padding: 0.5rem;
+    transition: box-shadow 0.2s;
+    border-radius: 6px;
+}
+
+.p-datepicker .p-yearpicker,
+.p-datepicker .p-monthpicker {    
+    margin: 0.75rem;
+    justify-items: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+}
+
+.p-yearpicker-year,
+.p-monthpicker-month {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.p-monthpicker-month {
+    width: 31.3%;
+}
+
+.p-yearpicker-year {
+    width: 40%;
+}

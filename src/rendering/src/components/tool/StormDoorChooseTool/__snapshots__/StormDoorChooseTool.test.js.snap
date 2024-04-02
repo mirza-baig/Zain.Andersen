@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  id="id1695242607"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12 lg:col-span-2"
+      />
+      <div
+        class="col-span-12 max-ml:text-center lg:col-span-8"
+      >
+        <div
+          class="flex justify-center"
+        >
+          <div
+            class="items-top font-sans [&_a:hover]:underline mb-xxxs font-sans font-heavy text-s ml:text-m"
+          >
+            <h4>
+              Find your perfect storm door
+            </h4>
+          </div>
+        </div>
+        <ul
+          class="flex flex-wrap justify-center"
+        />
+        <div
+          class="mt-s mb-xxs text-center font-sans text-sm-s font-heavy ml:mt-l ml:text-s"
+        >
+          Would you prefer a full view or partial view style storm door?
+        </div>
+        <div
+          class="mt-s flex min-h-[200px] w-full justify-center"
+        >
+          <div
+            class="flex w-full flex-col justify-center md:flex-row"
+          />
+        </div>
+        <div
+          class="justify-end md:justify-center flex w-full md:mt-l"
+        >
+          <div>
+            <div
+              class="flex w-fit cursor-pointer items-center whitespace-nowrap rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text disabled:border-gray disabled:text-gray md:hover:border-theme-btn-border-hover lg:hover:bg-theme-btn-bg-hover lg:hover:text-theme-btn-text-hover"
+            >
+              Next
+               
+              <span
+                class="ml-xxs"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

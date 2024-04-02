@@ -1,0 +1,71 @@
+﻿---
+ID: "095e5480-80b0-45c7-ad31-b77aa2b0d151"
+Parent: "b16c7ec6-fa17-45e9-81d7-2d024bdff7c2"
+Template: "b16c7ec6-fa17-45e9-81d7-2d024bdff7c2"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Listing/Xup Card Collection Dynamic/Event Result Item/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0686f5bc-df6a-4aca-b40d-14b7a19e87b4"
+      Hint: eventCTAField
+      Value: "{32736939-5062-43DB-B7F5-E9BC1DE12DF7}"
+    - ID: "1576bbe8-ea19-44b2-a64e-2ae02cfe1fd6"
+      Hint: eventTimeField
+      Value: "{5BD852BC-501B-4994-B056-D57550FF283F}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230514T131958Z
+    - ID: "2dbe6565-48f5-4d01-b6dc-6405a6ec274b"
+      Hint: eventDescriptionField
+      Value: "{36EF16D1-D549-4853-91E2-DA98FFDDAEBC}"
+    - ID: "35d1a82f-f94a-4124-be0a-fd2334caa18f"
+      Hint: startDateField
+      Value: "{4B10218E-D61F-4193-A2A8-E705B0D065D5}"
+    - ID: "3fd50554-534b-4589-b991-d00dc2e519a0"
+      Hint: eventAddressField
+      Value: "{BE15AC17-969E-4BD0-ABA8-B66A1E511850}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "607c504e-7976-43e5-9f52-11a8b306df51"
+      Hint: eventCityField
+      Value: "{F0925646-90AE-4820-B22C-CD4D7096D654}"
+    - ID: "71e8df91-462a-47ca-88d0-9cc731485243"
+      Hint: eventStateField
+      Value: "{13E9A8B6-8E68-40B4-A55F-961FEC270349}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "609ebac6-d03a-4563-bffd-6f2b94dbfe19"
+    - ID: "a49438ee-42ae-4d28-bed7-9105ed453fa0"
+      Hint: eventZipField
+      Value: "{4BB0EEEA-72F9-4972-ABD3-6D50C301A64D}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240119T081130Z
+    - ID: "ecc94b0d-1e2c-40f4-8da1-7ea4fd107562"
+      Hint: resultType
+      Value: "{0BA0A593-86D1-4ABC-94CB-D450C0D8CAE7}"
+    - ID: "ee919ffd-2b57-4826-9eca-c0f0baedf580"
+      Hint: ctaText
+      Value: Details
+    - ID: "ef350ce6-2a32-4b35-8ef3-55f7c53f0014"
+      Hint: eventNameField
+      Value: "{A89996C3-B57F-47C6-A46C-282A3165828B}"
+    - ID: "f91239d4-e873-472d-a303-8bc2a1e3846c"
+      Hint: endDateField
+      Value: "{8003F232-2E46-4C49-BD35-1A6C977811DA}"

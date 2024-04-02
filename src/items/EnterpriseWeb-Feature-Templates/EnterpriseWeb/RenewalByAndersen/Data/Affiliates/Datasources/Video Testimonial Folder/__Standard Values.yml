@@ -1,0 +1,40 @@
+﻿---
+ID: "fa5cdee2-9b77-4b0b-a65c-9bd3ddb46650"
+Parent: "1feccddd-a9fe-47b9-a7a8-ae7a64d67140"
+Template: "1feccddd-a9fe-47b9-a7a8-ae7a64d67140"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Data/Affiliates/Datasources/Video Testimonial Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {B1156C6A-0B3E-476B-AEE4-1F87201AA750}
+    {1FECCDDD-A9FE-47B9-A7A8-AE7A64D67140}
+    {53C1FBF4-F2CE-48E7-9FD4-76D1AB239352}
+    {FDC166F4-EE93-4875-A317-A8BD3771EE7C}
+    {9DB6541D-6849-4ECF-9231-90FB16E6D012}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230414T050814Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0c9d75d6-e73c-495e-bac2-a0f5f22f3240"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230620T172800Z

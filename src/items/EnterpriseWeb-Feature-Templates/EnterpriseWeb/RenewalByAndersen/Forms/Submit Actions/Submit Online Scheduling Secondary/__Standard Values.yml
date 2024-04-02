@@ -1,0 +1,23 @@
+﻿---
+ID: "4035d86e-01cc-4cab-95c9-574c88febea2"
+Parent: "ba892992-9790-4f60-8990-5b3bb9e3cc80"
+Template: "ba892992-9790-4f60-8990-5b3bb9e3cc80"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Forms/Submit Actions/Submit Online Scheduling Secondary/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240212T122714Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8d0b33ca-5d17-4ebc-81c7-325b45240460"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T122356Z

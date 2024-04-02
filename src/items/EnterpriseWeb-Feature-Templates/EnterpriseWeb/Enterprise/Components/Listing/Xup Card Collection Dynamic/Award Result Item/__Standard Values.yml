@@ -1,0 +1,53 @@
+﻿---
+ID: "4012ab44-cbba-44d7-9d4d-eaa9d15f2a19"
+Parent: "ebf78648-f3ee-48c7-aad4-db4422bde600"
+Template: "ebf78648-f3ee-48c7-aad4-db4422bde600"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Listing/Xup Card Collection Dynamic/Award Result Item/__Standard Values
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230514T131958Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7b1a0791-a87a-4cfd-9834-cc7baed57082"
+      Hint: thumbnailImageField
+      Value: "{F2F37F45-3294-4D70-BEA0-0FF7B45F9954}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3f3ef907-dbef-48e6-a4f9-55cc15a8b295"
+    - ID: "91fcfa3a-e733-40c9-b54d-71f5976ed533"
+      Hint: ctaField
+      Value: "{9215E58C-4AD8-4D5D-991F-560B2778DD3B}"
+    - ID: "9696a5cc-8026-42f9-838c-54e03538f693"
+      Hint: headlineField
+      Value: "{4D257117-0BF5-4A88-929A-7DE8CACAD8EB}"
+    - ID: "a04a394f-b60d-43fc-a90d-b59715dc8bec"
+      Hint: descriptionField
+      Value: "{2F33AAD2-6246-474A-AB99-98EB5748D052}"
+    - ID: "a1172430-fcba-4bf4-bacd-e95907b5f5fb"
+      Hint: ctaText
+      Value: Details
+    - ID: "b5d6dd1e-1e65-4bb8-af53-642a595d8c90"
+      Hint: resultType
+      Value: "{85C6B944-45A1-4428-A347-9543719167FE}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240119T132050Z

@@ -1,0 +1,30 @@
+﻿---
+ID: "e993c15e-9f11-485c-9ba7-42fceeaa54f6"
+Parent: "02bf7ffe-dfbb-43f3-8c3b-067cb5bbe482"
+Template: "02bf7ffe-dfbb-43f3-8c3b-067cb5bbe482"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/General/RbA Consult Request Canada/RbA Consult Request Canada/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/32x32/user1_mobilephone.png
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{31B7697D-3A7C-4EF0-B768-D04B36C7BBFE}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231027T185113Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "92affc88-9bd2-4c48-b8b4-eb44597368f5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231027T190507Z

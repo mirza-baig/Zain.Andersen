@@ -1,0 +1,50 @@
+﻿---
+ID: "36e56843-9a69-4c70-8889-a6658b881eb2"
+Parent: "05b5a7af-9cb7-4b03-8945-f8f390f4f36a"
+Template: "05b5a7af-9cb7-4b03-8945-f8f390f4f36a"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/General/Page Mashup Dynamic/Page Mashup Dynamic/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{57B24586-AEBC-4CB2-B3FE-AC60A16F11E2}"
+- ID: "32a0a4a0-2c24-4894-8629-4cd02476348e"
+  Hint: headlineLevel
+  Value: "{0F556F3A-BBAD-4AA5-952D-B79003B39CD6}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{990FC1C8-F083-4774-9088-30257926B673}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230307T191714Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "784a08ba-2b25-40f6-8af6-e78380409904"
+      Hint: backgroundColor
+      Value: "{64333070-0D1B-4A33-9E19-7D299D6E8DD3}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bd184924-caf8-432e-b0af-390729e723ed"
+    - ID: "b2a74f5b-05db-4e79-8ce9-328512c478cf"
+      Hint: headlineText
+      Value: $name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c2f1aa43-eb6a-4b0f-9f04-d5dbf2b13ece"
+      Hint: mashupStyle
+      Value: "{6CD7E7F9-E49D-4137-84DE-E6BEF771582A}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230819T181833Z

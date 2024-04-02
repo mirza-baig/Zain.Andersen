@@ -1,0 +1,30 @@
+﻿---
+ID: "ddd86812-688c-4ba2-b893-54ab08382ba4"
+Parent: "3d472372-9575-4389-a5d2-9f9c597fd2cb"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Forms/Generic Form Field Validation/Field Validation
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230221T203527Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b278b657-508e-4cdf-a205-0bfdaeac644e"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: "{368F5461-9A97-49CB-A2D3-6B4E271340FF}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230921T101345Z

@@ -1,0 +1,65 @@
+﻿---
+ID: "5e0baa9e-2d79-448b-920b-1c68b0186ece"
+Parent: "a04b6040-6e2f-4d1e-acc8-5546d1e823d7"
+Template: "a04b6040-6e2f-4d1e-acc8-5546d1e823d7"
+Path: /sitecore/templates/Project/AndersenCorporation/RenewalByAndersen/Pages/Renewal Cares Page/__Standard Values
+SharedFields:
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{A149F6AE-49EA-49CD-8EFF-4CBF693E5435}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{DD2C902A-D7D2-4DB9-8538-C7748DAB080D}">
+        <r
+          ds="local:/Data/Hero Simple"
+          id="{EEE84920-F7A4-42BA-9A72-6CCDD7C8F933}"
+          par=""
+          ph="headless-hero"
+          uid="{ABEAAA4B-454C-4116-BC0B-851EFE26A165}"
+          ccb="Clear on publish" />
+        <r
+          ds="local:/Data/Content Block with Media"
+          id="{4385140E-BCCF-4D2D-BCC4-7AFB700D6CCD}"
+          par="personalizationRules"
+          ph="headless-main"
+          uid="{6AE6818C-C17A-449A-827D-F2E4C3C42B28}"
+          ccb="Clear on publish" />
+        <r
+          ds="local:/Data/Curated Image Display"
+          id="{197700F4-C8A4-43D9-A3F8-D32B44FD987A}"
+          par=""
+          ph="headless-main"
+          uid="{4C86E699-5E8F-46D3-8104-71045C7E4FD6}"
+          ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230719T084835Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "11bf6abf-7c42-47b7-add3-986e6a856754"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240319T074719Z

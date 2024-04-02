@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/chatbutton"
+  id="id1695242607"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="hidden ml:block"
+      />
+    </div>
+  </div>
+</section>
+`;

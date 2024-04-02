@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="forms/formwithcardplaceholder"
+  id="id971698437"
+>
+  <div
+    class="my-8 w-full theme-gray bg-light-gray"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-0 gap-x-0 "
+    >
+      <div
+        class="col-span-12 py-l"
+      >
+        <div
+          class="grid grid-cols-2 gap-x-0 max-lg:px-m md:max-w-screen-lg md:grid-cols-12 lg:mx-auto"
+        >
+          <div
+            class="col-span-12  max-md:border-b max-md:border-solid max-md:border-gray md:col-span-5"
+          >
+            <div
+              style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+            >
+              <h2>
+                Form
+              </h2>
+              <p>
+                JSS component is missing React implementation. See the developer console for more information.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-span-12 max-md:py-s md:col-span-6 md:col-start-7 md:my-2 md:border-l md:border-solid md:border-gray md:px-s [&>div]:!h-auto"
+          >
+            <div
+              class="flex"
+            >
+              <div
+                style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+              >
+                <h2>
+                  ProductPreviewCard
+                </h2>
+                <p>
+                  JSS component is missing React implementation. See the developer console for more information.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

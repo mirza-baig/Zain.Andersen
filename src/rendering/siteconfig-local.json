@@ -1,0 +1,80 @@
+{
+  "sitecore": {
+    "sites": [
+      {
+        "name": "AndersenWindows",
+        "hostName": "www.local.andersenwindows.com",
+        "theme": "aw",
+        "targetHostName": "www.local.andersenwindows.com",
+        "language": "en",
+        "canonicalHostName": "https://www.andersenwindows.com"
+      },
+      {
+        "name": "AndersenHomeDepot",
+        "hostName": "www.local.andersenhomedepot.com",
+        "theme": "aw",
+        "targetHostName": "www.local.andersenhomedepot.com",
+        "language": "en",
+        "canonicalHostName": "https://www.andersenhomedepot.com"
+      },
+      {
+        "name": "StormDoors",
+        "hostName": "www.local.stormdoors.com",
+        "theme": "aw",
+        "targetHostName": "www.local.stormdoors.com",
+        "language": "en",
+        "canonicalHostName": "https://www.stormdoors.com"
+      },
+      {
+        "name": "AndersenLuminaire",
+        "hostName": "www.local.andersenluminaire.com",
+        "theme": "aw",
+        "targetHostName": "www.local.andersenluminaire.com",
+        "language": "en",
+        "canonicalHostName": "https://www.andersenluminaire.com"
+      },
+      {
+        "name": "HeritageWindows",
+        "hostName": "www.local.heritagewindows.com",
+        "theme": "aw",
+        "targetHostName": "www.local.heritagewindows.com",
+        "language": "en",
+        "canonicalHostName": "https://www.heritagewindows.com"
+      },
+      {
+        "name": "Stormdoors",
+        "hostName": "www.local.stormdoors.com",
+        "theme": "aw",
+        "targetHostName": "www.local.stormdoors.com",
+        "language": "en",
+        "canonicalHostName": "https://www.stormdoors.com"
+      },
+      {
+        "name": "RenewalbyAndersen",
+        "hostName": "www.local.renewalbyandersen.com|www.local.enewsletter.renewalbyandersen.com",
+        "theme": "rba",
+        "targetHostName": "www.local.renewalbyandersen.com",
+        "language": "en",
+        "hasAffiliatePersonalization": "true",
+        "canonicalHostName": "https://www.renewalbyandersen.com"
+      },
+      {
+        "name": "RenewalbyAndersenCA",
+        "hostName": "www.local.renewalbyandersen.ca",
+        "theme": "rba",
+        "targetHostName": "www.local.renewalbyandersen.ca",
+        "language": "en-CA",
+        "hasAffiliatePersonalization": "true",
+        "canonicalHostName": "https://www.renewalbyandersen.ca"
+      },
+      {
+        "name": "OnlineScheduling",
+        "hostName": "www.local.os.renewalbyandersen.com",
+        "theme": "rba",
+        "targetHostName": "www.local.os.renewalbyandersen.com",
+        "language": "en",
+        "canonicalHostName": "https://os.renewalbyandersen.com"
+      }
+    ]
+  }
+}

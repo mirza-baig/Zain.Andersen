@@ -1,0 +1,37 @@
+﻿---
+ID: "64b071ab-1058-4ff8-b128-4d62b539cccd"
+Parent: "bc3e01e3-a6c1-4c63-85e2-f0fb23809e8e"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Storm Door Choose Tool/Question
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Core2/32x32/question_mark.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{17DC7CEE-994D-4DC7-80BC-357EF53C3708}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{3C8A8E27-8550-4663-8D65-47C8EFDA9B91}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161201T220739Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dsasik
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "806ebf18-532e-41e8-afb8-c866cf0dcd3e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dboeser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230512T170600Z

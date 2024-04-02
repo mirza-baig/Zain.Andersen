@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="site/tafooter"
+  id="id343697139"
+>
+  <div
+    class="my-8 w-full theme-black bg-theme-bg"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m py-m ml:pt-ml ml:pb-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12 mx-auto grid w-full max-w-[1200px] grid-cols-2 gap-s ml:grid-cols-12 ml:gap-y-xxxs "
+      >
+        <div
+          class="col-span-2 text-white ml:col-span-8"
+        >
+          <div
+            class="flex flex-row gap-x-xxs ml:gap-x-s"
+          >
+            <a
+              aria-label="LOGO-RbA-Horizontal-white"
+              class="flex h-fit justify-center"
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="footer"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title=""
+            >
+              
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27143%27%20height=%2749%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="LOGO-RbA-Horizontal-white"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </a>
+            <a
+              aria-label="ANDERSEN_Logo_TM_Rectangle_RGB_white"
+              class="flex h-fit justify-center"
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="footer"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title=""
+            >
+              
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27188%27%20height=%2726%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="ANDERSEN_Logo_TM_Rectangle_RGB_white"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-span-2 flex flex-col flex-wrap justify-end gap-x-s text-white ml:col-span-4 ml:flex-row ml:items-center"
+        >
+          <div
+            class="mb-0 ml:text-right font-bold text-body"
+          >
+            <div
+              class="body-copy"
+            >
+              <div>
+                Follow us on
+              </div>
+            </div>
+          </div>
+          <ul
+            class="flex gap-x-xxs"
+          >
+            <li>
+              <a
+                aria-label="LinkedIn"
+                data-gtm-click=""
+                data-gtm-dl-event="nav_click"
+                data-gtm-dl-nav-section="footer"
+                href="https://www.linkedin.com/company/renewal-by-andersen/ "
+                role="link"
+                tabindex="0"
+              >
+                <span />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Facebook"
+                data-gtm-click=""
+                data-gtm-dl-event="nav_click"
+                data-gtm-dl-nav-section="footer"
+                href="https://www.facebook.com/rbacorp"
+                role="link"
+                tabindex="0"
+              >
+                <span />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="Twitter"
+                data-gtm-click=""
+                data-gtm-dl-event="nav_click"
+                data-gtm-dl-nav-section="footer"
+                href="https://twitter.com/RbACorp"
+                role="link"
+                tabindex="0"
+              >
+                <span />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-span-2 mb-xxs text-white ml:col-span-8 ml:mb-0"
+        >
+          <div
+            class="flex flex-col"
+          >
+            <div
+              class="font-sans mb-m ml:mb-xxxs text-small font-bold !font-serif"
+            >
+              <h3>
+                Andersen collects certain categories of personal information. See links for more information.
+              </h3>
+            </div>
+            <ul>
+              <li
+                class="relative inline px-s text-small pl-0"
+              >
+                <a
+                  aria-label="Terms"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="https://www.renewalbyandersen.com/about/terms-of-use"
+                  role="link"
+                  tabindex="0"
+                >
+                  
+                  Terms
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="Privacy Policy"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="https://www.andersenwindows.com/support/privacy/"
+                  role="link"
+                  tabindex="0"
+                >
+                  
+                  Privacy Policy
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="Privacy Notice for CA Residents"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="https://www.andersenwindows.com/support/privacy-california/"
+                  role="link"
+                  tabindex="0"
+                >
+                  
+                  Privacy Notice for CA Residents
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="EEO Policy"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="/Components/"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                  title=""
+                >
+                  
+                  EEO Policy
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="Opt Out of Sale of Personal Information"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="/Components"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                  title=""
+                >
+                  
+                  EEO Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="col-span-2 text-white ml:col-span-4"
+        >
+          <a
+            aria-label="flag canada"
+            class="mb-m flex w-fit items-center gap-x-xs hover:underline ml:mb-xxxs ml:ml-auto ml:justify-end"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="footer"
+            href="http://localhost/"
+            role="link"
+            tabindex="0"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="flag canada"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+            <div
+              class="font-sans text-body font-bold !font-serif"
+            >
+              <span>
+                Visit Canadian Site
+              </span>
+            </div>
+          </a>
+          <div
+            class="text-sm-xxs font-regular ml:text-right"
+          >
+            © 2024 Renewal by Andersen LLC. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

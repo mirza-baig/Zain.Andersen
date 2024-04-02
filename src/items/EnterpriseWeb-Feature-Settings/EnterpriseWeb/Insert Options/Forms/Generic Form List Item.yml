@@ -1,0 +1,41 @@
+﻿---
+ID: "3f066633-a3ef-4fb0-a39d-8f6a6958407e"
+Parent: "a433ca80-d2b7-4053-877d-9abbf924882a"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Forms/Generic Form List Item
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230221T202441Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "945b0934-594c-45dc-8cb5-fe2c57c2b95e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T123122Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{D50C50B0-A744-4A6D-9429-F7BFFDDCFFA6}">
+            <conditions>
+              <condition
+                id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                uid="C75FF8CCD1F84B93B8872566D0154CC3"
+                templateid="{0C525BAC-A5FE-4CCB-ACD3-DC0552B7C1CC}" />
+            </conditions>
+          </rule>
+        </ruleset>

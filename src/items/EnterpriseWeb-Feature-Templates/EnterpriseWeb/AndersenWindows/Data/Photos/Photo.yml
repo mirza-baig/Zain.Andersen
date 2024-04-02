@@ -1,0 +1,50 @@
+﻿---
+ID: "2ac3a258-2f0a-4081-bb8e-f00e281d4311"
+Parent: "f4f22e44-0728-42bf-81a2-006e2a88da7c"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Data/Photos/Photo
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/photo_landscape.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {DD38514D-89E9-47F5-9A34-F5DAA3E8C852}
+    {E8C6ADB0-F9A8-4419-94D6-E4FDDEF70138}
+    {FD382638-2617-42AD-8B7C-2E32C63AF069}
+    {A108E368-6E6C-45A6-BF81-31B697D63CFF}
+    {02D5F625-C6D6-4483-B2BC-3584C0D8E5F2}
+    {FF115385-5C3B-4AB1-9531-ECD4221A2438}
+    {F6DB8EE2-8EA2-4F31-8EC4-7EBEF253CE7A}
+    {2C7C69ED-9881-4955-AE0E-F0B757A08D45}
+    {BD0FD2C9-039C-4926-AB5D-9E8CB50FDA23}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{C3E82B73-8736-4B3A-B023-84800BBE3EA3}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230414T050829Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "44d0a3f3-cb07-4812-8885-fac44f648308"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230727T114451Z

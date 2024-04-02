@@ -1,0 +1,36 @@
+﻿---
+ID: "6e8db76c-54ef-4e03-9cb5-60d805e91302"
+Parent: "0f302051-b24f-4188-aa82-407aae1e9e43"
+Template: "78e78e19-8b37-4637-8c04-9de221572d0d"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/No Appointments Available/Headline
+SharedFields:
+- ID: "32a0a4a0-2c24-4894-8629-4cd02476348e"
+  Hint: headlineLevel
+  Value: "{321A2081-2F14-4A42-B4E3-B88212FAE788}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240228T215009Z
+    - ID: "4b5aa8b0-1ef1-4ec3-bafc-7e06f56e640b"
+      Hint: removeHorizontalLine
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f22c9ff3-04aa-4cb9-a652-c12afcbc9b8b"
+    - ID: "b2a74f5b-05db-4e79-8ce9-328512c478cf"
+      Hint: headlineText
+      Value: "It looks like our calendar is starting to fill up!"
+    - ID: "b91944fc-cbae-47eb-9b9b-1521875058e2"
+      Hint: alignment
+      Value: "{67192EBD-70CE-4603-AE48-70C3B5DF6B2B}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240228T215042Z

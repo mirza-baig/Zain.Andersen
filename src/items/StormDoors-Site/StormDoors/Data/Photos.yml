@@ -1,0 +1,23 @@
+﻿---
+ID: "e7630a8d-f07f-407a-9f31-2c0cdd8ef781"
+Parent: "b9a43d38-d944-4d00-a747-845c4db9e205"
+Template: "4c7a7cfa-0c24-4306-92e2-ddc9753f105f"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/StormDoors/Data/Photos
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240103T155908Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "560e2779-ae85-427b-9721-926027c8f279"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240103T155908Z

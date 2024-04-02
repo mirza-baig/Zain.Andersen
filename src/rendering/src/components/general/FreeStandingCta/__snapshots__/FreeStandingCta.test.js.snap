@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/freestandingcta"
+  id="id175593572"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <section
+        class="col-span-12"
+        id="id175593572"
+      >
+        <div
+          class="mb-s flex items-start md:flex-row md:items-center md:space-x-4"
+        >
+          <div
+            class="mb-s flex items-start md:flex-row md:items-center"
+          >
+            <a
+              aria-label="Home"
+              class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed"
+              data-gtm-click=""
+              data-gtm-dl-event="cta_click"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title=""
+            >
+              Home
+              <span
+                class="ml-xxs"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>
+`;

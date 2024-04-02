@@ -1,0 +1,62 @@
+﻿---
+ID: "9f7da8fb-0731-4b99-822e-2ace6ace3164"
+Parent: "4b4a94da-c1e9-4b59-b306-857753d26011"
+Template: "4b4a94da-c1e9-4b59-b306-857753d26011"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Listing/Xup Card Collection Dynamic/Xup Card Collection Dynamic/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{CC77E3E9-19DA-456B-8058-B893B285D626}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{24BB4781-62A8-4BAD-BB7A-603C5F7EC92F}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230508T085937Z
+    - ID: "40774dac-dc9f-4e8c-83a2-8a1f2c63a7eb"
+      Hint: mobileDisplayStyle
+      Value: "{98BE30E0-6704-4E1C-827E-2F336F669190}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "5e7302d9-92a5-4d57-b3d1-46a9cb1dcec9"
+      Hint: queryPipeline
+      Value: default
+    - ID: "759476aa-e293-46a9-a7bd-9a601d7306c4"
+      Hint: searchHub
+      Value: search
+    - ID: "78500268-84c1-4025-b32e-f1a5911b4bc8"
+      Hint: cardsPerRow
+      Value: "{1EF447F3-ED4F-4305-86C8-02B708063CAE}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a6c9922e-ef90-4c9c-9fc6-8b31f7663907"
+    - ID: "a276736e-9bbd-4953-81d3-e08f8b19d161"
+      Hint: alignment
+      Value: "{C6DC5505-A8A3-47E0-8B10-F01B2C03AA32}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "cfbb0810-47a5-4fe8-8d12-97f2f7cc4b33"
+      Hint: desktopDisplayStyle
+      Value: "{98BE30E0-6704-4E1C-827E-2F336F669190}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230529T094724Z
+    - ID: "ebc0f4f5-3020-4870-960b-524e0d172158"
+      Hint: headlineLevel
+      Value: "{0F556F3A-BBAD-4AA5-952D-B79003B39CD6}"

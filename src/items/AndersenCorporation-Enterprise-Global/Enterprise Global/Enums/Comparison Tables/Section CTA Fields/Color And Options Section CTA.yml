@@ -1,0 +1,35 @@
+﻿---
+ID: "d905e637-ad7f-4581-ace7-c0a13466c1bf"
+Parent: "6c03dd90-52c2-4ef4-ac2f-c0b3149391f7"
+Template: "d2923fee-da4e-49be-830c-e27764dfa269"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Enums/Comparison Tables/Section CTA Fields/Color And Options Section CTA
+SharedFields:
+- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
+  Hint: Value
+  Value: colorAndOptionsSectionCTA
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230712T080725Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7810ea5c-73f2-4d6a-8198-b302dbd591cd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230712T080728Z

@@ -1,0 +1,33 @@
+﻿---
+ID: "10b0fc31-e051-4a7b-ac42-109035b60d71"
+Parent: "0c26130e-a614-43cd-a5bd-e1eca85f61d6"
+Template: "741b9a7f-3a37-46e0-9980-ea7e53c4e840"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Window Concerns/Concerns/Concern Types/I want to change the style
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T173339Z
+    - ID: "6d7079b0-0aad-4d21-a1e2-6cca425235be"
+      Hint: title
+      Value: I want to change the style
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "594bc3f6-9d1b-4629-9f77-6c159a0f84bd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d04866e9-7ea4-4ad8-9c6e-1b751177e26b"
+      Hint: value
+      Value: I want to change the style
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240115T173421Z

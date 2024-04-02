@@ -1,0 +1,23 @@
+﻿---
+ID: "1aa88bc9-6588-4141-9d7c-c4138b1b3b95"
+Parent: "79c205cf-4d0c-4ca0-b056-71761739524f"
+Template: "79c205cf-4d0c-4ca0-b056-71761739524f"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Submit Actions/Attributes/Field Attribute/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231017T095737Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b46914b7-7d49-468a-863a-fd3e4071e408"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231017T095737Z

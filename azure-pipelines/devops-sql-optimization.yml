@@ -1,0 +1,41 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger: none
+
+schedules:
+- cron: '45 23 * * 1-5'
+  displayName: At 11:45PM on every day-of-week from Monday through Friday
+  branches:
+    include:
+    - main
+
+pool:
+  name: Enterprise Web
+
+stages:
+- stage: Development
+  jobs:
+  - template: sql-optizimation\optimize-environment.yml
+    parameters:
+      azureSubscription: 'DEV_ENTWB1'
+      resourceGroupName: 'DEV_EntWb1'
+      sqlServerName: 'deventwb1sql1.database.windows.net'
+      sqlDatabaseNames: 'dev_master,dev_external'
+
+- stage: UAT
+  jobs:
+  - template: sql-optizimation\optimize-environment.yml
+    parameters:
+      azureSubscription: 'DEV_ENTWB1'
+      resourceGroupName: 'DEV_EntWb1'
+      sqlServerName: 'deventwb1sql1.database.windows.net'
+      sqlDatabaseNames: 'uat_master,uat_external'
+
+- stage: Production
+  jobs:
+  - template: sql-optizimation\optimize-environment.yml
+    parameters:
+      azureSubscription: 'PROD_ENTWB1'
+      resourceGroupName: 'PROD_EntWb1'
+      sqlServerName: 'prodentwb1sql1.database.windows.net'
+      sqlDatabaseNames: 'prod_master,prod_external'

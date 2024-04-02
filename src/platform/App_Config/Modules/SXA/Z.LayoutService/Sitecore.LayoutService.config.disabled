@@ -1,0 +1,137 @@
+﻿<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/" xmlns:role="http://www.sitecore.net/xmlconfig/role/" xmlns:search="http://www.sitecore.net/xmlconfig/search/">
+    <sitecore>
+        <layoutService>
+            <serializableRenderingTypes>
+                <sublayout>{0A98E368-CDB9-4E1E-927C-8E0C24A003FB}</sublayout>
+                <viewRendering>{99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}</viewRendering>
+                <controllerRendering>{2A3E91A0-7987-44B5-AB34-35C2D9DE83B9}</controllerRendering>
+                <xslRendering>{F1F1D639-4F54-40C2-8BE0-81266B392CEB}</xslRendering>
+                <jsonRendering>{04646A89-996F-4EE7-878A-FFDBF1F0EF0D}</jsonRendering>
+            </serializableRenderingTypes>
+            <serializationMaxDepth>4</serializationMaxDepth>
+            <paths>
+                <excludePaths>
+                    <path id="1">/sitecore/system</path>
+                    <path id="2">/sitecore/templates</path>
+                    <path id="3">/sitecore/layout</path>
+                    <path id="4">/sitecore/media library</path>
+                    <path id="5">/sitecore/social</path>
+                </excludePaths>
+            </paths>
+            <configurations>
+                <config name="default">
+                    <rendering type="Sitecore.LayoutService.Configuration.DefaultRenderingConfiguration, Sitecore.LayoutService">
+                        <placeholdersResolver type="Sitecore.LayoutService.Placeholders.DynamicPlaceholdersResolver, Sitecore.LayoutService" />
+                        <itemSerializer type="Sitecore.LayoutService.Serialization.ItemSerializers.DefaultItemSerializer, Sitecore.LayoutService" resolve="true">
+                            <AlwaysIncludeEmptyFields>true</AlwaysIncludeEmptyFields>
+                        </itemSerializer>
+                        <renderingContentsResolver type="Sitecore.LayoutService.ItemRendering.ContentsResolvers.RenderingContentsResolver, Sitecore.LayoutService">
+                            <IncludeServerUrlInMediaUrls>true</IncludeServerUrlInMediaUrls>
+                        </renderingContentsResolver>
+                    </rendering>
+                    <serialization type="Sitecore.LayoutService.Configuration.DefaultSerializationConfiguration, Sitecore.LayoutService">
+                        <transformer type="Sitecore.LayoutService.Serialization.LayoutTransformer, Sitecore.LayoutService" resolve="true" />
+                    </serialization>
+                </config>
+            </configurations>
+        </layoutService>
+        <pipelines>
+            <group groupName="layoutService">
+                <pipelines>
+                    <renderJsonRendering performanceCritical="true">
+                        <processor type="Sitecore.LayoutService.Presentation.Pipelines.RenderJsonRendering.Initialize, Sitecore.LayoutService" resolve="true" />
+                        <processor type="Sitecore.LayoutService.Presentation.Pipelines.RenderJsonRendering.RenderPlaceholders, Sitecore.LayoutService" resolve="true" />
+                        <processor type="Sitecore.LayoutService.Presentation.Pipelines.RenderJsonRendering.DetermineRenderingContentsResolver, Sitecore.LayoutService" resolve="true" />
+                        <processor type="Sitecore.LayoutService.Presentation.Pipelines.RenderJsonRendering.ResolveRenderingContents, Sitecore.LayoutService" resolve="true" />
+                    </renderJsonRendering>
+                    <getFieldSerializer performanceCritical="true">
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetRichTextFieldSerializer, Sitecore.LayoutService"
+                                   resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">rich text</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetImageFieldSerializer, Sitecore.LayoutService" resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">image</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetGeneralLinkFieldSerializer, Sitecore.LayoutService"
+                                   resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">general link</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetDateFieldSerializer, Sitecore.LayoutService"
+                                   resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">date</fieldType>
+                                <fieldType id="2">datetime</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetCheckboxFieldSerializer, Sitecore.LayoutService"
+                                   resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">checkbox</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetInternalLinkFieldSerializer, Sitecore.LayoutService"
+                                   resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">droplink</fieldType>
+                                <fieldType id="2">droptree</fieldType>
+                                <fieldType id="3">grouped droplink</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetMultilistFieldSerializer, Sitecore.LayoutService" resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">checklist</fieldType>
+                                <fieldType id="2">multilist</fieldType>
+                                <fieldType id="3">multilist with search</fieldType>
+                                <fieldType id="4">treelist</fieldType>
+                                <fieldType id="5">treelist with search</fieldType>
+                                <fieldType id="6">treelistex</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetNumberFieldSerializer, Sitecore.LayoutService" resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">number</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetFileFieldSerializer, Sitecore.LayoutService"
+                                   resolve="true">
+                            <FieldTypes hint="list">
+                                <fieldType id="1">file</fieldType>
+                            </FieldTypes>
+                        </processor>
+                        <processor type="Sitecore.LayoutService.Serialization.Pipelines.GetFieldSerializer.GetDefaultFieldSerializer, Sitecore.LayoutService" resolve="true" />
+                    </getFieldSerializer>
+                    <getLayoutServiceContext>
+                        <processor type="Sitecore.LayoutService.ItemRendering.Pipelines.GetLayoutServiceContext.PageEditingContext, Sitecore.LayoutService" />
+                        <processor type="Sitecore.LayoutService.ItemRendering.Pipelines.GetLayoutServiceContext.UserContext, Sitecore.LayoutService" />
+                        <processor type="Sitecore.LayoutService.ItemRendering.Pipelines.GetLayoutServiceContext.SiteContext, Sitecore.LayoutService" />
+                        <processor type="Sitecore.LayoutService.ItemRendering.Pipelines.GetLayoutServiceContext.LanguageContext, Sitecore.LayoutService" />
+                    </getLayoutServiceContext>
+                </pipelines>
+            </group>
+            <mvc.getRenderer>
+                <processor type="Sitecore.LayoutService.Pipelines.GetRenderer.GetJsonRenderer, Sitecore.LayoutService"
+                           patch:before="processor[@type='Sitecore.Mvc.Pipelines.Response.GetRenderer.GetViewRenderer, Sitecore.Mvc']"
+                           resolve="true" />
+            </mvc.getRenderer>
+            <mvc.renderRendering>
+                <processor type="Sitecore.LayoutService.Presentation.Pipelines.RenderRendering.RenderJsonFromCache, Sitecore.LayoutService"
+                           patch:before="processor[contains(@type, 'RenderFromCache')]" />
+                <processor type="Sitecore.LayoutService.Presentation.Pipelines.RenderRendering.AddRecordedJsonToCache, Sitecore.LayoutService"
+                           patch:before="processor[contains(@type, 'AddRecordedHtmlToCache')]" />
+            </mvc.renderRendering>
+        </pipelines>
+        <services>
+            <configurator type="Sitecore.LayoutService.RegisterDependencies, Sitecore.LayoutService" />
+        </services>
+        <settings>
+            <setting name="LayoutService.JsonCacheMultiplier" value="1" />
+            <setting name="LayoutService.CacheCalculationDepth" value="7" />
+        </settings>
+    </sitecore>
+</configuration>

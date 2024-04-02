@@ -1,0 +1,30 @@
+﻿---
+ID: "e5461aa1-bf62-4a90-9895-fb5a59c9a3bd"
+Parent: "87e2b22c-7568-4b1f-ab26-c75f6039aba5"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/RbA Page/Page
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230804T122747Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "177d6778-bf85-4f5a-b3d0-70f441b420b2"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {79C7F0AF-3F65-49CA-8211-80F33EFF62EE}
+        {9520F84E-BFB8-4FBD-80D5-58FD2A5C24C7}
+        {5768739D-118E-4474-9ADA-3F2CA1AE2F1B}
+        {BAA054B2-2E04-4FD2-8720-0B75241E1EC4}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240227T125624Z

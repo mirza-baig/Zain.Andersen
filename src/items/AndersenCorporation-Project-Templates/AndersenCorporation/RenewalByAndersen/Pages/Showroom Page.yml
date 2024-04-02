@@ -1,0 +1,44 @@
+﻿---
+ID: "94a9901c-0489-44f3-a476-c988b53bc138"
+Parent: "df5ee69c-ec34-451d-82c0-abf00b9e996b"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Project/AndersenCorporation/RenewalByAndersen/Pages/Showroom Page
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Apps/32x32/Shop (1).png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {E24802C8-F876-472F-9719-CC7090EAE42D}
+    {0B71EF43-740F-4206-8177-47EAEC27F6D7}
+    {88B2F728-B5A0-44C4-BE3F-677F33204F5D}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{5FCB95AE-9852-4FC5-A350-268F45E93658}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T193713Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4559b130-fcb4-4680-9845-1ce35a06fce2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T213020Z

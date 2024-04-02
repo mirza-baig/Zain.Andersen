@@ -1,0 +1,60 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // {
+    //   "address": "localhost",
+    //   "localRoot": "${workspaceFolder}/src/rendering",
+    //   "name": "Attach: Rendering Server AW",
+    //   "port": 9229,
+    //   "remoteRoot": "${workspaceRoot}/src/rendering",
+    //   "request": "attach",
+    //   "skipFiles": [
+    //     "<node_internals>/**",
+    //     "node_modules/**"
+    //   ],
+    //   "type": "node"
+    // },
+    {
+      "name": "Launch: Rendering Server",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start:debug"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "cwd": "${workspaceRoot}/src/rendering"
+    },
+    {
+      "name": "Launch: Rendering Client",
+      "type":  "msedge",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceRoot}/src/rendering"
+    },
+    {
+      "name": "Launch: Rendering Both",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "start:debug"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "node_modules/**"
+      ],
+      "cwd": "${workspaceRoot}/src/rendering",
+      "serverReadyAction": {
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithEdge"
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+﻿---
+ID: "ab24c746-0df1-4a6c-8039-66a731d63f8d"
+Parent: "c763e8a3-51e9-4ab8-a6bf-1c7698954a3b"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/FieldSets/Forms/_Field Validation/Data/errorMessage
+SharedFields:
+- ID: "56776edf-261c-4abc-9fe7-70c618795239"
+  Hint: __Help link
+  Value: |
+    <link linktype="external" url="https://andersenwindows.atlassian.net/wiki/spaces/EW/pages/3140714497/Tokens" anchor="" target="_blank" />
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Error Message
+  - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef"
+    Hint: __Short description
+    Value: Click here to find available tokens.
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230801T103902Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "323a5f7d-1f50-4eb0-a340-ae0fd2b78a95"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230813T173205Z

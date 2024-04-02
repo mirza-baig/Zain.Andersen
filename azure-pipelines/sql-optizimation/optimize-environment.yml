@@ -1,0 +1,41 @@
+parameters:
+  azureSubscription: ''
+  sqlServerName: ''
+  sqlDatabaseNames: ''
+
+jobs:
+- job: OptimizeDatabases
+  displayName: Optimize Databases
+  steps:
+  - task: PowerShell@2
+    displayName: "Install PS Modules"
+    inputs:
+      targetType: inline
+      script: |
+        Write-Host "Installing needed PowerShell modules..." -ForegroundColor DarkGray
+        if (Get-PackageProvider -ListAvailable -Name NuGet) {
+          Write-Host "PowerShell package provider 'NuGet' already installed." -ForegroundColor DarkGreen
+        } else {
+          Write-Host "Installing PowerShell package provider 'NuGet'..." -ForegroundColor DarkYellow
+          Install-PackageProvider -Name NuGet -Scope CurrentUser -Verbose
+        }
+        if (Get-Module -ListAvailable -Name Az.Accounts) {
+          Write-Host "PowerShell module 'Az.Accounts' already installed." -ForegroundColor DarkGreen
+        } else {
+          Write-Host "Installing PowerShell module 'Az.Accounts'..." -ForegroundColor DarkYellow
+          Install-Module -Name Az.Accounts -Scope CurrentUser -Force -Verbose
+        }
+        if (Get-Module -ListAvailable -Name SQLServer) {
+          Write-Host "PowerShell module 'SQLServer' already installed." -ForegroundColor DarkGreen
+        } else {
+          Write-Host "Installing PowerShell module 'SQLServer'..." -ForegroundColor DarkYellow
+          Install-Module -Name SQLServer -Scope CurrentUser -Force -Verbose
+        }
+
+  - task: AzurePowerShell@5
+    displayName: 'Run Database Optimization Script'
+    inputs:
+      azureSubscription: ${{ parameters.azureSubscription }}
+      ScriptPath: "azure-pipelines/sql-optizimation/optimize-dbs.ps1"
+      ScriptArguments: '-SqlServer "${{ parameters.sqlServerName }}" -DatabaseNames "${{ parameters.sqlDatabaseNames }}" -ReportOnly $false'
+      azurePowerShellVersion: LatestVersion

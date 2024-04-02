@@ -1,0 +1,41 @@
+﻿---
+ID: "cf79b8d9-cc98-44f4-b51e-73bd8c5b5402"
+Parent: "e98fa3b4-0bb2-4c8b-bdc3-19e927d59c73"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Settings/Insert Options/Forms Folder/Generic Form Field Value Provider
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240213T104629Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e68fdeda-c6ea-4dc8-af87-ca7f2ddbd026"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T124647Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{1905863F-C4A2-40E7-B077-EA92E3D2A393}">
+            <conditions>
+              <condition
+                id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                uid="E6D8E68B7B41461F9D68461687838B50"
+                templateid="{0C525BAC-A5FE-4CCB-ACD3-DC0552B7C1CC}" />
+            </conditions>
+          </rule>
+        </ruleset>

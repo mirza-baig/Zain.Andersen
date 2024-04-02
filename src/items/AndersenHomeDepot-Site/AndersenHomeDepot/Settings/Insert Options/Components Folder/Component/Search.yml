@@ -1,0 +1,26 @@
+﻿---
+ID: "97eda729-fcff-4d03-bb30-60d4d2e5c6b3"
+Parent: "1d404350-9530-4873-9102-6c49e5d493e7"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenHomeDepot/Settings/Insert Options/Components Folder/Component/Search
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230529T093426Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8e1db408-1728-4659-b5d0-05013267ad4a"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: "{8CB11CD1-C5F4-4A2B-8962-495809C7741D}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230529T093440Z

@@ -1,0 +1,44 @@
+---
+ID: "321f8b0f-30a5-45e2-ac05-1e01e8441472"
+Parent: "1aa901cd-5f94-481d-a6f9-31bbe7f32578"
+Template: "1aa901cd-5f94-481d-a6f9-31bbe7f32578"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/General/Video Gallery/Video Gallery/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{7F254BEA-A718-4A73-AFC7-D278FDA7A417}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230720T094333Z
+    - ID: "3e9c702e-e699-4186-bcb7-077992a2574d"
+      Hint: desktopDisplayStyle
+      Value: "{409CA401-1D2A-4CAA-852E-E0F3C9EC3E75}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d651d5c9-f39a-430a-9a53-763e66abd6f2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "bd324f04-f828-49d9-b443-23d41c70d801"
+      Hint: mobileDisplayStyle
+      Value: "{0AEE9619-7D5A-4B61-AE4C-685FE3014726}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240109T111908Z
+    - ID: "ebc0f4f5-3020-4870-960b-524e0d172158"
+      Hint: headlineLevel
+      Value: "{0F556F3A-BBAD-4AA5-952D-B79003B39CD6}"

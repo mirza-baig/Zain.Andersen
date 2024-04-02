@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  class="rba-header-container z-[1000] ml:border-b ml:border-gray bg-white"
+  data-component="site/rbaheader"
+  id="id1695242607"
+>
+  <div
+    class="my-0 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-x-0 "
+    >
+      <div
+        class="col-span-12 mx-[calc(50%-50vw)] bg-black py-xxs ml:py-0"
+      >
+        <div
+          class="mx-auto flex h-full max-w-screen-lg items-center justify-between px-m text-white"
+        >
+          <ul
+            class="flex w-full cursor-pointer items-center ml:w-fit"
+          >
+            <li
+              class="flex flex-col flex-wrap border-dark-gray pr-xxs"
+              tabindex="0"
+            >
+              <div
+                class="flex items-center text-[10px] leading-4"
+              >
+                <span
+                  class="whitespace-nowrap"
+                >
+                  Use My Location
+                </span>
+                <span
+                  class="ml-xxxs transition ease-linear"
+                />
+              </div>
+            </li>
+            
+          </ul>
+          <div
+            class="w-full max-w-[288px] text-black"
+          />
+          <ul
+            class="flex h-full items-center gap-4 text-xxs font-bold"
+          >
+            
+          </ul>
+        </div>
+      </div>
+      <div
+        class="sticky top-0 z-[998] col-span-12 bg-white ml:static ml:col-span-3"
+      >
+        <div
+          class="flex justify-between border-b border-gray py-xxs px-m ml:border-none ml:p-0"
+        >
+          <div
+            class="w-[173px]"
+          >
+            <a
+              aria-label="logo"
+              class=""
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="header"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title=""
+            >
+              
+              <div
+                class="relative hidden md:block aspect-picture    aspect-auto max-w-[173px]"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 38.49407783417936% 0px 0px 0px;"
+                  />
+                  <img
+                    alt="logo"
+                    data-nimg="responsive"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+              <div
+                class="relative w-full md:hidden aspect-auto max-w-[173px]"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 38.49407783417936% 0px 0px 0px;"
+                  />
+                  <img
+                    alt="logo"
+                    data-nimg="responsive"
+                    decoding="async"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                    style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                  />
+                  <noscript />
+                </span>
+              </div>
+            </a>
+          </div>
+          <div
+            class="flex items-center gap-m text-black ml:hidden"
+          >
+            
+            <span
+              class="cursor-pointer"
+            >
+              <span />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-span-12 ml:col-span-6"
+      >
+        <div
+          class="flex flex-col ml:h-full ml:flex-row ml:items-center"
+        >
+          <ul
+            class="inline-flex w-full flex-col justify-between pb-xs ml:flex-row ml:pb-0"
+          >
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Windows
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Windows
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Windows
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Windows
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Windows
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Why Renewal
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Design Ideas
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+            <li
+              class="flex cursor-pointer items-center justify-between border-b border-gray p-s ml:my-s ml:border-b-3 ml:border-primary ml:p-0 ml:hover:border-opacity-100 ml:border-opacity-0"
+              tabindex="0"
+            >
+              <span
+                class="font-sans text-sm-s font-extra-light ml:mr-xxs ml:font-serif ml:text-body ml:font-bold"
+              >
+                Resources
+              </span>
+              <span
+                class="transition ease-linear"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="group fixed bottom-0 z-[910] col-span-12 flex w-full items-center justify-center bg-primary py-s hover:cursor-pointer ml:static ml:z-0 ml:col-span-2 ml:!col-start-11"
+      >
+        <a
+          aria-label="Consultation CTA"
+          class="relative flex w-fit items-center justify-center text-sm font-bold leading-4 !no-underline after:absolute after:bottom-[-4px] after:hidden after:h-[3px] after:w-full after:bg-secondary group-hover:after:inline-block ml:leading-[22px]"
+          data-gtm-click=""
+          data-gtm-dl-event="nav_click"
+          data-gtm-dl-nav-section="header"
+          href="https://www.renewalbyandersen.com/forms/schedule-a-consultation"
+          role="link"
+          tabindex="0"
+          target=""
+        >
+          Free Consultation
+          <span
+            class="ml-[6px]"
+          />
+        </a>
+      </div>
+      <div
+        class="rba-scrollbar bg-white-scrollbar fixed top-0 left-0 z-[998] h-screen w-full origin-left transform overflow-y-auto bg-light-gray transition-transform ease-linear ml:w-[360px] -translate-x-full"
+        style="top: 0px;"
+      />
+    </div>
+  </div>
+</section>
+`;

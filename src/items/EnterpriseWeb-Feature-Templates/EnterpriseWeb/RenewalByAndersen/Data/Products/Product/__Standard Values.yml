@@ -1,0 +1,29 @@
+﻿---
+ID: "d180c2f7-3432-44d4-b032-801ad0b05322"
+Parent: "2ecea6ff-6088-4414-ba4f-7c26f672635f"
+Template: "2ecea6ff-6088-4414-ba4f-7c26f672635f"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Data/Products/Product/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230612T184104Z
+    - ID: "5f5d0f03-65c4-4a4b-acca-5c42c0dd6a09"
+      Hint: productId
+      Value: $id
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "36b45395-e6cd-4e22-9170-e84d5c4429c8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230612T195512Z
+    - ID: "e8fa5100-e12d-4a18-9317-4dcef8a6ed99"
+      Hint: productName
+      Value: $name

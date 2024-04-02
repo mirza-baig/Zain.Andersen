@@ -1,0 +1,23 @@
+﻿---
+ID: "3cb08b48-1264-4311-aae7-cb518fd384f7"
+Parent: "7f5042d3-c4c1-47a3-a3d3-c29900f31f92"
+Template: "ff220b80-51d7-439e-b74e-7bb1decb3272"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Settings/Insert Options/Forms Folder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230721T092826Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cb199529-39aa-4986-b527-76e54e058c7d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230721T092826Z

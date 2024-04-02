@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  data-component="modal/genericmodal"
+>
+  <div
+    aria-label="genericModal3"
+    aria-modal="true"
+    class="fixed top-0 left-0 z-[1000] h-screen w-screen transform items-center justify-center bg-black bg-opacity-75 transition-transform duration-500 ease-in-out md:z-[998] flex"
+    id="genericModal3"
+    role="dialog"
+    style="height: calc(100vh - 0px); transform: translateY(calc(-120%));"
+    tabindex="-1"
+  >
+    <div
+      class="relative flex flex-col overflow-y-auto bg-white md:mx-auto w-screen h-screen"
+      style="height: calc(100vh - 0px);"
+      tabindex="0"
+    >
+      <div
+        class="flex h-[40px] w-full justify-end"
+      >
+        <button
+          class="mt-m mr-m"
+        >
+          <span />
+        </button>
+      </div>
+      <div
+        class="!pb-l md:pb-l pb-l"
+      >
+        <div>
+          <div
+            style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+          >
+            <h2>
+              PromoGeneric
+            </h2>
+            <p>
+              JSS component is missing React implementation. See the developer console for more information.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+          >
+            <h2>
+              PromoGeneric
+            </h2>
+            <p>
+              JSS component is missing React implementation. See the developer console for more information.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="sticky bottom-0 z-10 mt-auto flex w-full items-center justify-center gap-xxxs border-t border-gray bg-white py-2.5 md:bg-primary"
+      >
+        <span
+          class="font-serif text-button font-bold"
+        >
+          Close
+        </span>
+        <span />
+      </button>
+    </div>
+  </div>
+</div>
+`;

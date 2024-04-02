@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class=" relative z-[999] block font-sans max-ml:hidden ml:min-h-[122px]"
+  data-component="site/awheader"
+  id="awHeader"
+>
+  <div
+    class="utility-nav h-14 w-full bg-secondary text-white"
+  >
+    <div
+      class="flex h-14 items-center justify-end max-[1480px]:px-s ml:max-w-screen-xl xl:mx-auto"
+    >
+      <ul
+        class="z-50 flex items-center"
+      >
+        <li
+          class="px-5 last-of-type:pr-0 hover:underline"
+        >
+          <a
+            aria-label="My Favorites (0)"
+            class="flex items-center text-xxs flex-row-reverse items-center"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="utility"
+            href="/"
+            role="link"
+            tabindex="0"
+          >
+            My Favorites (0)
+            <span
+              class="mr-xxs"
+            />
+          </a>
+        </li>
+        <li
+          class="px-5 last-of-type:pr-0 hover:underline"
+        >
+          <a
+            aria-label="Item Link "
+            class="flex items-center text-xxs flex-row-reverse items-center"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="utility"
+            href="/"
+            role="link"
+            tabindex="0"
+          >
+            Item Link 
+          </a>
+        </li>
+        <li
+          class="px-5 last-of-type:pr-0 hover:underline"
+        >
+          <a
+            aria-label="Item Link "
+            class="flex items-center text-xxs flex-row-reverse items-center"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="utility"
+            href="/"
+            role="link"
+            tabindex="0"
+          >
+            Item Link 
+          </a>
+        </li>
+        <li
+          class="px-5 last-of-type:pr-0 hover:underline"
+        >
+          <a
+            aria-label="Item Link "
+            class="flex items-center text-xxs flex-row-reverse items-center"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="utility"
+            href="/"
+            role="link"
+            tabindex="0"
+          >
+            Item Link 
+          </a>
+        </li>
+        <li>
+          |
+        </li>
+        <li
+          class="px-5 last-of-type:pr-0 hover:underline"
+        >
+          <a
+            aria-label="1-800-426-4261"
+            class="text-xxs font-heavy capitalize"
+            data-gtm-click=""
+            data-gtm-dl-event="click_to_call"
+            href="tel:1-800-426-4261"
+            role="link"
+            tabindex="0"
+            target=""
+          >
+            1-800-426-4261
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <nav
+    class="main-nav mx-auto w-full border-b border-solid border-b-gray bg-white"
+  >
+    <div
+      class="headerBottomPosElement main-nav relative z-20 flex w-full items-center justify-center border-t-0 bg-white max-[1480px]:pl-l ml:max-w-screen-xl xl:mx-auto"
+    >
+      <div
+        class="rbaConsultRequest_headerLogo_container min-w-[197px]"
+      >
+        <a
+          aria-label=""
+          class=""
+          data-gtm-click=""
+          data-gtm-dl-event="nav_click"
+          data-gtm-dl-nav-section="header"
+          href="/"
+          role="link"
+          tabindex="0"
+          target=""
+          title=""
+        >
+          
+          <div
+            class="relative hidden md:block aspect-picture    aspect-auto max-w-[197px]"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 14.122533748701974% 0px 0px 0px;"
+              />
+              <img
+                alt="Andersen Windows Logo"
+                data-nimg="responsive"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=3840&q=75"
+                srcset="/_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=640&q=75 640w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=750&q=75 750w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=828&q=75 828w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=1080&q=75 1080w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=1200&q=75 1200w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=1920&q=75 1920w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=2048&q=75 2048w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+            </span>
+          </div>
+          <div
+            class="relative w-full md:hidden aspect-auto max-w-[197px]"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 14.122533748701974% 0px 0px 0px;"
+              />
+              <img
+                alt="Andersen Windows Logo"
+                data-nimg="responsive"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=3840&q=75"
+                srcset="/_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=640&q=75 640w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=750&q=75 750w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=828&q=75 828w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=1080&q=75 1080w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=1200&q=75 1200w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=1920&q=75 1920w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=2048&q=75 2048w, /_next/image/?url=https%3A%2F%2Fedge.sitecorecloud.io%2Fandersencorporation-m9n8s20s%2Fmedia%2FProject%2FAndersenCorporation%2FAndersenWindows%2Fshared%2FLogo%2FANDERSEN_Logo_TM_Rectangle_RGB.png%3Fh%3D272%26iar%3D0%26w%3D1926&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+              />
+            </span>
+          </div>
+        </a>
+      </div>
+      <div
+        class="mr-[10px] flex w-[86%] items-center justify-end "
+      >
+        <ul
+          class="z-20 flex h-[65px] max-w-[1239px] items-center bg-white pl-[3.5%]"
+        >
+          <li
+            class="mx-[15px] my-[10px] flex flex-[1_auto] justify-end self-auto bg-white capitalize"
+          >
+            <span
+              class="cursor-pointer text-xxs font-heavy hover:shadow-[0_3px_0_0_#f26924]"
+            >
+              Windows & Doors
+            </span>
+          </li>
+          <li
+            class="mx-[15px] my-[10px] flex flex-[1_auto] justify-end self-auto bg-white capitalize"
+          >
+            <span
+              class="cursor-pointer text-xxs font-heavy hover:shadow-[0_3px_0_0_#f26924]"
+            >
+              Design Ideas
+            </span>
+          </li>
+          <li
+            class="mx-[15px] my-[10px] flex flex-[1_auto] justify-end self-auto bg-white capitalize"
+          >
+            <span
+              class="cursor-pointer text-xxs font-heavy hover:shadow-[0_3px_0_0_#f26924]"
+            >
+              Parts & Support
+            </span>
+          </li>
+          <li
+            class="mx-[15px] my-[10px] flex flex-[1_auto] justify-end self-auto bg-white capitalize"
+          >
+            <span
+              class="cursor-pointer text-xxs font-heavy hover:shadow-[0_3px_0_0_#f26924]"
+            >
+              For Pros
+            </span>
+          </li>
+          <li
+            class="mx-[15px] my-[10px] flex flex-[1_auto] justify-end self-auto bg-white capitalize"
+          >
+            <div
+              class="mb-0 mb-s flex items-start md:flex-row md:items-center"
+            >
+              <button
+                class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed"
+              >
+                Request a quote
+                 
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="relative mx-auto max-w-full"
+    >
+      <div
+        class="absolute right-0 h-auto min-w-[50%] bg-white transition-[height] duration-[0.15s] ease-[cubic-bezier(0,0,0.58,1)]"
+        style="width: 20px;"
+      />
+    </div>
+  </nav>
+</div>
+`;

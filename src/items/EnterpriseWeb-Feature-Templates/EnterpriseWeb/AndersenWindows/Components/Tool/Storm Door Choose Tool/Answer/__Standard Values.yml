@@ -1,0 +1,39 @@
+﻿---
+ID: "0a1b924f-d904-4934-9e5e-0853b4820057"
+Parent: "1831e880-f641-4cef-9d28-96b614042637"
+Template: "1831e880-f641-4cef-9d28-96b614042637"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Storm Door Choose Tool/Answer/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {64B071AB-1058-4FF8-B128-4D62B539CCCD}
+    {57330B4D-64AC-4DAD-9F5A-6776CF1BE815}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "001dd393-96c5-490b-924a-b0f25cd9efd8"
+      Hint: __Lock
+      Value: <r />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20161201T221250Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dsasik
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "114a5d77-3bb6-4899-b743-a60de48a5037"
+    - ID: "b6008eff-9b4d-4806-b3b1-0a2030b8d599"
+      Hint: answerText
+      Value: $name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dboeser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230512T170431Z

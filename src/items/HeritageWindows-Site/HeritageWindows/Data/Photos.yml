@@ -1,0 +1,23 @@
+﻿---
+ID: "fb2d28ec-1f03-45be-ab67-d4b1ea9e6a3a"
+Parent: "5ddce618-7c28-4ba6-b52b-7a5b5ea01d54"
+Template: "4c7a7cfa-0c24-4306-92e2-ddc9753f105f"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Data/Photos
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240108T145753Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53353edf-2591-4cbb-ab02-b9e46db11aec"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T145753Z

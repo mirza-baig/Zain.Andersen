@@ -1,0 +1,26 @@
+﻿---
+ID: "f02f76b9-e6a9-413b-b885-b892eea313bd"
+Parent: "784cd304-7ed1-4c67-92a5-d9a1478d6fb5"
+Template: "8b70967e-a2ac-4f92-a099-2584e1d30523"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Product Detail Page/$name/Data/Hero Product Tabs/Hero Product Tab Item 2
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240312T100120Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8c375e01-fedb-4c85-8377-7c9595ad5f9a"
+    - ID: "9aa36342-a88e-4a09-889c-4e740d1e5c28"
+      Hint: title
+      Value: Hero Product Tab Item 2
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240312T100120Z

@@ -1,0 +1,35 @@
+﻿---
+ID: "6775b28b-2b83-43e7-8154-aa5bcb757d07"
+Parent: "e49bb4dd-c984-4cd9-b013-140dff3e06f8"
+Template: "e49bb4dd-c984-4cd9-b013-140dff3e06f8"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Data/Affiliates/Datasources/Award/__Standard Values
+SharedFields:
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{38962021-FA11-4DDB-8C14-1C26B08AAE29}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T165915Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3866c94d-661b-4591-a705-8a8498b93392"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240320T143527Z

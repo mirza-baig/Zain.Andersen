@@ -1,0 +1,36 @@
+﻿---
+ID: "63852664-e2e1-457e-916b-33418aa6047c"
+Parent: "d624c21f-d095-47aa-98f3-35694903eb41"
+Template: "246db8c1-1c1c-45c1-af6c-79733ff73baa"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Service Request/Form Page/Issues
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240117T115242Z
+    - ID: "77c6887b-22dd-4724-86b4-e02bab525fbb"
+      Hint: datasource
+      Value: "{2CD70283-2FF2-4961-8A5C-55A5756B49F4}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9c5e899c-a898-4506-a267-4c1195f93d13"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: issues
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Select the items that describe the issues you are having with your windows or doors.
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240117T120444Z

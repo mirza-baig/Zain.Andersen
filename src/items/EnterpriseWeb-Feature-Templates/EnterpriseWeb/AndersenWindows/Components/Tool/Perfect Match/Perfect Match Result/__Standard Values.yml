@@ -1,0 +1,23 @@
+﻿---
+ID: "b31da771-6d11-4473-88ec-b8a2198b8aec"
+Parent: "fb9f1ddd-26c4-42d8-8dc5-ab75c192780b"
+Template: "fb9f1ddd-26c4-42d8-8dc5-ab75c192780b"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Perfect Match/Perfect Match Result/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230929T143158Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bb6a6c13-89e6-41e6-b668-2270a3e9da70"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230929T143158Z

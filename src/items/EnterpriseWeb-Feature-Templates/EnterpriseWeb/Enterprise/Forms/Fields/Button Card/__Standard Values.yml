@@ -1,0 +1,38 @@
+﻿---
+ID: "672ef278-1f16-4785-83d1-a980f97c7947"
+Parent: "30fdf2a8-49fd-40af-8a08-d520450e67ab"
+Template: "30fdf2a8-49fd-40af-8a08-d520450e67ab"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Fields/Button Card/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{42B7918E-F5FA-4137-9F60-E505BAFCF845}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230216T192449Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "69f97382-3b05-4b4f-b2ee-22a24b616fe0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230822T045005Z
+    - ID: "f1116160-0971-4766-9985-341a508f6786"
+      Hint: selection
+      Value: "{27EEAB6B-870A-4D23-9FAA-E4CC785D9396}"

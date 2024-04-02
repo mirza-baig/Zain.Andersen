@@ -1,0 +1,41 @@
+﻿---
+ID: "3619edc9-1f16-4e81-930d-8aa78577d577"
+Parent: "1a9db7e8-eb55-41d1-88e2-a5d1f548b045"
+Template: "1a9db7e8-eb55-41d1-88e2-a5d1f548b045"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Modal/Generic Modal/Generic Modal/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{42FA2125-3780-458F-912B-77751C23B312}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230303T170358Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "7dc8f51c-df62-4a89-9c0a-5cce44daf180"
+      Hint: modalId
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8c1c8aa9-b3b3-4550-b578-cd2a6cef74c5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230717T220721Z

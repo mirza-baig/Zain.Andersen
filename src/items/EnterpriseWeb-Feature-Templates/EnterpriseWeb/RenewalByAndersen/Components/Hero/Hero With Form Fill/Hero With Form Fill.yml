@@ -1,0 +1,50 @@
+﻿---
+ID: "4925230d-dc0e-4bc2-a48a-c07d697c1fd7"
+Parent: "e7f08c7a-f372-4d21-87d6-1d987ec95dda"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Hero/Hero With Form Fill/Hero With Form Fill
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/form_yellow_add.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {B61A1D20-9EE5-4CCB-9E0D-24A97E58D293}
+    {07B8BF2C-54FD-40CB-934D-2BEFB6E8CD31}
+    {F5185659-6DAA-4A22-B22A-4CCCFB074F24}
+    {5E2F3CF0-45EC-4618-AA30-0465290A248D}
+    {30594C7E-1F51-4706-AB7E-6766B1FC3C90}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{F4561EB7-1789-4517-9B78-CA7D0EE037BF}"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Hero with Form Fill
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231213T080556Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "06eda633-da72-4c0b-b3c9-9f584df0397e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231215T102154Z

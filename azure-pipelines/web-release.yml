@@ -1,0 +1,270 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+# trigger: none
+# trigger:
+#   batch: true
+#   branches:
+#     include:
+#       - release/*
+trigger:
+- release/*
+
+resources:
+  repositories:
+  - repository: enterprise-deployment
+    type: git
+    name: enterprise-deployment
+
+pool:
+  vmImage: windows-latest
+
+variables:
+- group: Web - Build Deploy - Global
+- name: buildConfiguration
+  value: Release
+- name: containerRegistry
+  value: prodentwb1acr1
+- name: repository
+  value: enterpriseweb/enterpriseweb-xm1-cm
+- name: VERCEL_ORG_ID # Need this defined as an environment variable for the vercel cli
+  value: team_Te46li2AMhv2GDNDb4O9Tc9e
+
+stages:
+- stage: Queue
+  jobs:
+  - deployment: Queue
+    environment: Web-Release-Queue
+    pool:
+      vmImage: ubuntu-latest
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: echo "Starting pipeline execution."
+- stage: Build
+  dependsOn: Queue
+  jobs:
+  - job: BuildSolution
+    displayName: Build and Publish Solution
+    steps:
+    - template: templates\build-cm.yml
+      parameters:
+        buildConfiguration: $(buildConfiguration)
+    - template: templates\build-iar.yml
+    - template: templates\publish-solution.yml
+  - job: BuildDocker
+    displayName: Build and Publish Docker
+    dependsOn: BuildSolution
+    pool:
+      name: Enterprise Web
+    steps:
+    - template: templates\build-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository)
+    - template: templates\publish-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository)
+
+- stage: UatCM
+  dependsOn: Build
+  displayName: UAT CM
+  variables:
+  - group: Web - Build Deploy - UAT
+  jobs:
+  - template: templates\deploy-cm.yml
+    parameters:
+      devopsEnvironment: CM-UAT
+      azureSubscription: DEV_ENTWB1
+      aksSubscription: AKS - ARM
+      aksClusterName: AKS-Cluster1
+      aksClusterResourceGroup: AKS_Cluster1a
+      aksPodName: cm-uat
+      aksNamespace: sitecore
+      sitecoreEnvironment: uat
+      sitecoreCmUrl: https://cm.uat.ew.andersencorp.com
+      sitecoreIdUrl: https://id.uat.ew.andersencorp.com
+      sitecoreCliClientId: SitecoreCLIServer
+      sitecoreCliClientSecret: $(SitecoreCliClientSecret)
+      repository: $(repository)
+
+- stage: UATPreviewVercelAW
+  dependsOn: UatCM
+  displayName: "UAT Preview Vercel Andersen Windows"
+  variables:
+  - group: Web - Build Deploy - UAT
+  - name: VERCEL_PROJECT_ID
+    value: prj_MTsg1rW9oDGogyzMI2lfeyoeb6Si
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      displayName: Andersen Windows
+      devopsEnvironment: CD-Preview
+      vercelAliasUrl: preview-andersenwindows-uat.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://preview.uat.andersenwindows.com
+
+- stage: UATPreviewVercelRbA
+  dependsOn: UatCM
+  displayName: "UAT Preview Vercel Renewal by Andersen"
+  variables:
+  - group: Web - Build Deploy - UAT
+  - name: VERCEL_PROJECT_ID
+    value: prj_s8kF8EuZTExgaDrdLHdlm5cum8tM
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      displayName: Renewal By Andersen
+      devopsEnvironment: CD-Preview
+      vercelAliasUrl: preview-renewalbyandersen-uat.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://preview.uat.renewalbyandersen.com
+
+- stage: UatVercelAW
+  dependsOn:
+  - UatCM
+  - UATPreviewVercelAW
+#  - UATPreviewVercelRbA
+  displayName: UAT Vercel Andersen Windows
+  variables:
+  - group: Web - Build Deploy - UAT
+  - name: VERCEL_PROJECT_ID # Need this defined as an environment variable for the vercel cli
+    value: prj_9sYXVOTeJJjhGNhoV0LWlmRGvU7b
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      devopsEnvironment: CD-UAT
+      vercelAliasUrl: andersenwindows-uat.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://www.uat.andersenwindows.com
+
+- stage: UatVercelRbA
+  dependsOn:
+  - UatCM
+ # - UATPreviewVercelAW
+  - UATPreviewVercelRbA
+  displayName: UAT Vercel Renewal by Andersen
+  variables:
+  - group: Web - Build Deploy - UAT
+  - name: VERCEL_PROJECT_ID
+    value: prj_MHBPO9iSObOlAn02F7bt3a77yNsX
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      devopsEnvironment: CD-UAT
+      vercelAliasUrl: renewalbyandersen-uat.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://www.uat.renewalbyandersen.com
+
+- stage: SmokeTestAW
+  dependsOn:
+  - UatVercelAW
+  displayName: "Smoke Test Andersen Windows"
+  pool:
+    vmImage: ubuntu-latest
+  jobs:
+  - template: templates\smoke-test.yml
+    parameters:
+      environment: uat
+
+- stage: ProductionCM
+  dependsOn:
+  - UatCM
+  - SmokeTestAW
+  - UatVercelRbA
+  displayName: Production CM
+  variables:
+  - group: Web - Build Deploy - Prod
+  jobs:
+  - template: templates\deploy-cm.yml
+    parameters:
+      devopsEnvironment: CM-Prod
+      azureSubscription: DEV_ENTWB1
+      aksSubscription: AKS - ARM
+      aksClusterName: AKS-Cluster1
+      aksClusterResourceGroup: AKS_Cluster1a
+      aksPodName: cm-prod
+      aksNamespace: sitecore-prod
+      sitecoreEnvironment: prod
+      sitecoreCmUrl: https://cm.prod.ew.andersencorp.com
+      sitecoreIdUrl: https://id.prod.ew.andersencorp.com
+      sitecoreCliClientId: SitecoreCLIServer
+      sitecoreCliClientSecret: $(SitecoreCliClientSecret)
+      repository: $(repository)
+
+- stage: ProductionPreviewVercelAW
+  dependsOn: ProductionCM
+  displayName: "Production Preview Vercel Andersen Windows"
+  variables:
+  - group: Web - Build Deploy - Prod
+  - name: VERCEL_PROJECT_ID
+    value: prj_u69iaVVXIylmcOGTnQQ7w6xUC7Bo
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      displayName: Andersen Windows
+      devopsEnvironment: CD-Preview
+      vercelAliasUrl: preview-andersenwindows-prod.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://preview.prod.andersenwindows.com
+
+- stage: ProductionPreviewVercelRbA
+  dependsOn: ProductionCM
+  displayName: "Production Preview Vercel Renewal by Andersen"
+  variables:
+  - group: Web - Build Deploy - Prod
+  - name: VERCEL_PROJECT_ID
+    value: prj_Hwbip3P6EhXJ6VjLkY5qtKhye0NH
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      displayName: Renewal By Andersen
+      devopsEnvironment: CD-Preview
+      vercelAliasUrl: preview-renewalbyandersen-prod.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://preview.prod.renewalbyandersen.com
+
+- stage: ProductionVercelAW
+  dependsOn:
+  - ProductionCM
+  - ProductionPreviewVercelAW
+#  - ProductionPreviewVercelRbA
+  displayName: Production Vercel Andersen Windows
+  variables:
+  - group: Web - Build Deploy - Prod
+  - name: VERCEL_PROJECT_ID # Need this defined as an environment variable for the vercel cli
+    value: prj_7ArELqi0fbHYDmjSRmbJcvpExZ01
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      devopsEnvironment: CD-Prod
+      vercelAliasUrl: andersenwindows-prod.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://www.prod.andersenwindows.com
+
+- stage: ProductionVercelRbA
+  dependsOn:
+  - ProductionCM
+#  - ProductionPreviewVercelAW
+  - ProductionPreviewVercelRbA
+  displayName: Production Vercel Renewal by Andersen
+  variables:
+  - group: Web - Build Deploy - Prod
+  - name: VERCEL_PROJECT_ID # Need this defined as an environment variable for the vercel cli
+    value: prj_VgVe2i02BSyT93e4OgtuiB7TJcfe
+  jobs:
+  - template: templates\deploy-vercel.yml
+    parameters:
+      devopsEnvironment: CD-Prod
+      vercelAliasUrl: renewalbyandersen-prod.vercel.app
+      vercelDeployToken: $(VercelDeployToken)
+      vercelScope: andersen-corporation
+      siteUrl: https://www.prod.renewalbyandersen.com

@@ -1,0 +1,2 @@
+583812	Item of draft version that is specified in datasource is published to Edge
+587094	Workflow not being enabled on SXA based sites

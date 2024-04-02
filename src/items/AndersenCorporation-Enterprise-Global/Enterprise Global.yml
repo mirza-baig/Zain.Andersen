@@ -1,0 +1,31 @@
+﻿---
+ID: "d2931197-d6e8-458c-b8cf-beb0cad88230"
+Parent: "68b9ba98-ac50-4df6-b8f0-d32c72becf20"
+Template: "837d4217-d91f-41d3-88b3-bfa21cf5a25a"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1000
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\RbA Read Only|pe|-item:read|pd|-item:read|ar|sitecore\RbA Talent Approver|pe|-item:read|pd|-item:read|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230921T172301Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b3dadf8f-cea4-4fbc-8aac-bc66d215300b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240318T090906Z

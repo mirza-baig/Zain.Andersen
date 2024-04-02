@@ -1,0 +1,53 @@
+﻿---
+ID: "837a53c5-06a2-42d7-b0dd-0e13e41e6785"
+Parent: "b6d0a1a5-7d12-4f3c-b103-23ba6541e501"
+Template: "8f3d8f9b-2d76-4ace-803f-35415d2b230a"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Enterprise Web/Page Variants
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/text_rich_colored.png
+- ID: "8bb9a5e3-cae8-49c6-b830-258a51d970c9"
+  Hint: ID
+  Value: PageVariantsChunk
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{B8CC30CD-725A-4353-9EA6-CD9832CB3996}"
+          par="Id=Chunk"
+          uid="{3b8754c7-359d-4589-bf90-64dae11c154a}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240306T200214Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "50dd555b-1dec-432a-aebe-db8f7ca7578b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c95d21bd-66c3-444b-a37f-d346cbaf2b55"
+      Hint: Header
+      Value: Page Variants
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240307T030943Z

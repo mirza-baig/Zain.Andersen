@@ -1,0 +1,27 @@
+﻿---
+ID: "ddb273b1-408c-4ba7-b183-8dcf4c3645b9"
+Parent: "c35c016a-e9e6-4d75-80f1-4212b2a6b16d"
+Template: "c35c016a-e9e6-4d75-80f1-4212b2a6b16d"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/General/Free Standing CTA/Free Standing CTA/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{6AE20E02-0AF7-4873-8D0A-4057F8C4E4ED}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230828T125657Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d2bb2946-afbc-4ed1-88b7-f05d9ef8d5b3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230828T132813Z

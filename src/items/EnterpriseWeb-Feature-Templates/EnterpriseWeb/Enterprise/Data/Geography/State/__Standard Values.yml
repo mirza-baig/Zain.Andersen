@@ -1,0 +1,34 @@
+﻿---
+ID: "be9cb19b-e065-4b0b-9a60-19f456d3074a"
+Parent: "e43bce6c-c44d-49ec-8347-e76dbab1bdcd"
+Template: "e43bce6c-c44d-49ec-8347-e76dbab1bdcd"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Data/Geography/State/__Standard Values
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170817T193739Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "713d8ced-4863-44a5-8ce3-ba3380c7642c"
+      Hint: FullName
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f04cab5b-1791-45c6-9bbb-c3492ff10d7d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230510T125745Z

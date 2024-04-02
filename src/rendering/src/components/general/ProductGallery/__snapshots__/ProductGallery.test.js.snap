@@ -1,0 +1,451 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/productgallery"
+  id="id1695242607"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12 md:col-span-6"
+      >
+        <div
+          class="relative"
+        >
+          <div
+            class="relative hidden md:block  "
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27592%27%20height=%27592%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="Image"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <div
+            class="relative w-full md:hidden"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27592%27%20height=%27592%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="Image"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+              />
+              <noscript />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-span-12 md:col-span-6 md:-mb-s"
+      >
+        <div
+          class="md:[&_.numbered-pagination_.slick-prev]:left-[calc(100%-87px)] [&_.numbered-pagination_.slick-next]:right-m md:[&_.numbered-pagination_.slick-next]:left-[98%] md:[&_.numbered-pagination_ul]:mx-m md:[&_.numbered-pagination_ul]:text-right"
+        >
+          <div
+            class="slick-slider numbered-pagination slick-initialized"
+          >
+            
+            <div
+              class="slick-list"
+            >
+              <div
+                class="slick-track"
+                style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+              >
+                <div
+                  aria-hidden="false"
+                  class="slick-slide slick-active slick-current"
+                  data-index="0"
+                  style="outline: none; width: 0px;"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="pb-[15px] md:pr-[10px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="relative before:absolute before:top-0 before:left-0 before:z-10 before:h-full before:w-full before:border-[4px] before:border-primary"
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt="Image"
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt="Image"
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="pb-[15px] md:px-[5px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class=""
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="pb-[15px] md:pl-[10px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class=""
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt="jmage"
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt="jmage"
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="pb-[15px] md:pr-[10px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class=""
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="pb-[15px] md:px-[5px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class=""
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="pb-[15px] md:pl-[10px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class=""
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt=""
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="pb-[15px] md:pr-[10px]"
+                      style="width: 33.333333333333336%; display: inline-block;"
+                      tabindex="-1"
+                    >
+                      <div
+                        class=""
+                      >
+                        <div
+                          class="relative hidden md:block aspect-picture   "
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt="Image"
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                        <div
+                          class="relative w-full md:hidden"
+                        >
+                          <span
+                            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                          >
+                            <span
+                              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+                            />
+                            <img
+                              alt="Image"
+                              data-nimg="responsive"
+                              decoding="async"
+                              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                            />
+                            <noscript />
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,23 @@
+﻿---
+ID: "650320cb-dc20-4061-9bf0-69254d991ccf"
+Parent: "ed4d4471-0803-4b3c-b759-1c4ee563e1d2"
+Template: "29fc8bbb-0a7a-46db-a42a-f736d0586507"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Product Detail Page/$name/Data/Video Gallery Dynamic
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240312T103350Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a8b6b51f-8b49-4e78-9c30-e156cbb298e0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240312T103407Z

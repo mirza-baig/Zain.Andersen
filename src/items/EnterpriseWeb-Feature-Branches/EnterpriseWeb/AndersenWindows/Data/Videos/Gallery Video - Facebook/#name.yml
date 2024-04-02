@@ -1,0 +1,30 @@
+﻿---
+ID: "73ff434a-a681-4f36-a5b7-f85a93109629"
+Parent: "50bf2caf-fba7-48b7-b6d8-d82378416871"
+Template: "a3a3ca99-d535-4e53-aab9-c05fdeb02f3d"
+Path: "/sitecore/templates/Branches/Feature/EnterpriseWeb/AndersenWindows/Data/Videos/Gallery Video - Facebook/$name"
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {10FFC85C-56A6-4A99-953C-56BB3405C1E6}
+    {396F8987-9EC8-4916-9B38-7D9F8499E3F6}
+    {E2DD131A-BD4E-43AB-8A8C-DE118FE9AFF2}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230620T131831Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8cb0470d-3d7a-4204-93ca-3b68aba1ccb5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230721T173739Z

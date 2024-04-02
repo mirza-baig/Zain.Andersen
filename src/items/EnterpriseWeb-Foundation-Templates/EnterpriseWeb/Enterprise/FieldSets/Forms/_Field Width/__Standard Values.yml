@@ -1,0 +1,34 @@
+﻿---
+ID: "bf12f12e-3c46-4409-80bb-3cd73135a763"
+Parent: "73cae614-298f-46a2-8e2c-fefea2e2f716"
+Template: "73cae614-298f-46a2-8e2c-fefea2e2f716"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/FieldSets/Forms/_Field Width/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230904T113904Z
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{998F4A8C-E357-4E2D-9071-AB2ADDFA8283}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77fcd599-d589-4ac1-8e8b-e75736b6e2c6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230904T113910Z

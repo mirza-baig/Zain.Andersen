@@ -1,0 +1,381 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger: none
+
+parameters:
+- name: environment
+  displayName: Environment to refresh
+  type: string
+  default: Development
+  values:
+  - Development
+  - UAT
+- name: refreshCore
+  displayName: Include core database?
+  type: boolean
+  default: false
+
+resources:
+  repositories:
+  - repository: enterprise-deployment
+    type: git
+    name: enterprise-deployment
+
+variables:
+- name: prefix
+  ${{ if eq( parameters['environment'], 'Development') }}:
+    value: "dev_"
+  ${{ if eq( parameters['environment'], 'UAT' ) }}:
+    value: "uat_"
+- name: azureSubscriptionProd
+  value: 'PROD_ENTWB1'
+- name: azureSubscriptionNonProd
+  value: 'DEV_ENTWB1'
+- name: apiAppService
+  ${{ if eq( parameters['environment'], 'Development') }}:
+    value: "deventwb1appsvc1a"
+  ${{ if eq( parameters['environment'], 'UAT' ) }}:
+    value: "deventwb1appsvc1b"
+- name: sitecoreCmUrl
+  ${{ if eq( parameters['environment'], 'Development') }}:
+    value: https://cm.dev.ew.andersencorp.com
+  ${{ if eq( parameters['environment'], 'UAT' ) }}:
+    value: https://cm.uat.ew.andersencorp.com
+- name: aksEnvironment
+  ${{ if eq( parameters['environment'], 'Development') }}:
+    value: "dev"
+  ${{ if eq( parameters['environment'], 'UAT' ) }}:
+    value: "uat"
+- name: databaseNames
+  ${{ if eq( parameters['refreshCore'], false) }}:
+    value: 'master'
+  ${{ if eq( parameters['refreshCore'], true) }}:
+    value: 'core,master'
+- name: aksSubscription
+  value: AKS - ARM
+- name: aksClusterName
+  value: AKS-Cluster1
+- name: aksClusterResourceGroup
+  value: AKS_Cluster1a
+- name: aksPodName
+  value: cm-dev
+- name: aksNamespace
+  value: sitecore
+- name: cmImagePlaceHolder
+  value: 'prodentwb1acr1.azurecr.io/enterpriseweb/enterpriseweb-xm1-cm:latest-alpha'
+- name: idImagePlaceHolder
+  value: 'prodentwb1acr1.azurecr.io/enterpriseweb/enterpriseweb-id:latest-alpha'
+
+stages:
+- stage: RefreshEnvironments
+  displayName: Refresh Environments
+  pool:
+    name: Enterprise Web
+  jobs:
+  - job: InstallPS
+    displayName: Install PowerShell Modules
+    steps:
+    - checkout: none
+    - task: PowerShell@2
+      displayName: "Install PS Modules"
+      inputs:
+        targetType: inline
+        script: |
+          Write-Host "Installing needed PowerShell modules..." -ForegroundColor DarkGray
+          if (Get-PackageProvider -ListAvailable -Name NuGet) {
+            Write-Host "##[section]PowerShell package provider 'NuGet' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell package provider 'NuGet'..."
+            Install-PackageProvider -Name NuGet -Scope CurrentUser -Verbose
+          }
+          if (Get-Module -ListAvailable -Name Az.Accounts) {
+            Write-Host "##[section]PowerShell module 'Az.Accounts' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell module 'Az.Accounts'..."
+            Install-Module -Name Az.Accounts -Scope CurrentUser -Force -Verbose
+          }
+          if (Get-Module -ListAvailable -Name Az.Websites) {
+            Write-Host "##[section]PowerShell module 'Az.Websites' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell module 'Az.Websites'..."
+            Install-Module -Name Az.Websites -Scope CurrentUser -Force -Verbose
+          }
+          if (Get-Module -ListAvailable -Name SQLServer) {
+            Write-Host "##[section]PowerShell module 'SQLServer' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell module 'SQLServer'..."
+            Install-Module -Name SQLServer -Scope CurrentUser -Force -Verbose
+          }
+        workingDirectory: $(Build.SourcesDirectory)
+
+  - job: BringDownAKS
+    displayName: Bring Down AKS
+    pool:
+      name: AKS
+      demands:
+        - kubectl -equals 1.25.0
+        - kubelogin -equals 0.0.20
+        - AzureCLI -equals 2.42.0
+    steps:
+    - checkout: enterprise-deployment
+    - task: AzureCLI@2
+      displayName: Authenticate With AKS
+      inputs:
+        azureSubscription: $(azureSubscriptionNonProd)
+        scriptType: ps
+        scriptLocation: inlineScript
+        inlineScript: |
+          # Authenticate to kubernetes with kubelogin
+          Write-Host "##[debug]Logging into Azure Subscription: $(aksSubscription)"
+          az account set --name "$(aksSubscription)"
+
+          Write-Host "##[debug]Getting AKS Credentials, Cluster Name: $(aksClusterName), Cluster Resource Group: $(aksClusterResourceGroup)"
+          az aks get-credentials -n $(aksClusterName) -g $(aksClusterResourceGroup) --overwrite-existing
+
+          $env:KUBECONFIG="$HOME/.kube/config"
+
+          Write-Host "##[debug]Converting the Azure login to K8s"
+          kubelogin convert-kubeconfig -l azurecli
+
+          # Verify connectivity to AKS cluster
+          Write-Host "##[debug]Verify connectivity to AKS cluster, Namespace: $(aksNamespace)"
+          kubectl get po -n $(aksNamespace)
+
+    - task: AzureCLI@2
+      name: GetImageVersions
+      displayName: Get Image Versions
+      inputs:
+        azureSubscription: $(azureSubscriptionNonProd)
+        scriptType: ps
+        scriptLocation: inlineScript
+        inlineScript: |
+          # Get current image
+          $cmimage = kubectl get deployment cm-$(aksEnvironment) --namespace $(aksNamespace) -o jsonpath='{.spec.template.spec.containers[0].image}'
+          $idimage = kubectl get deployment id-$(aksEnvironment) --namespace $(aksNamespace) -o jsonpath='{.spec.template.spec.containers[0].image}'
+
+          Write-Host "##[debug]Current CM image is: $cmimage"
+          Write-Host "##vso[task.setvariable variable=cmImage;isOutput=true]$cmimage"
+
+          Write-Host "##[debug]Current ID image is: $idimage"
+          Write-Host "##vso[task.setvariable variable=idImage;isOutput=true]$idimage"
+
+    - task: AzureCLI@2
+      displayName: Delete AKS Pods
+      inputs:
+        azureSubscription: $(azureSubscriptionNonProd)
+        scriptType: ps
+        scriptLocation: inlineScript
+        inlineScript: |
+          Write-Host "##[debug]Current CM image is: $(GetImageVersions.cmImage)"
+          Write-Host "##[debug]Current ID image is: $(GetImageVersions.idImage)"
+
+          #Substitue CM values into YAML
+          $cmYaml= Get-content -Path $(Build.SourcesDirectory)/manifests/cm-$(aksEnvironment).yaml
+          $cmYaml = $cmYaml -replace '$(cmImagePlaceHolder)', '$(GetImageVersions.cmImage)'
+
+          Write-Host "$cmYaml"
+
+          $cmYaml| kubectl delete -f -
+
+          #Substitue ID values into YAML
+          $idYaml= Get-content -Path $(Build.SourcesDirectory)/manifests/id-$(aksEnvironment).yaml
+          $idYaml = $idYaml -replace '$(idImagePlaceHolder)', '$(GetImageVersions.idImage)'
+
+          Write-Host "$idYaml"
+
+          $idYaml| kubectl delete -f -
+
+  # - job: BringDownAPI
+  #   displayName: Bring Down API
+  #   dependsOn: InstallPS
+  #   steps:
+  #   - task: AzurePowerShell@5
+  #     displayName: "Bring down API App Service"
+  #     inputs:
+  #       azureSubscription: $(azureSubscriptionNonProd) # Required. Name of Azure Resource Manager service connection
+  #       scriptPath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\stop-webapp.ps1
+  #       scriptArguments: '-name $(apiAppService) -resourceGroup "DEV_EntWb1"'
+  #       azurePowerShellVersion: 'latestVersion'
+
+  #   - ${{ if eq( parameters['environment'], 'UAT' ) }}:
+  #     - task: AzurePowerShell@5
+  #       displayName: "Bring down API App Service Staging Slot"
+  #       inputs:
+  #         azureSubscription: $(azureSubscriptionNonProd) # Required. Name of Azure Resource Manager service connection
+  #         scriptPath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\stop-webapp.ps1
+  #         scriptArguments: '-name $(apiAppService) -resourceGroup "DEV_EntWb1" -slot'
+  #         azurePowerShellVersion: 'latestVersion'
+
+  - job: CopyDownDatabases
+    displayName: Copy Down Databases
+    dependsOn:
+    - BringDownAKS
+    # - BringDownAPI
+    steps:
+    - task: AzurePowerShell@5
+      name: GetDatabaseAccessToken
+      displayName: "Get Database Access Token"
+      inputs:
+        azureSubscription: $(azureSubscriptionProd) # Required. Name of Azure Resource Manager service connection
+        scriptType: 'inlineScript'
+        inline: |
+          # Get an access token with the Service Pricipal used in the Azure DevOps Pipeline
+          Write-Host "Retrieving access token..."
+          $accessToken = (Get-AzAccessToken -ResourceUrl https://database.windows.net).Token
+
+          Write-Host "##vso[task.setVariable variable=dbAccessToken;isOutput=true]$accessToken"
+        azurePowerShellVersion: 'latestVersion'
+
+    - task: PowerShell@2
+      displayName: Rename Old Databases
+      inputs:
+        filePath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\rename-db.ps1
+        arguments: '-prefix $(prefix) -token $(GetDatabaseAccessToken.dbAccessToken) -databaseNames "$(databaseNames)"'
+
+    - task: PowerShell@2
+      displayName: Copy Databases
+      inputs:
+        filePath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\copy-db.ps1
+        arguments: '-destinationPrefix $(prefix) -token $(GetDatabaseAccessToken.dbAccessToken) -databaseNames "$(databaseNames)"'
+
+  - job: BringUpAKS
+    displayName: Bring Up AKS
+    dependsOn:
+    - CopyDownDatabases
+    - BringDownAKS
+    pool:
+      name: AKS
+      demands:
+        - kubectl -equals 1.25.0
+        - kubelogin -equals 0.0.20
+        - AzureCLI -equals 2.42.0
+    variables:
+      cmImage: $[ dependencies.BringDownAKS.outputs['GetImageVersions.cmImage'] ]
+      idImage: $[ dependencies.BringDownAKS.outputs['GetImageVersions.idImage'] ]
+
+    steps:
+    - checkout: enterprise-deployment
+    - task: AzureCLI@2
+      displayName: Authenticate With AKS
+      inputs:
+        azureSubscription: $(azureSubscriptionNonProd)
+        scriptType: ps
+        scriptLocation: inlineScript
+        inlineScript: |
+          # Authenticate to kubernetes with kubelogin
+          Write-Host "##[debug]Logging into Azure Subscription: $(aksSubscription)"
+          az account set --name "$(aksSubscription)"
+
+          Write-Host "##[debug]Getting AKS Credentials, Cluster Name: $(aksClusterName), Cluster Resource Group: $(aksClusterResourceGroup)"
+          az aks get-credentials -n $(aksClusterName) -g $(aksClusterResourceGroup) --overwrite-existing
+
+          $env:KUBECONFIG="$HOME/.kube/config"
+
+          Write-Host "##[debug]Converting the Azure login to K8s"
+          kubelogin convert-kubeconfig -l azurecli
+
+          # Verify connectivity to AKS cluster
+          Write-Host "##[debug]Verify connectivity to AKS cluster, Namespace: $(aksNamespace)"
+          kubectl get po -n $(aksNamespace)
+
+    - task: AzureCLI@2
+      displayName: Bring Up AKS
+      inputs:
+        azureSubscription: $(azureSubscriptionNonProd)
+        scriptType: ps
+        scriptLocation: inlineScript
+        inlineScript: |
+          Write-Host "##[debug]Current CM image is: $(cmImage)"
+          Write-Host "##[debug]Current ID image is: $(idImage)"
+
+          #Substitue CM values into YAML
+          $cmYaml= Get-content -Path $(Build.SourcesDirectory)/manifests/cm-$(aksEnvironment).yaml
+          $cmYaml = $cmYaml -replace '$(cmImagePlaceHolder)', '$(cmImage)'
+
+          Write-Host "$cmYaml"
+
+          $cmYaml| kubectl apply -f -
+
+          #Substitue ID values into YAML
+          $idYaml= Get-content -Path $(Build.SourcesDirectory)/manifests/id-$(aksEnvironment).yaml
+          $idYaml = $idYaml -replace '$(idImagePlaceHolder)', '$(idImage)'
+
+          Write-Host "$idYaml"
+
+          $idYaml| kubectl apply -f -
+
+  # - job: BringUpAPI
+  #   displayName: Bring Up API
+  #   dependsOn: CopyDownDatabases
+  #   steps:
+  #   - task: AzurePowerShell@5
+  #     displayName: "Bring Up API App Service"
+  #     inputs:
+  #       azureSubscription: $(azureSubscriptionNonProd) # Required. Name of Azure Resource Manager service connection
+  #       scriptPath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\start-webapp.ps1
+  #       scriptArguments: '-name $(apiAppService) -resourceGroup "DEV_EntWb1"'
+  #       azurePowerShellVersion: 'latestVersion'
+
+  #   - ${{ if eq( parameters['environment'], 'UAT' ) }}:
+  #     - task: AzurePowerShell@5
+  #       displayName: "Bring Up API App Service Staging Slot"
+  #       inputs:
+  #         azureSubscription: $(azureSubscriptionNonProd) # Required. Name of Azure Resource Manager service connection
+  #         scriptPath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\start-webapp.ps1
+  #         scriptArguments: '-name $(apiAppService) -resourceGroup "DEV_EntWb1" -slot'
+  #         azurePowerShellVersion: 'latestVersion'
+
+  - job: HealthCheckAKS
+    displayName: Health Check AKS
+    dependsOn: BringUpAKS
+    steps:
+    - task: PowerShell@2
+      displayName: Health Check CM
+      inputs:
+        filePath: $(Build.SourcesDirectory)\azure-pipelines\deploy\SiteHealthCheck.ps1
+        arguments: '-Url $(sitecoreCmUrl)'
+
+  # - job: HealthCheckAPI
+  #   dependsOn: BringUpAPI
+  #   steps:
+  #   - task: PowerShell@2
+  #     displayName: Health Check API
+  #     inputs:
+  #       filePath: $(Build.SourcesDirectory)\azure-pipelines\deploy\SiteHealthCheck.ps1
+  #       arguments: '-Url "https://$(apiAppService).azurewebsites.net/swagger/index.html"'
+
+  #   - ${{ if eq( parameters['environment'], 'UAT' ) }}:
+  #     - task: PowerShell@2
+  #       displayName: Health Check API Staging
+  #       inputs:
+  #         filePath: $(Build.SourcesDirectory)\azure-pipelines\deploy\SiteHealthCheck.ps1
+  #         arguments: '-Url "https://$(apiAppService)-staging.azurewebsites.net/swagger/index.html"'
+
+
+  - job: ValidateEnvironment
+    displayName: "Validate Environment"
+    dependsOn:
+      - HealthCheckAKS
+      # - HealthCheckAPI
+    pool: server
+    steps:
+    - task: ManualValidation@0
+      timeoutInMinutes: 0 # wait as long as we can
+      inputs:
+        notifyUsers: ''
+        instructions: 'Please validate the environment'
+        onTimeout: 'reject'
+
+  - job: CleanupTempDatabases
+    displayName: Cleanup Temp Databases
+    dependsOn:
+    - ValidateEnvironment
+    - CopyDownDatabases
+    variables:
+      dbAccessToken: $[ dependencies.CopyDownDatabases.outputs['GetDatabaseAccessToken.dbAccessToken'] ]
+    steps:
+    - task: PowerShell@2
+      displayName: Delete Temporary Databases
+      inputs:
+        filePath: $(Build.SourcesDirectory)\azure-pipelines\environment-refresh\delete-temp-db.ps1
+        arguments: '-prefix $(prefix) -token $(dbAccessToken) -databaseNames "$(databaseNames)"'

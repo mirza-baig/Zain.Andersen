@@ -1,0 +1,37 @@
+﻿---
+ID: "65a283e8-454e-4c0f-af09-16fec151b4c2"
+Parent: "50abe846-9e6f-45ab-a903-96404081223d"
+Template: "50abe846-9e6f-45ab-a903-96404081223d"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/BaseTemplates/_Base Gallery Video/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1bb99f94-7968-439b-bdfa-5d5b9d72801b"
+      Hint: eyebrowLevel
+      Value: "{AADA53F8-582E-4687-B9B6-3F2C01437A23}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230725T180650Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c7665ae8-7ee1-45e5-9fb3-ed117b349521"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230725T180711Z
+    - ID: "ebc0f4f5-3020-4870-960b-524e0d172158"
+      Hint: headlineLevel
+      Value: "{7F10288A-BEB1-4D95-A139-32DF40094441}"

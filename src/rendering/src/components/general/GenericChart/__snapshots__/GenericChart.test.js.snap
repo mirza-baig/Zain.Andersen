@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  class="font-futura-pt"
+  data-component="general/genericchart"
+  id="id964553899"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class=" w-full  px-m gap-s md:gap-s "
+    >
+      <div
+        class="items-top font-sans [&_a:hover]:underline  text-[26px] font-demi leading-[1.25] mb-[12px] md:text-[34px] "
+      >
+        <h2>
+          Grille Types
+        </h2>
+      </div>
+      <div
+        class=" hidden md:block text-[18px] leading-1.5] mb-[10px] "
+      >
+        <div
+          class="body-copy"
+        >
+          <div>
+            <p>
+              Module body copy text here
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="comparison-chart-table"
+      >
+        <table
+          class=" w-full table-fixed text-center"
+        >
+          <thead>
+            <tr
+              class=" title-row hidden md:table-row "
+            >
+              <th>
+                 
+              </th>
+              <th
+                class="row-header p-[5px] bg-gray text-black leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h3]:mb-[10px] [&_h4]:text-[18px] [&_h4]:font-demi [&_h4]:mb-[8px]"
+              >
+                <h3>
+                  <span>
+                    Profile Width
+                  </span>
+                </h3>
+                <h4>
+                  Subtitle
+                </h4>
+              </th>
+              <th
+                class="row-header p-[5px] bg-gray text-black leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h3]:mb-[10px] [&_h4]:text-[18px] [&_h4]:font-demi [&_h4]:mb-[8px]"
+              >
+                <h3>
+                  <span>
+                    Profile Picture
+                  </span>
+                </h3>
+                <h4>
+                  subtitle 2
+                </h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              class=" image-row hidden md:table-row"
+            >
+              <th>
+                 
+              </th>
+              <td
+                class="p-[5px]"
+              />
+              <td
+                class="p-[5px]"
+              >
+                <div
+                  class="relative hidden md:block   lazy"
+                >
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27402%27%20height=%27402%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="100 Series Patio Door"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div
+                  class="relative w-full md:hidden"
+                >
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27402%27%20height=%27402%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="100 Series Patio Door"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=" content-row "
+            >
+              <th
+                class="column-header border border-black bg-black text-white border-b-gray border-b text-[14px] md:text-[18px] p-[5px_15px] font-demi"
+              >
+                <h4>
+                  <span>
+                    Ovolo
+                  </span>
+                </h4>
+                
+              </th>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Width
+                    </span>
+                  </h3>
+                  <h4>
+                    Subtitle
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    7/8” & 1 
+                    <awsup>
+                      1/4"
+                    </awsup>
+                    <br />
+                    
+
+                    <div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Picture
+                    </span>
+                  </h3>
+                  <h4>
+                    subtitle 2
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    <p
+                      style="text-align: justify;"
+                    >
+                      <img
+                        alt="ovolo grille profiles"
+                        height="215"
+                        src="https://preview.local.andersenwindows.com/-/media/AndersenWindows/images/windows-and-doors/options-and-accessories/grilles-new/profiles/aw-ovolo.jpg?rev=a6c8d20d1d71442b92db2cf4d7ce822f&hash=D5BE19BB9E5F91D033AB77A106253A3F"
+                        width="272"
+                      />
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=" content-row "
+            >
+              <th
+                class="column-header border border-black bg-black text-white border-b-gray border-b text-[14px] md:text-[18px] p-[5px_15px] font-demi"
+              >
+                <h4>
+                  <span>
+                    Contemporary
+                  </span>
+                </h4>
+                
+              </th>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Width
+                    </span>
+                  </h3>
+                  <h4>
+                    Subtitle
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    1 
+                    <awsup>
+                      1/4"
+                    </awsup>
+                    <br />
+                    
+
+                    <div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Picture
+                    </span>
+                  </h3>
+                  <h4>
+                    subtitle 2
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    <img
+                      alt="contemp grille profile"
+                      height="215"
+                      src="https://preview.local.andersenwindows.com/-/media/AndersenWindows/images/windows-and-doors/options-and-accessories/grilles-new/profiles/aw-contemp.jpg?rev=afc94be4f9d949e5bde4c59171e90dae&hash=6CD2E908B43D8917178FE3BCC1F360A9"
+                      width="272"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=" content-row "
+            >
+              <th
+                class="column-header border border-black bg-black text-white border-b-gray border-b text-[14px] md:text-[18px] p-[5px_15px] font-demi"
+              >
+                <h4>
+                  <span>
+                    E-Series Contemporary Full Divided Light
+                  </span>
+                </h4>
+                
+              </th>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Width
+                    </span>
+                  </h3>
+                  <h4>
+                    Subtitle
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    7/8” 
+                    <br />
+                    
+
+                    <div>
+                       
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Picture
+                    </span>
+                  </h3>
+                  <h4>
+                    subtitle 2
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    <img
+                      alt="e-series grille profile"
+                      height="215"
+                      src="https://preview.local.andersenwindows.com/-/media/AndersenWindows/images/windows-and-doors/options-and-accessories/grilles-new/profiles/aw-e-ser.jpg?rev=cb464568eb6a44f58f9df792f8b6b3f0&hash=03080AB03D0728798A3E068EDF9B33BE"
+                      width="272"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr
+              class=" content-row "
+            >
+              <th
+                class="column-header border border-black bg-black text-white border-b-gray border-b text-[14px] md:text-[18px] p-[5px_15px] font-demi"
+              >
+                <h4>
+                  <span>
+                    Squared
+                  </span>
+                </h4>
+                
+              </th>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Width
+                    </span>
+                  </h3>
+                  <h4>
+                    Subtitle
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    1", 1 
+                    <awsup>
+                      1/4"
+                    </awsup>
+                    , 1 
+                    <awsup>
+                      1/2"
+                    </awsup>
+                    , 1 
+                    <awsup>
+                      3/4"
+                    </awsup>
+                    , 2", 
+                    <br />
+                    
+2 
+                    <awsup>
+                      1/4"
+                    </awsup>
+                    , 2 
+                    <awsup>
+                      1/2"
+                    </awsup>
+                    , 3" & 4"
+                  </div>
+                </div>
+              </td>
+              <td
+                class="bg-white border border-black block md:table-cell border-b-black "
+              >
+                <div
+                  class=" mobile-title md:hidden p-[5px] bg-gray text-black border-b-black border-b leading-[1.25] [&_h3]:text-[22px] [&_h3]:font-bold [&_h4]:text-[14px] [&_h4]:font-demi"
+                >
+                  <h3>
+                    <span>
+                      Profile Picture
+                    </span>
+                  </h3>
+                  <h4>
+                    subtitle 2
+                  </h4>
+                </div>
+                <div
+                  class="body-copy  [&_img]:mx-auto p-[5px]"
+                >
+                  <div>
+                    <img
+                      alt="square grille profile"
+                      height="215"
+                      src="https://preview.local.andersenwindows.com/-/media/AndersenWindows/images/windows-and-doors/options-and-accessories/grilles-new/profiles/aw-square.jpg?rev=0c099518ea9941be9e7879f90bf2aa42&hash=2DDF23D91CADB83E6C0FBB48AB2DDACE"
+                      width="272"
+                    />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div
+        class="content-footer"
+      >
+        <div
+          class="body-copy"
+        >
+          <div>
+            <p>
+              Footer copy
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

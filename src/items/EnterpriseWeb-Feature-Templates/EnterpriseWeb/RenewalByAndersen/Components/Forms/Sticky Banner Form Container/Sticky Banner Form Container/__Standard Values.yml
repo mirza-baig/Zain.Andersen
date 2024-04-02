@@ -1,0 +1,23 @@
+﻿---
+ID: "5d615d67-a483-42e6-8d92-aaa3c7f3c0d3"
+Parent: "22b23bf3-5b5a-4dcb-8f00-5e722ba8de0a"
+Template: "22b23bf3-5b5a-4dcb-8f00-5e722ba8de0a"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Forms/Sticky Banner Form Container/Sticky Banner Form Container/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240223T124627Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e7c0f73b-3cfa-47eb-b6fe-c39afb8a2222"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240312T114959Z

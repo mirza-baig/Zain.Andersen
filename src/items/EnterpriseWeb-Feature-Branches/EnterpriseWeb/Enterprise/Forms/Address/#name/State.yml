@@ -1,0 +1,36 @@
+﻿---
+ID: "47733e2e-deb2-41c4-bf10-243016567af9"
+Parent: "7356b2c0-5908-4c8c-9c07-266557efc9ba"
+Template: "1107f99a-cc75-44ce-be55-8318199d91bd"
+Path: /sitecore/templates/Branches/Feature/EnterpriseWeb/Enterprise/Forms/Address/$name/State
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230907T105201Z
+    - ID: "6389830e-b933-48b6-8ff7-9b83b8e62917"
+      Hint: showDefaultDisplay
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e38e2520-4a11-4d2c-b493-8e10f5fa922b"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: state
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: State
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230913T080035Z

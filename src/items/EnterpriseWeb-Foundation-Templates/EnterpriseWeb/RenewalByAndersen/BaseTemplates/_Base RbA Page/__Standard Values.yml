@@ -1,0 +1,27 @@
+﻿---
+ID: "dd4b4815-a9aa-49f8-a9f5-2c498e4b2c9e"
+Parent: "0b71ef43-740f-4206-8177-47eaec27f6d7"
+Template: "0b71ef43-740f-4206-8177-47eaec27f6d7"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/RenewalByAndersen/BaseTemplates/_Base RbA Page/__Standard Values
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230614T191113Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a1f15e8d-91c0-4262-be99-9976855e69ed"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230821T182005Z

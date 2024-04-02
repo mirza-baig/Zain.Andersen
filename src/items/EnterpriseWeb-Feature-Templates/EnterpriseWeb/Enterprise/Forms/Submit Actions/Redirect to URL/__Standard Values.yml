@@ -1,0 +1,31 @@
+﻿---
+ID: "e8e7149c-9888-450e-9a38-e883cfc56d11"
+Parent: "093e29cc-3530-4c3d-8651-8d5fa8117f1e"
+Template: "093e29cc-3530-4c3d-8651-8d5fa8117f1e"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Submit Actions/Redirect to URL/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230907T100045Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "512754f5-f0ce-4116-94af-92ee81254ab2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230907T100118Z

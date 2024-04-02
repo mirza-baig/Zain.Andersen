@@ -1,0 +1,26 @@
+﻿---
+ID: "b5f72b54-7c6a-4484-872b-627191b620d4"
+Parent: "2c65efe1-b7a1-4ced-9ada-6cd4cc79aa35"
+Template: "2c65efe1-b7a1-4ced-9ada-6cd4cc79aa35"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Navigation/Menu/Mega Menu/Tile Item/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231211T123147Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0b0e7bea-e92f-450a-9bf4-0f8f8b341dde"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "ca1d4bf7-7722-4dd7-af44-14489b5c8c86"
+      Hint: tileText
+      Value: $name
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231211T123837Z

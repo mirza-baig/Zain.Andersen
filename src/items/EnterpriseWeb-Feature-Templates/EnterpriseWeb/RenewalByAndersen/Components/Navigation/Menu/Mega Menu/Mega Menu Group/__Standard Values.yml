@@ -1,0 +1,32 @@
+﻿---
+ID: "66efa68c-3922-4bc7-9979-11431db91cfc"
+Parent: "7d09a27f-5f8c-4b53-a201-d7b2d12ba8c9"
+Template: "7d09a27f-5f8c-4b53-a201-d7b2d12ba8c9"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Navigation/Menu/Mega Menu/Mega Menu Group/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {60B6E011-B348-41A2-BE90-0A7469063AE5}
+    {2C65EFE1-B7A1-4CED-9ADA-6CD4CC79AA35}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231211T123141Z
+    - ID: "713b009f-ad58-4c42-aca9-80ac98c043c6"
+      Hint: menuTitle
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a0b2a4b8-24d1-4ac3-b33c-05146ce383f4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231211T123802Z

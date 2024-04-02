@@ -1,0 +1,38 @@
+﻿---
+ID: "d2957c1c-85a9-4694-a15b-39cdbbf1e0ca"
+Parent: "4356e75b-eb4a-4b80-93c2-3af38affac02"
+Template: "d2923fee-da4e-49be-830c-e27764dfa269"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Enums/Search/Facet Fields/RenewalByAndersen/People
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 2100
+- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
+  Hint: Value
+  Value: ew_people
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231127T162846Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5dba559b-46c7-42ef-8c0c-2c02d699b336"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231201T195704Z

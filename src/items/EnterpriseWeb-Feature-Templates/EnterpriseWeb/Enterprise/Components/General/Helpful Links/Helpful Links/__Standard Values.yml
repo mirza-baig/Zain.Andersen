@@ -1,0 +1,38 @@
+﻿---
+ID: "3b6fa4a1-4027-446f-819e-ef9f854d88f5"
+Parent: "71fd9193-c637-43ce-87e9-a8bd5824dce9"
+Template: "71fd9193-c637-43ce-87e9-a8bd5824dce9"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/General/Helpful Links/Helpful Links/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{0DB2E4A5-381C-4835-8A0B-AF6DA82194C2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231003T075302Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "55f1ced7-aef0-4b16-833e-06b320403cbb"
+    - ID: "b2a74f5b-05db-4e79-8ce9-328512c478cf"
+      Hint: headlineText
+      Value: Helpful Links
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231003T075609Z

@@ -1,0 +1,15 @@
+.pdt-radio-border-selected {
+    border-color: var(--theme-btn-border);
+    border-width: 5px;
+    padding: 5px;
+  }
+  
+  .pdt-radio-border-unselected {
+    border-color: rgba(228,229,228,1);
+    border-width: 2px;
+    padding: 5px;
+  }
+
+  .radio-item-margin {
+    margin-bottom: 10px;
+  }

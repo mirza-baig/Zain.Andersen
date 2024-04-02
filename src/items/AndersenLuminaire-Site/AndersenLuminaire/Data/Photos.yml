@@ -1,0 +1,23 @@
+﻿---
+ID: "14ed658f-4eab-49ce-95f2-e63c1e9c1ca9"
+Parent: "c1874f5b-7f6d-4d04-bf78-87a020c96d06"
+Template: "4c7a7cfa-0c24-4306-92e2-ddc9753f105f"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenLuminaire/Data/Photos
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240105T152556Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "132510d4-a00e-411a-a972-60e66d070aa9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240105T152556Z

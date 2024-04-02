@@ -1,0 +1,49 @@
+﻿---
+ID: "28cc45b2-3513-4a8b-88e0-3f6e0dd9c9a7"
+Parent: "602f9dcf-368b-48d4-868a-b3ff59f83cad"
+Template: "6dad441f-58d9-40a0-a119-c8d990b0484d"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Property Address/Next
+BranchID: "7d8d11ec-a27e-4f43-b608-b07e879a122d"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{57A007E1-EF7A-4A75-9D71-3376C0C2F23E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T174213Z
+    - ID: "2e33e2a6-2961-4b2a-802d-1af46aa877e9"
+      Hint: width
+      Value: "{022C2407-F7A8-4576-8C9B-45EA8014462D}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0d0aa463-49b9-4f00-b243-a1b1873959bd"
+    - ID: "966c54c5-3bf3-4c02-979e-4f5f0e174a78"
+      Hint: alignment
+      Value: "{D0E2B998-4601-4AA2-97AD-4D41E22B3180}"
+    - ID: "aa589f76-57ab-423d-97ea-3cbc07d536bb"
+      Hint: mobileWidth
+      Value: "{901574DF-D212-4E67-89A5-AAC4A9707E0A}"
+    - ID: "ad9f1c2c-d0ba-4341-a2bb-44042e6e7545"
+      Hint: navigationStep
+      Value: "{289FE73E-E947-4B59-A53A-6BFBF997DD45}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d64281de-e711-40d7-b01d-fecd1a4d2d42"
+      Hint: icon
+      Value: "{50590EDC-7EA7-4436-9A3E-701C87A07DB2}"
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Next
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240115T191614Z

@@ -1,0 +1,14 @@
+trigger: none
+
+pool:
+  name: Enterprise Web
+
+stages:
+- stage: Test
+  jobs:
+  - job: Test
+    steps:
+    - task: NodeTool@0
+      displayName: Install Node
+      inputs:
+        versionSpec: 18.17.1

@@ -1,0 +1,37 @@
+﻿---
+ID: "e97d4146-d02e-4199-afdc-ccfe6cedf495"
+Parent: "29cfa308-edef-4c91-832c-bf34c77c4959"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Settings/Insert Options/Videos Folder/Gallery Video
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230721T114335Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "33b280d5-30d0-4449-be5a-2548b3940bd8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230721T114608Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{AD5B8165-4C60-4945-9262-B9247E291865}">
+            <conditions>
+              <condition
+                id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+                uid="EB089A88E31F4509A16F2EFB21516921"
+                templateid="{540B0A20-57BD-4103-B3C5-7E3DB9C0EAD0}" />
+            </conditions>
+          </rule>
+        </ruleset>

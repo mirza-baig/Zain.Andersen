@@ -1,0 +1,29 @@
+﻿---
+ID: "648a1f25-1aee-4080-b7b0-04b466033673"
+Parent: "08b344e4-e51c-4dc5-845c-46fc0be21f3b"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/AW Page/Page
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230804T122747Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b75e19f8-006d-4816-802d-ecb63537dcb5"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {6AF8B67C-1137-4B57-A0E4-9EEEB1DFCCFA}
+        {9256EDF3-D0FA-4588-ADDA-3036B9D04FAA}
+        {A28667E9-0CD2-46A9-A228-0F6C8D85B817}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230804T122820Z

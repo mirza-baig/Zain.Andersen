@@ -1,0 +1,179 @@
+﻿---
+ID: "4500b192-595e-4c24-b488-dda0d8733e68"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Blogs
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+        function findFacet($facetPath, $itemName)
+        {
+            #Write-host $facetPath
+            #Write-host $itemName
+            # Get the root node using Get-Item, then a call to Axes.
+            $result = ""
+            if (![string]::IsNullOrEmpty($itemName)) {
+                $facetItems = Get-Item -Path $facetPath
+                
+                $items = $itemName.Split(',') 
+                foreach($item in $items)
+                {
+                    
+                    #Write-host $facetItems.Name
+                    #Write-host $item
+                    $facet = $facetItems.Axes.GetDescendants() | 
+                    Where-Object { ( $_.TemplateName -eq 'Facet Tag') -And (($_.Name.ToLower() -eq $item.ToLower() )-Or ($_.Fields["Title"].Value.ToLower() -eq $item.ToLower())) } | Initialize-Item   
+    
+                    if($facet -ne $null)
+                    {
+                        #Write-host $facet.Id
+                        $result += $facet.Id.ToString() + '|'
+                    }
+                    else
+                    {
+                        Write-host "No matching item:  " + $facetPath + " Value: " + $item
+                    }
+                }
+                if($result -ne "")
+                {
+                    $result = $result.Substring(0, $result.Length - 1);
+                }
+            }
+            return $result;
+        }
+        
+        $importRows = Import-CSV "C:\blog-import.csv  ";
+    
+        Write-Host "start"
+        
+        foreach ($row in $importRows)
+        {
+            if ([string]::IsNullOrEmpty($row.centercontentName))
+            {
+                $srcBlogPath = "master:/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Home/Blog Source/andersen-corp-earns-2017-energy-star-partner-award";    
+            }
+            else
+            {
+                $srcBlogPath = "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Home/Blog Source/blog-centerContent";    
+            }
+            
+            $destBlogPath = $row.itemPath.replace('/sitecore/content/andersen-windows/','/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/'); 
+            
+            Write-Host $destBlogPath
+            Copy-Item -Path $srcBlogPath -Destination $destBlogPath -Recurse
+        
+            $blog  = Get-Item -Path $destBlogPath
+            Write-Host $blog.ItemPath
+            
+            $blog.Editing.BeginEdit()
+            $blog['articleTitle'] = $row.articleTitle;
+            $blog['articleDescription'] = $row.articleDescription;
+            $blog['articleDate'] = $row.articleDate;
+            $blog['breadcrumbTitle'] = $row.breadcrumbTitle;
+            
+            $blog['pageTitle'] = $row.pageTitle;
+            $blog['pageMetaDescription'] = $row.pageMetaDescription;
+            $blog['siteSearchDescription'] = $row.siteSearchDescription;
+            $blog['siteSearchHeadline'] = $row.siteSearchHeadline;
+            $blog['siteSearchImage'] = $row.siteSearchImage;
+            $blog['primaryImage'] = $row.BlogPostThumbnailImage;
+            $blog['siteSearchEyebrow'] = $row.PageType;
+            $blog['openGraphImage'] = $row.openGraphImage;
+            
+            if($row.articleCategory -like "*Company news*")
+            {
+                $blog['articleCategory'] = '{B507D4DB-B60D-4A3B-9370-64BD1D792EE2}';
+            }
+            if($row.articleCategory -like "*Culture of inclusion*")
+            {
+                $blog['articleCategory'] = '{CD3DF0FD-40AA-4D3A-BCBB-4B9C3FDA2007}';
+            }
+            if($row.articleCategory -like "*Empowering communities*")
+            {
+                $blog['articleCategory'] = '{F6B1D0B8-C68D-4C22-BEAB-3836CE929EF4}';
+            }
+            if($row.articleCategory -like "*Innovation at work*")
+            {
+                $blog['articleCategory'] = '{7AB03DBF-44D5-4646-BD03-4584BA3FC404}';
+            }
+            
+            $blog['articlePublicTags'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Settings/Facets/Article Public Tags" $row.articlePublicTags;
+            
+        
+            $blog.Editing.EndEdit();
+            
+            $heroPath = $destBlogPath + '/Data/hero'
+            $contentBlockPath = $destBlogPath + '/Data/content-block'
+            $contentBlockwithMediaPath = $destBlogPath + '/Data/content-block-with-media'
+    
+             #Udpate hero data    
+             $hero = Get-Item -Path $heroPath
+             Write-Host $hero.ItemPath
+             $hero.Editing.BeginEdit()
+        
+             #$hero.Name = 'hero' + $row.heroTitle;
+             $hero['headlineText'] = $row.heroTitle;
+             $hero['primaryImage'] = $row.heroImage;
+    
+        
+             $hero.Editing.EndEdit();
+        
+             #Udpate content block data     
+             if ([string]::IsNullOrEmpty($row.centercontentName))
+            {
+             $contentBlock = Get-Item -Path $contentBlockPath
+             Write-Host $contentBlock.ItemPath
+             $contentBlock.Editing.BeginEdit()
+        
+             #$contentBlock.Name = 'hero' + $row.contentName;
+             $contentBlock['body'] = $row.contentBodyCopy;
+        
+             $contentBlock.Editing.EndEdit();
+             
+            }
+            else
+            {
+                 $contentBlockMedia = Get-Item -Path $contentBlockwithMediaPath
+             Write-Host $contentBlockMedia.ItemPath
+             $contentBlockMedia.Editing.BeginEdit()
+        
+             #$contentBlock.Name = 'hero' + $row.contentName;
+             $contentBlockMedia['topCopy'] = $row.centercontentBodyCopyAbove;
+             $contentBlockMedia['bottomCopy'] = $row.centercontentBodyCopyBelow;
+             $contentBlockMedia['primaryVideo'] = $row.centercontentCenteredVideo;
+             $contentBlockMedia['primaryImage'] = $row.centercontentCenteredImage;
+             
+        
+             $contentBlockMedia.Editing.EndEdit();
+            }
+        
+        }
+        
+        Write-Host "end"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231031T155110Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "828ed400-4e53-4be0-9cd6-a170a8a40f02"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231108T061412Z

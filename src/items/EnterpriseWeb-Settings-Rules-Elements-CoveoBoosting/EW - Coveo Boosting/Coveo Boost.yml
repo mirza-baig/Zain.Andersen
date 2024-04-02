@@ -1,0 +1,38 @@
+﻿---
+ID: "f0ee810c-483f-44b1-aaa3-32f474478139"
+Parent: "e6ac1f9a-5a72-40c2-9687-0d5459df73c3"
+Template: "f90052a5-b4e6-4e6d-9812-1e1b88a6fcea"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Coveo Boosting/Coveo Boost"
+SharedFields:
+- ID: "ff55d5a7-6d4b-4cd1-83e0-bac268073f66"
+  Hint: Type
+  Value: Platform.Foundation.Core.Rules.Coveo.Actions.CoveoBoostAction,Platform
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230511T145817Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "820749b7-195d-4c8d-ae17-af7062e713ec"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230511T150415Z
+    - ID: "eeb36a3b-40d9-4af5-862a-de257b84dca3"
+      Hint: Text
+      Value: "add [weight,,,number] to document score"

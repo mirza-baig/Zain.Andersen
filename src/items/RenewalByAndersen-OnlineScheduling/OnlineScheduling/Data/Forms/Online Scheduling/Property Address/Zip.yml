@@ -1,0 +1,36 @@
+﻿---
+ID: "52af4280-e012-400d-9048-cf62b085f9f0"
+Parent: "602f9dcf-368b-48d4-868a-b3ff59f83cad"
+Template: "353ea57b-c16e-4079-92db-f169461acd5e"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Property Address/Zip
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 650
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T194121Z
+    - ID: "6b3bbf77-7867-448b-ab5d-123405409097"
+      Hint: placeholderText
+      Value: Zipcode
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0b37022-8a87-43c0-ab99-2d103addc9d7"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: zipCode
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240314T211554Z

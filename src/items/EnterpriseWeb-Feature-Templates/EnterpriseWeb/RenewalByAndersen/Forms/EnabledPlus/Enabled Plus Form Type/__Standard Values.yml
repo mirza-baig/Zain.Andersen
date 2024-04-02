@@ -1,0 +1,40 @@
+﻿---
+ID: "819653d6-b1d6-4ea2-a70e-ea24d1fcc366"
+Parent: "0419ca6d-926c-4b73-92f2-fef7adc4b898"
+Template: "0419ca6d-926c-4b73-92f2-fef7adc4b898"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Forms/EnabledPlus/Enabled Plus Form Type/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/add.png
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171001T173124Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ce5065d0-d1c7-443c-a014-29ba0cc9819d"
+    - ID: "b0cd4555-9c81-4f3c-8439-c2635430609c"
+      Hint: Callback Time
+      Value: 0
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20220614T140455Z
+    - ID: "e6a6917f-08ef-41f9-b358-01fc14c6d0bc"
+      Hint: Enabled Plus Form Key
+      Value: $name

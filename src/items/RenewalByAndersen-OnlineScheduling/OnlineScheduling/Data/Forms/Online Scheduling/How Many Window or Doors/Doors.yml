@@ -1,0 +1,36 @@
+﻿---
+ID: "90052f74-4d2d-4742-a146-d9d100f1549a"
+Parent: "900748f3-0f6f-4a07-9d0c-cf45ec6308ba"
+Template: "78ab6aec-5df4-490d-b9fd-aecf481b3323"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/How Many Window or Doors/Doors
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 312
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T202601Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "722aaf90-b6c1-4dbf-a879-e5eceb0952f1"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: doors
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "ce420979-e757-42e5-adf5-603ae93ed71a"
+      Hint: dependsOn
+      Value: "{E5D05A09-9C3C-4FFC-BA18-46F5CF5BA3E8}"
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Select # of Doors
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240115T185755Z

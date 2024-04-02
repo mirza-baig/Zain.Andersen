@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="forms/onlinescheduling"
+  id="id1695242607"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="m-auto"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; width: 48px; height: 48px; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <img
+            alt="loading spinner"
+            class="animate-spin"
+            data-nimg="fixed"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+          <noscript />
+        </span>
+      </div>
+      <div
+        class="col-span-12 pb-16 invisible"
+        data-component="forms/form"
+      >
+        <form
+          class="scroll-container"
+        >
+          <div
+            class="md:bg-light-gray relative mb-m"
+          >
+            <div
+              class="flex flex-row justify-center gap-x-s py-s"
+            >
+              <div
+                class="relative w-[187px]"
+              >
+                <div
+                  class="relative flex h-full flex-col items-center justify-between"
+                >
+                  <div
+                    class="flex h-full flex-col items-center justify-center"
+                  >
+                    <div
+                      class="z-10 h-full w-full"
+                    >
+                      <strong
+                        class="mb-xxs block text-center font-sans text-button font-semibold"
+                      >
+                        Property Information
+                      </strong>
+                    </div>
+                    <div
+                      class="z-10 m-0 flex h-[40px] min-h-[40px] w-[40px] cursor-default items-center justify-center rounded-full border-2 p-0 border-primary bg-white border-gray bg-white relative before:absolute before:top-0 before:-left-[11px] before:h-full before:w-[9px] before:bg-light-gray after:bg-light-gray
+                         before:content-[""] after:absolute after:top-0 after:-right-[11px] after:h-full after:w-[9px]  after:content-[""]"
+                    >
+                      <strong
+                        class="mb-xxs block text-center font-sans text-button font-semibold !mb-0"
+                      >
+                        1
+                      </strong>
+                    </div>
+                  </div>
+                  <span
+                    class="absolute left-[calc(50%_+_28px)] bottom-[20px] h-[2px] w-full max-w-[148px] bg-gray after:absolute after:left-0 after:h-[2px] after:w-[calc(var(--percent)_*_1%)] after:bg-primary after:content-['']"
+                    style="--percent: 0;"
+                  />
+                </div>
+              </div>
+              <div
+                class="relative w-[187px]"
+              >
+                <div
+                  class="relative flex h-full flex-col items-center justify-between"
+                >
+                  <div
+                    class="flex h-full flex-col items-center justify-center"
+                  >
+                    <div
+                      class="z-10 h-full w-full"
+                    >
+                      <strong
+                        class="mb-xxs block text-center font-sans text-button font-semibold"
+                      >
+                        Property Information
+                      </strong>
+                    </div>
+                    <div
+                      class="z-10 m-0 flex h-[40px] min-h-[40px] w-[40px] cursor-default items-center justify-center rounded-full border-2 p-0 border-gray bg-white relative before:absolute before:top-0 before:-left-[11px] before:h-full before:w-[9px] before:bg-light-gray after:bg-light-gray
+                         before:content-[""] after:absolute after:top-0 after:-right-[11px] after:h-full after:w-[9px]  after:content-[""]"
+                    >
+                      <strong
+                        class="mb-xxs block text-center font-sans text-button font-semibold !mb-0"
+                      >
+                        2
+                      </strong>
+                    </div>
+                  </div>
+                  <span
+                    class="absolute left-[calc(50%_+_28px)] bottom-[20px] h-[2px] w-full max-w-[148px] bg-gray after:absolute after:left-0 after:h-[2px] after:w-[calc(var(--percent)_*_1%)] after:bg-primary after:content-['']"
+                    style="--percent: 0;"
+                  />
+                </div>
+              </div>
+              <div
+                class="relative w-[187px]"
+              >
+                <div
+                  class="relative flex h-full flex-col items-center justify-between"
+                >
+                  <div
+                    class="flex h-full flex-col items-center justify-center"
+                  >
+                    <div
+                      class="z-10 h-full w-full"
+                    >
+                      <strong
+                        class="mb-xxs block text-center font-sans text-button font-semibold"
+                      >
+                        Property Information
+                      </strong>
+                    </div>
+                    <div
+                      class="z-10 m-0 flex h-[40px] min-h-[40px] w-[40px] cursor-default items-center justify-center rounded-full border-2 p-0 border-gray bg-white relative before:absolute before:top-0 before:-left-[11px] before:h-full before:w-[9px] before:bg-light-gray after:bg-light-gray
+                         before:content-[""] after:absolute after:top-0 after:-right-[11px] after:h-full after:w-[9px]  after:content-[""]"
+                    >
+                      <strong
+                        class="mb-xxs block text-center font-sans text-button font-semibold !mb-0"
+                      >
+                        3
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pages"
+          >
+            <div
+              class="grid grid-cols-12 gap-y-m gap-x-s"
+            >
+              <div
+                class="relative col-span-12 mb-s mx-auto w-fit"
+              >
+                <div
+                  class="items-top font-sans [&_a:hover]:underline text-center md:text-m font-medium text-sm-s"
+                >
+                  <h2>
+                    To continue to schedule your appointment online, tell us a little more about your project.
+                  </h2>
+                </div>
+              </div>
+              <div
+                class="relative col-span-12 flex text-left justify-left"
+              >
+                <div
+                  class="relative col-span-12 md:col-span-3"
+                >
+                  <label
+                    class="text-body font-regular inline-flex items-center"
+                    for="52995195-5cb2-4e49-acc9-1942699fee80"
+                  >
+                    Are you the owner of the property?
+                    
+                    <div
+                      class="group relative ml-xxs md:inline-flex"
+                    >
+                      <span
+                        class="cursor-pointer"
+                      />
+                      <div
+                        class="absolute z-[1000] hidden w-max min-w-[86px] max-w-[288px] break-all rounded-[8px] bg-white p-xxs text-body text-black opacity-0 shadow-[0_2px_5px_0px_rgba(0,0,0,0.25)] group-hover:block group-hover:opacity-100"
+                        style="bottom: 20px; left: 0px;"
+                      >
+                        <div
+                          class="body-copy"
+                        >
+                          <div>
+                            Only the property owner(s) may sign contracts for services
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <div
+                    class="grid grid-cols-2 gap-s md:grid-cols-12"
+                  >
+                    <div
+                      class="md:col-span-6 col-span-2"
+                    >
+                      <label>
+                        <input
+                          class="appearence-none h-0 w-0 border-0 outline-none ring-0 focus:ring-0 [&:focus:checked_+_.button-card-item]:before:ring-2 [&:focus_+_.button-card-item]:before:ring-2 [&:checked_+_.button-card-item]:before:border-[2px] [&:checked_+_.button-card-item]:before:border-black [&:checked_+_.button-card-item_.radio]:border-black [&:checked_+_.button-card-item_.radio]:before:inline-block"
+                          name="windowsproblems-propertyowner"
+                          type="radio"
+                          value="Yes"
+                        />
+                        <div
+                          class="group button-card-item relative flex flex-row bg-light-gray p-xxs before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border-[2px] before:border-gray hover:cursor-pointer hover:before:border-black before:rounded-[10px] w-full break-all min-h-[64px] md:flex-col md:justify-center md:py-m items-center md:items-start"
+                        >
+                          <div
+                            class="flex items-center"
+                          >
+                            <span
+                              class="radio relative bg-white min-w-[32px] min-h-[32px] rounded-full border-[2px] border-gray group-hover:border-black ml-xxs mr-s before:hidden before:content-[""] before:absolute before:w-[24px] before:h-[24px] before:bg-primary before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full"
+                            />
+                            <div
+                              class="font-sans text-button break-normal md:text-xs font-heavy md:text-center"
+                            >
+                              Yes
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                    <div
+                      class="md:col-span-6 col-span-2"
+                    >
+                      <label>
+                        <input
+                          class="appearence-none h-0 w-0 border-0 outline-none ring-0 focus:ring-0 [&:focus:checked_+_.button-card-item]:before:ring-2 [&:focus_+_.button-card-item]:before:ring-2 [&:checked_+_.button-card-item]:before:border-[2px] [&:checked_+_.button-card-item]:before:border-black [&:checked_+_.button-card-item_.radio]:border-black [&:checked_+_.button-card-item_.radio]:before:inline-block"
+                          name="windowsproblems-propertyowner"
+                          type="radio"
+                          value="No"
+                        />
+                        <div
+                          class="group button-card-item relative flex flex-row bg-light-gray p-xxs before:content-[""] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:border-[2px] before:border-gray hover:cursor-pointer hover:before:border-black before:rounded-[10px] w-full break-all min-h-[64px] md:flex-col md:justify-center md:py-m items-center md:items-start"
+                        >
+                          <div
+                            class="flex items-center"
+                          >
+                            <span
+                              class="radio relative bg-white min-w-[32px] min-h-[32px] rounded-full border-[2px] border-gray group-hover:border-black ml-xxs mr-s before:hidden before:content-[""] before:absolute before:w-[24px] before:h-[24px] before:bg-primary before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full"
+                            />
+                            <div
+                              class="font-sans text-button break-normal md:text-xs font-heavy md:text-center"
+                            >
+                              No
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="text-theme-text [&_.body-copy]:!text-small mt-xxxs"
+                  >
+                    <div
+                      class="body-copy"
+                    >
+                      <div>
+                        (please select one)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="relative self-center col-span-12 md:col-span-12"
+              >
+                <button
+                  class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed mx-auto"
+                  name="Next"
+                  type="button"
+                >
+                  <span
+                    class="w-full"
+                  >
+                    Next
+                  </span>
+                  <span
+                    class="ml-xxs"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+`;

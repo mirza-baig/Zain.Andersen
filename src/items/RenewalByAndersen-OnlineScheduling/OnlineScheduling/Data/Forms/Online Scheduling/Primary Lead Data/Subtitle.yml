@@ -1,0 +1,33 @@
+﻿---
+ID: "eb7d5778-75cf-4043-a9ee-1b585cca2763"
+Parent: "0f436350-410f-40c8-9091-fe1be45bee38"
+Template: "1e258863-055b-4c0d-b775-59541b0a90fd"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Primary Lead Data/Subtitle
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e246876-a2fe-4095-be68-9326368cf7a7"
+      Hint: alignment
+      Value: "{67192EBD-70CE-4603-AE48-70C3B5DF6B2B}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T191703Z
+    - ID: "3875eed7-fb48-4f65-9cfe-491437fac478"
+      Hint: body
+      Value: "We work with you to design the right custom-built replacement windows and doors, crafted to match you home's exact needs."
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9f956796-6c82-4c0d-a499-4a12f2a15e3a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240314T133121Z

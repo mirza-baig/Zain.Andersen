@@ -1,0 +1,23 @@
+﻿---
+ID: "9a9fcb94-6a16-4b73-b027-4c21c0b2b5b0"
+Parent: "220617b6-ba9d-4d77-a379-b1ccf78a35c3"
+Template: "660d7a4d-d54e-4663-af5a-b7b6c963d9d2"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Affiliate Retailer Page/$name/Data/Promo Image With Slider
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240222T100844Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d116c877-823f-48fa-a88f-8344330fa752"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240222T100844Z

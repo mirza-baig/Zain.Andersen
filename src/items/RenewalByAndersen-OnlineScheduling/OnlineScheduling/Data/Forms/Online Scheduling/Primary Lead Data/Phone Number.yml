@@ -1,0 +1,39 @@
+﻿---
+ID: "0056f914-b06f-4a13-83dd-fc178a15d9e4"
+Parent: "0f436350-410f-40c8-9091-fe1be45bee38"
+Template: "c5db4ef7-746f-44c1-a564-55a405df748e"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Primary Lead Data/Phone Number
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240314T112015Z
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{022C2407-F7A8-4576-8C9B-45EA8014462D}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29343b64-4301-4bc6-b2b3-c07da48037a6"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: phoneNumber
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Phone Number
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240314T133121Z
+    - ID: "dd2f7bff-92de-4235-8fc7-51382406ec0c"
+      Hint: validations
+      Value: "{32619155-B223-4871-983E-D8920B692AA3}"

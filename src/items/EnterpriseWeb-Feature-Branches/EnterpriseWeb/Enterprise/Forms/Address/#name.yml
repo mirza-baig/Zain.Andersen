@@ -1,0 +1,23 @@
+﻿---
+ID: "7356b2c0-5908-4c8c-9c07-266557efc9ba"
+Parent: "1478dc82-0220-48ec-9e5c-269a89b6932a"
+Template: "0e87d9f7-c36a-42c7-bee4-00a50b3bdede"
+Path: /sitecore/templates/Branches/Feature/EnterpriseWeb/Enterprise/Forms/Address/$name
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230907T105105Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fc8430de-48ce-4cfa-af44-67caf59bc514"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230907T105631Z

@@ -1,0 +1,35 @@
+﻿---
+ID: "ab293e75-2474-40a5-a1b9-ae1e1b77b5e4"
+Parent: "083ae430-1bdd-4f4a-acf8-ecd12ed63bd2"
+Template: "40ca4912-1224-4f0b-919f-c4fe11a7a004"
+Path: /sitecore/system/Settings/Rules/Definitions/Macros/EWCoveoStringOperator
+SharedFields:
+- ID: "e90b394e-9c00-48ff-a0ca-4e812e84b05f"
+  Hint: Type
+  Value: Platform.Foundation.Core.Rules.Coveo.Macros.CoveoStringOperator,Platform
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230511T164707Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fc0b9471-3c3b-4f4e-b3a6-31bac7af7f03"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230511T184250Z

@@ -1,0 +1,71 @@
+﻿---
+ID: "5ea4b474-32fe-4313-a3ea-e1bfbd511b83"
+Parent: "17ae38ed-37e3-4a00-a985-f8de88131653"
+Template: "17ae38ed-37e3-4a00-a985-f8de88131653"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Listing/Xup Card Collection Dynamic/Showroom Result Item/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{4EE3D2D1-E50F-4FE1-B38E-AC88CD508F17}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230514T131958Z
+    - ID: "299bdb4e-5967-4b34-86c3-ad6d593ac74d"
+      Hint: showroomPageUrl
+      Value: "{B2F6247D-3BE3-4475-A485-3DCC37AF886F}"
+    - ID: "43d94111-bb01-46dd-8673-dce08900f104"
+      Hint: showroomAddressLine2
+      Value: "{492B00C9-A3AA-45BC-81E4-7A42ADF0E3C8}"
+    - ID: "46090e96-d39b-4a0b-bf62-9c095b759603"
+      Hint: showroomName
+      Value: "{8FDF8A5A-5AD4-4A02-BD5A-B4E6CA62063D}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "82da3d07-a359-4432-87df-36ee8c7a512e"
+      Hint: showroomCity
+      Value: "{06B58130-E849-43CD-84BF-0BBB9C08BE23}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "488c88b5-cfad-4996-b181-edf1f7cf2264"
+    - ID: "99849e45-c768-43a5-8593-369c154242e8"
+      Hint: showroomPostalCode
+      Value: "{C89E09B5-D430-421D-8C00-0B14EC5F64BE}"
+    - ID: "a4194e87-6824-46ef-a447-0b3d0df51009"
+      Hint: showroomAddressLine1
+      Value: "{3AD0B469-0F28-4709-879E-437642F52F9A}"
+    - ID: "aed5ea27-1cad-457c-b396-07d2ab8d78de"
+      Hint: ctaText
+      Value: View showroom details
+    - ID: "b283c73c-45b3-417c-bae7-f0a28f0dff6b"
+      Hint: showroomLocationPhoneNumber
+      Value: "{EAA47A6E-6776-4029-8E37-A58AC6D63A75}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c19ee6ea-cfae-4a14-930a-f38688d10568"
+      Hint: showroomState
+      Value: "{6F59F44E-D5A6-4D69-8FE9-5CBAB91BF620}"
+    - ID: "c8205ec2-3562-413f-addc-36df72d4d834"
+      Hint: resultType
+      Value: "{32442E5D-B81B-4733-A212-2EF014B2F287}"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240119T092751Z
+    - ID: "ed7b119a-5242-4e3c-a6b2-d9e67a32aab5"
+      Hint: showroomHours
+      Value: "{0EA6D57A-82CD-4D53-BD89-0DBE58BA83EF}"

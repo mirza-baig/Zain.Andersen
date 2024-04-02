@@ -1,0 +1,39 @@
+﻿---
+ID: "5e5e4a9d-1b8a-4da7-9747-0beb5a6a014b"
+Parent: "997ade26-64b1-43e6-a528-648607033c71"
+Template: "d2923fee-da4e-49be-830c-e27764dfa269"
+Path: "/sitecore/content/AndersenCorporation/Enterprise Global/Enums/Hero Half Media Container Width/16-9 with full bleed"
+SharedFields:
+- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
+  Hint: Value
+  Value: "full-bleed"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "16:9 with full bleed"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231102T101648Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a92ddb75-cec8-4f38-831b-168a97898edc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231109T082816Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "6446d9a1-0836-4e6c-9c1d-2f54678d3e6e"
+Parent: "7276b56b-3dc5-47fd-9776-f6af7a85907b"
+Template: "7276b56b-3dc5-47fd-9776-f6af7a85907b"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Elements/Search/Tab/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230202T104222Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5e64831d-0fc2-407f-8a7c-3525b57c3fda"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231229T123220Z

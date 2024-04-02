@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="affiliate/showroom-address-and-hours"
+  id="id18323859"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-y-m md:gap-s "
+    >
+      <div
+        class="col-span-12 md:col-span-4 md:col-start-2"
+      >
+        <h2
+          class="mb-s font-sans text-sm-s font-medium md:text-m"
+        >
+          Address and hours
+        </h2>
+        <div
+          class="mb-m text-sm-xs font-bold text-dark-gray"
+        >
+          <p
+            class=""
+          >
+            1920 West County Rd C
+            
+          </p>
+          <p
+            class="mb-s"
+          >
+            Roseville
+            , 
+            Minnesota
+            ,
+             
+            55113
+          </p>
+          <a
+            href="tel:651-633-9749"
+          >
+            651-633-9749
+          </a>
+        </div>
+        <h3
+          class="text-sm-xxs font-bold"
+        >
+          Showroom hours
+        </h3>
+        <ul
+          class="text-body text-dark-gray"
+        >
+          <li>
+            Monday - Saturday
+            : 
+            10:00 AM - 6:00 PM
+          </li>
+          <li>
+            Sunday 
+            : 
+            11:00 AM - 5:00 PM
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+`;

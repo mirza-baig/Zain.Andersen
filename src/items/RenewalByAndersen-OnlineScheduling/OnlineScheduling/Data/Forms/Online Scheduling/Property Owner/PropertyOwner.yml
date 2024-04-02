@@ -1,0 +1,48 @@
+﻿---
+ID: "52995195-5cb2-4e49-acc9-1942699fee80"
+Parent: "3222770f-dfa4-4ed5-80b7-64f2b3006b65"
+Template: "81abdbfe-9b8f-4552-b072-a3cff5887f68"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Property Owner/PropertyOwner
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0da80845-0a6e-4cef-bcfc-c64704b9ae9a"
+      Hint: tooltipText
+      Value: Only the property owner(s) may sign contracts for services
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T185611Z
+    - ID: "264a6df3-824f-4a5d-a50e-608a50ddc6b4"
+      Hint: datasource
+      Value: "{400CAFEC-DB48-4850-B443-058246144412}"
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{0266B091-D20B-4AD9-9D41-264C534BE485}"
+    - ID: "4837961f-794e-4c40-beac-68df9cef9f41"
+      Hint: subLabel
+      Value: (please select one)
+    - ID: "8760bb3b-bd1c-4ef8-b0b2-6bffd769c0cf"
+      Hint: buttonsPerRows
+      Value: "{E84642CB-7A4F-431A-8895-B01A1930EEFA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "77f8ba72-e427-4228-8cd4-fd0a30ba8ebb"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: "windowsproblems-property owner"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: "Are you the owner of the property?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240228T215346Z

@@ -1,0 +1,37 @@
+﻿---
+ID: "174a49f8-99e5-4294-bb12-62884388f8e0"
+Parent: "38304a35-1f69-4841-9269-c87ccb5d7e02"
+Template: "38304a35-1f69-4841-9269-c87ccb5d7e02"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Submit Actions/Recaptcha/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "10870af3-5887-4e68-8a3f-4b9547dadf02"
+      Hint: userAction
+      Value: submit
+    - ID: "14a2561e-f217-4d39-9f15-8be746dde549"
+      Hint: minimumScoreValue
+      Value: 0.1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231222T082020Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6bc286e4-17b3-490a-84be-b6b6afdcfd10"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240102T100320Z

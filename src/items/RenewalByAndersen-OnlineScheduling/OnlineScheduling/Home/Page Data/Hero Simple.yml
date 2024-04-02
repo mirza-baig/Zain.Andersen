@@ -1,0 +1,26 @@
+﻿---
+ID: "6676ef72-66a6-4b4b-9798-93f143589db4"
+Parent: "5fcc0965-d211-40b7-92dc-0ec21507e744"
+Template: "26715daa-b9e1-4f96-803f-e07fcbf620de"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Home/Page Data/Hero Simple
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240108T194620Z
+    - ID: "67964309-f6a9-4609-a06b-0b39b4f8886b"
+      Hint: headlineText
+      Value: Hero stuff
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ae14e9e4-f1f4-42de-9728-ef1203a53490"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T194634Z

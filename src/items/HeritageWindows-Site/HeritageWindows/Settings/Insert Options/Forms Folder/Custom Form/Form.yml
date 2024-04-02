@@ -1,0 +1,31 @@
+﻿---
+ID: "f6bd0bf4-24c5-4b00-bf57-341213d4bdf5"
+Parent: "f220a54a-ffeb-4ca5-bdd5-559fda9a6e92"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Settings/Insert Options/Forms Folder/Custom Form/Form
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230721T114612Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62b4727b-f916-40bc-aef6-4f9d6bbde746"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {3CE6C07D-ED81-4338-A692-998A14DC6225}
+        {A25126F1-75AB-400C-A90E-D1A98212462C}
+        {BEB7171E-DD4D-432B-89AB-C558A2921C37}
+        {96BBA5DE-FD7E-4F2B-8C11-CE2B78C86072}
+        {F39CDC1F-727B-4EC5-B87C-56CDEC9800A2}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231009T061521Z

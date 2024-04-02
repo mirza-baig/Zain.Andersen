@@ -1,0 +1,70 @@
+﻿---
+ID: "43efcc5b-291c-403f-ac1d-3e7af44c6309"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Templates Not Referring to Base Item Template
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $baseTemplateId = "{EEB48E13-B592-496C-8F44-657E2D2755C1}"
+    $pathToCheck = "\sitecore\templates\Foundation\EnterpriseWeb"
+    
+    # Function to get templates that don't inherit the specified base template
+    # Make sure Link database is updated
+    function Get-TemplatesNotInheritingBaseTemplate {
+        param (
+            [string]$BaseTemplateId
+        )
+    
+        $database = Get-Database -Name "master"
+        $templatesNotInheritingBase = @()
+    
+        $allTemplates = Get-ChildItem -Path $pathToCheck -Recurse | Where-Object { $_.TemplateName -ne "__Standard Values" } | Where-Object { $_.TemplateId -eq "{AB86861A-6030-46C5-B394-E8F99E8B87DB}"}
+    
+        foreach ($template in $allTemplates) {
+            $templateId = $template.ID
+            $inheritsFromBase = [Sitecore.Data.Managers.TemplateManager]::GetTemplate($templateId, $database).DescendsFromOrEquals($BaseTemplateId)
+    
+            if (-not $inheritsFromBase) {
+                $templatesNotInheritingBase += $template
+            }
+        }
+    
+        $templatesNotInheritingBase
+    }
+    
+    $props = @{
+        Title = "Base Item Inheritance - Fallback not Enabled"
+        PageSize = 20
+    }
+    
+    # Get templates that don't inherit from the specified base template
+    $templatesNotInheritingBase = Get-TemplatesNotInheritingBaseTemplate -BaseTemplateId $baseTemplateId | Show-ListView @props -Property @{Label="Name"; Expression={$_.DisplayName}},@{Label="Path"; Expression={$_.FullPath}},@{Label="ID"; Expression={$_.ID}}
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240103T101255Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bb226064-3069-4fb3-b18d-248a1b2ac651"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240104T085015Z

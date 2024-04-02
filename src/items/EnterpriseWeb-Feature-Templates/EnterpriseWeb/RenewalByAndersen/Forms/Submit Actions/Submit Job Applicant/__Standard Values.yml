@@ -1,0 +1,31 @@
+﻿---
+ID: "e15776c3-b0be-4d78-9448-1e4651d5797f"
+Parent: "8162ce49-dd41-4ba8-b425-327d0e49a2a2"
+Template: "8162ce49-dd41-4ba8-b425-327d0e49a2a2"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Forms/Submit Actions/Submit Job Applicant/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240219T090959Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7e2c3963-a542-4de4-b6e3-08a294b6ad42"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240219T091038Z

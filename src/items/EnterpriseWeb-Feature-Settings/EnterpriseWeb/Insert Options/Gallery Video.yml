@@ -1,0 +1,45 @@
+﻿---
+ID: "0b964942-cd9b-4b02-98e4-49be6c27bcee"
+Parent: "f2278a29-030e-45da-a7df-0626f4ae2460"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Gallery Video
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230802T133404Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "82249062-a971-4725-ad4b-8dd7cb1b856f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230804T122531Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{A5E59DE0-FC71-41AA-B7AC-554CC573F2FF}"
+            name="Affiliates Gallery Video Insert Options">
+            <conditions>
+              <and
+                uid="FD61F7032F324B3C9FAA957DF936E536">
+                <condition
+                  id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+                  uid="708CFAB3700A49DF924AA19F8E9C1D2B"
+                  templateid="{540B0A20-57BD-4103-B3C5-7E3DB9C0EAD0}" />
+                <condition
+                  id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                  uid="BEF07747544A40E2A439A1194DF3D3F0"
+                  itemid="{1F5AB56B-F49F-4148-94FF-25E6867D7434}" />
+              </and>
+            </conditions>
+          </rule>
+        </ruleset>

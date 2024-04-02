@@ -1,0 +1,414 @@
+﻿---
+ID: "c63e161d-bf14-4d8d-9680-d4ed3a0e2e78"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Perfect Match Results
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $importRows = Import-CSV "c:\inetpub\wwwroot\app_data\packages\results.csv"
+    Write-Host "start"
+    $resultTemplateId = "{FB9F1DDD-26C4-42D8-8DC5-AB75C192780B}"
+    
+    function getButtonType($value) {
+        $result = ""
+        switch ($value) {
+            "{40850527-FA07-46E0-8C6E-538FAC110009}" {$result = "{DD818850-EC95-4D32-9774-7CC8173E277B}"; Break}
+            "{561DE93F-5FF1-4848-812D-2F7C345F8B46}" {$result = "{49A23327-0397-4CCE-A930-E76918D37C42}"; Break}
+            "{DFB3303A-B0FD-4E3C-B3F9-11386E6B976F}" {$result = "{8AEDD89C-E161-41D4-B773-6A6097A19372}"; Break}
+            Default {
+                $result = ""
+            }
+        }
+        
+        return $result
+    }
+    
+    function getItemIdByPath($path) {
+        $result = ""
+        try {
+            $item = Get-Item -Path "$path"
+            $result = $item.ID
+        }
+        catch {
+            $result = ""
+        }
+        return $result
+    }
+    
+    function getProductType($value) {
+        $valueArray = $value.split("|")
+        $sb = [System.Text.StringBuilder]::new()
+        foreach ($id in $valueArray) {
+            switch ($id) {
+                #Door
+                "{42E926D0-D15D-4460-BCF3-9DD8BDCEEFD5}" {
+                    $doorItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-type/door"
+                    [void]$sb.Append($doorItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Window
+                "{45E238F9-674D-4578-B290-2F17AF5F5666}" {
+                    $windowItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-type/window"
+                    [void]$sb.Append($windowItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+            }
+        }
+        
+        $result = $sb.ToString()
+        $result = $result.Substring(0, $result.Length - 1)
+        return $result
+    }
+    
+    function getProductStyle($value) {
+        $valueArray = $value.split("|")
+        $sb = [System.Text.StringBuilder]::new()
+        foreach ($id in $valueArray) {
+            switch ($id) {
+                #Awning
+                "{C2BDBCD9-B99A-4BAC-8A0A-3551083FC0BF}" {
+                    $awningItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/awning"
+                    [void]$sb.Append($awningItem)
+                    [void]$sb.Append("|");
+                    Break;
+                }
+                #Bay Bow
+                "{8DE14E8D-223C-4D70-87A4-1B986AC71396}" {
+                    $bayBowItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/bay-bow" 
+                    [void]$sb.Append($bayBowItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Casement
+                "{57137AEC-9CBC-455F-BB42-1264B5D724FC}" {
+                    $casementItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/casement"
+                    [void]$sb.Append($casementItem)
+                    [void]$sb.Append("|"); 
+                    Break
+                }
+                #Doors Not Sure
+                "{C1542E94-0A29-4A6C-A872-421F2A3D1555}" {
+                    $doorsNotSureItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/doors-not-sure"
+                    [void]$sb.Append($doorsNotSureItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Gliding Patio Door
+                "{2621015D-A768-4297-9329-D9AE0A3091EF}" {
+                    $glidingPatioDoorItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/gliding-patio-door"
+                    [void]$sb.Append($glidingPatioDoorItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Gliding Window
+                "{BDCDBA74-D8A5-4EF4-A56A-3B8C2F2D838A}" {
+                    $glidingWindowItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/gliding-window"
+                    [void]$sb.Append($glidingWindowItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Hinged Patio Door
+                "{0B44F573-58C5-43E9-8EAA-33BBFF988B83}" {
+                    $hingedPatioDoorItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/hinged-patio-door"
+                    [void]$sb.Append($hingedPatioDoorItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Hung
+                "{614C64D7-ED1D-423C-812C-05BE944D4F05}" {
+                    $hungItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/hung"
+                    [void]$sb.Append($hungItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Picture
+                "{E85174EB-0355-496E-AD09-84AD7B26EE00}" {
+                    $pictureItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/picture"
+                    [void]$sb.Append($pictureItem)
+                    [void]$sb.Append("|"); 
+                    Break
+                }
+                #Specialty
+                "{30FEAED9-8F53-4CE9-9BA3-74DB386765E9}" {
+                    $specialtyItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/specialty"
+                    [void]$sb.Append($specialtyItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Windows Not Sure
+                "{997EA3B9-F444-42D6-9BF1-26DBD0B576CA}" {
+                    $windowsNotSureItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/product-style/windows-not-sure"
+                    [void]$sb.Append($windowsNotSureItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+            }
+        }
+        
+        $result = $sb.ToString()
+        $result = $result.Substring(0, $result.Length - 1)
+        return $result
+    }
+    
+    function getSizeAndPanel($value) {
+        $valueArray = $value.split("|")
+        $sb = [System.Text.StringBuilder]::new()
+        foreach ($id in $valueArray) {
+            switch ($id) {
+                #Custom
+                "{160BB46E-9CD2-447D-BB61-62A2F3CB336A}" {
+                    $customItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/custom"
+                    [void]$sb.Append($customItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Double
+                "{5741C3DD-9953-4B26-ADF9-E7D9C5388AC8}" {
+                    $doubleItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/double"
+                    [void]$sb.Append($doubleItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #More Panels
+                "{25EEE1E3-8836-4E71-9F15-87B5A1FA9996}" {
+                    $morePanelsItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/more-panels"
+                    [void]$sb.Append($morePanelsItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Not Sure
+                "{5CEEBCA2-F3BD-4B37-B42C-DF7CA45AD390}" {
+                    $notSureItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/not-sure"
+                    [void]$sb.Append($notSureItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Quad
+                "{E2232703-CCF6-4200-8DC5-9242F46CFC6D}" {
+                    $quadItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/quad"
+                    [void]$sb.Append($quadItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Single
+                "{86265B98-040E-49A7-8598-80F760991C92}" {
+                    $singleItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/single"
+                    [void]$sb.Append($singleItem)
+                    [void]$sb.Append("|");
+                    Break
+                    
+                }
+                #Triple
+                "{794C1467-170E-49E4-B7C2-5403C6E1450B}" {
+                    $tripleItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/size-and-panel/triple"
+                    [void]$sb.Append($tripleItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+            }
+        }
+        
+        $result = $sb.ToString()
+        $result = $result.Substring(0, $result.Length - 1)
+        return $result
+    }
+    
+    function getPanelStyle ($value) {
+        $valueArray = $value.split("|")
+        $sb = [System.Text.StringBuilder]::new()
+        foreach ($id in $valueArray) {
+            switch ($id) {
+                #Contemporary
+                "{21DF0964-1745-4DDE-B436-A1B85FBDBEF0}" {
+                    $contemporaryItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/panel-style/contemporary"
+                    [void]$sb.Append($contemporaryItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Either
+                "{9698C192-FE29-44CC-8EA8-9C555C76E317}" {
+                    $eitherItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/panel-style/either"
+                    [void]$sb.Append($eitherItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Traditional
+                "{2EA53EBE-6503-4C3D-93CF-77AA2814A01C}" {
+                    $traditionalItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/panel-style/traditional";
+                    [void]$sb.Append($traditionalItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+            }
+        }
+        
+        $result = $sb.ToString()
+        $result = $result.Substring(0, $result.Length - 1)
+        return $result
+    }
+    
+    function getCoastal ($value) {
+        $valueArray = $value.split("|")
+        $sb = [System.Text.StringBuilder]::new()
+        foreach ($id in $valueArray) {
+            switch ($id) {
+                #Coastal
+                "{CA811647-A3A4-4C68-AF06-7A42E2B83D15}" {
+                    $coastalItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/coastal/coastal"
+                    [void]$sb.Append($coastalItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Inland
+                "{9743E643-DACE-46ED-A8B1-581F1BC7E3D4}" {
+                    $inlandItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/coastal/inland"
+                    [void]$sb.Append($inlandItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+            }
+        }
+        
+        $result = $sb.ToString()
+        $result = $result.Substring(0, $result.Length - 1)
+        return $result
+    }
+    
+    function getOperation ($value) {
+        $valueArray = $value.split("|")
+        $sb = [System.Text.StringBuilder]::new()
+        foreach ($id in $valueArray) {
+            switch ($id) {
+                #Inswing
+                "{272F101B-A941-4763-B546-12B0C431F14D}" {
+                    $inswingItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/operation/inswing"
+                    [void]$sb.Append($inswingItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Outswing
+                "{D3A13242-720C-44D8-9C36-B46B0789168C}" {
+                    $outswingItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/operation/outswing"
+                    [void]$sb.Append($outswingItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+                #Not Sure
+                "{4CE09EC4-F341-4FF7-946B-D57C3ACCA6BB}" {
+                    $notSureItem = getItemIdByPath "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Data/Elements/Perfect Match/options/operation/not-sure"
+                    [void]$sb.Append($notSureItem)
+                    [void]$sb.Append("|");
+                    Break
+                }
+            }
+        }
+        
+        $result = $sb.ToString()
+        $result = $result.Substring(0, $result.Length - 1)
+        return $result
+    }
+    
+    foreach ($row in $importRows){
+        $destFolderPath = $row.ItemPath
+        Write-Host $destFolderPath
+        Write-Host "master:$destFolderPath"
+        $existingItem = Get-Item -Path "master:/$destFolderPath"
+        if ($existingItem -eq $null) {
+            Write-Host "New Item"
+            New-Item -Path "master:$destFolderPath" -ItemType $resultTemplateId 
+        }
+        
+        $item = Get-Item -Path "master:$destFolderPath"
+        Write-Host "the new item - " $item.Name
+        $item.Editing.BeginEdit()
+        $item["productSeries"] = $row."Product Series"
+        $item["productCategory"] = $row."Product Category"
+        $item["productCost"] = $row."Product Cost"
+        $item["productDescription"] = $row."Product Description"
+        $item["bullet1Text"] = $row."Bullet 1 Text"
+        $item["bullet2Text"] = $row."Bullet 2 Text"
+        $item["bullet3Text"] = $row."Bullet 3 Text"
+        $item["bullet4Text"] = $row."Bullet 4 Text"
+        $item["viewDetailsLink"] = $row."View Details Link"
+        $item["viewDetailsButtonType"] = getButtonType $row."View Details Button Type"
+        $item["designLink"] = $row."Design Link"
+        $item["designButtonType"] = getButtonType $row."Design Button Type"
+        $item["findADealerLink"] = $row."Find A Dealer Link"
+        $item["findADealerButtonType"] = getButtonType $row."Find A Dealer Button Type"
+        $item["productImage1"] = $row."Product Image 1"
+        $item["productImage2"] = $row."Product Image 2"
+        $item["productImage3"] = $row."Product Image 3"
+        $item["productImage4"] = $row."Product Image 4"
+        $item["productImage5"] = $row."Product Image 5"
+        $item["bannerText"] = $row."Banner Text"
+        $item["resultHeroImage"] = $row."Result Hero Image"
+        $item["resultOverlayImage"] = $row."Result Overlay Image"
+        #$item["imageCarouselModule"] = xxxxxx
+        $item["videoYouTubeId1"] = $row."Video YouTube Id 1"
+        $item["videoYouTubeId2"] = $row."Video YouTube Id 2"
+        $item["videoYouTubeId3"] = $row."Video YouTube Id 3"
+        $item["videoYouTubeId4"] = $row."Video YouTube Id 4"
+        $item["videoYouTubeId5"] = $row."Video YouTube Id 5"
+        $item["variationOf"] = $row."Variation Of"
+        $item["customSizesAvailable"] = $row."Custom Sizes Available"
+        $item["productType"] = getProductType $row."Product Type"
+        $item["productStyle"] = getProductStyle $row."Product Style"
+        $item["productSizeAndPanel"] = getSizeAndPanel $row."Product Size And Panel"
+        $item["productPanelStyle"] = getPanelStyle $row."ProductPanel Style"
+        $item["productCoastal"] = getCoastal $row."Product Coastal"
+        $item["productOperation"] = getOperation $row."Product Operation"
+        $item["newConstructionScore"] = $row."New Construction Score"
+        $item["remodelingScore"] = $row."Remodeling Score"
+        $item["customizableScore"] = $row."Customizable Score"
+        $item["energyEfficiencyScore"] = $row."Energy Efficiency Score"
+        $item["maintenanceScore"] = $row."Maintenance Score"
+        $item["valueScore"] = $row."Value Score"
+        $item["installationScore"] = $row."Installation Score"
+        $item["region1Score"] = $row."Region 1 Score"
+        $item["region2Score"] = $row."Region 2 Score"
+        $item["region3Score"] = $row."Region 3 Score"
+        $item["region4Score"] = $row."Region 4 Score"
+        $item["region5Score"] = $row."Region 5 Score"
+        $item["region6Score"] = $row."Region 6 Score"
+        $item["boost"] = $row."Boost"
+        $item["exteriorColorScore"] = $row."Exterior Color Score"
+        $item["performanceConsiderationScore"] = $row."Performance Consideration Score"
+        $item["blindsBetweenGlassScore"] = $row."Blinds Between Glass Score"
+        $item["interiorColorScore"] = $row."Interior Color Score"
+        $item["coastalScore"] = $row."Coastal Score"
+        $item["singlePanelProductConfiguration"] = $row."Single Panel Product Configuration"
+        $item["doublePanelProductConfiguration"] = $row."Double Panel Product Configuration"
+        $item["triplePanelProductConfiguration"] = $row."Triple Panel Product Configuration"
+        $item["quadPanelProductConfiguration"] = $row."Quad Panel Product Configuration"
+        $item.Editing.EndEdit()
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231205T195611Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0249f815-f609-4f44-b2f8-6cc68c3b0309"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231206T143355Z

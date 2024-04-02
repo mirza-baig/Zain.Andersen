@@ -1,0 +1,36 @@
+﻿---
+ID: "7260e6ed-50db-4364-9b73-760083dcded7"
+Parent: "794a128b-3e88-4475-b5b5-474adbdaed0d"
+Template: "d0a7a158-a75f-46e3-beac-bedec75b26bd"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Settings/Feature Toggles/Coveo User Affiliate Toggle
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23847fa2-73a2-431c-89f5-35db3e8abe65"
+      Hint: featureDescription
+      Value: If this feature is enabled, filter and boosting expressions on Coveo components will pass user affiliate in Coveo.
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T152913Z
+    - ID: "8ae40a19-4714-40e9-b17e-c470739f4800"
+      Hint: enableForSites
+      Value: "{256D8805-AAD6-4255-8E8D-996E0EC6C94A}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0feff1b-4070-4de0-b502-3094f86a3154"
+    - ID: "b4e75372-e1c1-4652-9f76-656b02b1384a"
+      Hint: featureState
+      Value: "{6B5D9900-92A5-40F3-A041-733054B16E31}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240131T124349Z

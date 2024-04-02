@@ -1,0 +1,23 @@
+﻿---
+ID: "eccab221-1d65-4fd2-9f13-c23bc431bbe0"
+Parent: "c1874f5b-7f6d-4d04-bf78-87a020c96d06"
+Template: "0c525bac-a5fe-4ccb-acd3-dc0552b7c1cc"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenLuminaire/Data/Forms
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240105T152530Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "137c2472-084d-4a22-98ba-c3c5246e896e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240105T152530Z

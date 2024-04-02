@@ -1,0 +1,4 @@
+577105  [Edge] Republish failed consistently after published 16k items and deleting them
+591829  Duplicate item entities created during publishing to Edge
+593932  Failure during preparing edge entity hangs whole publishing process
+588607  Skip delete job when item doesn't exist on edge

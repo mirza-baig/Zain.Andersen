@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/htmlblock"
+  id="id2077084623"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12"
+      >
+        <script>
+          
+var CRL8_SITENAME = 'renewalbyandersen-sb1oge'; !function(){var e=window.crl8=window.crl8||{},n=!1,i=[];e.ready=function(e){n?e():i.push(e)},e.pixel=e.pixel||function(){e.pixel.q.push(arguments)},e.pixel.q=e.pixel.q||[];var t=window.document,o=t.createElement("script"),c=e.debug||-1!==t.location.search.indexOf("crl8-debug=true")?"js":"min.js";o.async=!0,o.src=t.location.protocol+"//edge.curalate.com/sites/"+CRL8_SITENAME+"/site/latest/site."+c,o.onload=function(){n=!0,i.forEach(function(e){e()})};var r=t.getElementsByTagName("script")[0];r.parentNode.insertBefore(o,r.nextSibling)}();
+
+        </script>
+        
+
+        <div
+          data-crl8-container-id="product"
+          data-crl8-filter="productId:'awning'"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

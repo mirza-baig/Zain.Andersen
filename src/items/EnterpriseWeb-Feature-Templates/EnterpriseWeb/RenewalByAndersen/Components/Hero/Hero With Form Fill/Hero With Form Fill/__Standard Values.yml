@@ -1,0 +1,41 @@
+﻿---
+ID: "f4561eb7-1789-4517-9b78-ca7d0ee037bf"
+Parent: "4925230d-dc0e-4bc2-a48a-c07d697c1fd7"
+Template: "4925230d-dc0e-4bc2-a48a-c07d697c1fd7"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Hero/Hero With Form Fill/Hero With Form Fill/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{60C44293-87B5-4EF7-9099-C69065914FAA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231213T080601Z
+    - ID: "2b93fa2a-fbb3-4021-bc8e-54d880cbd025"
+      Hint: formStyle
+      Value: "{2AB3123E-294E-4484-A3E8-786A511DEE75}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6a1d1f8a-6aba-4d43-9e8d-8c46460dad50"
+    - ID: "90c6ac9a-9c89-4c82-a0d0-a618fa904395"
+      Hint: formAlignment
+      Value: "{606F0984-E397-4978-9B28-62AB17338161}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231214T073536Z

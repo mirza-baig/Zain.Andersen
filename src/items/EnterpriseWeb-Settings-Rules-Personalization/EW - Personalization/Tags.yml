@@ -1,0 +1,23 @@
+﻿---
+ID: "930ee35d-baf8-40ff-b3b5-2b5fb99a1adb"
+Parent: "9f1c45e3-c04d-40e0-81f4-2bf90ac75d84"
+Template: "96c8e5dd-63c3-496b-a97c-a3e37e1dacba"
+Path: "/sitecore/system/Settings/Rules/EW - Personalization/Tags"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120807T142637
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e94aef20-f3b0-40a6-ade0-b7d1a1ac93a4"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230804T202657Z

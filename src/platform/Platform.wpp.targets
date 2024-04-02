@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  A .wpp.targets file can be used to configure web application publishing.
+  https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/advanced-enterprise-web-deployment/excluding-files-and-folders-from-deployment
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    Use the SitecoreAssemblies ItemGroup provided by the Sitecore.Assemblies.Platform
+    package in order to prevent built-in Sitecore assemblies from publishing.
+    https://doc.sitecore.com/developers/93/sitecore-experience-manager/en/sitecore-assembly-list-nuget-packages.html
+
+    Delay executing this target until after Compile in order to
+    ensure the NuGet package targets have been evaluated.
+  -->
+  <Target Name="ExcludeSitecoreAssemblies" AfterTargets="Compile">
+    <ItemGroup>
+      <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename)%(Extension)')" Exclude="bin\Sitecore.Services.GraphQL.EdgeSchema.dll;bin\Sitecore.XA.Feature.Composites.dll;bin\Sitecore.XA.Feature.ErrorHandling.dll;bin\Sitecore.XA.Feature.Forms.dll;bin\Sitecore.XA.Feature.Redirects.dll;bin\Sitecore.XA.Feature.SiteMetadata.dll;bin\Sitecore.XA.Foundation.Caching.dll;bin\Sitecore.XA.Foundation.DynamicPlaceholders.dll;bin\Sitecore.XA.Foundation.Editing.dll;bin\Sitecore.XA.Foundation.LocalDatasources.dll;bin\Sitecore.XA.Foundation.Multisite.dll;bin\Sitecore.XA.Foundation.Mvc.dll;bin\Sitecore.XA.Foundation.PlaceholderSettings.dll;bin\Sitecore.XA.Foundation.Presentation.dll;bin\Sitecore.XA.Foundation.Publication.dll;bin\Sitecore.XA.Foundation.SitecoreExtensions.dll;bin\Sitecore.XA.Foundation.Theming.dll;bin\Sitecore.XA.JSS.Foundation.Multisite.dll" />
+      <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename).pdb')" />
+      <ExcludeFromPackageFiles Include="@(SitecoreAssemblies -> 'bin\%(Filename).xml')" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="DotNetToolRestore" AfterTargets="Build">
+    <Exec Condition="'$(BuildingInsideVisualStudio)' == 'true'" WorkingDirectory="$(SolutionDir)" Command="dotnet tool restore"/>
+  </Target>
+
+  <Target Name="Leprechaun" AfterTargets="DotNetToolRestore">
+    <Exec Condition="'$(BuildingInsideVisualStudio)' == 'true'" Command="dotnet leprechaun /g /c $(SolutionDir)src/Leprechaun.config"/>
+  </Target>
+
+</Project>

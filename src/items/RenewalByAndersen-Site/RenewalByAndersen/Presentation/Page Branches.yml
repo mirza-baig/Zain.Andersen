@@ -1,0 +1,98 @@
+﻿---
+ID: "6207f7d1-9a16-4372-90e7-d93cede577ee"
+Parent: "61ba38a3-185b-4571-93b5-f226f2510a76"
+Template: "fbc802e5-4b9e-480f-93da-3f2a80cae5cb"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches
+SharedFields:
+- ID: "bb3391dd-f8be-4b2e-ae9f-47bb63c166ce"
+  Hint: Rule
+  Value: |
+    <ruleset>
+      <rule
+        uid="{600A0797-1E3D-4349-B502-C9B1997EFC31}">
+        <conditions>
+          <condition
+            id="{4B889F07-94D4-4371-B522-9FFE8AF0BE12}"
+            uid="1757E2A6E2954D37A9D8713D37EFA3A4"
+            operatorid="{10537C58-1684-4CAB-B4C0-40C10907CE31}"
+            value="/sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Home/locations" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="EFDBDD76BD9C4A3296F6BC54929401EF"
+            PageBranchId="{69DD9914-5306-4FCC-930A-836602AF6B50}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{44311901-1380-4538-A609-B9ECD29E423E}">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="A613BB7CBF6E4F768958205A89B3699A"
+            templateid="{F6161117-87FD-42BC-82DE-37D44E896A47}" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="0B84AC1794EB4F7E8B4932665D708343"
+            PageBranchId="{2E0D6300-1B9F-47EC-99D0-7151AF378ADC}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{63CB3AB1-FE78-4F90-88F4-425572E9E78A}">
+        <conditions>
+          <condition
+            id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+            uid="9905913247E64DCE8A98E943B063BAB3"
+            templateid="{F6161117-87FD-42BC-82DE-37D44E896A47}" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="BE8A9A7433B048C3B62791496F3B948C"
+            PageBranchId="{FD356E0E-C11C-4075-95C8-06E082C9D00E}" />
+        </actions>
+      </rule>
+      <rule
+        uid="{D4B11B45-AC79-4800-A930-0BC5A5C7AAD9}">
+        <conditions>
+          <condition
+            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+            uid="382A492E860A4F139496700A863F89D4"
+            itemid="{389C03C7-02A0-463C-B02B-4ED091CAAD15}" />
+        </conditions>
+        <actions>
+          <action
+            id="{D46EC8E5-7B46-47DE-B44A-4C5C30EF48D1}"
+            uid="25774A1C210D4DD9807EA9D9D6624778"
+            PageBranchId="{1F29F9F9-B61A-480C-A9CE-2ECA6423E1F7}" />
+        </actions>
+      </rule>
+    </ruleset>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221116T211242Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dee867da-2e33-4c9f-88c5-f1e59da53fbd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240313T055154Z

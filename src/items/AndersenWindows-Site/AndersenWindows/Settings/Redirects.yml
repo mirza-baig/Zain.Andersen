@@ -1,0 +1,31 @@
+﻿---
+ID: "e6635ff0-ae22-4748-a63a-8d5865de3fb0"
+Parent: "28f9d5a6-6092-42e2-8528-876a1eb37346"
+Template: "c2dc4690-af44-48c7-bb21-90d1ad246732"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Settings/Redirects
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230926T165643Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8668a65b-e8fb-43bb-a773-349dce436bf1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230926T165643Z

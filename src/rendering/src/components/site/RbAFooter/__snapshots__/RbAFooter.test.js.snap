@@ -1,0 +1,520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="site/rbafooter"
+  id="id1314024754"
+>
+  <div
+    class="my-8 w-full theme-black bg-theme-bg"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m py-m ml:pt-ml ml:pb-[27px] gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12 mx-auto grid w-full max-w-[1200px] grid-cols-2 flex-col gap-s ml:flex-none ml:grid-cols-12 ml:gap-y-xxs"
+      >
+        <div
+          class="order-2 col-span-12 text-white ml:order-none ml:col-span-3"
+        >
+          <div
+            class="mb-m grid text-white max-ml:border-b max-ml:border-solid max-ml:border-b-white"
+          >
+            
+            <h3
+              class="mb-xxs font-serif text-body font-bold"
+            >
+              Administrative offices
+            </h3>
+            
+            
+            <a
+              aria-label="Administrative Office Phone Number"
+              class="text-body"
+              data-gtm-click=""
+              data-gtm-dl-event="click_to_call"
+              href="tel: "
+              role="link"
+              tabindex="0"
+            >
+              
+            </a>
+            <div>
+              <div
+                class="mb-s mt-xxs flex ml:mb-0"
+              >
+                <a
+                  aria-label="Showroom information"
+                  class="text-body font-bold hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="header"
+                  href="#"
+                  role="link"
+                  tabindex="0"
+                >
+                  Showroom information
+                </a>
+                <span
+                  class="ml-xxs w-xs -rotate-90 text-white transition-transform duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="order-3 col-span-12 -mt-s text-white ml:order-none ml:col-span-6 ml:mt-0"
+        >
+          <div
+            class="flex w-full flex-wrap gap-s text-white ml:flex-row ml:flex-nowrap ml:gap-x-4"
+          />
+        </div>
+        <div
+          class="order-4 col-span-12 text-white ml:order-none ml:col-span-3"
+        >
+          <a
+            aria-label="Schedule a consultation"
+            class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed mb-s text-button w-[236px] h-[48px] ml:ml-auto flex justify-center"
+            data-gtm-click=""
+            data-gtm-dl-event="cta_click"
+            href="/"
+            role="link"
+            tabindex="0"
+            target=""
+            title=""
+          >
+            Schedule a consultation
+            <span
+              class="ml-xxs"
+            />
+          </a>
+          <a
+            aria-label="Request a brochure"
+            class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-black px-m py-[9px] font-sans text-button font-heavy hover:bg-black hover:text-white disabled:border-gray disabled:text-gray mb-s text-button w-[236px] h-[48px] ml:ml-auto flex justify-center"
+            data-gtm-click=""
+            data-gtm-dl-event="cta_click"
+            href="/"
+            role="link"
+            tabindex="0"
+            target=""
+            title=""
+          >
+            Request a brochure
+            <span
+              class="ml-xxs"
+            />
+          </a>
+          <a
+            aria-label="Windows & Doors"
+            class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-black px-m py-[9px] font-sans text-button font-heavy hover:bg-black hover:text-white disabled:border-gray disabled:text-gray mb-s text-button w-[236px] h-[48px] ml:ml-auto flex justify-center"
+            data-gtm-click=""
+            data-gtm-dl-event="cta_click"
+            href="/"
+            role="link"
+            tabindex="0"
+            target=""
+            title=""
+          >
+            Windows & Doors
+            <span
+              class="ml-xxs"
+            />
+          </a>
+        </div>
+        <div
+          class="border-none ml:col-span-12 ml:border-b ml:border-solid ml:border-b-dark-gray"
+        />
+        <div
+          class="order-1 col-span-12 text-white ml:order-none ml:col-span-4"
+        >
+          <div
+            class="-ml-[10px] flex flex-row gap-x-xxs ml:ml-0 ml:gap-x-s"
+          >
+            <a
+              aria-label="LOGO-RbA-Horizontal-white"
+              class="flex  justify-center"
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="footer"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title="LOGO-RbA-Horizontal-white"
+            >
+              
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27173%27%20height=%2763%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="LOGO-RbA-Horizontal-white"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </a>
+            <a
+              aria-label="ANDERSEN_Logo_TM_Rectangle_RGB_white"
+              class="flex  justify-center -mt-m"
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="footer"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title="ANDERSEN_Logo_TM_Rectangle_RGB_white"
+            >
+              
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27157%27%20height=%2727%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt="ANDERSEN_Logo_TM_Rectangle_RGB_white"
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="order-6 col-span-12 text-white ml:order-none ml:col-span-4"
+        >
+          <div
+            class="mt-xxs flex flex-wrap gap-y-s ml:flex-nowrap"
+          >
+            <a
+              aria-label="Footer Logo"
+              class="flex  justify-center pr-s"
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="footer"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title="Footer Logo"
+            >
+              
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27120%27%20height=%2756%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt=""
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </a>
+            <a
+              aria-label="Footer Logo"
+              class="flex  justify-center"
+              data-gtm-click=""
+              data-gtm-dl-event="nav_click"
+              data-gtm-dl-nav-section="footer"
+              href="/"
+              role="link"
+              tabindex="0"
+              target=""
+              title="Footer Logo"
+            >
+              
+              <span
+                style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+              >
+                <span
+                  style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                >
+                  <img
+                    alt=""
+                    aria-hidden="true"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27120%27%20height=%2756%27/%3e"
+                    style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                  />
+                </span>
+                <img
+                  alt=""
+                  data-nimg="intrinsic"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                />
+                <noscript />
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="order-7 col-span-12 self-center text-white ml:order-none ml:col-span-4"
+        >
+          <a
+            aria-label="flag canada"
+            class="flex w-fit items-center gap-x-xs hover:underline ml:mb-xxxs ml:ml-auto ml:justify-end"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="footer"
+            href="http://localhost/"
+            role="link"
+            tabindex="0"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2724%27%20height=%2724%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="flag canada"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+            <div
+              class="font-sans text-button font-bold !font-serif"
+            >
+              <span>
+                Visit Canadian Site
+              </span>
+            </div>
+          </a>
+        </div>
+        <div
+          class="order-5 col-span-12 flex flex-col text-white ml:order-none ml:col-span-12 ml:w-[33%] ml:flex-row ml:items-center"
+        >
+          <div
+            class="mb-0 font-bold !text-body !leading-[26px] ml:mr-xxs"
+          >
+            <div
+              class=""
+            >
+              <div>
+                Follow us on
+              </div>
+            </div>
+          </div>
+          <ul
+            class="flex gap-x-m ml:gap-x-xxs"
+          >
+            <li>
+              <a
+                aria-label="linkedin"
+                data-gtm-click=""
+                data-gtm-dl-event="nav_click"
+                data-gtm-dl-nav-section="footer"
+                href="https://www.linkedin.com/company/renewal-by-andersen/ "
+                role="link"
+                tabindex="0"
+                target=""
+              >
+                <span
+                  class="!w-24px !h-[24px]"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="twitter"
+                data-gtm-click=""
+                data-gtm-dl-event="nav_click"
+                data-gtm-dl-nav-section="footer"
+                href="https://twitter.com/RbACorp"
+                role="link"
+                tabindex="0"
+                target=""
+              >
+                <span
+                  class="!w-24px !h-[24px]"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                aria-label="facebook"
+                data-gtm-click=""
+                data-gtm-dl-event="nav_click"
+                data-gtm-dl-nav-section="footer"
+                href="https://www.facebook.com/rbacorp"
+                role="link"
+                tabindex="0"
+                target=""
+              >
+                <span
+                  class="!w-24px !h-[24px]"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="order-9 col-span-12 flex flex-wrap gap-x-s justify-self-start text-white ml:order-none ml:col-span-4"
+        >
+          <div
+            class="text-small font-regular leading-[26px]"
+          >
+            © 2024 Renewal by Andersen LLC. All rights reserved.
+          </div>
+        </div>
+        <div
+          class="order-8 col-span-12 text-white ml:order-none ml:col-span-8 ml:-mt-l"
+        >
+          <div
+            class="flex flex-col"
+          >
+            <div
+              class="font-sans text-small leading-[20px] font-bold !font-serif"
+            >
+              <h3>
+                Andersen collects certain categories of personal information. See links for more information.
+              </h3>
+            </div>
+            <ul>
+              <li
+                class="relative inline px-s text-small font-regular leading-[26px] pl-0"
+              >
+                <a
+                  aria-label="Terms"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="https://www.renewalbyandersen.com/about/terms-of-use"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                >
+                  
+                  Terms
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small font-regular leading-[26px] before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="Privacy Policy"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="https://www.andersenwindows.com/support/privacy/"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                >
+                  
+                  Privacy Policy
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small font-regular leading-[26px] before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="Privacy Notice for CA Residents"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="https://www.andersenwindows.com/support/privacy-california/"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                >
+                  
+                  Privacy Notice for CA Residents
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small font-regular leading-[26px] before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="EEO Policy"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="/"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                  title=""
+                >
+                  
+                  EEO Policy
+                </a>
+              </li>
+              <li
+                class="relative inline px-s text-small font-regular leading-[26px] before:absolute before:top-[3px] before:left-0 before:inline-block before:h-[11px] before:border-l "
+              >
+                <a
+                  aria-label="Opt Out of Sale of Personal Information"
+                  class="underline-offset-1 hover:underline"
+                  data-gtm-click=""
+                  data-gtm-dl-event="nav_click"
+                  data-gtm-dl-nav-section="footer"
+                  href="/"
+                  role="link"
+                  tabindex="0"
+                  target=""
+                  title=""
+                >
+                  
+                  Opt Out of Sale of Personal Information
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

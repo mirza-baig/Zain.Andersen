@@ -1,0 +1,34 @@
+﻿---
+ID: "c7b2c191-391a-4278-8f3e-50144a876fa0"
+Parent: "b1547b3c-2d27-41cb-ae05-58198f49e2dc"
+Template: "b1547b3c-2d27-41cb-ae05-58198f49e2dc"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Elements/Disclaimer/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230216T192247Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "36f1aa6c-ffdc-4a01-9dca-a61f073aed2b"
+    - ID: "af76eb4d-24fd-4d39-b83c-39e98b457f81"
+      Hint: alignment
+      Value: "{E121CCAA-A70E-450B-A94B-2C58F949B49C}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T123841Z

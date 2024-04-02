@@ -1,0 +1,41 @@
+﻿---
+ID: "4a74db59-8be7-4b79-991c-d7f7bf0c5b05"
+Parent: "ca265d36-b2b1-486e-b022-cdf32d8ad76c"
+Template: "ca265d36-b2b1-486e-b022-cdf32d8ad76c"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Elements/Search/Video Result Item/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{4EE3D2D1-E50F-4FE1-B38E-AC88CD508F17}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230514T131958Z
+    - ID: "3eacec4e-5128-4d43-90a0-c80148d64f78"
+      Hint: resultType
+      Value: "{1ECD8B0A-4ADB-4972-9C04-9073D8A5CA44}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e25bb8e9-228e-46eb-9ed0-ec2dcf37e80f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231215T105553Z

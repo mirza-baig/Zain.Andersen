@@ -1,0 +1,27 @@
+﻿---
+ID: "2926eb02-af29-4d29-8214-0197b21a314e"
+Parent: "d740b2dd-2cae-4943-9c40-09f17902e918"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: "/sitecore/system/Settings/Rules/EW - Affiliate Personalization/Tags/Default"
+SharedFields:
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Value: "{7420D5AF-BFCB-4968-9158-A984791B8831}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120807T112600Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db953bd3-1c55-409e-8271-b2de4f1b74a7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240304T002546Z

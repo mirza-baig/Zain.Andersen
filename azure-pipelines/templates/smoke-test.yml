@@ -1,0 +1,36 @@
+parameters:
+  environment: ''
+
+jobs:
+- job: RunSmokeTest
+  displayName: Run Quick Smoke Test
+  variables:
+      awUrl: https://www.dev.andersenwindows.com/
+  steps:
+  - task: NodeTool@0
+    displayName: Install Node
+    inputs:
+      versionSpec: 18.17.1
+  - task: PowerShell@2
+    displayName: Restore NPM packages
+    inputs:
+      targetType: inline
+      script: |
+        npm install
+      workingDirectory: $(Build.SourcesDirectory)/src/smoke-test
+  # This task runs the tests specified by jest.config.js
+  # The 2>&1 is a workaround for facebook/jest#5064
+  - task: PowerShell@2
+    displayName: Run tests
+    inputs:
+      targetType: inline
+      script: |
+        npm run test -- --config jest.config.${{parameters.environment}}.ts --ci 2>&1
+      workingDirectory: $(Build.SourcesDirectory)/src/smoke-test
+    # This task is how the "Tests" tab in our Azure Pipelines build results page gets its data
+  - task: PublishTestResults@2
+    displayName: Publish test results
+    inputs:
+      testResultsFiles: $(Build.SourcesDirectory)/src/smoke-test/test-results/junit.xml
+      testRunTitle: Smoke Test
+    condition: succeededOrFailed()

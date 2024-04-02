@@ -1,0 +1,27 @@
+﻿---
+ID: "a5a47d52-9256-4d7f-9369-9d6e8502f61e"
+Parent: "468f866e-8b5d-4d31-9c4f-95f86c8526d2"
+Template: "c9dbb8ea-78a9-4188-a05f-35d12b442909"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Affiliate Showroom Page/$name/Data/HTML Block
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240226T092750Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1a7c50b6-4e42-46ca-a20d-c3eba6473730"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240226T092753Z

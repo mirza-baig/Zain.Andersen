@@ -1,0 +1,40 @@
+﻿---
+ID: "b9e616dd-7d0c-4d52-99ed-e2c242ef3ec5"
+Parent: "900748f3-0f6f-4a07-9d0c-cf45ec6308ba"
+Template: "78e78e19-8b37-4637-8c04-9de221572d0d"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/How Many Window or Doors/Headline
+BranchID: "7d8d11ec-a27e-4f43-b608-b07e879a122d"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{404F5EA3-2410-49FF-83F1-541D6EC52809}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T174213Z
+    - ID: "4b5aa8b0-1ef1-4ec3-bafc-7e06f56e640b"
+      Hint: removeHorizontalLine
+      Value: 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "43663364-00b8-43e0-8485-77dca204f8c6"
+    - ID: "b2a74f5b-05db-4e79-8ce9-328512c478cf"
+      Hint: headlineText
+      Value: "Approximately how many windows/doors are you looking to replace?"
+    - ID: "b91944fc-cbae-47eb-9b9b-1521875058e2"
+      Hint: alignment
+      Value: "{67192EBD-70CE-4603-AE48-70C3B5DF6B2B}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240321T124712Z

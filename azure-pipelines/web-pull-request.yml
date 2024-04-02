@@ -1,0 +1,132 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)-pr
+
+trigger: none
+
+variables:
+  - group: Web - Build Deploy - Global
+  - name: buildConfiguration
+    value: Debug
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildSitecore
+    displayName: Build Sitecore
+    pool:
+      vmImage: windows-latest
+    steps:
+    - template: templates\build-cm.yml
+      parameters:
+        buildConfiguration: $(buildConfiguration)
+    - template: templates\build-iar.yml
+
+  - job: BuildFrontEnd
+    displayName: Build Front End
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - task: NodeTool@0
+      displayName: Install Node
+      inputs:
+        versionSpec: 18.17.1
+
+    - task: PowerShell@2
+      displayName: Restore DotNet CLI tools
+      inputs:
+        targetType: inline
+        script: |
+          dotnet tool restore
+        workingDirectory: $(Build.SourcesDirectory)
+
+    - task: PowerShell@2
+      displayName: Install Vercel CLI
+      inputs:
+        targetType: inline
+        script: |
+          npm i -g vercel
+
+    # - task: PowerShell@2
+    #   displayName: Get Vercel variables
+    #   inputs:
+    #     targetType: inline
+    #     script: |
+    #       vercel env pull --yes --token=$(VercelDeployToken)
+    #     workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    - task: PowerShell@2
+      displayName: Restore NPM packages
+      inputs:
+        targetType: inline
+        script: |
+          npm install
+        workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    # - task: PowerShell@2
+    #   displayName: Build Front End
+    #   inputs:
+    #     targetType: inline
+    #     script: |
+    #       npm run build
+    #     workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    - task: PowerShell@2
+      displayName: Run lint
+      inputs:
+        targetType: inline
+        script: |
+          npm run lint
+        workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    - task: PowerShell@2
+      displayName: Run Leprechaun
+      inputs:
+        targetType: inline
+        script: |
+          dotnet leprechaun -g -c src/Leprechaun.config
+        workingDirectory: $(Build.SourcesDirectory)
+
+    - task: PowerShell@2
+      displayName: Run bootstrap
+      inputs:
+        targetType: inline
+        script: |
+          npm run bootstrap
+        workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    - task: PowerShell@2
+      displayName: Remove .babelrc
+      inputs:
+        targetType: inline
+        script: |
+          rm .babelrc
+        workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    - task: PowerShell@2
+      displayName: Run tests
+      inputs:
+        targetType: inline
+        script: |
+          npm run test -- --ci 2>&1
+        workingDirectory: $(Build.SourcesDirectory)/src/rendering
+
+    - task: PublishTestResults@2
+      displayName: Publish test results
+      inputs:
+        testResultsFiles: $(Build.SourcesDirectory)/src/rendering/test-results/junit.xml
+        testRunTitle: Front End Tests
+      condition: succeededOrFailed()
+
+    - task: PublishCodeCoverageResults@1
+      displayName: Publish code coverage results
+      inputs:
+        codeCoverageTool: Cobertura
+        summaryFileLocation: $(Build.SourcesDirectory)/src/rendering/coverage/cobertura-coverage.xml
+      condition: succeededOrFailed()
+
+    - task: PowerShell@2
+      displayName: Run compile
+      inputs:
+        targetType: inline
+        script: |
+          npx tsc --project tsconfig.json
+        workingDirectory: $(Build.SourcesDirectory)/src/rendering

@@ -1,0 +1,57 @@
+﻿---
+ID: "88b2f728-b5a0-44c4-be3f-677f33204f5d"
+Parent: "04a48aef-febd-4576-873b-f480a71523ab"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/RenewalByAndersen/FieldSets/Search/_Search Fieldsets
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {15D02D75-8AAE-4FBE-8D9E-B2768BC9E6E1}
+    {09846439-DEBF-4049-A92A-8CC421710AC0}
+    {EE9A6631-32D9-4865-8FD0-DA51F52B6E05}
+    {2139C77E-28C8-4FC0-877B-7164E34C2074}
+    {DD2D50B9-A11D-474C-B26B-0923FF3249A2}
+    {E8C6ADB0-F9A8-4419-94D6-E4FDDEF70138}
+    {8F60C9EE-08A8-4C73-860F-9F0A5C3D5243}
+    {E52488A3-C049-47D6-B646-4D15AA3ACC11}
+    {4800303E-A556-414F-A463-57471B3862A8}
+    {BE380C8E-7813-4104-AD69-39B359407793}
+    {674CE761-B6D7-43AE-9472-5C64EA765775}
+    {46E2CE0D-2711-4533-B6F5-83B29A3FB901}
+    {84E4D0F3-2654-4BDD-B80A-A47358F76C8A}
+    {53DECD09-1098-47B3-96A9-B84FCE5C5E87}
+    {DED64F54-AE82-466B-93E2-E57D8D2BC4F5}
+    {D879A2F3-3C12-4A8C-93F4-6468FBA34986}
+    {9F522844-8BBC-4474-9E61-8F296A5CB109}
+    {FD382638-2617-42AD-8B7C-2E32C63AF069}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{9F5FCC18-8D74-4822-9955-4465E06C71C4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230928T155808Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "573ff099-8cdd-4359-96ed-36aa8d1e2660"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230928T160849Z

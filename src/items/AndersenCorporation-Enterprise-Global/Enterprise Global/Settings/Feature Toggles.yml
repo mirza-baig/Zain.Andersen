@@ -1,0 +1,23 @@
+﻿---
+ID: "794a128b-3e88-4475-b5b5-474adbdaed0d"
+Parent: "6d43b2fb-89d9-4200-9f0a-b4684b35e738"
+Template: "9b959d30-aa1b-4a1c-a648-09c5cb301fa2"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Settings/Feature Toggles
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231127T183225Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2a2ebbf4-38b0-4a08-8107-70a3723742ad"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231127T183225Z

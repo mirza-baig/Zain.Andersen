@@ -1,0 +1,38 @@
+﻿---
+ID: "31aee1f2-b13f-4283-93ff-4409ed191ba0"
+Parent: "3ab405d6-0581-4c6a-8238-175d68096111"
+Template: "3ab405d6-0581-4c6a-8238-175d68096111"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Product/Comparison Table/Comparison Product Table/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: 
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{E67BB036-39EA-4498-B911-209B7647AB35}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230525T155845Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\dboeser
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dboeser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2a95e05a-25e1-4f74-8bca-bab4bba4f36c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dboeser
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230608T163207Z

@@ -1,0 +1,41 @@
+﻿---
+ID: "24d55a70-64f2-4215-8da2-2e3c0644ab30"
+Parent: "5ee3b5a2-7085-4fbc-8b6b-7b2cc00af4f2"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: /sitecore/system/Settings/Rules/Coveo Search Rules/Tags/Default
+BranchID: "bdc41fdd-a3ac-4b69-a0ba-471c425cb083"
+SharedFields:
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Value: |
+    {264F7277-6256-4477-BE23-23552FDEA116}
+    {5CE2FBBF-4DDC-4B22-AA0E-1FF13EA22868}
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{38069D83-16E5-4533-998A-E9E9E13B508D}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230504T075549Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "132862b5-f839-44fe-b0b7-ad1028059f32"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230504T075835Z

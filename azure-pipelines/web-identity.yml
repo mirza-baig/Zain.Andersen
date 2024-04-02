@@ -1,0 +1,86 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger: none
+
+resources:
+  repositories:
+  - repository: enterprise-deployment
+    type: git
+    name: enterprise-deployment
+
+pool:
+  vmImage: windows-latest
+
+variables:
+- group: Web - Build Deploy - Global
+- name: buildConfiguration
+  value: Debug
+- name: containerRegistry
+  value: prodentwb1acr1
+- name: repository-dev
+  value: enterpriseweb/enterpriseweb-xm1-identity-dev
+- name: repository-uat
+  value: enterpriseweb/enterpriseweb-xm1-identity-uat
+- name: repository-prod
+  value: enterpriseweb/enterpriseweb-xm1-identity-prod
+
+stages:
+- stage: BuildIdentityDev
+  variables:
+  - group: Web - Build Deploy - Dev
+  jobs:
+  - job: BuildDocker
+    displayName: Build and Publish Identity Docker
+    pool:
+      name: Enterprise Web
+    steps:
+    - template: templates\build-id-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository-dev)
+        latestTag: 10.2-ltsc2019
+    - template: templates\publish-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository-dev)
+        latestTag: 10.2-ltsc2019
+
+- stage: BuildIdentityUAT
+  variables:
+  - group: Web - Build Deploy - UAT
+  jobs:
+  - job: BuildDocker
+    displayName: Build and Publish Identity Docker
+    pool:
+      name: Enterprise Web
+    steps:
+    - template: templates\build-id-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository-uat)
+        latestTag: 10.2-ltsc2019
+    - template: templates\publish-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository-uat)
+        latestTag: 10.2-ltsc2019
+
+- stage: BuildIdentityProd
+  variables:
+  - group: Web - Build Deploy - Prod
+  jobs:
+  - job: BuildDocker
+    displayName: Build and Publish Identity Docker
+    pool:
+      name: Enterprise Web
+    steps:
+    - template: templates\build-id-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository-prod)
+        latestTag: 10.2-ltsc2019
+    - template: templates\publish-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository-prod)
+        latestTag: 10.2-ltsc2019

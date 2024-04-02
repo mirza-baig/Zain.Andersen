@@ -1,0 +1,1277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/productcarousel"
+  id="id1695242607"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-0 gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12"
+      >
+        <div
+          class="px-m md:max-w-screen-lg lg:mx-auto"
+        >
+          <div
+            class="items-top font-sans [&_a:hover]:underline text-theme-text text-sm-m md:text-m font-bold mb-s"
+          >
+            <h2>
+              Popular Contemporary Solutions
+            </h2>
+          </div>
+          <div
+            class="text-theme-body text-body mb-s"
+          >
+            <div
+              class="body-copy"
+            >
+              <div>
+                Body Copy
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="grid-cols-12 col-span-12 relative mt-4 product-carousel"
+      >
+        <div
+          class="product-carousel z-0"
+        >
+          <div>
+            <div
+              class="slick-slider center slick-initialized"
+              dir="ltr"
+            >
+              <div
+                class="absolute bottom-[50%] left-0 md:left-[calc(50%-195px)] z-10"
+              >
+                <div>
+                  <button
+                    class="button w-11 h-11 flex items-center justify-center rounded-full border-2 border-[#C4BFB6] bg-white cursor-pointer text-[#001722] transition hover:bg-[#001722] hover:text-white hover:border-[#001722]"
+                    tabindex="0"
+                  >
+                    <span />
+                  </button>
+                </div>
+              </div>
+              <div
+                class="slick-list"
+                style="padding: 0px 50px;"
+              >
+                <div
+                  class="slick-track"
+                  style="width: -1800px; opacity: 1; left: -50px;"
+                >
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-center slick-cloned"
+                    data-index="-6"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px]"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="mt-4 w-[300px] px-2 text-center"
+                            >
+                              <a
+                                aria-label="100 Series casement window"
+                                class="font-futura-pt text-[18px] font-bold uppercase leading-7 text-black hover:underline"
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                100 Series casement window
+                              </a>
+                              <p
+                                class="mt-2 text-sm"
+                              >
+                                Low-maintenance meets energy-efficient.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="-5"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="-4"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="-3"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="-2"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="-1"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="false"
+                    class="slick-slide slick-active slick-center slick-current"
+                    data-index="0"
+                    style="outline: none;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px]"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="mt-4 w-[300px] px-2 text-center"
+                            >
+                              <a
+                                aria-label="100 Series casement window"
+                                class="font-futura-pt text-[18px] font-bold uppercase leading-7 text-black hover:underline"
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                100 Series casement window
+                              </a>
+                              <p
+                                class="mt-2 text-sm"
+                              >
+                                Low-maintenance meets energy-efficient.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide"
+                    data-index="1"
+                    style="outline: none;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide"
+                    data-index="2"
+                    style="outline: none;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide"
+                    data-index="3"
+                    style="outline: none;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide"
+                    data-index="4"
+                    style="outline: none;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide"
+                    data-index="5"
+                    style="outline: none;"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-center slick-cloned"
+                    data-index="6"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px]"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                            <div
+                              class="mt-4 w-[300px] px-2 text-center"
+                            >
+                              <a
+                                aria-label="100 Series casement window"
+                                class="font-futura-pt text-[18px] font-bold uppercase leading-7 text-black hover:underline"
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                100 Series casement window
+                              </a>
+                              <p
+                                class="mt-2 text-sm"
+                              >
+                                Low-maintenance meets energy-efficient.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="7"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="8"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="9"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="10"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    aria-hidden="true"
+                    class="slick-slide slick-cloned"
+                    data-index="11"
+                    tabindex="-1"
+                  >
+                    <div>
+                      <div
+                        style="width: 100%; display: inline-block;"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="flex h-full items-center"
+                        >
+                          <div
+                            class="product-carousel"
+                          >
+                            <div
+                              class="w-[300px] opacity-50"
+                            >
+                              <a
+                                aria-label="Casement-Window-900x900"
+                                class=""
+                                data-gtm-click=""
+                                data-gtm-dl-event="cta_click"
+                                href="/mirza/test/"
+                                role="link"
+                                tabindex="0"
+                                title=""
+                              >
+                                
+                                <div
+                                  class="mx-[25px] text-center ml:mx-0"
+                                >
+                                  <span
+                                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                                  >
+                                    <span
+                                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 138.00738007380073% 0px 0px 0px;"
+                                    />
+                                    <img
+                                      alt="Casement-Window-900x900"
+                                      class="h-auto w-full"
+                                      data-nimg="responsive"
+                                      decoding="async"
+                                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                                    />
+                                    <noscript />
+                                  </span>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="absolute bottom-[50%] right-0 md:right-[calc(50%-195px)] z-10"
+              >
+                <div>
+                  <button
+                    class="button w-11 h-11 flex items-center justify-center rounded-full border-2 border-[#C4BFB6] bg-white cursor-pointer text-[#001722] transition hover:bg-[#001722] hover:text-white hover:border-[#001722]"
+                    tabindex="0"
+                  >
+                    <span />
+                  </button>
+                </div>
+              </div>
+              <ul
+                class="slick-dots static"
+                style="display: block;"
+              >
+                <li
+                  class="slick-active"
+                >
+                  <button>
+                    1
+                  </button>
+                </li>
+                <li
+                  class=""
+                >
+                  <button>
+                    2
+                  </button>
+                </li>
+                <li
+                  class=""
+                >
+                  <button>
+                    3
+                  </button>
+                </li>
+                <li
+                  class=""
+                >
+                  <button>
+                    4
+                  </button>
+                </li>
+                <li
+                  class=""
+                >
+                  <button>
+                    5
+                  </button>
+                </li>
+                <li
+                  class=""
+                >
+                  <button>
+                    6
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full flex justify-center mt-8"
+        >
+          <div>
+            <a
+              aria-label="Call to action"
+              class="space-between relative flex w-full grow items-center py-3 pr-l font-sans text-xs font-heavy leading-6 text-secondary hover:underline hover:decoration-black hover:underline-offset-8 id url name displayName fields templateId templateName"
+              data-gtm-click=""
+              data-gtm-dl-event="cta_click"
+              href="/Generic-Card-Page"
+              role="link"
+              tabindex="0"
+              target=""
+              title=""
+            >
+              Call to action
+              <span
+                class="absolute right-0 flex h-10 w-10 items-center justify-center rounded-full border-4 border-primary hover:bg-primary hover:text-white"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,0 +1,37 @@
+﻿---
+ID: "bb3df613-3922-42ea-871d-cbf2e59648c7"
+Parent: "3f53969c-7227-4df6-a910-fb6921bc148e"
+Template: "c4442680-1100-4626-a469-acc318e25cbf"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Thank You Page
+BranchID: "7d8d11ec-a27e-4f43-b608-b07e879a122d"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{C98D9CE2-0DB5-46BE-970E-9729C97BAF40}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "07abe275-4db7-4211-b415-2cbb014f7f9b"
+      Hint: hideStepper
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T174213Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "36a87888-16e8-4b21-ab51-cf85bf7ae7e3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Thank You Page
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240318T171311Z

@@ -1,0 +1,48 @@
+﻿---
+ID: "8106506f-c78e-43ec-8c71-62f0fe69f98d"
+Parent: "3bd771f0-5f43-4e71-861b-9126b69e2129"
+Template: "81abdbfe-9b8f-4552-b072-a3cff5887f68"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/How Can We Help You/How can we help you
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0da80845-0a6e-4cef-bcfc-c64704b9ae9a"
+      Hint: tooltipText
+      Value: 
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T185611Z
+    - ID: "264a6df3-824f-4a5d-a50e-608a50ddc6b4"
+      Hint: datasource
+      Value: "{355529D6-5722-48CB-8A02-EC356F5263D8}"
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{0266B091-D20B-4AD9-9D41-264C534BE485}"
+    - ID: "4837961f-794e-4c40-beac-68df9cef9f41"
+      Hint: subLabel
+      Value: (please select one)
+    - ID: "8760bb3b-bd1c-4ef8-b0b2-6bffd769c0cf"
+      Hint: buttonsPerRows
+      Value: "{E84642CB-7A4F-431A-8895-B01A1930EEFA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1f6f8331-16f4-4e7a-8ae2-1c00eb6cc7a0"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: howcanwehelpyou
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: "How can we help you?"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240228T215745Z

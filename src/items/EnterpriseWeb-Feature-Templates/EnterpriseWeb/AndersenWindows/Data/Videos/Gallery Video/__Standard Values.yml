@@ -1,0 +1,31 @@
+﻿---
+ID: "fd127120-ad5c-4408-871a-ee092a887f97"
+Parent: "a3a3ca99-d535-4e53-aab9-c05fdeb02f3d"
+Template: "a3a3ca99-d535-4e53-aab9-c05fdeb02f3d"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Data/Videos/Gallery Video/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230721T120246Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "937d3716-2844-4555-8716-405587005a9f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230721T120246Z

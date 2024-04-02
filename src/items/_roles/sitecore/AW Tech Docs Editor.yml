@@ -1,0 +1,12 @@
+﻿---
+Role: |
+  sitecore\AW Tech Docs Editor
+MemberOf:
+  Role: |
+    sitecore\Sitecore Client Maintaining
+  Role: |
+    sitecore\Sitecore Client Advanced Publishing
+  Role: |
+    sitecore\Sitecore Client Publishing
+  Role: |
+    sitecore\Author

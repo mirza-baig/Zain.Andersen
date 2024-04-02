@@ -1,0 +1,122 @@
+﻿---
+ID: "094dbd60-1ba5-4d36-a430-dfee96c1c99e"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Swatches
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    #Create Image Media link
+    function CreateMediaLink($mediaItem)
+    {
+        return "<image mediaid=""" + $mediaItem+ """ />";
+    }
+    #Create Swatch Folder if does not exists
+    function CreateSwatchFolder($paths, $rootPath)
+    {
+        Write-host "CreateSwatchFolder paths" $paths
+        #loop through array of Swatch folder paths
+        foreach($path in $paths)
+        {
+            $folderPath = $rootPath + '/' + $path 
+            
+            Write-host "rootPath" $rootPath
+            Write-host "folderPath" $folderPath
+            
+            $folderExists = Test-Path -Path $folderPath
+            Write-Host "folderExists: " $folderExists
+            
+            $folderItem = $null
+            #Check for Swatch folder exist already
+            if(!$folderExists)
+            {
+                #Create new element folder if does not exists. 
+                $elementFolder = New-Item -Path $folderPath  -ItemType "{7BB09D29-EA13-41B4-A161-F6AB842B0D2D}"
+                Write-host "Element Folder - " $folderPath
+                
+            }
+            $rootPath = $folderPath;
+        }
+    }
+    
+    #Import Legacy Swatch data from CSV
+    $importRows = Import-CSV "C:\Swatches.csv";
+    
+    Write-Host "start"
+    
+    foreach ($row in $importRows)
+    {
+        Write-Host "path - " $row.itemPath
+        $swatchPath = $folderPath = ''
+        $awSwatchRoot = '/sitecore/content/AndersenCorporation/AndersenWindows/Global/Products/Global Swatches/Swatch/AW'
+        $ahdSwatchRoot = '/sitecore/content/AndersenCorporation/AndersenWindows/Global/Products/Global Swatches/Swatch/AHD'
+    
+        #get new swatch item path and folder paths
+        #AW Swatch path handling
+        if ($row.itemPath.Contains("/sitecore/content/andersen-windows/data/elements/swatches")) { 
+            $swatchPath = $row.itemPath -replace '/sitecore/content/andersen-windows/data/elements/swatches', $awSwatchRoot; 
+            $folderPath = $row.itemPath -replace '/sitecore/content/andersen-windows/data/elements/swatches/', ''; 
+            $paths = $folderPath -split "/" | Select -SkipLast 1
+            Write-Host "array - " $paths
+            #create swatch folders 
+            CreateSwatchFolder $paths $awSwatchRoot;
+        }
+        #strom doors Swatch path handling
+        if ($row.itemPath.Contains("/sitecore/content/stormdoors/data/elements/stormdoor-swatches")) { 
+            $swatchPath = $row.itemPath -replace '/sitecore/content/stormdoors/data/elements/stormdoor-swatches', '/sitecore/content/AndersenCorporation/AndersenWindows/Global/Products/Global Swatches/Swatch/Storm Doors';
+        }
+        #AHD Swatch path handling
+        if ($row.itemPath.Contains("/sitecore/content/andersen-home-depot/data/elements/swatches")) { 
+            $swatchPath = $row.itemPath -replace '/sitecore/content/andersen-home-depot/data/elements/swatches', $ahdSwatchRoot;
+            $folderPath = $row.itemPath -replace '/sitecore/content/andersen-home-depot/data/elements/swatches/', '';     
+            $paths = $folderPath -split "/" | Select -SkipLast 1
+            Write-Host "array - " $paths
+            #create swatch folders
+            CreateSwatchFolder $paths $ahdSwatchRoot;
+        }
+    
+        Write-Host "new  - " $swatchPath
+        Write-Host "path - " $folderPath
+        
+        # create swatch items
+        $swatchItem = New-Item -Path $swatchPath  -ItemType "{863DCC2E-CCA5-4236-B10F-8B4872E1C47C}"
+        
+        $swatchItem.Editing.BeginEdit()
+        $swatchItem['swatchName'] = $row.swatchName;
+        $swatchItem['swatchImage'] = CreateMediaLink $row.swatchImage;
+        $swatchItem.Editing.EndEdit();
+        
+        #Write-Host $row.documentTitle; 
+        
+        
+    }
+    
+    Write-Host "end"
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231101T025447Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "606fdb4a-d299-49bb-8351-4abf477841db"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231102T040456Z

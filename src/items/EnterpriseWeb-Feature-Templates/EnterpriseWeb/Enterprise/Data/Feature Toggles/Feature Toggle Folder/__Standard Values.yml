@@ -1,0 +1,35 @@
+﻿---
+ID: "aacf1a7d-37db-4df6-bdb4-f5b0e174bd4d"
+Parent: "9b959d30-aa1b-4a1c-a648-09c5cb301fa2"
+Template: "9b959d30-aa1b-4a1c-a648-09c5cb301fa2"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Data/Feature Toggles/Feature Toggle Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{D0A7A158-A75F-46E3-BEAC-BEDEC75B26BD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231127T181926Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "64e473af-dbda-49d4-92c3-b7da3c823f4b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231127T183126Z

@@ -1,0 +1,47 @@
+﻿---
+ID: "918e075e-9d21-48f7-ad42-49fa7e6ce163"
+Parent: "29fc8bbb-0a7a-46db-a42a-f736d0586507"
+Template: "29fc8bbb-0a7a-46db-a42a-f736d0586507"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/General/Video Gallery Dynamic/Video Gallery Dynamic/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{CA265D36-B2B1-486E-B022-CDF32D8AD76C}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{4EE3D2D1-E50F-4FE1-B38E-AC88CD508F17}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230720T094333Z
+    - ID: "3ff92f67-53d5-436e-b94f-69fb0564a5ed"
+      Hint: desktopDisplayStyle
+      Value: "{1C68739A-5D8F-4A19-A25C-E6B8174A1237}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "84ec3469-483c-4aa1-a920-160af2392559"
+      Hint: mobileDisplayStyle
+      Value: "{0AEE9619-7D5A-4B61-AE4C-685FE3014726}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c4de9d55-553d-494a-a4d4-f6c3e52aa19d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231220T101038Z
+    - ID: "ebc0f4f5-3020-4870-960b-524e0d172158"
+      Hint: headlineLevel
+      Value: "{0F556F3A-BBAD-4AA5-952D-B79003B39CD6}"

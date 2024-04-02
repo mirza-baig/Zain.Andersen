@@ -1,0 +1,73 @@
+﻿---
+ID: "9f649d28-b06d-4a5a-95d5-f89f8355a26c"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Media Folder Template Change
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    
+    $props = @{
+       InfoTitle = "Change Template of items"
+        PageSize = 10000000
+    }
+    
+    $sourcePath = "master://sitecore/media library/Project/AndersenCorporation/AndersenWindows/AndersenWindows"
+    $items = Get-ChildItem -Path $sourcePath -Recurse
+    #Uncomment below two lines if you want to include the root item too.
+    #$rootItem = Get-Item -Path $sourcePath
+    #$items = $items + $rootItem
+    
+    $result = New-Object System.Collections.Generic.List[PSObject]
+    
+    
+        # Logic
+        foreach($item in $items)
+        {
+            if ($item.TemplateId -eq "{239F9CF4-E5A0-44E0-B342-0F32CD4C6D8B}")
+            {
+                $item.Editing.BeginEdit();
+                $item.TemplateId = "{FE5DD826-48C6-436D-B87A-7C4210C7413B}"
+                $item.Editing.EndEdit();
+                Write-Host "Item id: " $item.ID " - Template id: " $item.TemplateId
+                
+                $obj = New-Object PSObject @{
+                    ItemID = $item.ID;
+                    Name = $item.Name;
+                    Path = $item.ItemPath;
+                    TemplateID = $item.TemplateId
+                }
+                $result.add($obj)
+            }
+        }
+    
+    
+    $result | Show-ListView @props -Property ItemID, Name, Path, TemplateID
+    Close-Window
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231003T021837Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b593df87-d982-45e2-b8c3-84e35ba9f33e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231003T021837Z

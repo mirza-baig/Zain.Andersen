@@ -1,0 +1,40 @@
+﻿---
+ID: "51f6ea25-a989-46c8-a637-fe744f7d33ea"
+Parent: "c0d9936e-59ad-4fe4-b9aa-9f00fd0eff3c"
+Template: "62d234ca-1c65-4699-8bfe-339c28d92761"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Additional Details/Additional Details
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 225
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T173935Z
+    - ID: "4837961f-794e-4c40-beac-68df9cef9f41"
+      Hint: subLabel
+      Value: (optional)
+    - ID: "6b3bbf77-7867-448b-ab5d-123405409097"
+      Hint: placeholderText
+      Value: |
+        Enter any additional details you would like to share... e.g. "Use the side door" or "We have a dog"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0a5ab80-bdd8-4b2c-a99e-a34240b09cb2"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: "windowsproblems-additional details"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T153138Z

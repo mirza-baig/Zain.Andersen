@@ -1,0 +1,16 @@
+<Project>
+  <!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+  <Import Project="$([MSBuild]::GetPathOfFileAbove(Packages.props, $(MSBuildThisFileDirectory)..))" />
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Update="Microsoft.AspNetCore.TestHost" Version="6.0.27" />
+    <PackageReference Update="Microsoft.CodeCoverage" Version="17.7.0" />
+    <PackageReference Update="System.Net.Primitives" Version="4.3.1" />
+    <PackageReference Update="xunit" Version="2.4.2" />
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.5" />
+    <PackageReference Update="coverlet.collector" Version="3.1.2" />
+    <PackageReference Update="Sitecore.NSubstituteUtils" Version="2.0.2" />
+    <PackageReference Update="Moq" Version="4.20.70" />
+    <PackageReference Update="Sitecore.XA.Foundation.SitecoreExtensions" Version="10.2.0" />
+  </ItemGroup>
+</Project>

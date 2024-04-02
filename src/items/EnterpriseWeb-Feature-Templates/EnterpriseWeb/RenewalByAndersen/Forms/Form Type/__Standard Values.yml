@@ -1,0 +1,43 @@
+﻿---
+ID: "b15ac42a-4ac2-4cf9-8851-d13b29ac3896"
+Parent: "8caacb46-825a-4fe1-adf4-a30971c1b3bf"
+Template: "8caacb46-825a-4fe1-adf4-a30971c1b3bf"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Forms/Form Type/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/notebook2.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170920T201754Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "83ee0362-323d-455b-961e-3b5d4ac4778f"
+      Hint: Enabled Plus Form Type
+      Value: 
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0064340-30df-43ba-846d-25b6e7705b48"
+    - ID: "b2def901-a19f-4798-9766-cc3c90a6563a"
+      Hint: Value
+      Value: 
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20191115T132652Z

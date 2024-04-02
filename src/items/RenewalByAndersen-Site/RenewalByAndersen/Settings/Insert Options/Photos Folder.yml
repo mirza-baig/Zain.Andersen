@@ -1,0 +1,23 @@
+﻿---
+ID: "57f4d643-ead4-4063-8a52-33b4f489dbc8"
+Parent: "6a554749-6cbf-47c1-bba1-59f75fc28be5"
+Template: "ff220b80-51d7-439e-b74e-7bb1decb3272"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Settings/Insert Options/Photos Folder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230721T092826Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cb199529-39aa-4986-b527-76e54e058c7d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230721T092826Z

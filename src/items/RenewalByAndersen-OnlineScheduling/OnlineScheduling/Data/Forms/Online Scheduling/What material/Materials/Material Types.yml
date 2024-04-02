@@ -1,0 +1,23 @@
+﻿---
+ID: "90184df2-6520-491d-af40-63a55b913561"
+Parent: "505c2e44-b0e6-4982-ae40-296bc7c3a8e1"
+Template: "4aaa5f48-2f4b-42e2-89cc-a4a92896d011"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/What material/Materials/Material Types
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T202952Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5099f29f-2eb5-48be-98bf-f1eb5e0ef7cf"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240112T202952Z

@@ -1,0 +1,157 @@
+﻿---
+ID: "98903c81-86e0-4868-bdb8-0ea933d7a666"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Export Media Items Has Content Reference
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    
+    <#
+            .SYNOPSIS
+                Lists all media items that are not linked to content items.
+                
+            .NOTES
+                Michael West
+        #>
+        function HasContentReference {
+            param(
+                $Item
+            )
+            
+            $linkDb = [Sitecore.Globals]::LinkDatabase
+            $links = $linkDb.GetReferrers($Item)
+            
+            $result = $false
+            
+            foreach($link in $links) {
+                $linkItem = $link.GetSourceItem()
+                if ($linkItem) {
+                    $path = New-Object Sitecore.Data.ItemPath ($linkItem)
+                    if($path.IsContentItem) {
+                        $result = $true
+                        break
+                    }
+                }
+            }
+            
+            $result
+        }
+        
+        function Get-MediaItemWithReference { param(
+                $path
+            )
+                $mediaItemContainer = Get-Item $path
+        <# 
+         Write-Host "$mediaItemContainer"   
+            foreach($a in $mediaItemContainer)
+        {
+            Write-Host "$($a.ID) $($a.ItemPath) )";
+        }
+        #>    
+            
+            $items = $mediaItemContainer.Axes.GetDescendants() | Where-Object { $_.TemplateID -ne [Sitecore.TemplateIDs]::MediaFolder } | Initialize-Item
+         
+        
+            foreach($item in $items) {
+                if(HasContentReference($item)) {
+                    $item
+                }
+            }
+        }
+        #List of Media paths needs to be exported 
+        $paths = @("/sitecore/media library/AndersenWindows/Files/liftslide-documents",
+        "/sitecore/media library/AndersenWindows/Files/look-out-for-kids",
+        "/sitecore/media library/AndersenWindows/Files/multi-glide-documents",
+        "/sitecore/media library/AndersenWindows/Files/product-guides-mkto",
+        "/sitecore/media library/AndersenWindows/Files/product-info-sheets",
+        "/sitecore/media library/AndersenWindows/Files/product-mp4s",
+        "/sitecore/media library/AndersenWindows/Files/size-charts",
+        "/sitecore/media library/AndersenWindows/Files/verilock-connect"
+        )
+        
+        $pkgItems = @();
+        
+        #Loop through each path that needs to be exported. 
+        foreach($path in $paths){
+            #Get the media items that has a content reference 
+            $pkgItems += Get-MediaItemWithReference ($path)
+        }
+        
+        if($pkgItems.Count -eq 0) {
+            Show-Alert "There are no media items used by content items"
+        } else {
+            $props = @{
+                Title = $PSScript.Name
+                InfoTitle = "Media items used by content items"
+                InfoDescription = "Lists all media items that are linked to content items."
+                PageSize = 25
+            }
+            write-Host((Get-Date).ToString("yyyyMMdd-hhmmss"));
+            
+            $package = New-Package ("Media Migration Pkg-" + (Get-Date).ToString("yyyyMMdd-hhmmss"))
+         
+            # Set package metadata
+            $package.Sources.Clear();
+             
+            $package.Metadata.Author = "Hztl";
+            $package.Metadata.Publisher = "Hztl";
+            $package.Metadata.Version = "1.0";
+            $package.Metadata.Readme = 'Media library item with content reference'
+            
+            foreach($item in $pkgItems)
+            {
+                #write-Host "$($item.ID) $($item.ItemPath)   $($item.Created)    $($item['__Created By'])    $($item.__Updated)  $($item['__Updated by'])";
+                # Add contnet/home to the package
+                #$source = Get-Item $item.ItemPath | New-ItemSource -Name '$item.ID' -InstallMode Merge
+                $source = Get-Item $item.ItemPath | New-ExplicitItemSource  -Name '$item.ID' -InstallMode Merge
+                $package.Sources.Add($source);
+            }
+             
+            # Save package
+            Export-Package -Project $package -Path "$($package.Name)-$($package.Metadata.Version).zip" -Zip
+             
+            # Offer the user to download the package
+            Download-File "$SitecorePackageFolder\$($package.Name)-$($package.Metadata.Version).zip"
+            
+            $pkgItems |
+                Show-ListView @props -Property @{Label="Name"; Expression={$_.DisplayName} },
+                    @{Label="Size"; Expression={$_.Size}},
+                    @{Label="Extension"; Expression={$_.Extension}},
+                    @{Label="Updated"; Expression={$_.__Updated} },
+                    @{Label="Updated by"; Expression={$_."__Updated by"} },
+                    @{Label="Created"; Expression={$_.__Created} },
+                    @{Label="Created by"; Expression={$_."__Created by"} },
+                    @{Label="Path"; Expression={$_.ItemPath} }
+        }
+        
+        Close-Window
+    
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230730T190703Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5f3bd34f-5b45-4744-8b7e-81f4887c8bca"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230830T025644Z

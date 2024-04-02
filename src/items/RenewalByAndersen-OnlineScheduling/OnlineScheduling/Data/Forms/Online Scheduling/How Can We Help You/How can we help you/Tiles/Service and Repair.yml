@@ -1,0 +1,29 @@
+﻿---
+ID: "5a7e39b2-afd4-4140-bda3-8129bdacf427"
+Parent: "355529d6-5722-48cb-8a02-ec356f5263d8"
+Template: "741b9a7f-3a37-46e0-9980-ea7e53c4e840"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/How Can We Help You/How can we help you/Tiles/Service and Repair
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T190005Z
+    - ID: "6d7079b0-0aad-4d21-a1e2-6cca425235be"
+      Hint: title
+      Value: Service & Repair
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "49084ae0-22ca-471d-8b7c-caac8782ae30"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d04866e9-7ea4-4ad8-9c6e-1b751177e26b"
+      Hint: value
+      Value: serviceandrepair
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240112T192801Z

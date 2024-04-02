@@ -1,0 +1,52 @@
+﻿---
+ID: "80e5a76f-d4fe-4a7a-839b-f307ad883b31"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Perfect Match Folders
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $importRows = Import-CSV "c:\inetpub\wwwroot\app_data\packages\element-folders.csv"
+    Write-Host "start"
+    $folderTemplateId = "{7BB09D29-EA13-41B4-A161-F6AB842B0D2D}"
+    
+    foreach ($row in $importRows){
+        $destFolderPath = $row.ItemPath
+        Write-Host $destFolderPath
+        Write-Host "master:$destFolderPath"
+        $existingItem = Get-Item -Path "master:/$destFolderPath"
+        if ($existingItem -eq $null) {
+            Write-Host "New Item"
+            New-Item -Path $destFolderPath -ItemType $folderTemplateId
+        } else {
+            Write-Host $item.Name
+        }
+        Write-Host "#############"
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231205T193334Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "53421638-706c-4705-a2a6-0c59fa5ad6ee"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231205T193334Z

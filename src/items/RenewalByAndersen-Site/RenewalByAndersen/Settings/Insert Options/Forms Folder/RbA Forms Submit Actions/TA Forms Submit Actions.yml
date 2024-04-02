@@ -1,0 +1,28 @@
+﻿---
+ID: "6a2733dd-bdde-432f-83f2-4197b243a2b2"
+Parent: "3cd6d110-22c1-4823-ab6b-32e1ef312ecc"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Settings/Insert Options/Forms Folder/RbA Forms Submit Actions/TA Forms Submit Actions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240217T173000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2a9e4d21-ad7a-4b79-82d0-ee83287eb9d6"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {8162CE49-DD41-4BA8-B425-327D0E49A2A2}
+        {44B7F9BC-F4DA-4237-B24A-1FDAC78D7FC5}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T185107Z

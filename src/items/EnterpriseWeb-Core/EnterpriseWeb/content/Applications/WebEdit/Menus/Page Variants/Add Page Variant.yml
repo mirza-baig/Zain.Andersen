@@ -1,0 +1,54 @@
+﻿---
+ID: "2efcb90a-bcb3-4216-997c-d5276b3f418f"
+Parent: "30bed57c-a9a4-4bf5-a10a-cc1b25ac4468"
+Template: "998b965e-6ab8-4568-810f-8101d60d0cc3"
+Path: /sitecore/EnterpriseWeb/content/Applications/WebEdit/Menus/Page Variants/Add Page Variant
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/insert_option.png
+- ID: "afc50abc-3ed5-49f7-aa38-32de0034e17c"
+  Hint: ID
+  Value: AddPageVariantMenuItem
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{DC4C09C2-52DB-4375-B385-F6AF61A7FCE5}"
+          par="Id=AddPageVariantCommand&amp;PageCodeScriptFileName=%2fsitecore%2fshell%2fclient%2fSitecore%2fEnterpriseWeb%2fExperienceEditor%2fCommands%2fAddPageVariant.js&amp;Command=AddPageVariant"
+          uid="{9aa9eff5-162d-4233-985d-65bda6110e74}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "9b72a62b-2775-423d-b17a-ec34a9f31af8"
+    Hint: Display name
+    Value: Add Page Variant
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240306T235357Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5436c666-c6dc-4948-9d1c-0eea4d8bd26f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240307T000723Z

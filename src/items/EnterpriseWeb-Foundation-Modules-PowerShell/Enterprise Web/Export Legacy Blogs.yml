@@ -1,0 +1,259 @@
+﻿---
+ID: "ba93e30f-bf94-4da3-8212-dc2eed33f984"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Export Legacy Blogs
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $blogs = @("{901BF74D-BB06-46C1-9802-DA3389DE21DC}","{413B5183-ADB6-4F81-B2E0-AAD788ECFCCD}","{8F276D12-02D7-495D-8F46-E75377C946EE}","{FE7E0D26-6C6B-443A-AE69-22325E66CF94}","{9AA1C091-E028-4B8A-BFE2-AC4287A81881}","{3DCD0B5D-5AB5-47BE-A824-71BF8BD11CD9}","{08C78B45-64D1-43DC-B9D8-3CD828547720}","{A29A6608-9621-461C-A8C7-C3175A85CEBF}","{DCCC6EB4-9B23-48C1-81D2-8556E7FF7402}","{28E5ABA2-3E96-4A27-BA13-E76024F7840C}","{EB64FCDD-551B-43FC-967C-BF85F76450F9}","{9CB89B25-6F46-4111-9A51-EA0954BAE946}","{D4785540-677A-4FC3-9A4E-4E7F4AF5037E}","{1A74B936-C97F-49BA-A53B-258E60805128}","{612D5C4B-A894-4E98-8F4B-1FEDCB74B346}","{0BD3CB35-1FFE-43DA-AFBA-34AD0946E97B}","{9F749F83-4A8D-4657-A97C-BD2BA7F568ED}","{E49FEDE5-914F-4FD8-8C05-FE89807073B3}","{7C2C4869-5614-4D9D-ABAA-4F9890BC9D43}","{55449A1D-F526-4F11-81FC-3EFBF0F79DBE}","{8B07502C-F52C-40FA-B5EF-E00404482557}","{C7B481B6-AF7E-4B23-A339-8F08E8868FE5}","{E98CBE4C-D5B0-4FD5-8E27-9E73776813AA}","{0C8D7F22-70CC-4AE3-8628-1F61DD5F8084}","{0D36103C-B631-4269-8AB5-54CBCF6AA876}","{6B2279EB-1167-4616-ABBF-163E6AF223C9}","{ADF2DCFF-22E0-465C-B3A4-1166AA6B35F0}","{4132245B-6497-4E22-AE4F-AC4D8D6F0A46}","{2C322293-D61B-4125-8122-6982037AC15C}","{81137E11-BA17-4449-8ACA-DD054D2E5BDF}","{0DF6C66E-E0AC-4726-8179-4C9550C4AD20}","{601A03EA-E6C1-4FC2-B7AD-57DF6149E01D}","{E3EC2D29-106E-4E7D-A6C6-9C75D22197BF}","{14D90A4D-3E1C-439C-9BE4-FF03787BB4C3}","{BFC1098D-92FA-4591-9E70-88C9B39CB93A}","{8B448806-E88F-4856-B676-08ECBA235DB6}","{BB3AA5C0-A602-4719-8B05-6937999D9226}","{5F869353-7771-4F77-888A-4C2D406D36F0}","{74FBF957-61C3-428C-90C0-3624AA019453}","{28A065C8-CAAE-46FD-9B2E-1E16FE292A74}","{7D63CC05-EACB-44F1-9350-2DC86A01BDFB}","{CE1147A4-948C-4FC6-AFF4-4CC333D17D0E}","{2CD2C811-D448-46C9-A563-04E51A634EA6}","{7F6F95F3-4E6E-4A4A-87FC-5F1FECBD7F4D}","{C0B4387B-F523-475A-923A-1A45DB3AC8B4}","{834B6186-0B74-4BB5-938A-0BAFBF04CDB1}","{F02466F9-B0C4-45DD-99C0-B3588E3241ED}","{1DA28BA5-286E-4E4B-8CF3-53B9002C0249}","{8D54ADA2-5DC8-4CCF-B938-B4F3FE3E2CBE}","{228B4078-8746-4685-9D6D-8AE17E7AAB29}","{2DD8B9BE-DBFB-4AA6-99E6-C46D0F0ED39A}","{301398DA-F6F9-42FE-81FC-6AA698EE74A6}","{9021AFC6-6A1C-4B6D-8330-1DE2A25B64C8}","{81A043CE-F069-411A-9364-690314A8886C}","{B6D51924-77F6-400E-83B4-6834D997531A}","{2CCEB82E-FAF1-4138-AF5F-05E51CA52B00}","{6DEB1E67-A84C-4860-A73E-30570D9C6268}","{75BD7849-8402-4514-8047-0E80E5D39459}","{F12262E4-15B2-489D-B11A-BC37C8867B97}","{00258835-47A6-4A6B-97A8-895E9F21457E}","{014E1064-8E3D-4308-B6EF-F2A6D666631A}","{7421D4AB-B0AE-4F64-9241-A1ABD232DB8D}","{998B3D31-1FBD-4188-A8D1-D44198E7E822}","{15767BB1-4CC9-4607-AF35-7FEFD0E3BC87}","{FAB2F08C-4ADE-4D9E-8370-B37680005639}","{3DE42B0D-12BC-4782-81EA-5FB3E5337093}","{4951A4DE-7548-4055-B5F6-AB249415D933}","{38F7C9A0-34AC-4B07-AF1F-2FBDFD40FDA0}","{4677B46B-97CA-4B36-B47C-A5BDA24FC09C}","{6D0779D7-F417-40BC-AFA6-D4C8C6C50D6D}","{DDE49BED-4FB1-4D7A-890A-384C6BFA0F11}","{47A1DB48-E9EC-4732-A89E-E9BA50A67DF5}","{CB105B61-5ACE-4223-A58F-010A6241DCA7}","{1E144473-B215-4D49-8F1A-F2BFAE3D75E4}","{FA82AB02-0568-4C66-95F3-20277546DF22}","{6D08F414-0C95-495D-8F10-F4119C707D28}","{B963AFED-A8CC-4BC0-A810-8ABC5BA96681}","{58FA6AD3-0EE3-4752-8E1E-971243028F93}","{BBB13734-6C46-46A2-B013-3B40FC574C56}","{5A649A8E-739B-4C2F-8BF8-4104B7DEF73F}","{2049DCF0-F0E6-4A49-9922-4C4DEF7B9C18}","{7AFB5F56-86F0-4EF3-A829-276B0B37FE76}","{8B99230A-9031-47E9-B7EF-725F0137785A}","{A121CF18-50B3-428C-BF23-2CA3B83A1EE6}","{B4520440-5A05-4712-9901-9732B14A8F93}","{41EA7460-2B94-4088-A9AE-8CA6B67AAFFC}","{7C831D4F-7D2C-4517-A83A-0135DDA37ADC}","{4F87114C-7267-464B-AECB-64CBB71977F0}","{B46E56DE-C797-4A4A-B6ED-95D433394C31}","{17ABE34B-23F3-407F-A332-C0AA4572344F}","{948C3665-68AE-4862-9CE7-527CB95A3443}","{DF5B596D-E7BD-4120-8003-D6EBAA24F6E2}","{7B5C6BB0-9953-4DD5-9A84-C0C8204E67FD}","{2A6D29F9-2CD2-457C-A2B0-8F6982D35DA6}","{0366FD49-12FC-41D9-A7E2-155F603A30CF}","{B8975379-9130-440C-A7EF-E410B97780A5}","{3733A8A3-F1FF-47D1-BE67-E07B732F16AA}","{A8D59644-1251-42CD-B7F5-198A0947838E}","{4F729CAF-AD21-4ED7-898A-C4668405DC5B}","{11970201-6DDE-4B48-AD2A-F060DA788772}","{28F379D7-1110-45DC-8504-FE4909A79FED}","{CD4BF45F-D55E-40AC-8FB1-B31994FE5FF4}","{A3E2AE4B-DDA0-4832-9A36-CCF67AEEFBFF}","{0E054E64-0A93-4CFC-A22E-2BCB4DF66181}","{38E4DE9D-104F-455C-846F-E1A2A1BB77B1}","{804F3451-E1AF-4A51-A82F-CA22B7F60169}","{A758B5DE-CF59-48FA-ABC1-97915247DD4E}","{B52E8866-7E5F-4C70-80FB-23341ED9B601}","{861CA382-1613-4493-AE35-DCD4C7F1CD00}","{AF0BCF1C-E3E6-4D8F-80D6-400090B4D59E}","{FE1F7A9F-A798-4DA3-A4D8-CF55F2B126AD}","{6EF72065-623C-4E04-8479-1676CCDF1368}","{E9667551-15C0-40DD-81A7-8004A00F109B}","{92DC60A7-92B7-47DB-80B2-E8198CECA0A5}","{67C73721-AC15-4576-A435-B100BD48C1FD}","{89AADC07-02BA-4E7E-848F-EC50BD461262}","{1C054974-A159-4313-8B67-E9212DFD9D39}","{2F65BABF-964E-49B9-95BA-3BABED8E1241}","{DA13CF3C-E741-4246-94FE-0AA876B171E8}","{A55EE47B-5DFE-4757-8867-BE0B6DAC9F2D}","{026F4EB6-055E-40B2-A98A-A3B53ADBA413}","{D8A8A99A-0479-4BB0-A2DB-240729CFE404}","{CB069CC5-286F-4FB7-9C91-182ABAD1A584}","{616E5C07-8046-4146-B1DE-FD92FA9F0592}","{7C2726CB-BAB8-4485-BF8F-4553E0A3EDA8}","{484563FA-C681-4411-851E-60715CB5F608}","{5D6D1B24-020F-486D-9E4A-2BAA8BD9EC7F}","{AC073A5B-1394-43AD-A2F3-09CBC1FF57E0}","{FCCCC5FE-265D-41F7-AB85-B8955D917F0C}","{26FF1D7A-6471-4F53-A5DD-A4BCF3E987F0}","{8376A93A-8B6B-4DB4-A660-DB8B9ECD24BF}","{96DF8601-FAA5-4540-9E37-04F3BBEFDB28}","{8C41B777-CAC6-4C78-BC44-B1A2718DBC6C}","{CDD4A81C-EC6A-41D2-B118-678E39FB35FB}","{2664D3DE-C07D-4997-A148-3734CA4DFC33}","{E223F873-DA52-45AB-9F46-C4C75F9CB99D}","{FEE3EFCB-0D14-446B-8584-71DE75824802}","{CCE731C9-A5F6-46FD-A059-315159B3C43A}","{FC800AD6-22DD-49C4-8EDB-60911CE9B787}","{BAB39AA6-EFC8-41B9-A0BD-CAE636E2FCC9}","{1FDC7052-37A9-4778-8072-536E11C702D6}","{E1AD8950-4975-4647-8BA4-19F4F0E1ABBD}","{FEBBDB39-4F46-4AAF-B7AF-AB61C552D7E7}","{985F9371-7A4A-4BE7-B68A-8583741A1827}","{65553B04-FA97-4BCF-B102-FC832D534AEB}","{C19CA442-52C1-4482-8F24-8CF38299C9A6}","{FFE1B406-CA4C-46E8-9561-AAACE41B5A47}","{A30A4290-DD76-46DB-8684-B2EDD18E0225}","{0740CEAB-BFC3-47C9-99BE-EE93E6DB9BDF}","{837D8F32-26C2-4EFE-8321-6A9B8085863A}","{82E7AB0F-DF33-4042-8CB5-A3F8AAD0830B}","{F0491087-88BD-4B91-9D62-74E694EDFF49}","{1CB5B950-6E0B-44DB-A9EA-1A42549F52FD}","{FEB45ACE-6F38-44EE-A80C-70205E2EAF4A}","{06EECF5A-C5EB-4936-80C0-F87E8A02AFEB}","{91E403BF-37F9-4EF6-8AFC-A3A996FE9762}","{147908CB-F4FB-4246-840C-3EEB926A3129}","{B18FB0FC-C068-449D-AC44-027C8AE38FF7}","{D4ECB8D1-EB25-4407-86E2-547740AA060C}","{3FFAD81A-3AC3-4732-87FA-9700E8D984BF}","{66ACAF75-57A7-457A-B621-F36504F95AE3}","{3BC9935B-99D1-4A30-96AE-D416E7CDC6A4}","{BB750C06-1DA7-4CB5-A620-A5B13223D1BA}","{12B5D5F6-C3EE-4085-AB79-CEADB2C7312D}","{CD2C476B-1F8C-48BA-A562-2AE0FE5F1A24}","{12558C9B-1746-411F-81A5-40D28AE94990}","{E5A8B4A0-8E66-4A6A-9D15-F481CC9CDE65}","{37D8926A-7AEA-4617-8FB2-E6DA60FE1588}","{D609531C-AF77-40D9-86C2-7A82EA7AE615}")
+    #$blogs = @("{901BF74D-BB06-46C1-9802-DA3389DE21DC}","{413B5183-ADB6-4F81-B2E0-AAD788ECFCCD}","{8F276D12-02D7-495D-8F46-E75377C946EE}","{FE7E0D26-6C6B-443A-AE69-22325E66CF94}","{9AA1C091-E028-4B8A-BFE2-AC4287A81881}","{3DCD0B5D-5AB5-47BE-A824-71BF8BD11CD9}","{08C78B45-64D1-43DC-B9D8-3CD828547720}","{A29A6608-9621-461C-A8C7-C3175A85CEBF}","{DCCC6EB4-9B23-48C1-81D2-8556E7FF7402}","{28E5ABA2-3E96-4A27-BA13-E76024F7840C}","{EB64FCDD-551B-43FC-967C-BF85F76450F9}","{9CB89B25-6F46-4111-9A51-EA0954BAE946}","{D4785540-677A-4FC3-9A4E-4E7F4AF5037E}","{1A74B936-C97F-49BA-A53B-258E60805128}","{612D5C4B-A894-4E98-8F4B-1FEDCB74B346}","{0BD3CB35-1FFE-43DA-AFBA-34AD0946E97B}","{9F749F83-4A8D-4657-A97C-BD2BA7F568ED}","{E49FEDE5-914F-4FD8-8C05-FE89807073B3}","{7C2C4869-5614-4D9D-ABAA-4F9890BC9D43}","{55449A1D-F526-4F11-81FC-3EFBF0F79DBE}","{8B07502C-F52C-40FA-B5EF-E00404482557}","{C7B481B6-AF7E-4B23-A339-8F08E8868FE5}","{E98CBE4C-D5B0-4FD5-8E27-9E73776813AA}","{0C8D7F22-70CC-4AE3-8628-1F61DD5F8084}","{0D36103C-B631-4269-8AB5-54CBCF6AA876}","{6B2279EB-1167-4616-ABBF-163E6AF223C9}","{ADF2DCFF-22E0-465C-B3A4-1166AA6B35F0}","{4132245B-6497-4E22-AE4F-AC4D8D6F0A46}","{2C322293-D61B-4125-8122-6982037AC15C}","{81137E11-BA17-4449-8ACA-DD054D2E5BDF}","{0DF6C66E-E0AC-4726-8179-4C9550C4AD20}","{601A03EA-E6C1-4FC2-B7AD-57DF6149E01D}","{E3EC2D29-106E-4E7D-A6C6-9C75D22197BF}","{14D90A4D-3E1C-439C-9BE4-FF03787BB4C3}","{BFC1098D-92FA-4591-9E70-88C9B39CB93A}","{8B448806-E88F-4856-B676-08ECBA235DB6}","{BB3AA5C0-A602-4719-8B05-6937999D9226}","{5F869353-7771-4F77-888A-4C2D406D36F0}","{74FBF957-61C3-428C-90C0-3624AA019453}","{28A065C8-CAAE-46FD-9B2E-1E16FE292A74}","{7D63CC05-EACB-44F1-9350-2DC86A01BDFB}","{CE1147A4-948C-4FC6-AFF4-4CC333D17D0E}","{2CD2C811-D448-46C9-A563-04E51A634EA6}","{7F6F95F3-4E6E-4A4A-87FC-5F1FECBD7F4D}","{C0B4387B-F523-475A-923A-1A45DB3AC8B4}","{834B6186-0B74-4BB5-938A-0BAFBF04CDB1}","{F02466F9-B0C4-45DD-99C0-B3588E3241ED}","{1DA28BA5-286E-4E4B-8CF3-53B9002C0249}","{8D54ADA2-5DC8-4CCF-B938-B4F3FE3E2CBE}","{228B4078-8746-4685-9D6D-8AE17E7AAB29}","{2DD8B9BE-DBFB-4AA6-99E6-C46D0F0ED39A}","{301398DA-F6F9-42FE-81FC-6AA698EE74A6}","{9021AFC6-6A1C-4B6D-8330-1DE2A25B64C8}","{81A043CE-F069-411A-9364-690314A8886C}","{B6D51924-77F6-400E-83B4-6834D997531A}","{2CCEB82E-FAF1-4138-AF5F-05E51CA52B00}","{6DEB1E67-A84C-4860-A73E-30570D9C6268}","{75BD7849-8402-4514-8047-0E80E5D39459}","{F12262E4-15B2-489D-B11A-BC37C8867B97}","{00258835-47A6-4A6B-97A8-895E9F21457E}","{014E1064-8E3D-4308-B6EF-F2A6D666631A}","{7421D4AB-B0AE-4F64-9241-A1ABD232DB8D}","{998B3D31-1FBD-4188-A8D1-D44198E7E822}","{15767BB1-4CC9-4607-AF35-7FEFD0E3BC87}","{FAB2F08C-4ADE-4D9E-8370-B37680005639}","{3DE42B0D-12BC-4782-81EA-5FB3E5337093}","{4951A4DE-7548-4055-B5F6-AB249415D933}","{38F7C9A0-34AC-4B07-AF1F-2FBDFD40FDA0}","{4677B46B-97CA-4B36-B47C-A5BDA24FC09C}","{6D0779D7-F417-40BC-AFA6-D4C8C6C50D6D}","{DDE49BED-4FB1-4D7A-890A-384C6BFA0F11}","{47A1DB48-E9EC-4732-A89E-E9BA50A67DF5}","{CB105B61-5ACE-4223-A58F-010A6241DCA7}","{1E144473-B215-4D49-8F1A-F2BFAE3D75E4}","{FA82AB02-0568-4C66-95F3-20277546DF22}","{6D08F414-0C95-495D-8F10-F4119C707D28}","{B963AFED-A8CC-4BC0-A810-8ABC5BA96681}","{58FA6AD3-0EE3-4752-8E1E-971243028F93}","{BBB13734-6C46-46A2-B013-3B40FC574C56}","{5A649A8E-739B-4C2F-8BF8-4104B7DEF73F}","{2049DCF0-F0E6-4A49-9922-4C4DEF7B9C18}","{7AFB5F56-86F0-4EF3-A829-276B0B37FE76}","{8B99230A-9031-47E9-B7EF-725F0137785A}","{A121CF18-50B3-428C-BF23-2CA3B83A1EE6}","{B4520440-5A05-4712-9901-9732B14A8F93}","{41EA7460-2B94-4088-A9AE-8CA6B67AAFFC}","{7C831D4F-7D2C-4517-A83A-0135DDA37ADC}","{4F87114C-7267-464B-AECB-64CBB71977F0}","{B46E56DE-C797-4A4A-B6ED-95D433394C31}","{17ABE34B-23F3-407F-A332-C0AA4572344F}","{948C3665-68AE-4862-9CE7-527CB95A3443}","{DF5B596D-E7BD-4120-8003-D6EBAA24F6E2}","{7B5C6BB0-9953-4DD5-9A84-C0C8204E67FD}","{2A6D29F9-2CD2-457C-A2B0-8F6982D35DA6}","{0366FD49-12FC-41D9-A7E2-155F603A30CF}","{B8975379-9130-440C-A7EF-E410B97780A5}","{3733A8A3-F1FF-47D1-BE67-E07B732F16AA}","{A8D59644-1251-42CD-B7F5-198A0947838E}","{4F729CAF-AD21-4ED7-898A-C4668405DC5B}","{11970201-6DDE-4B48-AD2A-F060DA788772}","{28F379D7-1110-45DC-8504-FE4909A79FED}","{CD4BF45F-D55E-40AC-8FB1-B31994FE5FF4}","{A3E2AE4B-DDA0-4832-9A36-CCF67AEEFBFF}","{0E054E64-0A93-4CFC-A22E-2BCB4DF66181}","{38E4DE9D-104F-455C-846F-E1A2A1BB77B1}","{804F3451-E1AF-4A51-A82F-CA22B7F60169}","{A758B5DE-CF59-48FA-ABC1-97915247DD4E}","{B52E8866-7E5F-4C70-80FB-23341ED9B601}","{861CA382-1613-4493-AE35-DCD4C7F1CD00}","{AF0BCF1C-E3E6-4D8F-80D6-400090B4D59E}","{FE1F7A9F-A798-4DA3-A4D8-CF55F2B126AD}","{6EF72065-623C-4E04-8479-1676CCDF1368}","{E9667551-15C0-40DD-81A7-8004A00F109B}","{92DC60A7-92B7-47DB-80B2-E8198CECA0A5}","{67C73721-AC15-4576-A435-B100BD48C1FD}","{89AADC07-02BA-4E7E-848F-EC50BD461262}","{1C054974-A159-4313-8B67-E9212DFD9D39}","{2F65BABF-964E-49B9-95BA-3BABED8E1241}","{DA13CF3C-E741-4246-94FE-0AA876B171E8}","{A55EE47B-5DFE-4757-8867-BE0B6DAC9F2D}","{026F4EB6-055E-40B2-A98A-A3B53ADBA413}","{D8A8A99A-0479-4BB0-A2DB-240729CFE404}","{CB069CC5-286F-4FB7-9C91-182ABAD1A584}","{616E5C07-8046-4146-B1DE-FD92FA9F0592}","{7C2726CB-BAB8-4485-BF8F-4553E0A3EDA8}","{484563FA-C681-4411-851E-60715CB5F608}","{5D6D1B24-020F-486D-9E4A-2BAA8BD9EC7F}","{AC073A5B-1394-43AD-A2F3-09CBC1FF57E0}","{FCCCC5FE-265D-41F7-AB85-B8955D917F0C}","{26FF1D7A-6471-4F53-A5DD-A4BCF3E987F0}","{8376A93A-8B6B-4DB4-A660-DB8B9ECD24BF}","{96DF8601-FAA5-4540-9E37-04F3BBEFDB28}","{8C41B777-CAC6-4C78-BC44-B1A2718DBC6C}","{CDD4A81C-EC6A-41D2-B118-678E39FB35FB}","{2664D3DE-C07D-4997-A148-3734CA4DFC33}","{E223F873-DA52-45AB-9F46-C4C75F9CB99D}","{FEE3EFCB-0D14-446B-8584-71DE75824802}","{CCE731C9-A5F6-46FD-A059-315159B3C43A}","{FC800AD6-22DD-49C4-8EDB-60911CE9B787}","{BAB39AA6-EFC8-41B9-A0BD-CAE636E2FCC9}","{1FDC7052-37A9-4778-8072-536E11C702D6}","{E1AD8950-4975-4647-8BA4-19F4F0E1ABBD}","{985F9371-7A4A-4BE7-B68A-8583741A1827}","{C19CA442-52C1-4482-8F24-8CF38299C9A6}","{0740CEAB-BFC3-47C9-99BE-EE93E6DB9BDF}","{F0491087-88BD-4B91-9D62-74E694EDFF49}","{1CB5B950-6E0B-44DB-A9EA-1A42549F52FD}","{FEB45ACE-6F38-44EE-A80C-70205E2EAF4A}","{91E403BF-37F9-4EF6-8AFC-A3A996FE9762}","{66ACAF75-57A7-457A-B621-F36504F95AE3}","{12B5D5F6-C3EE-4085-AB79-CEADB2C7312D}")
+    #$blogs = @("{901BF74D-BB06-46C1-9802-DA3389DE21DC}","{413B5183-ADB6-4F81-B2E0-AAD788ECFCCD}","{8F276D12-02D7-495D-8F46-E75377C946EE}","{FE7E0D26-6C6B-443A-AE69-22325E66CF94}")
+    
+    function parseItems($data, $fieldName = 'Title', $type = '') {
+        if ([string]::IsNullOrEmpty($data)) {
+            return "";
+        }
+        else {
+    #        write-host("$data" + $data)
+    #        write-host( $fieldName)
+    #        write-host( $type)
+            $lookupItems = $data.split('|')
+            $val = ""
+            foreach ($lookup in $lookupItems) {
+     #           write-host("$lookup" + $lookup)
+                if (![string]::IsNullOrEmpty($lookup)) {
+                    $facet = Get-Item $lookup
+     #               write-host($facet.ID)
+                    if ($type -eq 'property') {
+                        $val += $facet.$fieldName + ","
+                    }
+                    else {
+                        $val += $facet[$fieldName] + ","
+                    }
+                }
+            }    
+            return $val.Substring(0, $val.Length - 1);
+        }    
+    }
+    
+    
+    $result = New-Object System.Collections.Generic.List[PSObject]
+    
+    Write-Host "Start"
+    foreach($blog in $blogs){
+        
+            $blogItem = Get-Item -Path "master:" -ID $blog
+            
+            $renderings = Get-Rendering -Item $blogItem -Device $defaultLayout -FinalLayout
+            
+            $heroName = $heroTitle = $contentName = $contentBodyCopy = ''
+            $contentName = $contentBodyCopy = $contentModuleHeading = $contentIsFullWidth = $contentSmallFont = ''
+            $centercontentName = $centercontentModuleData = $centercontentBodyCopyAbove = $centercontentCenteredImage = $centercontentImageCaption = $centercontentCenteredVideo = $centercontentModuleHeadingBelow = $centercontentBodyCopyBelow = ''
+    
+            foreach($render in $renderings)
+            {
+    
+                
+                if ( $render.ItemId -eq '{4749CD4E-EE67-4BD9-8791-A025916CF8DD}')
+                {
+                    Write-Host "Blog Hero With-Without Image"
+                    Write-Host $render.ItemID
+                    Write-Host $render.DataSource
+                    $heroItem = Get-Item -Path "master:" -ID $render.DataSource
+    
+                    $heroName = $heroItem.Name
+                    $heroTitle = $heroItem['Module Heading']
+                    $heroImage = $heroItem['Module Image']
+                    $heroSmallHeadline = $heroItem['Module Small Headline']
+                    $heroSubHeading = $heroItem['Module Sub Heading']
+    
+                }
+                if ( $render.ItemId -eq '{B8CD8CEB-9D01-44F4-B0F7-92CCC0A43267}')
+                {
+                    Write-Host "Simple Conent"
+                    Write-Host $render.ItemID
+                    Write-Host $render.DataSource
+                    $contentItem = Get-Item -Path "master:" -ID $render.DataSource
+                    
+                    $contentName = $contentItem.Name
+                    $contentBodyCopy = $contentItem['Body Copy']
+                    $contentModuleHeading = $contentItem['Module Heading']
+                    $contentIsFullWidth = $contentItem['Is Full Width']
+                    $contentSmallFont = $contentItem['Small Font']
+    
+                }
+                if ( $render.ItemId -eq '{3E31F65D-1EC1-44D5-B189-07BD056E3268}')
+                {
+                    Write-Host "Centered Image"
+                    Write-Host $render.ItemID
+                    Write-Host $render.DataSource
+                    $centercontentItem = Get-Item -Path "master:" -ID $render.DataSource
+                    
+                    $centercontentName = $centercontentItem.Name
+                    $centercontentModuleData = $centercontentItem['Module Data']
+                    $centercontentBodyCopyAbove = $centercontentItem['Body Copy Above']
+                    $centercontentCenteredImage = $centercontentItem['Centered Image']
+                    $centercontentImageCaption = $centercontentItem['Image Caption']
+                    $centercontentCenteredVideo = $centercontentItem['Centered Video']
+                    $centercontentModuleHeadingBelow = $centercontentItem['Module Heading Below']
+                    $centercontentBodyCopyBelow = $centercontentItem['Body Copy Below']
+                }
+            }
+            
+            $obj = New-Object PSObject @{
+                itemName = $blogItem.Name
+                itemId = $blogItem.ID.ToString()
+                itemPath = $blogItem.ItemPath
+                articleTitle = $blogItem['Blog Post Title']
+    articleDescription = $blogItem['Blog Post Teaser Copy']
+    articleCategory = $blogItem['Blog Post Category']
+    articleDate = $blogItem['Blog Post Date']
+    articlePublicTags = parseItems $blogItem['Blog Post Tags']
+    articlePrivateTags = parseItems $blogItem['Blog Post Internal Tags']
+    articleAuthor = $blogItem['Blog Post Author']
+    breadcrumbTitle = $blogItem['Breadcrumb Title']
+    pageTitle = $blogItem['Page Title']
+    pageCanonicalUrl = $blogItem['Page Canonical Url']
+    pageMetaDescription = $blogItem['Page Meta Description']
+    pageAddScriptsAfterBodyOpen = $blogItem['Page Add Scripts After Body Open']
+    pageAddScriptsBeforeBodyClose = $blogItem['Page Add Scripts Before Body Close']
+    pageAddScriptsBeforeHeadClose = $blogItem['Page Add Scripts Before Head Close']
+    pageMetaRobots = $blogItem['Page Meta Robots']
+    excludeFromSitemap = $blogItem['Page Include In Sitemap File']
+    openGraphImage = $blogItem['Social Media Image']
+    relatedProducts = $blogItem['Associated Products']
+    productType = $blogItem['Product Type']
+    productSeries = $blogItem['Product Series Tag']
+    windowType = $blogItem['Window Style']
+    doorType = $blogItem['Door Style']
+    siteSearchDescription = $blogItem['Search Description']
+    siteSearchHeadline = $blogItem['Search Title']
+    excludeFromSearch = $blogItem['Exclude From Site Search']
+    siteSearchImage = $blogItem['Site Search Thumbnail']
+    siteSearchEyebrow = parseItems $blogItem['Site Search Topic']
+    
+    PageSitemapChangeFreq = parseItems $blogItem['Page Sitemap Change Freq'] 'Value'
+    PageSitemapPriority = parseItems $blogItem['Page Sitemap Priority'] 'Value'
+    BlogPostThumbnailImage = $blogItem['Blog Post Thumbnail Image']
+    ProHub = $blogItem['Pro Hub']
+    ProHubCategory = $blogItem['Pro Hub Category']
+    QueryableTreelist = $blogItem['Queryable Treelist']
+    ProHubBySeries = $blogItem['Pro Hub By Series']
+    PageType = $blogItem['Page Type']
+    PageLoadTags = $blogItem['Page Load Tags']
+    CoveoUsageAnalyticsCustomMetadata = $blogItem['CoveoUsageAnalyticsCustomMetadata']
+    UsageAnalyticsPageViewContentType = $blogItem['UsageAnalyticsPageViewContentType']
+    heroName = $heroName 
+    heroTitle = $heroTitle 
+    heroImage = $heroImage
+    heroSmallHeadline = $heroSmallHeadline
+    heroSubHeading = $heroSubHeading
+    contentName = $contentName 
+    contentBodyCopy = $contentBodyCopy
+    contentModuleHeading = $contentModuleHeading
+    contentIsFullWidth = $contentIsFullWidth
+    contentSmallFont = $contentSmallFont
+    centercontentName = $centercontentName
+    centercontentModuleData = $centercontentModuleData
+    centercontentBodyCopyAbove = $centercontentBodyCopyAbove
+    centercontentCenteredImage = $centercontentCenteredImage
+    centercontentImageCaption = $centercontentImageCaption
+    centercontentCenteredVideo = $centercontentCenteredVideo
+    centercontentModuleHeadingBelow = $centercontentModuleHeadingBelow
+    centercontentBodyCopyBelow = $centercontentBodyCopyBelow
+            }
+    
+            $result.add($obj)
+    }
+    
+    Write-Host "End"
+    
+    $result | Show-ListView -Property itemName,
+    itemId,
+    itemPath,
+    articleTitle,
+    articleDescription,
+    articleCategory,
+    articleDate,
+    articlePublicTags,
+    articlePrivateTags,
+    articleAuthor,
+    breadcrumbTitle,
+    pageTitle,
+    pageCanonicalUrl,
+    pageMetaDescription,
+    pageAddScriptsAfterBodyOpen,
+    pageAddScriptsBeforeBodyClose,
+    pageAddScriptsBeforeHeadClose,
+    pageMetaRobots,
+    excludeFromSitemap,
+    openGraphImage,
+    relatedProducts,
+    productType,
+    productSeries,
+    windowType,
+    doorType,
+    siteSearchDescription,
+    siteSearchHeadline,
+    excludeFromSearch,
+    siteSearchImage,
+    siteSearchEyebrow,
+    PageSitemapChangeFreq,
+    PageSitemapPriority,
+    BlogPostThumbnailImage,
+    ProHub,
+    QueryableTreelist,
+    ProHubCategory,
+    QueryableTreelist,
+    ProHubBySeries,
+    PageType,
+    PageLoadTags,
+    CoveoUsageAnalyticsCustomMetadata,
+    UsageAnalyticsPageViewContentType,
+    heroName,
+    heroTitle,
+    heroImage,
+    heroSmallHeadline,
+    heroSubHeading,
+    contentName,
+    contentBodyCopy,
+    contentModuleHeading,
+    contentIsFullWidth,
+    contentSmallFont,
+    centercontentName,
+    centercontentModuleData,
+    centercontentBodyCopyAbove,
+    centercontentCenteredImage,
+    centercontentImageCaption,
+    centercontentCenteredVideo,
+    centercontentModuleHeadingBelow,
+    centercontentBodyCopyBelow
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231101T011320Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9b94bad-bd7d-4bb8-82ec-899730ba0659"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231113T190129Z

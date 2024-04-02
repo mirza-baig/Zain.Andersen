@@ -1,0 +1,5 @@
+﻿<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1">
+  <appSettings>
+    <add key="env:define" value="" xdt:Transform="InsertIfMissing" xdt:Locator="Match(key)" />
+  </appSettings>
+</configuration>

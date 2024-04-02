@@ -1,0 +1,26 @@
+﻿---
+ID: "605c7706-13b3-4a17-b11e-9a59e45e9cba"
+Parent: "8200222e-964f-449d-a4cf-6c2c0f275fb7"
+Template: "f30aac0a-4117-4783-9620-891ae7e95093"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Settings/API Endpoints/Experience AW Website
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231012T211028Z
+    - ID: "67ca1284-a2b1-4776-9aba-646fea705e92"
+      Hint: endpointName
+      Value: "Experience-AW-Website"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "505eccdd-a768-4d4e-8c8f-8fb7d5cf3fe6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231013T140949Z

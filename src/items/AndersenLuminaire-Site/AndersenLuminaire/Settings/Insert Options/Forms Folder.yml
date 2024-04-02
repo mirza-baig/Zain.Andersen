@@ -1,0 +1,23 @@
+﻿---
+ID: "76a85629-5571-49f2-892e-4eb0a3eb5170"
+Parent: "e09373db-2bab-4d26-92d3-a217041966ea"
+Template: "ff220b80-51d7-439e-b74e-7bb1decb3272"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenLuminaire/Settings/Insert Options/Forms Folder
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240213T104607Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b251ec9c-84af-42df-ad22-5ab118877d2b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T104607Z

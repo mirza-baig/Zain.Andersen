@@ -1,0 +1,28 @@
+﻿---
+ID: "428f6b0d-26ad-4c8b-8c58-94ec32a5d6c1"
+Parent: "1057c235-c5c0-4eb7-8f77-ea51eb9e20ee"
+Template: "dda66314-03f3-4c89-84a9-39dffb235b06"
+Path: "/sitecore/system/Settings/Rules/EW - Affiliate Personalization"
+BranchID: "bdc41fdd-a3ac-4b69-a0ba-471c425cb083"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20081117T112729
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "95e11c22-cdcd-47a6-8d47-d88156563a88"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230804T202657Z

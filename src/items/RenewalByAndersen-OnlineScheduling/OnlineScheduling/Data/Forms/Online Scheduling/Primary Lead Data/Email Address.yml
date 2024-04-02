@@ -1,0 +1,39 @@
+﻿---
+ID: "b26f12b7-357c-47c8-91c6-94cf0633342e"
+Parent: "0f436350-410f-40c8-9091-fe1be45bee38"
+Template: "a1d62e74-51c3-4bdd-8547-1ece87422ec9"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Primary Lead Data/Email Address
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240314T111924Z
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{998F4A8C-E357-4E2D-9071-AB2ADDFA8283}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a9b2d2bc-9336-471c-bc5d-f475f60b60f2"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: emailAddress
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Email Address
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240314T133121Z
+    - ID: "dd2f7bff-92de-4235-8fc7-51382406ec0c"
+      Hint: validations
+      Value: "{32619155-B223-4871-983E-D8920B692AA3}"

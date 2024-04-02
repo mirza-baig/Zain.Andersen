@@ -1,0 +1,41 @@
+﻿---
+ID: "505c2e44-b0e6-4982-ae40-296bc7c3a8e1"
+Parent: "1d45dc2e-84f3-4a17-8983-2859ad00673f"
+Template: "81abdbfe-9b8f-4552-b072-a3cff5887f68"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/What material/Materials
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T202850Z
+    - ID: "264a6df3-824f-4a5d-a50e-608a50ddc6b4"
+      Hint: datasource
+      Value: "{90184DF2-6520-491D-AF40-63A55B913561}"
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{0266B091-D20B-4AD9-9D41-264C534BE485}"
+    - ID: "4837961f-794e-4c40-beac-68df9cef9f41"
+      Hint: subLabel
+      Value: (select any that apply)
+    - ID: "8760bb3b-bd1c-4ef8-b0b2-6bffd769c0cf"
+      Hint: buttonsPerRows
+      Value: "{E84642CB-7A4F-431A-8895-B01A1930EEFA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c25bbc1a-a3e6-44d7-ad27-c60d313963cd"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: "windowsproblems-window material"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240228T215755Z

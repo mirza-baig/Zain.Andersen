@@ -1,0 +1,62 @@
+﻿---
+ID: "f36baa08-9a08-4f97-8d2c-91c97bc2cf0c"
+Parent: "c11feebd-80b8-473b-91d0-66237582d15f"
+Template: "e46f3af2-39fa-4866-a157-7017c4b2a40c"
+Path: "/sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows/Settings/Site Grouping/HeritageWindows-UAT"
+SharedFields:
+- ID: "1ee576af-ba8e-4312-9fbd-2ccf8395baa1"
+  Hint: StartItem
+  Value: "{F9051A7C-462F-4CA7-B092-CBC8ABC190A7}"
+- ID: "42ddbe59-96df-4c83-bb22-0f739a603b3d"
+  Hint: FilteredItemsCacheSize
+  Value: 10
+- ID: "6e6da5b0-8d01-4514-b7dd-1940aff3e8cd"
+  Hint: FieldLanguageFallback
+  Value: 1
+- ID: "822cc751-5c96-4a43-b687-ff4786a6eba2"
+  Hint: LinkProvider
+  Value: enterpriseLinkProvider
+- ID: "8c436235-b85d-4097-89cf-d5a4fa70cc0a"
+  Hint: ItemLanguageFallback
+  Value: 1
+- ID: "8e0dd914-9afb-4d45-bf8b-7ff5d6e5337e"
+  Hint: HostName
+  Value: preview.uat.heritagewindows.com
+- ID: "b59e43ab-84da-49f3-87a1-d2fcf648365b"
+  Hint: Scheme
+  Value: https
+- ID: "cb4e9e2e-2b66-43dc-ad3f-9caf363d28d3"
+  Hint: SiteName
+  Value: HeritageWindows
+- ID: "da06d09e-02b6-464a-80fc-9d8d7fc875e3"
+  Hint: Environment
+  Value: uat
+- ID: "e5b5ccb5-17a1-429d-bd3e-6122b3216e52"
+  Hint: TargetHostName
+  Value: preview.uat.heritagewindows.com
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240108T151411Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fbe45164-793d-485d-8671-8145e3067f7b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240108T151445Z

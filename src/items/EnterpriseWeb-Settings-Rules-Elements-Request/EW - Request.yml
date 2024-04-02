@@ -1,0 +1,24 @@
+﻿---
+ID: "c895b16d-159e-4651-919e-f1be0431dfae"
+Parent: "e7cbefe8-9112-4b95-a978-4e470d94c54a"
+Template: "54dae7cd-bfd8-4e69-9679-75f2ae9f9034"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Request"
+BranchID: "9a72c539-dbf8-4dad-96d3-a298fc04add6"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130906T151712
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "beb47369-1d78-409b-8535-eaef3944cb0e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240304T003341Z

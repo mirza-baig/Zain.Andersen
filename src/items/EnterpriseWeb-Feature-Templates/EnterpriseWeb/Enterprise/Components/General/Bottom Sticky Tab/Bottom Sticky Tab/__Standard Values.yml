@@ -1,0 +1,35 @@
+﻿---
+ID: "ec97e9c1-a248-4270-a055-d678c296e86c"
+Parent: "d40b86a6-ccfa-4c47-be03-9781f566eade"
+Template: "d40b86a6-ccfa-4c47-be03-9781f566eade"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/General/Bottom Sticky Tab/Bottom Sticky Tab/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{5DF83B16-D611-4B55-99F9-0B430EEB8E71}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230703T103612Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5da14582-6b98-4fc2-aea5-1d1d88173399"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230817T094758Z

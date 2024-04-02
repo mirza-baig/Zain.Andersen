@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\AW Webmaster
+MemberOf:
+  Role: |
+    sitecore\EntWeb Master

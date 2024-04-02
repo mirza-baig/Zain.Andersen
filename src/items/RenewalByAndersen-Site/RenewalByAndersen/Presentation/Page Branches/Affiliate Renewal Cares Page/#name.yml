@@ -1,0 +1,39 @@
+﻿---
+ID: "cb19b54b-37b3-4fb9-95c2-449a06ceb220"
+Parent: "fd356e0e-c11c-4075-95c8-06e082c9d00e"
+Template: "a04b6040-6e2f-4d1e-acc8-5546d1e823d7"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Affiliate Renewal Cares Page/$name
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{ABEAAA4B-454C-4116-BC0B-851EFE26A165}"
+          s:par="personalizationRules&amp;CacheClearingBehavior=Clear%20on%20publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240226T092912Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6a1df963-9aee-46d8-87ea-ea7dfdfff58e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240313T055810Z
+    - ID: "e79cbfcf-c9b3-4c05-91d9-ff8412215bf8"
+      Hint: lastUpdated
+      Value: 20240313T055810Z

@@ -1,0 +1,31 @@
+﻿---
+ID: "858de1da-ff7b-450a-95f9-b54b63ed6158"
+Parent: "e4d4aa1b-80f1-49b5-997d-9c9a8cb748fd"
+Template: "e4d4aa1b-80f1-49b5-997d-9c9a8cb748fd"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Product/Product Carousel Slide/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230427T153307Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8d131516-b0f1-4b10-badd-bec60b72ba38"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230515T184637Z

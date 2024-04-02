@@ -1,0 +1,37 @@
+﻿---
+ID: "01f567ff-114d-4798-886d-f2db22885535"
+Parent: "9beecac7-2ccb-4747-bab3-9fde7f56aefc"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenHomeDepot/Settings/Insert Options/Forms Folder/Generic Form Field Value Provider
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240213T104629Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9e151b1-5626-49ea-9847-f84dbefab398"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T111500Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{1905863F-C4A2-40E7-B077-EA92E3D2A393}">
+            <conditions>
+              <condition
+                id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                uid="E6D8E68B7B41461F9D68461687838B50"
+                templateid="{0C525BAC-A5FE-4CCB-ACD3-DC0552B7C1CC}" />
+            </conditions>
+          </rule>
+        </ruleset>

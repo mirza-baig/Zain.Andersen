@@ -1,0 +1,42 @@
+﻿---
+ID: "5df4ec11-9ae2-465d-96c9-5828f9a985f0"
+Parent: "7ddb48b0-d1a1-4aa8-8bed-f986ce4314d3"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/FieldSets/Forms/_Input
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {F14D64B7-2524-44D7-BA9B-D5A64E647ED7}
+    {DBE25FB6-296C-4C56-A32A-5350CF0D42AF}
+    {29C03369-9627-45F5-A340-39967D7C632B}
+    {85561FB4-090F-47E9-9275-A922013E7B79}
+    {0BBF4D11-02E2-4903-A078-9EA8DCF2639C}
+    {73CAE614-298F-46A2-8E2C-FEFEA2E2F716}
+    {09B695FD-31A7-4C83-9036-CBBDE23C18B8}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230801T103913Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4bb548c3-4ff4-4354-8a5e-11ee79758932"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230925T192338Z

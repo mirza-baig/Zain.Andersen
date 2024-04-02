@@ -1,0 +1,30 @@
+﻿---
+ID: "47af33f2-d519-4b3a-8714-297a8026cd93"
+Parent: "1c38fed5-80d6-4d45-8a10-199848248e4e"
+Template: "1c38fed5-80d6-4d45-8a10-199848248e4e"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/General/Global Masthead/Global Masthead/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{B712B98D-C374-428C-AA54-54AD36DF323E}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{FDD8E74B-728B-4821-86FA-9FB48CFBC519}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230223T054733Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3ff77faa-9285-4334-839d-21d8451d5296"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231101T203453Z

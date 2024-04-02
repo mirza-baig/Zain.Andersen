@@ -1,0 +1,33 @@
+﻿---
+ID: "61532e96-7797-408e-a3f8-2fc46fe486e7"
+Parent: "59b458e8-0cd9-462f-a6d0-283b6623cc5c"
+Template: "741b9a7f-3a37-46e0-9980-ea7e53c4e840"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Other/Other/Other Options/None of the above
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T173815Z
+    - ID: "6d7079b0-0aad-4d21-a1e2-6cca425235be"
+      Hint: title
+      Value: None of the above
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "94682a8b-cc2d-418b-a132-162edcb13d5a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d04866e9-7ea4-4ad8-9c6e-1b751177e26b"
+      Hint: value
+      Value: None of the above
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240115T173818Z

@@ -1,0 +1,41 @@
+﻿---
+ID: "871b728d-c1e5-4b42-867a-7880a92f91fa"
+Parent: "81abdbfe-9b8f-4552-b072-a3cff5887f68"
+Template: "81abdbfe-9b8f-4552-b072-a3cff5887f68"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Fields/Tile Button/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{4AAA5F48-2F4B-42E2-89CC-A4A92896D011}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230216T192449Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8760bb3b-bd1c-4ef8-b0b2-6bffd769c0cf"
+      Hint: buttonsPerRows
+      Value: "{3D6C4FA4-5821-42EA-B209-9C88850DC1DA}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f5d114ea-5546-4905-abe6-c7295f778dc2"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230822T044202Z
+    - ID: "f1116160-0971-4766-9985-341a508f6786"
+      Hint: selection
+      Value: "{27EEAB6B-870A-4D23-9FAA-E4CC785D9396}"

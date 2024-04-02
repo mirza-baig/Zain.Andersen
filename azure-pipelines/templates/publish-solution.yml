@@ -1,0 +1,6 @@
+steps:
+- task: PublishPipelineArtifact@1
+  displayName: "Publish Artifacts"
+  inputs:
+    targetPath: '$(Build.SourcesDirectory)\deploy\artifacts'
+    artifactName: 'Solution'

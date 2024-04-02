@@ -1,0 +1,61 @@
+﻿---
+ID: "49162de2-852a-4d31-8e94-301c9faf2c79"
+Parent: "dc54a8c7-97bd-4641-92ab-72aa143a8e24"
+Template: "dc54a8c7-97bd-4641-92ab-72aa143a8e24"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Storm Door Choose Tool/Storm Door Choose Tool/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{64B071AB-1058-4FF8-B128-4D62B539CCCD}"
+- ID: "32a0a4a0-2c24-4894-8629-4cd02476348e"
+  Hint: headlineLevel
+  Value: "{0F556F3A-BBAD-4AA5-952D-B79003B39CD6}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{5D5476EC-7685-430F-B858-C79A096929E2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0aaaad4d-088f-4fa4-9ef1-db2ef164d27f"
+      Hint: startOverCtaText
+      Value: Start over
+    - ID: "137cc56c-5ece-4a99-8e01-9881ca55a618"
+      Hint: nextCtaText
+      Value: Next
+    - ID: "2295f9a0-e5d5-48e9-8e5e-b2a477fe70a5"
+      Hint: previousCtaText
+      Value: Previous
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230512T170214Z
+    - ID: "4c346442-e859-4efd-89b2-44aedf467d21"
+      Hint: __Valid to
+      Value: 
+    - ID: "4c6d4ddf-3362-418c-8eea-6e6b9adea4e0"
+      Hint: summaryHeadline
+      Value: "Based on your selections we suggest:"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\dboeser
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9db0b838-090d-44c5-af6d-615f4003c728"
+    - ID: "b2a74f5b-05db-4e79-8ce9-328512c478cf"
+      Hint: headlineText
+      Value: Find your perfect storm door
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\dboeser
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 
+    - ID: "d1c16c08-9672-4114-8f5a-0f92922f2917"
+      Hint: youSelectedHeadline
+      Value: "You Selected:"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230515T170153Z

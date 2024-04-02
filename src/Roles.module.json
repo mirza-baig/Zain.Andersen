@@ -1,0 +1,33 @@
+{
+  "namespace": "Roles",
+  "roles": [
+    {
+      "domain": "sitecore",
+      "pattern": "EntWeb .*"
+    },
+    {
+      "domain": "sitecore",
+      "pattern": "AW .*"
+    },
+    {
+      "domain": "sitecore",
+      "pattern": "RbA .*"
+    },
+    {
+      "domain": "sitecore",
+      "pattern": "AHD .*"
+    },
+    {
+      "domain": "sitecore",
+      "pattern": "ALA .*"
+    },
+    {
+      "domain": "sitecore",
+      "pattern": "Stormdoors .*"
+    },
+    {
+      "domain": "sitecore",
+      "pattern": "Review .*"
+    }
+  ]
+}

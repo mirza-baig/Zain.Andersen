@@ -1,0 +1,230 @@
+﻿---
+ID: "2b5326b8-49fa-4eb4-a17e-fd0acaba07da"
+Parent: "c3e74374-5165-4d90-898d-c93c05457155"
+Template: "c3e74374-5165-4d90-898d-c93c05457155"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Product/Comparison Table/Comparison Table Configuration/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: business/32x32/table_sql.png
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1800
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0041364a-93c2-4f3f-b434-7a5986c22091"
+      Hint: performanceStandardPerformance
+      Value: " Standard Performance:"
+    - ID: "00caaab0-489f-4f92-8881-f70ff77eae7d"
+      Hint: glassOptionsProtectiveFilm
+      Value: "Protective Film:"
+    - ID: "07e6a19d-c775-4957-a73c-9a336fd00264"
+      Hint: colorAndOptionsStandardExteriorColors
+      Value: Standard Exterior Colors
+    - ID: "0a3c1979-36c8-4b86-8bc3-08fd60e807a8"
+      Hint: stormDoorOptionsClosers
+      Value: " Closers:"
+    - ID: "10415275-b898-4736-89d8-11111e6702c4"
+      Hint: grillesSDL
+      Value: "SDL:"
+    - ID: "136ac491-2deb-488d-994a-6ae5e8f09657"
+      Hint: glassOptionsArtGlass
+      Value: " Art Glass:"
+    - ID: "138622a5-5076-453a-b538-b46436b7c6f1"
+      Hint: warrantyGlassCoverage
+      Value: "Glass Coverage:"
+    - ID: "18effe49-b69b-440b-b9cb-3dcaa45f1e27"
+      Hint: buttonCardModalCTAText
+      Value: Compare
+    - ID: "19583e4c-32b2-4bf6-b8e8-2ca00cdab4bc"
+      Hint: colorAndOptionsHardwareFinishes
+      Value: " Hardware Finishes:"
+    - ID: "19cead77-eb1b-4770-bb45-bd55e967bb73"
+      Hint: stormDoorOptionsColors
+      Value: "Colors:"
+    - ID: "1b70c458-c8a7-4824-9339-1a420523f083"
+      Hint: colorAndOptionsInsectScreen
+      Value: "Insect Screen:"
+    - ID: "1d928916-af36-4e67-8f1c-6acf83069d00"
+      Hint: productOptionsAdditionalOptions
+      Value: "Additional Options:"
+    - ID: "2592da50-29c4-4727-9bf9-330269fc416e"
+      Hint: exteriorDoorOptionsStandardHeights
+      Value: " Standard Heights:"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230426T033254Z
+    - ID: "2808d39e-6879-40af-8d36-8346297ed424"
+      Hint: glassOptionsSectionTitle
+      Value: Glass Options 
+    - ID: "2ce26471-0cb9-4cbc-94b3-33f321e4e8cd"
+      Hint: stormDoorOptionsHandleSetFinishes
+      Value: "Handle Set Finishes:"
+    - ID: "3163c62c-9ce4-4fc4-99cd-f358dd419e7e"
+      Hint: performanceThermalPerformance
+      Value: "Thermal Performance:"
+    - ID: "366343db-a2e3-4860-8cdb-dc5d817ff7d1"
+      Hint: colorAndOptionsStandardInteriorSpecies
+      Value: Standard Interior Species
+    - ID: "43828909-ba50-4e32-99d7-e3b6ac53e0e4"
+      Hint: productOptionsExteriorColors
+      Value: "Exterior Colors:"
+    - ID: "44c332df-b3d0-4f69-9b6d-22409376f74e"
+      Hint: changeProductStyleModalCTAText
+      Value: Compare
+    - ID: "497911b0-e151-4de0-9d78-2aadc21d0e8b"
+      Hint: stormDoorOptionsVentilation
+      Value: "Ventilation:"
+    - ID: "4a18fa61-9266-409e-9ae1-aafaf5a435f0"
+      Hint: productOptionsGlassOptions
+      Value: "Glass Options:"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "52b38c83-cd46-4cd9-b009-55e06b2d5efb"
+      Hint: performanceSectionTitle
+      Value: Performance
+    - ID: "58a0a02a-601b-46c9-832d-413d86109b9f"
+      Hint: grillesFDL
+      Value: "FDL:"
+    - ID: "5a11e972-0842-4a78-95fb-69c34fba4703"
+      Hint: sizingCustomWindowSizes
+      Value: Custom Window Sizes
+    - ID: "5b4a16ef-05ec-4d6a-aaeb-6859eaef0235"
+      Hint: grillesGBG
+      Value: "GBG:"
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "612bc6a6-4dcc-4566-a0cd-1518fb099953"
+      Hint: performanceOptionalStormwatchProtection
+      Value: "Optional Stormwatch Protection:"
+    - ID: "6f10679f-3f60-4775-b8de-d217ecac9569"
+      Hint: colorAndOptionsSectionTitle
+      Value: Color & Options
+    - ID: "71de0e14-f91e-4186-9cbc-894f2a72a7c3"
+      Hint: grillesSectionTitle
+      Value: Grilles
+    - ID: "78dd356d-db37-4b12-a760-a29b371f1376"
+      Hint: bigDoorOptionsMinimumPanelHeight
+      Value: "Minimum Panel Height:"
+    - ID: "7ada3fdb-9398-466b-b64c-15b02b5a7fad"
+      Hint: bigDoorOptionsMaximumPanelWidth
+      Value: "Maximum Panel Width:"
+    - ID: "7ed701da-cc2e-484c-b6f6-df0e0c93c464"
+      Hint: stormDoorOptionsKeyFeatures
+      Value: "Key Features:"
+    - ID: "8512a9d8-07c5-4ee7-878c-9f9bb9f46c6b"
+      Hint: exteriorDoorOptionsCustomDoorSizes
+      Value: "Custom Door Sizes:"
+    - ID: "85964fe4-88ab-4d69-ae73-e9ecd51e651c"
+      Hint: colorAndOptionsStandardInteriorFinishesOptions
+      Value:  Standard Interior Finishes/Options
+    - ID: "8cd475f9-2744-4b38-8dd8-9555c3b4845c"
+      Hint: productOptionsInteriorWoodSpecies
+      Value: "Interior Wood Species:"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2f4dbebc-37f8-4b6a-b6d5-a78a429ec9d9"
+    - ID: "8f31aa54-cc2c-4dbe-8e7c-383ea8238fba"
+      Hint: changeProductStyleCTAText
+      Value: Change product style to compare
+    - ID: "8f677993-effc-405f-a70e-37c490bb6016"
+      Hint: sizingStandardWindowSizes
+      Value: Standard Window Sizes
+    - ID: "8ff403b7-6fdd-45c9-a289-1daa0fd83dd8"
+      Hint: sizingSectionTitle
+      Value: Sizing
+    - ID: "90242c47-d7f5-445a-b27f-4e25a5c6f7a9"
+      Hint: windowOptionsAvailableShapes
+      Value: "Available Shapes:"
+    - ID: "928928a6-0f00-4321-8e9d-84e731f6cc23"
+      Hint: sizingStandardPatioDoorHeights
+      Value: Standard Patio Door Heights
+    - ID: "94d574c3-5589-4882-b769-f295899f3270"
+      Hint: sizingCustomPatioDoorSizes
+      Value: Custom Patio Door Sizes
+    - ID: "9b93a7f9-2dac-4b55-b24f-13f07ce53766"
+      Hint: buttonCardModalTitle
+      Value: "Edit series to compare:"
+    - ID: "9c3b97fc-b36b-44c4-bdcc-3b10f4584e43"
+      Hint: performanceOptionalPGUpgrade
+      Value: "Optional PG Upgrade:"
+    - ID: "9d364b16-64bf-493d-8784-fc712ae2c00f"
+      Hint: exteriorDoorOptionsSwingOptions
+      Value: "Swing Options:"
+    - ID: "a08c2c76-d7ff-4951-8999-5a0119578567"
+      Hint: glassOptionsPatternGlass
+      Value: "Pattern Glass:"
+    - ID: "a2dd8673-10e4-4bab-ae90-029c0bab716e"
+      Hint: stormDoorOptionsSizing
+      Value: "Sizing:"
+    - ID: "afd81ca2-e204-40b1-b69f-065d2b21765e"
+      Hint: bigDoorOptionsMaximumDoorSize
+      Value: "Maximum Door Size:"
+    - ID: "b4c01182-3e9a-4c79-8721-2ceb51fda1dc"
+      Hint: warrantyNonGlassComponentsCoverage
+      Value: "Non-Glass Components Coverage:"
+    - ID: "b59d9f80-bd3a-40e0-ac1d-55e981fb4386"
+      Hint: productOptionsMaterial
+      Value: "Material:"
+    - ID: "b81398c7-4a11-4877-aae0-4dda359ddb54"
+      Hint: buttonCardCTAText
+      Value: Edit series to compare
+    - ID: "b972f7d6-5cbb-498b-8d75-c5fac139a0e9"
+      Hint: warrantyPaintFinishCoverage
+      Value: "Paint Finish Coverage:"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c3181f53-1884-4882-8a58-b74125f99a9b"
+      Hint: sizingStandardPatioDoorWidths
+      Value: Standard Patio Door Widths
+    - ID: "c81e557c-e431-4549-bb5c-d31fbe621202"
+      Hint: warrantySectionTitle
+      Value: Warranty
+    - ID: "d0414207-2418-4402-bcb8-e2a7b4371795"
+      Hint: stormDoorOptionsInstallMethod
+      Value: "Install Method:"
+    - ID: "d22b50f8-98a8-4e65-b72e-4db833446752"
+      Hint: bigDoorOptionsConfigurations
+      Value: "Configurations:"
+    - ID: "d41d74f7-e9b2-417e-9f89-1dafe167654a"
+      Hint: productOptionsInteriorColors
+      Value: "Interior Colors:"
+    - ID: "d5111b45-0d50-4558-bca3-7833fb877111"
+      Hint: productOptionsInteriorWoodFinishes
+      Value: "Interior Wood Finishes:"
+    - ID: "d60c8e87-c3a8-4d05-9900-cc4430f9d0d1"
+      Hint: materialsSectionTitle
+      Value: Materials
+    - ID: "d61d99df-08ca-4347-9bd4-16cf4b583829"
+      Hint: glassOptionsBlindsShadesSwitchableGlazings
+      Value: "Blinds/shades/switchable glazings:"
+    - ID: "d6b54a3a-82aa-4360-91d7-f1cd778f95c9"
+      Hint: warrantyTransferability
+      Value: "Transferability:"
+    - ID: "d7908dbd-3968-4e58-80f0-bb95e0d008d4"
+      Hint: exteriorDoorOptionsStandardWidths
+      Value: "Standard Widths:"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230801T221948Z
+    - ID: "ee1dc18a-bea8-440d-8bc0-ebfc94b3d439"
+      Hint: productOptionsCustomizeYourOwn
+      Value: Customize Your Own
+    - ID: "f481f7fa-4b00-4ae0-b4d7-e80c2e5af749"
+      Hint: changeProductStyleModalTitle
+      Value: "Change product style to compare: "
+    - ID: "f74df4b2-3527-4dbc-b9c7-16d65211c508"
+      Hint: buttonCardModalNoSelectionErrorMessage
+      Value: At least one series must be selected
+    - ID: "ff0bb421-6dd2-4c17-8931-86aa30bed5e6"
+      Hint: productOptionsPriceLevel
+      Value: "Price Level:"

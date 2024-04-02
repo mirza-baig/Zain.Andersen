@@ -1,0 +1,1 @@
+597808  In Edge Publishing LinkManager will not use display name of ancestors with ItemLanguageFallback

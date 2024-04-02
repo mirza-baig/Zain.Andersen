@@ -1,0 +1,51 @@
+﻿---
+ID: "3ce6c07d-ed81-4338-a692-998a14dc6225"
+Parent: "fa618cc0-0166-4af7-87bc-4b68bdede786"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Forms/Contact Us
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/user_telephone.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {C604E2FE-0B9B-45C2-A482-C259AE4A4D1B}
+    {B61A1D20-9EE5-4CCB-9E0D-24A97E58D293}
+    {9D46F1C6-7311-4E9D-A3BB-FAEE878B236B}
+    {D53C5457-C518-40CA-A74D-B2A6FF63C675}
+    {99969A89-B62F-4155-A052-0F54C8C21B52}
+    {5E2F3CF0-45EC-4618-AA30-0465290A248D}
+    {6429831E-1F37-41B2-8C9B-FE4B9368E2F7}
+    {ADB8EFA6-D2D5-4847-A4AB-AA763E4F2387}
+    {273F8AC4-080A-4AF7-A5F8-1784BB13F83F}
+    {3CB9E78B-CEE4-40B3-A98D-B670326A8B60}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{6EC8EB94-94BA-4902-B6BA-C8981826B1BD}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230918T075833Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "eb648aa2-dd78-4420-8a8b-d66dc0b61be8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231109T180139Z

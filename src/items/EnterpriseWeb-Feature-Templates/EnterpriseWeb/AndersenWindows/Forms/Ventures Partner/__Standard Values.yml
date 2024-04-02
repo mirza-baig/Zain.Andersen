@@ -1,0 +1,109 @@
+﻿---
+ID: "1562e121-c430-4397-8bc0-a1b5d985d7c5"
+Parent: "96bba5de-fd7e-4f2b-8c11-ce2b78c86072"
+Template: "96bba5de-fd7e-4f2b-8c11-ce2b78c86072"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Forms/Ventures Partner/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{8FD5211C-A0D9-4912-AD92-3EB47BF82E85}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05aad351-6864-4f37-a429-cc5c7821d0b9"
+      Hint: termsAndConditionsStandaloneCopy
+      Value: |
+        <p>1.&nbsp; The submission by you of your pitchbook, ideas, technologies, drawings, products, and other information (collectively, your &ldquo;<span style="text-decoration: underline;">Submission</span>&rdquo;) does not create any obligation on the part of Andersen Corporation or any of its subsidiaries or affiliates (collectively, &ldquo;<span style="text-decoration: underline;">Andersen</span>&rdquo;) and does not create a contract between you and Andersen. Andersen is not obligated to review, pursue, or develop your Submission. Andersen is not obligated to provide you with an explanation as to the status of your Submission or an explanation if your Submission is not being pursued. Andersen, however, in its sole discretion, may elect to provide a response regarding the status of your Submission.&nbsp;&nbsp;Andersen will not return your Submission to you, so we recommend that original material be retained and copies sent to us.</p>
+        <p>2.&nbsp; You understand and agree that no agreement for compensation is, or shall be implied by the submission, receipt, consideration, evaluation, or use of your submission unless expressly agreed to in a separate written agreement executed by an authorized representative of Andersen.</p>
+        <p>3.&nbsp; You are providing your Submission to Andersen on a non-confidential basis, and Andersen shall have no obligation to keep your Submission confidential.&nbsp;&nbsp;Andersen may in any way use, copy, reproduce, sell, or redistribute all or any part of your Submission without compensating you.&nbsp;&nbsp;Your acknowledgement and agreement supersede any confidential or proprietary legends that may be included in your Submission.</p>
+        <p>4.&nbsp; You are authorized to make your Submission and your Submission does not violate any contract, intellectual property, or other rights of any other person.&nbsp;&nbsp;You grant to Andersen, its directors, officers, employees, agents, and contractors, a royalty-free, nonexclusive, perpetual, non-revocable, worldwide, sublicenseable, transferable license to use, copy, reproduce, sell, distribute (internally and externally), and make derivative works your Submission for any purpose, including, but not limited to, the right to manufacture or have manufactured any products or provide any services using all or any part of your Submission.&nbsp;&nbsp;You also represent and warrant that you have the right to grant the license set forth in this paragraph.&nbsp;</p>
+        <p>5.&nbsp; Except as expressly provided by these Submission Terms and Conditions, your submission of the web form and your Submission do not constitute an agreement between you and Andersen. If Andersen has an interest in working with you in the future, you and Andersen may enter into a separate written agreement setting forth the terms of any such relationship. Until and unless there is a signed agreement between you and Andersen, Andersen has no duty, obligation, responsibility, or liability of any kind to you in connection with your Submission. You understand and agree that no consulting relationship exists or is established, express or implied, between you and Andersen by your Submission. You will indemnify, defend, and hold Andersen harmless from any claims related to your Submission.</p>
+        <p>6.&nbsp; Andersen may now or in the future evaluate, discuss with, negotiate with, or transact with, other parties that have ideas, products, or businesses that may be similar to, or competitive with, your ideas, products, or businesses. Andersen may engage in the development or commercialization of technologies or products similar to, or competitive with, those contained in your Submission, and your Submission in no way restricts or prevents any of Andersen&rsquo;s activities, including, but not limited to, those described in this paragraph. Please be aware that Andersen may already have considered or have knowledge of the information in you submission. Andersen may already have begun development of ideas or products similar to your Submission before it was submitted.</p>
+        <p>7.&nbsp;&nbsp;The information you provide on the Submission Form and in the Submission will be used to respond to your request as further described in our Privacy Policy. Please be aware that this information may be transferred to a server located within or outside the U.S. for storage. If you do not consent to this use of your personal information, please do not make a Submission.</p>
+        <p>8.&nbsp;&nbsp;You acknowledge and agree that nothing contained in this Submission Form, in the Submission, or otherwise shall be deemed or construed as creating a partnership or joint venture between you and Andersen or any third party, and nothing contained in this Submission Form, in the Submission, or otherwise shall cause Andersen to be responsible in any way for your debts and obligations.</p>
+        <p>9.&nbsp;&nbsp;You understand the patentability of any invention is subject to various legal requirements. Among these legal requirements is the timely submission of a patent application to one or more patent offices. The United States now has a "first inventor to file" patent system. Delaying filing a patent application may put rights to a patent at risk. Submission of your invention to Andersen does not protect any rights you might have to a patent for your invention. By submitting your invention to Andersen you hereby waive any and all claims relating to any loss of rights to file a patent application or secure a patent due to any delays by Andersen or any other actions taken or not taken by Andersen. If you believe you have invented something, then you should consult an attorney to understand the laws concerning the protection of an invention through a patent</p>
+        <p>10.&nbsp; You agree that the U.S. District Court for the District of Minnesota shall have exclusive jurisdiction over any dispute you have or will have with Andersen and that you submit to that Court&rsquo;s personal jurisdiction.</p>
+        <p>11.&nbsp; Andersen will not accept your Submission unless you accept these Submission Terms and Conditions.&nbsp;</p>
+    - ID: "16bd5130-1ce0-4239-89dc-f0579800c40a"
+      Hint: fromEmailAddress
+      Value: "pop-up@andersencorp.com"
+    - ID: "1f9887e9-5ba2-4f36-b66f-49669b8d023e"
+      Hint: agreeToTermsAndConditionsText
+      Value: I have read and agree to the terms and conditions listed here
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230918T075839Z
+    - ID: "4b9396e7-9aa4-4367-b937-82af8b1c1d89"
+      Hint: subscribeToNewsUpdateText
+      Value: I agree to receive occasional news updates from Andersen Ventures+ via email and understand that I can unsubscribe at any time
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "67d056b8-e359-4e74-a245-446922f51dd6"
+      Hint: termsAndConditionsLinkText
+      Value: Terms and conditions
+    - ID: "866f4263-15ff-4fd8-a4cb-dca66da37503"
+      Hint: emailSubject
+      Value: Ventures Partner Form Submission
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3bf082b4-8944-40fb-a81b-bc34ac7fd1d0"
+    - ID: "94223b41-eb76-4196-abc1-6deec3bd4814"
+      Hint: toEmailAddress
+      Value: andersen.ventures@andersencorp.com
+    - ID: "ac18fce0-7ccd-4572-8369-b8e94d82e7dc"
+      Hint: termsAndConditions
+      Value: |
+        <p><strong>Ventures+ Website Terms and Conditions </strong></p>
+        <p><strong><span style="text-decoration: underline;">Submission Terms and Conditions</span></strong></p>
+        <p>By <strong>completing the web form and delivering your Submission, </strong>you agree, acknowledge, represent, and warrant that:</p>
+        <p>1.&nbsp; The submission by you of your pitchbook, ideas, technologies, drawings, products, and other information (collectively, your &ldquo;<span style="text-decoration: underline;">Submission</span>&rdquo;) does not create any obligation on the part of Andersen Corporation or any of its subsidiaries or affiliates (collectively, &ldquo;<span style="text-decoration: underline;">Andersen</span>&rdquo;) and does not create a contract between you and Andersen. Andersen is not obligated to review, pursue, or develop your Submission. Andersen is not obligated to provide you with an explanation as to the status of your Submission or an explanation if your Submission is not being pursued. Andersen, however, in its sole discretion, may elect to provide a response regarding the status of your Submission.<span>&nbsp; </span>Andersen will not return your Submission to you, so we recommend that original material be retained and copies sent to us.</p>
+        <p>2.&nbsp; You understand and agree that no agreement for compensation is, or shall be implied by the submission, receipt, consideration, evaluation, or use of your submission unless expressly agreed to in a separate written agreement executed by an authorized representative of Andersen.</p>
+        <p>3.&nbsp; You are providing your Submission to Andersen on a non-confidential basis, and Andersen shall have no obligation to keep your Submission confidential.<span>&nbsp; </span>Andersen may in any way use, copy, reproduce, sell, or redistribute all or any part of your Submission without compensating you.<span>&nbsp; </span>Your acknowledgement and agreement supersede any confidential or proprietary legends that may be included in your Submission.</p>
+        <p>4.&nbsp; You are authorized to make your Submission and your Submission does not violate any contract, intellectual property, or other rights of any other person.<span>&nbsp; </span>You grant to Andersen, its directors, officers, employees, agents, and contractors, a royalty-free, nonexclusive, perpetual, non-revocable, worldwide, sublicenseable, transferable license to use, copy, reproduce, sell, distribute (internally and externally), and make derivative works your Submission for any purpose, including, but not limited to, the right to manufacture or have manufactured any products or provide any services using all or any part of your Submission.<span>&nbsp; </span>You also represent and warrant that you have the right to grant the license set forth in this paragraph.<span>&nbsp; </span></p>
+        <p>5.&nbsp; Except as expressly provided by these Submission Terms and Conditions, your submission of the web form and your Submission do not constitute an agreement between you and Andersen. If Andersen has an interest in working with you in the future, you and Andersen may enter into a separate written agreement setting forth the terms of any such relationship. Until and unless there is a signed agreement between you and Andersen, Andersen has no duty, obligation, responsibility, or liability of any kind to you in connection with your Submission. You understand and agree that no consulting relationship exists or is established, express or implied, between you and Andersen by your Submission. You will indemnify, defend, and hold Andersen harmless from any claims related to your Submission.</p>
+        <p>6.&nbsp; Andersen may now or in the future evaluate, discuss with, negotiate with, or transact with, other parties that have ideas, products, or businesses that may be similar to, or competitive with, your ideas, products, or businesses. Andersen may engage in the development or commercialization of technologies or products similar to, or competitive with, those contained in your Submission, and your Submission in no way restricts or prevents any of Andersen&rsquo;s activities, including, but not limited to, those described in this paragraph. Please be aware that Andersen may already have considered or have knowledge of the information in you submission. Andersen may already have begun development of ideas or products similar to your Submission before it was submitted.</p>
+        <p>7.&nbsp; The information you provide on the Submission Form and in the Submission will be used to respond to your request as further described in our Privacy Policy. Please be aware that this information may be transferred to a server located within or outside the U.S. for storage. If you do not consent to this use of your personal information, please do not make a Submission.</p>
+        <p>8.&nbsp; You acknowledge and agree that nothing contained in this Submission Form, in the Submission, or otherwise shall be deemed or construed as creating a partnership or joint venture between you and Andersen or any third party, and nothing contained in this Submission Form, in the Submission, or otherwise shall cause Andersen to be responsible in any way for your debts and obligations.</p>
+        <p>9.<span>&nbsp; </span>You understand the patentability of any invention is subject to various legal requirements. Among these legal requirements is the timely submission of a patent application to one or more patent offices. The United States now has a "first inventor to file" patent system. Delaying filing a patent application may put rights to a patent at risk. Submission of your invention to Andersen does not protect any rights you might have to a patent for your invention. By submitting your invention to Andersen you hereby waive any and all claims relating to any loss of rights to file a patent application or secure a patent due to any delays by Andersen or any other actions taken or not taken by Andersen. If you believe you have invented something, then you should consult an attorney to understand the laws concerning the protection of an invention through a patent</p>
+        <p>10.&nbsp; You agree that the U.S. District Court for the District of Minnesota shall have exclusive jurisdiction over any dispute you have or will have with Andersen and that you submit to that Court&rsquo;s personal jurisdiction.</p>
+        <p>11.&nbsp; Andersen will not accept your Submission unless you accept these Submission Terms and Conditions.<span>&nbsp; </span></p>
+        <p>By clicking &ldquo;Agree&rdquo; below, I accept these Submission Terms and Conditions.</p>
+        <p><span> </span></p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d781450f-fc1b-44bf-97b0-9bcbf401e7b2"
+      Hint: emailBody
+      Value: |
+        <p><strong>Ventures Partner Form submitted for:</strong></p>
+        <p />Company:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{company}}<br />
+        Company Type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{company_type}}<br />
+        Target Area:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{target_area}}<br />
+        First Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{first_name}}<br />
+        Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{last_name}}<br />
+        Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{email}}<br />
+        Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{phone}}<br />
+        Website: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{website}}<br />
+        Country:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{country}}<br />
+        Message:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{message}}<br />
+        Agree to News Update:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{agree_to_news_updates}}<br />
+        Agree to Terms:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{agree_to_terms}}<br />
+        Referrer: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{referrer}}<br />
+        Interaction Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{interaction_date}}<br />
+        Context Id:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{context_id}}<p />
+        <p>&nbsp;</p>
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231014T173553Z

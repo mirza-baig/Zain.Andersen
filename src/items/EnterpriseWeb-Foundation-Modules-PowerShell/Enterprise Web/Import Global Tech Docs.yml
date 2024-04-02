@@ -1,0 +1,170 @@
+﻿---
+ID: "9e6e1d0a-02d4-4bfd-873b-8e3a55266100"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Global Tech Docs
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    function findFacet($facetPath, $itemName)
+    {
+        #Write-host $facetPath
+        #Write-host $itemName
+        # Get the root node using Get-Item, then a call to Axes.
+        $result = ""
+        if (![string]::IsNullOrEmpty($itemName)) {
+            $facetItems = Get-Item -Path $facetPath
+            
+            $items = $itemName.Split(',') 
+            foreach($item in $items)
+            {
+                
+                #Write-host $facetItems.Name
+                #Write-host $item
+                $facet = $facetItems.Axes.GetDescendants() | 
+                Where-Object { $_.Name.ToLower() -eq $item.ToLower() -Or $_.Fields["Title"].Value.ToLower() -eq $item.ToLower() } | Initialize-Item    
+                if($facet -ne $null)
+                {
+                    #Write-host $facet.Id
+                    $result += $facet.Id.ToString() + '|'
+                }
+                else
+                {
+                    Write-host "No matching item:  " + $facetPath + " Value: " + $item
+                }
+            }
+            if($result -ne "")
+            {
+                $result = $result.Substring(0, $result.Length - 1);
+            }
+        }
+        return $result;
+    }
+    
+    function findSite($siteNames)
+    {
+        
+        $siteRoot = Get-Item -Path "/sitecore/content/AndersenCorporation";
+        $result = "";
+        
+        if (![string]::IsNullOrEmpty($siteNames)) {
+            
+            $sites = $siteNames.split(',');
+            
+            foreach($site in $sites)
+            {
+                if($site -eq 'andersen-corporation')
+                {
+                    continue;
+                }
+                elseif($site -eq 'andersen-windows' -Or $site -eq 'heritage-windows') 
+                {
+                    $dxpSite = 'AndersenWindows';
+                }
+                elseif($site -eq 'andersen-home-depot' -Or $site -eq 'stormdoors')
+                {
+                    $dxpSite = 'AndersenHomeDepot';
+                }
+                
+                #Write-Host $dxpSite
+                $awSite = $siteRoot.Axes.GetDescendants() | 
+                Where-Object { $_.TemplateId -eq "{E42B9232-6F0F-4982-80FF-8EAC1CFFF69D}" -And $_.Name.ToLower() -eq $dxpSite.ToLower() } | Initialize-Item
+                 
+                if($awSite -ne $null)
+                {
+                    #Write-host $awSite.Id
+                    $result += $awSite.Id.ToString() + '|'
+                }
+                else
+                {
+                    Write-host "No matching Site - " + $site
+                }
+            }
+            if($result -ne "")
+            {
+                $result = $result.Substring(0, $result.Length - 1);
+            }
+        }
+    
+        return $result;
+    }
+    
+    function CreateMediaLink($mediaItem)
+    {
+        return "<link linktype=""media"" target="""" id=""" + $mediaItem + """ />";
+    }
+    
+    $importRows = Import-CSV "C:\Legacy-AW-Final-0827.csv";
+    $techDocPath = "/sitecore/content/AndersenCorporation/AndersenWindows/Global/Technical Documents";
+    
+    Write-Host "start"
+    
+    foreach ($row in $importRows)
+    {
+        $docName = $row.documentPath.replace('/sitecore/content/global/data/technical-documents',''); 
+        $path = $techDocPath + $docName;
+        #Write-host($path);
+        $techDoc = New-Item -Path $path  -ItemType "{185E5295-D62B-4B47-93B2-72E59A3F5360}"
+        
+        $techDoc.Editing.BeginEdit()
+        $techDoc['documentEyebrow'] = $row.documentEyebrow;
+        $techDoc['documentTitle'] = $row.documentTitle;
+        $techDoc['documentDescription'] = $row.documentDescription;
+        $techDoc['documentNumber'] = $row.documentNumber;
+        $techDoc['documentType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Document Type" $row.documentType;
+        $techDoc['documentSite'] = findSite $row.documentSite;
+        $techDoc['documentLanguage'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Languages" $row.documentLanguage;
+        $techDoc['document'] = CreateMediaLink $row.document; #$row.documentFile; #CreateMediaLink $row.document;
+        $techDoc['productSeries'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Product Series" $row.productSeries;
+        $techDoc['windowType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Window Type" $row.windowType;
+        $techDoc['doorType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Door Type" $row.doorType;
+        $techDoc['productOptions'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Product Options" $row.productOptions;
+        $techDoc['awningType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Awning Type" $row.awningType;
+        $techDoc['casementType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Casement Type" $row.casementType;
+        $techDoc['doubleHungType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Double Hung Type" $row.doubleHungType;
+        $techDoc['specialtyType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Specialty Type" $row.specialtyType;
+        $techDoc['stormDoorType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Storm Door Type" $row.stormDoorType;
+        $techDoc['doorSwing'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Door Swing" $row.doorSwing;
+        $techDoc['productStatus'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Product Status" $row.productStatus;
+        $techDoc['productBrand'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Product Brand" $row.productBrand;
+        $techDoc['environmentDocumentType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Environmental Document Type" $row.environmentDocumentType;
+        $techDoc['installationMethods'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Installation Method" $row.installationMethods;
+        $techDoc['installationGuideType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Installation Guide Type" $row.installationGuideType;
+        $techDoc['performanceDocumentType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Performance Document Type" $row.performanceDocumentType;
+        $techDoc['serviceGuideType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Service Guide Type" $row.serviceGuideType;
+        $techDoc['sizingDocumentType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Sizing Document Type" $row.sizingDocumentType;
+        $techDoc['joiningType'] = findFacet "master:/sitecore/content/AndersenCorporation/AndersenWindows/Global/Facets/Joining Type" $row.joiningType;
+        $techDoc.Editing.EndEdit();
+        
+        #Write-Host $row.documentTitle;
+    }
+    
+    Write-Host "end"
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230818T041759Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "034d200b-3a5f-4c1b-b060-304202a8bf3e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230828T200237Z

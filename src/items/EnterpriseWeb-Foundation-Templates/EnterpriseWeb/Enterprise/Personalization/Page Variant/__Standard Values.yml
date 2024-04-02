@@ -1,0 +1,35 @@
+﻿---
+ID: "c8ed3f88-0d96-4726-89c6-c7f26b4566c8"
+Parent: "6d6a6ce5-4e2a-4b04-ba7c-4d765e76c60d"
+Template: "6d6a6ce5-4e2a-4b04-ba7c-4d765e76c60d"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/Personalization/Page Variant/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240229T214753Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f0762fc3-7df4-4138-ab33-0bfc90f76d63"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240305T153359Z

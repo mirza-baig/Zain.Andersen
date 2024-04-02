@@ -1,0 +1,51 @@
+﻿---
+ID: "3abd8745-2020-40c3-9301-e88e1d7b87b5"
+Parent: "f2278a29-030e-45da-a7df-0626f4ae2460"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Product Swatch
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230106T171116Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b41ee626-7c56-42bd-9d0b-df472bffd28a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230813T045634Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{520BEE20-3542-4A04-89D8-817D6BB30D77}">
+            <conditions>
+              <or
+                uid="274C6DAD2DCD460D9EE7A26D105AC72D">
+                <condition
+                  id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                  uid="52A9B726ADCA402C84E23F13D031E97F"
+                  itemid="{6BB32758-D223-484A-B7C8-0AE22613C318}" />
+                <and
+                  uid="D1E4D4911DFA4C189D921C00054AAE46">
+                  <condition
+                    id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+                    uid="DC0FBE8C16574913943DF59CCD4CDE43"
+                    itemid="{3B66D70E-94D0-45FD-8C28-4880F718BD36}" />
+                  <condition
+                    id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                    uid="6033939552A84B6DB1AB14207ADC39BA"
+                    templateid="{7BB09D29-EA13-41B4-A161-F6AB842B0D2D}" />
+                </and>
+              </or>
+            </conditions>
+          </rule>
+        </ruleset>

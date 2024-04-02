@@ -1,0 +1,36 @@
+﻿---
+ID: "6280e331-8207-473c-8648-67ffd00f28c7"
+Parent: "7356b2c0-5908-4c8c-9c07-266557efc9ba"
+Template: "4fd88841-d725-4815-8b03-6ea12c956c18"
+Path: /sitecore/templates/Branches/Feature/EnterpriseWeb/Enterprise/Forms/Address/$name/Address 1
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230907T105123Z
+    - ID: "6b3bbf77-7867-448b-ab5d-123405409097"
+      Hint: placeholderText
+      Value: Address Line 1
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "963dedab-78be-4e66-85bf-a0453c16b66e"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: address1
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: Address Line 1
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230913T080518Z

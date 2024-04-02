@@ -1,0 +1,10 @@
+// Global
+import { hasDataComponent, snapshot } from 'lib/jest/test-utils';
+// Local
+import StickyHeaderForm from './StickyHeaderForm';
+import defaultData from './StickyHeaderForm.mock-data';
+
+it('renders correctly', async () => {
+  const component = snapshot(StickyHeaderForm, { componentProps: defaultData });
+  await hasDataComponent(component, 'forms/StickyHeaderForm');
+});

@@ -1,0 +1,153 @@
+﻿<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/"
+xmlns:set="http://www.sitecore.net/xmlconfig/set/" xmlns:role="http://www.sitecore.net/xmlconfig/role/">
+    <sitecore>
+        <contentSearch role:require="Standalone or ContentManagement">
+            <configuration type="Sitecore.ContentSearch.ContentSearchConfiguration, Sitecore.ContentSearch">
+                <indexes hint="list:AddIndex">
+                    <index id="sitecore_web_index" type="Sitecore.ContentSearch.SolrProvider.SolrSearchIndex, Sitecore.ContentSearch.SolrProvider">
+                        <locations hint="list:AddCrawler">
+                            <patch:delete/>
+                        </locations>
+                        <strategies hint="list:AddStrategy">
+                            <patch:delete/>
+                        </strategies>
+                    </index>
+                </indexes>
+            </configuration>
+        </contentSearch>
+
+        <settings role:require="Standalone or ContentManagement"> 
+            <setting name="Caching.AccessResultCacheSize" value="90MB" />
+            <setting name="Caching.LanguageFallbackFieldValues.DefaultCacheSize" value="5MB"/>
+            <setting name="Caching.IsFallbackValid.DefaultCacheSize" value="5MB"/>
+
+            <setting name="Caching.LayoutFieldDeltaCacheSize" value="20MB"/>
+            <setting name="Caching.DefaultClientDataCacheSize" value="10MB"/>
+            <setting name="Caching.DefaultPropertyCacheSize" value="2MB"/>
+            <setting name="Caching.DefaultDataCacheSize" value="20MB"/>
+            <setting name="Caching.DefaultFilteredItemsCacheSize" value="5MB"/>
+            <setting name="Caching.DefaultHtmlCacheSize" value="3MB"/>
+            <setting name="Caching.DefaultItemPathsCacheSize" value="5MB"/>
+            <setting name="Caching.DefaultPathCacheSize" value="400KB"/>
+            <setting name="Caching.DefaultRegistryCacheSize" value="5MB"/>
+            <setting name="Caching.DefaultViewStateCacheSize" value="5MB"/>
+            <setting name="Caching.DefaultXslCacheSize" value="5MB"/>
+
+            <setting name="Caching.Owin.TransformedIdentitiesCacheSize" value="20MB" />
+
+            <setting name="Sitecore.XA.Foundation.Mvc.CustomRenderingViewPathCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Presentation.PresentationContextCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Presentation.PageDesignsRulesCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Presentation.LayoutXmlCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Presentation.IsPageDesignCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Presentation.RenderingCachingOptionsCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Presentation.InjectedRenderingsCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Scaffolding.ScaffoldingServiceCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.SitecoreExtensions.ParentOfTemplateCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.SitecoreExtensions.ChildOfTemplateCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.SitecoreExtensions.TemplateInheritanceCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.SitecoreExtensions.ExtendedPropertiesCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Theming.ThemeInheritanceCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Theming.ThemeHTMLIncludesCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Variants.Abstractions.VariantSwitcherCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.Variants.Abstractions.AvailableRenderingVariantCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.StandardValues.StandardValuesCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.LocalDatasources.ResolveRenderingDatasourceCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.PageBranches.PageBranchesContextCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.PageBranches.PageBranchesRulesCacheMaxSize" value="10MB" />
+            <setting name="XA.Foundation.PlaceholderSettings.PlaceholderSettingsContextCacheMaxSize" value="10MB" />
+        </settings>
+
+        <sites role:require="Standalone or ContentManagement">
+            <site name="website">
+                <patch:attribute name="htmlCacheSize">5MB</patch:attribute>
+                <patch:attribute name="registryCacheSize">0</patch:attribute>
+                <patch:attribute name="viewStateCacheSize">0</patch:attribute>
+                <patch:attribute name="xslCacheSize">3MB</patch:attribute>
+                <patch:attribute name="filteredItemsCacheSize">15MB</patch:attribute>
+                <patch:attribute name="renderingParametersCacheSize">5MB</patch:attribute>
+            </site>
+            <site name="shell">
+                <patch:attribute name="htmlCacheSize">10MB</patch:attribute>
+                <patch:attribute name="registryCacheSize">6MB</patch:attribute>
+                <patch:attribute name="viewStateCacheSize">1MB</patch:attribute>
+                <patch:attribute name="xslCacheSize">8MB</patch:attribute>
+                <patch:attribute name="filteredItemsCacheSize">10MB</patch:attribute>
+                <patch:attribute name="renderingParametersCacheSize">5MB</patch:attribute>
+            </site>
+        </sites>
+
+        <databases role:require="Standalone or ContentManagement">
+            <database id="web">
+                <cacheSizes>
+                    <data>5MB</data>
+                    <items>5MB</items>
+                    <paths>25KB</paths>
+                    <itempaths>5MB</itempaths>
+                    <standardValues>25KB</standardValues>
+                </cacheSizes>
+                <dataProviders>
+                   <dataProvider>
+                      <param desc="headProvider">
+                         <dataProvider>
+                            <prefetch>
+                               <cacheSize>10MB</cacheSize>
+                            </prefetch>
+                         </dataProvider>
+                      </param>
+                   </dataProvider>
+                </dataProviders>
+            </database>
+            <database id="master">
+                <cacheSizes>
+                    <data>80MB</data>
+                    <items>200MB</items>
+                    <paths>2MB</paths>
+                    <itempaths>20MB</itempaths>
+                    <standardValues>15MB</standardValues>
+                </cacheSizes>
+                <dataProviders>
+                   <dataProvider>
+                      <param desc="headProvider">
+                         <dataProvider>
+                            <prefetch>
+                               <cacheSize>200MB</cacheSize>
+                            </prefetch>
+                         </dataProvider>
+                      </param>
+                   </dataProvider>
+                </dataProviders>
+            </database>
+            <database id="core">
+                <cacheSizes>
+                    <data>20MB</data>
+                    <items>60MB</items>
+                    <paths>1MB</paths>
+                    <itempaths>8MB</itempaths>
+                    <standardValues>3MB</standardValues>
+                </cacheSizes>
+                <dataProviders>
+                   <dataProvider>
+                      <param desc="headProvider">
+                         <dataProvider>
+                            <prefetch>
+                               <cacheSize>15MB</cacheSize>
+                            </prefetch>
+                         </dataProvider>
+                      </param>
+                   </dataProvider>
+                </dataProviders>
+            </database>
+            <database id="experienceedge">
+                <cacheSizes>
+                    <data>0</data>
+                    <items>0</items>
+                    <paths>0</paths>
+                    <itempaths>0</itempaths>
+                    <standardValues>0</standardValues>
+                </cacheSizes>
+            </database>
+        </databases>
+
+    </sitecore>
+</configuration>

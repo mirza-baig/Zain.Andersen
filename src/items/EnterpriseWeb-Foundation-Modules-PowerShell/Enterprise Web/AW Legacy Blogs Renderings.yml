@@ -1,0 +1,86 @@
+﻿---
+ID: "53bc5277-4ef4-4600-a3e9-9eeaac0478a3"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/AW Legacy Blogs Renderings
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $paths = @("/sitecore/content/andersen-windows/data/modules/ideas-and-inspiration/blog/trends",
+    "/sitecore/content/andersen-windows/data/modules/ideas-and-inspiration/blog/projects",
+    "/sitecore/content/andersen-windows/data/modules/ideas-and-inspiration/blog/ideas",
+    "/sitecore/content/andersen-windows/data/modules/ideas-and-inspiration/blog/tips",
+    "/sitecore/content/andersen-windows/data/modules/about/frame-maker/culture-of-inclusion",
+    "/sitecore/content/andersen-windows/data/modules/about/frame-maker/company-news",
+    "/sitecore/content/andersen-windows/data/modules/about/frame-maker/empowering-communities",
+    "/sitecore/content/andersen-windows/data/modules/about/frame-maker/innovation-at-work",
+    "/sitecore/content/andersen-windows/data/modules/for-professionals/pro-hub",
+    "/sitecore/content/andersen-windows/home/about/frame-maker/company-news",
+    "/sitecore/content/andersen-windows/home/about/frame-maker/culture-of-inclusion",
+    "/sitecore/content/andersen-windows/home/about/frame-maker/empowering-communities",
+    "/sitecore/content/andersen-windows/home/about/frame-maker/innovation-at-work",
+    "/sitecore/content/andersen-windows/home/ideas-and-inspiration/blog/ideas",
+    "/sitecore/content/andersen-windows/home/ideas-and-inspiration/blog/projects",
+    "/sitecore/content/andersen-windows/home/ideas-and-inspiration/blog/trends",
+    "/sitecore/content/andersen-windows/home/ideas-and-inspiration/blog/tips",
+    "/sitecore/content/andersen-windows/home/for-professionals/pro-views"
+    )
+    
+    $result = New-Object System.Collections.Generic.List[PSObject]
+    
+    foreach($path in $paths){
+        
+        $root = Get-ChildItem -Path $path -Recurse
+        $root | ForEach-Object {    
+            
+            $item = Get-Item -Path "master:" -ID $_.ID
+            $str = $item.Name  + "," + $item.ID.ToString() + "," + $item.ItemPath 
+            $renderings = Get-Rendering -Item $item -Device $defaultLayout -FinalLayout
+            foreach($render in $renderings)
+            {
+                $renderingItem = Get-Item -Path "master:" -ID $render.ItemID                
+                $str = $str + "," + $renderingItem.Name
+            }
+            
+            
+            
+            if ($renderings)
+            {
+                    $obj = New-Object PSObject @{
+                    Renderings              = $str;
+                    }
+                    $result.add($obj)
+    		Write-Host $str
+            }
+        }
+    }
+    
+    $result | Show-ListView -Property Renderings
+    
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231003T021932Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "87452e79-d096-47c2-881c-0b564ee1e049"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231003T021932Z

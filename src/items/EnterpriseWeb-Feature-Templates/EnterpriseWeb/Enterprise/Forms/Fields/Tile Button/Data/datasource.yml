@@ -1,0 +1,57 @@
+﻿---
+ID: "264a6df3-824f-4a5d-a50e-608a50ddc6b4"
+Parent: "c2b7c321-ab14-449d-9fec-72ae8c3c8830"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Forms/Fields/Tile Button/Data/datasource
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "Datasource=query:self::|query:$site/Data/Forms&IncludeTemplatesForDisplay=List Item Folder,List Item&IncludeTemplatesForSelection=List Item Folder"
+- ID: "21828437-ea4b-40a1-8c61-4ce60ea41db6"
+  Hint: Validate Button
+  Value: "{59D4EE10-627C-4FD3-A964-61A88B092CBC}"
+- ID: "337e20e1-999a-4eea-85ad-b58a03ae75cc"
+  Hint: Quick Action Bar
+  Value: "{59D4EE10-627C-4FD3-A964-61A88B092CBC}"
+- ID: "53c432c4-7122-4e2d-8296-db4184fd1735"
+  Hint: Workflow
+  Value: "{59D4EE10-627C-4FD3-A964-61A88B092CBC}"
+- ID: "9c903e29-650d-4af2-b9bd-526d5c14a1a5"
+  Hint: Validator Bar
+  Value: "{59D4EE10-627C-4FD3-A964-61A88B092CBC}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droptree
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 700
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Datasource
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230221T211644Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bfe562ef-595b-42cd-834b-25789c94fa29"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230911T110932Z

@@ -1,0 +1,64 @@
+﻿---
+ID: "42529190-9ada-4ee5-8ac6-3f9a5d91c726"
+Parent: "f24b8f51-0c42-451d-bdef-c4ebe71fc7f8"
+Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Presentation/Available Renderings/General
+SharedFields:
+- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
+  Hint: Renderings
+  Value: |
+    {9340E23A-8409-4C5D-841D-4027529DF9F6}
+    {3D0E9BF4-A029-488B-8F24-39F1FFF15EF5}
+    {373827C9-0FC7-4F8B-AD44-0A8792E80C59}
+    {5D08DBED-CC99-4C48-BDF4-59F4FF2A6015}
+    {5DF83B16-D611-4B55-99F9-0B430EEB8E71}
+    {2F7C4742-A920-431E-B1E2-5023E3699C63}
+    {9DAFF515-C692-4D7B-956D-0A2F14EF8ABC}
+    {4385140E-BCCF-4D2D-BCC4-7AFB700D6CCD}
+    {B3B40BBF-63B4-4CBB-9237-4772724213FC}
+    {0F3A5C81-1FE6-4392-B57A-8238427B300A}
+    {197700F4-C8A4-43D9-A3F8-D32B44FD987A}
+    {6AE20E02-0AF7-4873-8D0A-4057F8C4E4ED}
+    {120AD31C-0E1E-41B5-881D-D5C2916B4E90}
+    {FDD8E74B-728B-4821-86FA-9FB48CFBC519}
+    {3A8D4D62-40D3-438E-B1C1-2140058F1FED}
+    {2BB910E8-1BB6-46AF-A33F-452B5CF3FEBC}
+    {04467CFB-98D5-4EDF-BC31-961E1FBC9EBB}
+    {9D5851A0-C782-462B-AF45-5C112A998A06}
+    {28C27CCB-C692-43DD-A48C-CC1AA9D3D620}
+    {990FC1C8-F083-4774-9088-30257926B673}
+    {6BCCFACD-C5E7-4934-A9C2-D45EA0676729}
+    {31B7697D-3A7C-4EF0-B768-D04B36C7BBFE}
+    {B76947D7-B58E-432D-8D54-8D522674B434}
+    {87D803F5-B876-4152-A8D9-A05B92DEFB08}
+    {058C39A9-9EB4-414A-B23D-D4B5D86CF97B}
+    {8C9BADF0-DF98-488C-B6B1-B510C1A3A4D5}
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221116T200220Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "86717478-5b28-41ee-baa1-b80ecbe388f8"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jhuynh
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231212T222537Z

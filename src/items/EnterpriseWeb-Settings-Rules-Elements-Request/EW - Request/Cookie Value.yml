@@ -1,0 +1,38 @@
+﻿---
+ID: "89124b09-912e-40d0-a0ba-20f5f0096ee8"
+Parent: "c895b16d-159e-4651-919e-f1be0431dfae"
+Template: "f0d16eee-3a05-4e43-a082-795a32b873c0"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Request/Cookie Value"
+SharedFields:
+- ID: "ab51c8b2-f0e1-4471-9aae-cc080d774923"
+  Hint: Type
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20150420T141946Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c115f3aa-5ee4-4ad4-8a49-355da6d3fdd0"
+    - ID: "af321234-4eb9-4ef5-9197-65903351939c"
+      Hint: Text
+      Value: "where the cookie  [cookieItemId,Tree,root=/sitecore/content/AndersenCorporation/Enterprise Global/Lookups/Personalization/Cookies,Cookie] [operatorid,StringOperator,,compares to] [value,,,value]"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240104T113208Z

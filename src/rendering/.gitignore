@@ -1,0 +1,44 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+/test-results
+
+# next.js
+/.next*/
+/out/
+
+# graphql code generation
+/.generated
+*.graphql.d.ts
+*.graphqls.d.ts
+
+# misc
+.DS_Store
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+*.log*
+
+# sitecore
+scjssconfig.json
+*.deploysecret.config
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+
+# item type definitions
+/src/.generated
+
+# Compiled Javascript for Online Scheduling
+/public/os/*/*.js
+/public/os/*/*.map

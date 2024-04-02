@@ -1,0 +1,16 @@
+﻿<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/" xmlns:sxaxm="http://www.sitecore.net/xmlconfig/sxaxm/">
+  <sitecore>
+    <pipelines sxaxm:require="sxaxconnect">
+      <initializeTracker>
+        <processor type="Sitecore.LayoutService.Analytics.Pipelines.InitializeTracker.SetUrlFromRouteData, Sitecore.LayoutService.Analytics"
+                   patch:after="processor[@type='Sitecore.Analytics.Pipelines.InitializeTracker.CreatePage, Sitecore.Analytics']"
+                   resolve="true" />
+      </initializeTracker>
+      <mvc.requestBegin>
+        <processor type="Sitecore.LayoutService.Analytics.Pipelines.MvcRequestBegin.DetermineTrackerEnabled, Sitecore.LayoutService.Analytics"
+                   patch:after="processor[@type='Sitecore.Mvc.Analytics.Pipelines.MvcEvents.RequestBegin.StartTracking, Sitecore.Mvc.Analytics']"
+                   resolve="true" />
+      </mvc.requestBegin>
+    </pipelines>
+  </sitecore>
+</configuration>

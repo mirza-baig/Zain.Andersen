@@ -1,0 +1,27 @@
+﻿---
+ID: "5284e8e6-45b2-47e4-b9e9-be72c6c6cf99"
+Parent: "1c6af43e-b896-4dfc-9fec-a1e81af7e085"
+Template: "1c6af43e-b896-4dfc-9fec-a1e81af7e085"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Elements/AR/Call To Action AR/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Software/32x32/logic_and.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231130T182929Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1db35d08-e211-4f3f-98f6-a614e8d4212d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231130T183323Z

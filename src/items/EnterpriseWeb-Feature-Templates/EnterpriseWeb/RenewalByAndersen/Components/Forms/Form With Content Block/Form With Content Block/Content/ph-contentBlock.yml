@@ -1,0 +1,45 @@
+﻿---
+ID: "dfc8fd97-457a-4f57-8f3e-43041528e71c"
+Parent: "4e0dd3dc-84de-4ead-84df-32ceb56bce10"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: "/sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Forms/Form With Content Block/Form With Content Block/Content/ph-contentBlock"
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "datasource=query:./ancestor::*[@@templateid='{1C82E550-EBCD-4E5D-8ABD-D50D0809541E}']|query:$site/data/components&IncludeTemplatesForSelection={F0FF41EB-EB09-5AF7-907A-279A823AECD4},{91161173-F8DC-4340-B139-C14240C81287}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Droptree
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Content Block
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231206T103604Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d551d395-89e5-4527-a21a-b09f4aec3b9a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240216T103813Z

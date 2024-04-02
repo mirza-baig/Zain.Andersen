@@ -1,0 +1,36 @@
+﻿---
+ID: "ea62d49d-9ecf-42a2-949a-e23f81e735ff"
+Parent: "794a128b-3e88-4475-b5b5-474adbdaed0d"
+Template: "d0a7a158-a75f-46e3-beac-bedec75b26bd"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Settings/Feature Toggles/Coveo Job Category Toggle
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 250
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23847fa2-73a2-431c-89f5-35db3e8abe65"
+      Hint: featureDescription
+      Value: If this feature is enabled, filter and boosting expressions on Coveo components will pass current job category from job detail
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240115T152913Z
+    - ID: "8ae40a19-4714-40e9-b17e-c470739f4800"
+      Hint: enableForSites
+      Value: "{256D8805-AAD6-4255-8E8D-996E0EC6C94A}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "01919d18-5938-455c-a53c-034baa5f2821"
+    - ID: "b4e75372-e1c1-4652-9f76-656b02b1384a"
+      Hint: featureState
+      Value: "{D705059E-CFE1-4668-B59D-AF4491D23A4D}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240201T091006Z

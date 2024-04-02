@@ -1,0 +1,83 @@
+parameters:
+  devopsEnvironment: ''
+  azureSubscription: ''
+  aksSubscription: ''
+  aksClusterName: ''
+  aksClusterResourceGroup: ''
+  aksPodName: ''
+  aksNamespace: 'sitecore'
+  sitecoreEnvironment: ''
+  sitecoreIdUrl: ''
+  repository: ''
+
+jobs:
+- deployment: Deploy
+  displayName: Deploy to AKS
+  environment: ${{ parameters.devopsEnvironment }}
+  pool:
+    name: AKS
+    demands:
+      - kubectl -equals 1.25.0
+      - kubelogin -equals 0.0.20
+      - AzureCLI -equals 2.42.0
+  workspace:
+    clean: all
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - checkout: self
+        - checkout: enterprise-deployment
+
+        # Authenticate to AKS Cluster - Method 2
+        - task: AzureCLI@2
+          displayName: Authenticate with AKS
+          inputs:
+            azureSubscription: ${{ parameters.azureSubscription }}
+            scriptType: ps
+            scriptLocation: inlineScript
+            inlineScript: |
+              # Authenticate to kubernetes with kubelogin
+              Write-Host "Logging into Azure Subscription: ${{ parameters.aksSubscription }}" -ForegroundColor DarkGray
+              az account set --name "${{ parameters.aksSubscription }}"
+
+              Write-Host "Getting AKS Credentials, Cluster Name: ${{ parameters.aksClusterName }}, Cluster Resource Group: ${{ parameters.aksClusterResourceGroup }}" -ForegroundColor DarkGray
+              az aks get-credentials -n ${{ parameters.aksClusterName }} -g ${{ parameters.aksClusterResourceGroup }} --overwrite-existing
+
+              $env:KUBECONFIG="$HOME/.kube/config"
+
+              Write-Host "Converting the Azure login to K8s" -ForegroundColor DarkGray
+              kubelogin convert-kubeconfig -l azurecli
+
+              # Verify connectivity to AKS cluster
+              Write-Host "Verify connectivity to AKS cluster, Namespace: ${{ parameters.aksNamespace }}" -ForegroundColor DarkGray
+              kubectl get po -n ${{ parameters.aksNamespace }}
+
+        #Roll out ID Deployment
+        - task: PowerShell@2
+          displayName: Roll out ID Deployment
+          inputs:
+            filePath: $(Build.SourcesDirectory)\EnterpriseWeb\azure-pipelines\deploy\RolloutID.ps1
+            arguments: -environment ${{ parameters.sitecoreEnvironment }} -buildnumber $(Build.BuildNumber) -repository ${{ parameters.repository }}
+
+        #Wait for Updated CM Pod to Come Up!
+        - task: PowerShell@2
+          displayName: Wait for Updated ID Pod to Come Up!
+          inputs:
+            filePath: $(Build.SourcesDirectory)\EnterpriseWeb\azure-pipelines\deploy\PodHealthCheck.ps1
+            arguments: -appname ${{ parameters.aksPodName }} -namespace ${{ parameters.aksNamespace }}
+
+- job: HealthCheck
+  displayName: Health Check
+  dependsOn:
+  - Deploy
+  pool:
+    name: Enterprise Web
+  workspace:
+    clean: all
+  steps:
+  - task: PowerShell@2
+    displayName: Wait for Updated ID Site to Come Up!
+    inputs:
+      filePath: $(Build.SourcesDirectory)\azure-pipelines\deploy\SiteHealthCheck.ps1
+      arguments: '-Url ${{ parameters.sitecoreIdUrl }}'

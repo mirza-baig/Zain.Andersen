@@ -1,0 +1,23 @@
+﻿---
+ID: "a433ca80-d2b7-4053-877d-9abbf924882a"
+Parent: "f2278a29-030e-45da-a7df-0626f4ae2460"
+Template: "ff220b80-51d7-439e-b74e-7bb1decb3272"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/Forms
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240213T110921Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c264b78-eba9-4e70-8b7a-acb804d086f5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T110921Z

@@ -1,0 +1,50 @@
+﻿---
+ID: "4b4a94da-c1e9-4b59-b306-857753d26011"
+Parent: "24ed2232-58ad-4d57-a2ef-5869fb55d274"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Listing/Xup Card Collection Dynamic/Xup Card Collection Dynamic
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/credit_cards.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {B61A1D20-9EE5-4CCB-9E0D-24A97E58D293}
+    {99969A89-B62F-4155-A052-0F54C8C21B52}
+    {5E2F3CF0-45EC-4618-AA30-0465290A248D}
+    {565E77B0-8234-479E-9F8F-0B44BDB36FC4}
+    {E6BAFFE5-738B-491F-A637-007CA613933D}
+    {8784A0CA-76C8-44BF-A0BB-4B1328EF6D48}
+    {0214E26E-F249-4F92-8233-4C2CDE467721}
+    {2161F407-476C-4B0A-A609-6ECD9E149135}
+    {16886739-2EBC-47B1-84AC-281355D707D1}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{9F7DA8FB-0731-4B99-822E-2ACE6ACE3164}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230508T075026Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4fb06a75-1f72-4750-8792-7ddfa2ef0d2b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230607T072600Z

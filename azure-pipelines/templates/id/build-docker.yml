@@ -1,0 +1,39 @@
+parameters:
+  containerRegistry: ''
+  repository: ''
+  latestTag: 'latest'
+
+steps:
+- task: DockerInstaller@0
+  displayName: Install Docker CLI
+  inputs:
+    dockerVersion: 20.10.24
+
+- task: PowerShell@2
+  displayName: Remove .dockerignore
+  inputs:
+    targetType: inline
+    script: |
+      Remove-Item .dockerignore
+    workingDirectory: $(Build.SourcesDirectory)
+
+# - task: PowerShell@2
+#   displayName: 'Perform Variable Substitute into XML'
+#   inputs:
+#     targetType: filePath
+#     filePath: azure-pipelines/deploy/Perform-VariableSubstitution.ps1
+#     arguments: '-xmlFilePath "azure-pipelines/build/identity/Sitecore.IdentityServer.DevEx.xml" -pattern "SUPERLONGSECRETHERE" -identity_clisecret $(SitecoreCLIClientSecret)'
+
+- task: Docker@2
+  displayName: Build Docker image
+  inputs:
+    command: build
+    containerRegistry: ${{ parameters.containerRegistry }}
+    repository: ${{ parameters.repository }}
+    dockerfile: azure-pipelines/build/id/Dockerfile
+    buildContext: azure-pipelines/build/id
+    arguments: --build-arg BASE_IMAGE=scr.sitecore.com/sxp/sitecore-id7:10.2.1-ltsc2019
+    tags: |
+      $(Build.BuildNumber)
+      ${{ parameters.latestTag }}
+    workingDirectory: $(Build.SourcesDirectory)

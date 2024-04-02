@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\AHD Webmaster
+MemberOf:
+  Role: |
+    sitecore\EntWeb Master

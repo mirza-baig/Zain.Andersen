@@ -1,0 +1,27 @@
+﻿---
+ID: "bd858021-eaac-4b84-bd9b-2f1d99c79c34"
+Parent: "3d52dbd2-6813-4529-8305-1d0c58ddefe6"
+Template: "cb01f9fc-c187-46b3-ab0b-97a8468d8303"
+Path: /sitecore/system/Workflows/Affiliate Workflow/Draft/Submit for Review
+SharedFields:
+- ID: "dcbebc58-6124-4100-a248-fc717d6c78d5"
+  Hint: Next state
+  Value: "{DB99C9C1-9CF9-496B-8FCA-7F2504F1646B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170808T161822Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "f861ac44-ba15-4ddb-9fe1-654961aacd11"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\unicorn
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20171027T191321Z

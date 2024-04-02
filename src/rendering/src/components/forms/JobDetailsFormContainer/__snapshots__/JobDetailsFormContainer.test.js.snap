@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  class="bg-light-gray"
+  data-component="forms/jobdetailsformcontainer"
+  id="id1695242607"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-start-3 col-end-11 -ml-[2rem] py-l md:ml-0 ml:col-start-4 ml:col-end-10"
+      />
+    </div>
+  </div>
+</section>
+`;

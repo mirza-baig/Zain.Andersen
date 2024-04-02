@@ -1,0 +1,31 @@
+﻿---
+ID: "38962021-fa11-4ddb-8c14-1c26b08aae29"
+Parent: "05592656-56d7-4d85-aacf-30919ee494f9"
+Template: "1c0acc50-37be-4742-b43c-96a07a7410a5"
+Path: /sitecore/system/Workflows/Affiliate Workflow
+SharedFields:
+- ID: "b5166b38-e4bf-4410-953c-2037f2bf6a56"
+  Hint: Initial state
+  Value: "{3D52DBD2-6813-4529-8305-1D0C58DDEFE6}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|RbA\Site Admin|pe|+item:read|pd|+item:read|ar|rba\CareerAdmin|pe|-item:read|pd|-item:read|ar|sitecore\RbA Approver|pe|^*|+item:create|+workflowState:write|+workflowCommand:execute|+item:rename|+item:delete|+item:write|+item:read|+workflowState:delete|+item:admin|pd|^*|+item:create|+workflowState:write|+workflowCommand:execute|+item:rename|+item:delete|+item:write|+item:read|+workflowState:delete|+item:admin|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170808T161616Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "13a13042-4add-4e83-8d78-81d63791450c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240321T061307Z

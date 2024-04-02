@@ -1,0 +1,65 @@
+﻿---
+ID: "a8dcc7f6-8f42-4723-9cce-d827cf0bbb81"
+Parent: "837a53c5-06a2-42d7-b0dd-0e13e41e6785"
+Template: "1db34c92-03b0-4475-9a39-da14e4d9d8fc"
+Path: /sitecore/content/Applications/WebEdit/Ribbons/WebEdit/Enterprise Web/Page Variants/Page Variants
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/text_rich_colored.png
+- ID: "1193b1a3-0148-413f-a979-49b39aa4a2af"
+  Hint: ID
+  Value: PageVariantsButton
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 0
+- ID: "d47ed548-84d5-4622-9886-5cc164727507"
+  Hint: Icon
+  Value: Applications/32x32/text_rich_colored.png
+- ID: "dbbf9ee3-c30e-4456-a81f-ed8c2e8df91b"
+  Hint: Click
+  Value: "webedit:snippetslist(menu=/sitecore/content/Applications/WebEdit/Menus/Page Variants)"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          id="{9E57FCA0-F2B9-4780-8A14-208B339A86FF}"
+          par="Database=core&amp;Command=PageVariantsDropDown&amp;DefaultListItemCommand=PageVariantsDropDownItem&amp;PageCodeScriptFileName=%2Fsitecore%2Fshell%2Fclient%2FSitecore%2FEnterpriseWeb%2FExperienceEditor%2FCommands%2FPageVariantsDropDown.js&amp;RetrieveListItemsRequest=ExperienceEditor.EW.RetrievePageVariants&amp;ListDataSourceItemID=%7b30BED57C-A9A4-4BF5-A10A-CC1B25AC4468%7d"
+          uid="{e378b2f0-db38-4a0a-bd89-7306239dfc69}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240306T200322Z
+    - ID: "4df6da21-e745-444c-956e-1d4a96ab8821"
+      Hint: Header
+      Value: Page Variants
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4d90eca2-dd0a-4386-8774-0d453b28f3ec"
+    - ID: "a1a31a93-c4a0-4396-b629-67c33001a3cf"
+      Hint: Tooltip
+      Value: Navigate to a page variant or create a page variant.
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240307T194414Z

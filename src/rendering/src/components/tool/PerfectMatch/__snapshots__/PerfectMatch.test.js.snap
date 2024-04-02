@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  class="perfect-match-module font-futura-pt "
+  data-component="perfectmatch/perfectmatch"
+>
+  <button
+    aria-label="Show Navigation"
+    class="logo fixed top-0 p-[32px_0_0_40px] cursor-pointer border-none bg-none "
+    title="Show Navigation"
+  >
+    <img
+      alt="Andersen logo with hamburger menu for Perfect Match tool"
+      class="  "
+      height="23"
+      src="https://preview.local.andersenwindows.com/-/media/Project/AndersenCorporation/AndersenWindows/AndersenWindows/Perfect-Match/perfect-match-logo.png?h=23&iar=0&w=200&rev=a3a5108c7fa843b3b2048a19c360d3a6&hash=351287C9DD33DEC859840B20CE9AD0D2"
+      width="200"
+    />
+  </button>
+  <div
+    class="app"
+  />
+</section>
+`;

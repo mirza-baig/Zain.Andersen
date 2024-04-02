@@ -1,0 +1,45 @@
+﻿---
+ID: "40ed569b-cbab-4dce-b31d-28fa89358fe7"
+Parent: "e8454a81-d34a-4e03-8dc4-7c9f6b4f8314"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/FieldSets/Forms/_Field Value Provider Settings/Data/valueProviders
+SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: "datasource=query:$site/Data/Forms&IncludeTemplatesForDisplay={0C525BAC-A5FE-4CCB-ACD3-DC0552B7C1CC},{B1FEB0DC-74E8-4134-9B39-4D156B04448B},{B185F266-9182-4433-AE00-CBC6AE49DD1F},{BFE5AFE2-FD02-4CB7-94B7-ABD2715C9DB2}&IncludeTemplatesForSelection={B1FEB0DC-74E8-4134-9B39-4D156B04448B},{B185F266-9182-4433-AE00-CBC6AE49DD1F},{BFE5AFE2-FD02-4CB7-94B7-ABD2715C9DB2}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: Treelist
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 450
+Languages:
+- Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Value Providers
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230921T102908Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d3184935-f013-4201-9fca-0bfecb83633c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240213T105816Z

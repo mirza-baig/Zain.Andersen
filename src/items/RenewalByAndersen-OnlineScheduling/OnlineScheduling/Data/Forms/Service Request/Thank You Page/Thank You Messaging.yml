@@ -1,0 +1,36 @@
+﻿---
+ID: "f4ef545c-9922-4396-a2f8-dae9116494a5"
+Parent: "07289f62-10b8-409d-b672-c6015bc4a510"
+Template: "1e258863-055b-4c0d-b775-59541b0a90fd"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Service Request/Thank You Page/Thank You Messaging
+BranchID: "7d8d11ec-a27e-4f43-b608-b07e879a122d"
+SharedFields:
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{2FBBBC10-235F-47C5-A27C-DE3B0018360F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e246876-a2fe-4095-be68-9326368cf7a7"
+      Hint: alignment
+      Value: "{67192EBD-70CE-4603-AE48-70C3B5DF6B2B}"
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T174247Z
+    - ID: "3875eed7-fb48-4f65-9cfe-491437fac478"
+      Hint: body
+      Value: |
+        <h2 style="text-align: center;">THANK YOU!</h2>
+        <p style="text-align: center;">Thank you for requesting a service or repair. A Renewal by Andersen service agent will call you shortly.</p>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "878309c4-7f61-41c8-ab50-b04cf6cf2758"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240117T120913Z

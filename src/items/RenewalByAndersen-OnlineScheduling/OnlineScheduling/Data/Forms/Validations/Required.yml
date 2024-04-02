@@ -1,0 +1,33 @@
+﻿---
+ID: "32619155-b223-4871-983e-d8920b692aa3"
+Parent: "330c780b-0cc3-4abd-a4e0-b8cd5aa46c8f"
+Template: "368f5461-9a97-49cb-a2d3-6b4e271340ff"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Validations/Required
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240223T163324Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7c4aaa63-862c-4654-a27b-3042a7d40ed3"
+    - ID: "ab24c746-0df1-4a6c-8039-66a731d63f8d"
+      Hint: errorMessage
+      Value: "{fieldLabel} is required."
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T163430Z
+    - ID: "ff881b30-8357-42a4-afab-1f8dc3714518"
+      Hint: validationType
+      Value: "{D16071B0-1DF1-4F24-AB33-E2B22203E0B0}"

@@ -1,0 +1,27 @@
+﻿---
+ID: "53695f23-6375-4838-a038-d14299c5dd21"
+Parent: "28f9d5a6-6092-42e2-8528-876a1eb37346"
+Template: "47a35e04-43ae-48a7-881c-6334ea26f4a4"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Settings/Facets
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230403T134515Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cd7f06de-50ed-4757-b8e1-0a3d2e2f78b1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231030T205100Z

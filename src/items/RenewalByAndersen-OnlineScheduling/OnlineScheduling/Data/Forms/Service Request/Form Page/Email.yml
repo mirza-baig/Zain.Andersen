@@ -1,0 +1,39 @@
+﻿---
+ID: "90b4c20f-be18-40ae-8675-92bdc5a6b12e"
+Parent: "d624c21f-d095-47aa-98f3-35694903eb41"
+Template: "a1d62e74-51c3-4bdd-8547-1ece87422ec9"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Service Request/Form Page/Email
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 500
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240117T114216Z
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{022C2407-F7A8-4576-8C9B-45EA8014462D}"
+    - ID: "6b3bbf77-7867-448b-ab5d-123405409097"
+      Hint: placeholderText
+      Value: Email Address
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1cf967f4-afdb-48f9-9d77-52faa5077a96"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: emailAddress
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T150507Z

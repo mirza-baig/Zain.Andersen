@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
+  <sitecore>
+    <settings>
+      <setting name="LayoutService.Caching.ETag.Enabled" value="true" />
+    </settings>
+    <pipelines>
+      <initialize>
+        <processor type="Sitecore.LayoutService.Mvc.Pipelines.Initialize.RegisterRoutes, Sitecore.LayoutService.Mvc"
+                   patch:before="processor[@type='Sitecore.Mvc.Pipelines.Loader.InitializeRoutes, Sitecore.Mvc']"
+                   resolve="true" />
+      </initialize>
+      <httpRequestBegin>
+        <processor type="Sitecore.LayoutService.Mvc.Pipelines.HttpRequestBegin.SkipContextItemResolutionWhenLayoutServiceRequest, Sitecore.LayoutService.Mvc"
+                   resolve="true"
+                   patch:before="processor[contains(@type, 'ItemResolver')]"/>
+      </httpRequestBegin>
+      <!--
+        Note: When Sitecore.Mvc.Analytics is present, we need to ensure that the `ContextItemResolver` processor executes
+        before the `Sitecore.Mvc.Analytics.Pipelines.MvcEvents.RequestBegin.StartTracking, Sitecore.Mvc.Analytics` processor
+      -->
+      <mvc.requestBegin>
+        <processor type="Sitecore.LayoutService.Mvc.Pipelines.RequestBegin.ContextItemResolver, Sitecore.LayoutService.Mvc"
+                   patch:after="processor[@type='Sitecore.Mvc.Pipelines.Request.RequestBegin.EnsureLoggedInForPreview, Sitecore.Mvc']"
+                   resolve="true" />
+      </mvc.requestBegin>
+    </pipelines>
+    <services>
+      <configurator type="Sitecore.LayoutService.Mvc.RegisterDependencies, Sitecore.LayoutService.Mvc" />
+    </services>
+  </sitecore>
+</configuration>

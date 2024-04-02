@@ -1,0 +1,1 @@
+576754  Publishing process can freeze due to errors during acknowledging signals

@@ -1,0 +1,41 @@
+﻿---
+ID: "87e2b22c-7568-4b1f-ab26-c75f6039aba5"
+Parent: "f2278a29-030e-45da-a7df-0626f4ae2460"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/system/Settings/Feature/EnterpriseWeb/Insert Options/RbA Page
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Page
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230804T122410Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a5387adf-7e1f-4d32-a871-0138e05fd181"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230907T075212Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{3C8C5238-78A2-411B-A642-2EAAEC63F5AF}">
+            <conditions>
+              <condition
+                id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                uid="B1D9299A1DD14AEEAF26E8DF24E5D9E9"
+                templateid="{0B71EF43-740F-4206-8177-47EAEC27F6D7}" />
+            </conditions>
+          </rule>
+        </ruleset>

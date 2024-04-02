@@ -1,0 +1,37 @@
+﻿---
+ID: "dea55324-e720-4c10-9522-025b257534dd"
+Parent: "12bbe0d9-9d03-4bd7-b297-f69f4659ce47"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Settings/Insert Options/Xup Dynamic/Affiliate Data Result Item
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240121T160442Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7a16c532-6170-431a-9dfd-5b5383ed7712"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240121T162155Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{D230E29B-573A-42B5-BC7F-C91621400335}">
+            <conditions>
+              <condition
+                id="{5DE6D53E-EA62-4D17-8BDD-FEBCD80AC07B}"
+                uid="D31A1C3B14F64541B7EA46607C85D4A8"
+                templateid="{4B4A94DA-C1E9-4B59-B306-857753D26011}" />
+            </conditions>
+          </rule>
+        </ruleset>

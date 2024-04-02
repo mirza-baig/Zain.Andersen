@@ -1,0 +1,23 @@
+﻿---
+ID: "8851b8b1-0408-44de-bf6c-c90f35f507e8"
+Parent: "230a0b9c-423b-4c20-8130-08662aeea106"
+Template: "4aaa5f48-2f4b-42e2-89cc-a4a92896d011"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/What type of property is your home/What type of property/Property Types
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T202139Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8e16a4ac-8179-4637-a59f-9512a645f59a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240112T202139Z

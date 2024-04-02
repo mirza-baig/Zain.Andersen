@@ -1,0 +1,27 @@
+﻿---
+ID: "81357eb1-ce2c-4e00-ab80-4df63c747a7a"
+Parent: "30cdc733-19b5-45d9-9ad6-523431022cb1"
+Template: "f405005e-94f4-407c-90f5-fc909959618d"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Affiliate Renewal Cares Page/$name/Data/Curated Image Display
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240226T093046Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "336ab930-66c1-481d-a008-c66b2edaed38"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240226T093050Z

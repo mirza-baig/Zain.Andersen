@@ -1,0 +1,38 @@
+﻿---
+ID: "27a87346-b88b-4bdf-9519-4cf2b58f370a"
+Parent: "a25126f1-75ab-400c-a90e-d1a98212462c"
+Template: "a25126f1-75ab-400c-a90e-d1a98212462c"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Forms/Job Applicant/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{633A644C-CF10-4B79-9D0E-D429BC146B8A}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230918T075839Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4e0b42eb-2f9a-4bb4-a1f5-3cf8b8edf5ec"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231004T112144Z

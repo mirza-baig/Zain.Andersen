@@ -1,0 +1,544 @@
+{
+  "namespace": "Content.AndersenCorporation",
+  "references": [
+    "Foundation.EnterpriseWeb",
+    "Feature.EnterpriseWeb",
+    "Project.AndersenCorporation"
+  ],
+  "items": {
+    "includes": [
+      {
+        "name": "AndersenCorporation-Sites",
+        "path": "/sitecore/content/AndersenCorporation",
+        "scope": "itemAndChildren",
+        "allowedPushOperations": "createOnly",
+        "rules": [
+          {
+            "path": "/Enterprise Global",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "AndersenCorporation-Enterprise-Global",
+        "path": "/sitecore/content/AndersenCorporation/Enterprise Global",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createOnly",
+        "rules": [
+          {
+            "path": "/API Keys",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Enums",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createUpdateAndDelete"
+          },
+          {
+            "path": "/Lookups/Personalization",
+            "scope": "itemAndChildren"
+          }
+        ]
+      },
+      {
+        "name": "AndersenCorporation-Media",
+        "path": "/sitecore/media library/Project/AndersenCorporation",
+        "scope": "singleItem",
+        "allowedPushOperations": "createOnly"
+      },
+      {
+        "name": "AndersenWindows-Site",
+        "path": "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Partial Designs",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Page Designs",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Page Branches",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "AndersenHomeDepot-Site",
+        "path": "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenHomeDepot",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Available Renderings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Partial Designs/Empty",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Placeholder Settings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Styles",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "HeritageWindows-Site",
+        "path": "/sitecore/content/AndersenCorporation/AndersenWindows/HeritageWindows",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Available Renderings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Partial Designs/Empty",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Placeholder Settings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Styles",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "StormDoors-Site",
+        "path": "/sitecore/content/AndersenCorporation/AndersenWindows/StormDoors",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Available Renderings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Partial Designs/Empty",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Placeholder Settings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Styles",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "AndersenLuminaire-Site",
+        "path": "/sitecore/content/AndersenCorporation/AndersenWindows/AndersenLuminaire",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Available Renderings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Partial Designs/Empty",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Placeholder Settings",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Presentation/Styles",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "AndersenWindows-Media",
+        "path": "/sitecore/media library/Project/AndersenCorporation/AndersenWindows",
+        "scope": "itemAndChildren",
+        "allowedPushOperations": "createOnly"
+      },
+      {
+        "name": "AndersenWindows-Global",
+        "path": "/sitecore/content/AndersenCorporation/AndersenWindows/Global",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Products",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Technical Documents",
+            "scope": "singleItem"
+          }
+        ]
+      },
+      {
+        "name": "RenewalByAndersen-Site",
+        "path": "/sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Partial Designs",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Page Designs",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Page Branches",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createOnly"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      },
+      {
+        "name": "RenewalByAndersen-Media",
+        "path": "/sitecore/media library/Project/AndersenCorporation/RenewalByAndersen",
+        "scope": "itemAndChildren",
+        "allowedPushOperations": "createOnly"
+      },
+      {
+        "name": "RenewalByAndersen-Media-Affiliates",
+        "path": "/sitecore/media library/Project/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Affiliates",
+        "scope": "singleItem",
+        "allowedPushOperations": "createOnly"
+      },
+      {
+        "name": "RenewalByAndersen-Global",
+        "path": "/sitecore/content/AndersenCorporation/RenewalByAndersen/Global",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Affiliates",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Products",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Data Sources/Geography",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Data Sources/Jobs",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Data Sources",
+            "scope": "itemAndChildren"
+          }
+        ]
+      },
+      {
+        "name": "RenewalByAndersen-OnlineScheduling",
+        "path": "/sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling",
+        "scope": "itemAndDescendants",
+        "allowedPushOperations": "createAndUpdate",
+        "rules": [
+          {
+            "path": "/Data",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Home",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Media",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Partial Designs",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Page Designs",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation/Page Branches",
+            "scope": "singleItem"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants"
+          },
+          {
+            "path": "/Settings/Facets",
+            "scope": "itemAndChildren"
+          },
+          {
+            "path": "/Settings/Redirects",
+            "scope": "singleItem",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
+      }
+    ]
+  }
+}

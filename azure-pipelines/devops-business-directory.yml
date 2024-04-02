@@ -1,0 +1,80 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger: none
+
+# https://crontab.guru/#45_23_*_*_1-5
+schedules:
+- cron: '45 23 * * 1-5'
+  displayName: At 11:45PM on every day-of-week from Monday through Friday
+  branches:
+    include:
+    - main
+
+variables:
+- group: FTP - Rio
+- group: Storage Account - prodawweb2file1
+
+stages:
+- stage: BusinessDirectory
+  pool:
+    name: Enterprise Web
+  jobs:
+  - job: BusinessDirectory
+    displayName: "Send BusinessDirectory to Rio"
+    steps:
+    - checkout: none
+    - task: PowerShell@2
+      displayName: "Install PS Modules"
+      inputs:
+        targetType: inline
+        script: |
+          Write-Host "Installing needed PowerShell modules..." -ForegroundColor DarkGray
+          if (Get-PackageProvider -ListAvailable -Name NuGet) {
+            Write-Host "##[section]PowerShell package provider 'NuGet' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell package provider 'NuGet'..."
+            Install-PackageProvider -Name NuGet -Scope CurrentUser -Verbose
+          }
+          if (Get-Module -ListAvailable -Name WinSCP) {
+            Write-Host "##[section]PowerShell module 'WinSCP ' already installed."
+          } else {
+            Write-Host "##[warning]Installing PowerShell module 'WinSCP '..."
+            Install-Module -Name WinSCP -Scope CurrentUser -Force -Verbose
+          }
+        workingDirectory: $(Build.SourcesDirectory)
+
+    - task: AzurePowerShell@5
+      displayName: "Download from Azure"
+      inputs:
+        azureSubscription: PROD_EntWb1
+        azurePowerShellVersion: 'latestVersion'
+        workingDirectory: $(Agent.TempDirectory)
+        scriptType: 'inlineScript'
+        inline: |
+          Write-Host "Downloading file from Azure..."
+
+          # Get the storage account
+          $storageContext = New-AzStorageContext -StorageAccountName "prodawweb2file1" -StorageAccountKey "$(StorageAccount.prodawweb2file1.AccessKey)"
+
+          # Get the file
+          Get-AzStorageBlobContent -Container "dealerupload" -Blob "businessdirectoryxml.xml" -Destination ".\" -Context $storageContext -Force
+
+    - task: PowerShell@2
+      displayName: "Send to Rio"
+      inputs:
+        targetType: inline
+        script: |
+          Write-Host "Sending file to Rio using WinSCP..."
+
+          # Build the Credential
+          $sessionCredential = New-Object System.Management.Automation.PSCredential ("$(Ftp.Rio.Username)", (ConvertTo-SecureString "$(Ftp.Rio.Password)" -AsPlainText -Force))
+
+          $sessionOptions = New-WinSCPSessionOption -HostName "$(Ftp.Rio.Hostname)" -Protocol Sftp -Credential $sessionCredential -SshHostKeyFingerprint "$(Ftp.Rio.Fingerprint)" -PortNumber 22
+          $session = New-WinSCPSession -SessionOption $sessionOptions
+
+          Send-WinSCPItem -WinSCPSession $session -Path ".\businessdirectoryxml.xml" -RemotePath '/FromAW/'
+
+          Remove-WinSCPSession -WinSCPSession $session
+
+        workingDirectory: $(Agent.TempDirectory)
+

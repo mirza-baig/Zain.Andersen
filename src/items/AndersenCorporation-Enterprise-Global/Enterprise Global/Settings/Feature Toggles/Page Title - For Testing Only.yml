@@ -1,0 +1,31 @@
+﻿---
+ID: "29688f29-9003-46f0-b3d3-80f441dadb98"
+Parent: "794a128b-3e88-4475-b5b5-474adbdaed0d"
+Template: "d0a7a158-a75f-46e3-beac-bedec75b26bd"
+Path: "/sitecore/content/AndersenCorporation/Enterprise Global/Settings/Feature Toggles/Page Title - For Testing Only"
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23847fa2-73a2-431c-89f5-35db3e8abe65"
+      Hint: featureDescription
+      Value: |
+        If this feature is enabled, this will add " - Feature Toggle" to the end of the page title (browser tab title).
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231127T183616Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "528079ac-e188-49b6-9e38-d3d8aa282e1c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240131T123054Z

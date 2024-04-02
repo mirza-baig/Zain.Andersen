@@ -1,0 +1,633 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="general/carousel"
+  id="id1695242607"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="carousel-slider col-span-12"
+      >
+        <div
+          class="items-top font-sans [&_a:hover]:underline  text-theme-text text-sm-m md:text-m font-heavy mb-xxs "
+        >
+          <h2>
+            Optional heading
+          </h2>
+        </div>
+        <div
+          class="font-sans text-theme-text text-sm-s md:text-s font-medium mb-s "
+        >
+          <h3>
+            Optional description of carousel. Here’s what’s going on below.
+          </h3>
+        </div>
+        <div
+          class="slick-slider numbered-pagination slick-initialized"
+          dir="ltr"
+        >
+          <span
+            class="slick-arrow slick-prev text-theme-text hover:text-theme-text"
+            style="display: block;"
+            tabindex="0"
+          >
+            <span />
+          </span>
+          <div
+            class="slick-list"
+          >
+            <div
+              class="slick-track"
+              style="opacity: 1; transform: translate3d(0px, 0px, 0px);"
+            >
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="-1"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="false"
+                class="slick-slide slick-active slick-current"
+                data-index="0"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="1"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="2"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide"
+                data-index="3"
+                style="outline: none; width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="4"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="5"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="6"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                aria-hidden="true"
+                class="slick-slide slick-cloned"
+                data-index="7"
+                style="width: 0px;"
+                tabindex="-1"
+              >
+                <div>
+                  <div>
+                    <div
+                      class="[&_.section-grid]:px-0 [&_.promo-generic-wrapper]:px-0"
+                    >
+                      <div
+                        style="background: darkorange; outline: 5px solid orange; padding: 10px; color: white; max-width: 500px;"
+                      >
+                        <h2>
+                          PromoGeneric
+                        </h2>
+                        <p>
+                          JSS component is missing React implementation. See the developer console for more information.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="caption"
+                    >
+                      <div
+                        class="text-dark-gray mt-xxs text-left mb-s font-regular [&_strong]:text-black  font-serif text-sm-xxs text-body"
+                      >
+                        PRODUCT(S) IN IMAGE  
+                        <a
+                          href="/"
+                        >
+                          Double Hung Window
+                        </a>
+                        
+
+                        <div
+                          id="gtx-trans"
+                          style="position: absolute; left: 320px; top: 19px;"
+                        >
+                          
+
+                          <div
+                            class="gtx-trans-icon"
+                          >
+                             
+                          </div>
+                          
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            class="slick-arrow slick-next text-theme-text hover:text-theme-text"
+            style="display: block;"
+            tabindex="0"
+          >
+            <span />
+          </span>
+          <ul
+            class="mt-xs text-center"
+            style="display: block;"
+          >
+            <li
+              class="slick-active"
+            >
+              <span
+                class=""
+              >
+                1 / 4
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="hidden"
+              >
+                2 / 4
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="hidden"
+              >
+                3 / 4
+              </span>
+            </li>
+            <li
+              class=""
+            >
+              <span
+                class="hidden"
+              >
+                4 / 4
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="justify-center mt-m mb-s flex items-start md:flex-row md:items-center"
+        >
+          <a
+            aria-label="Learn More (Opens in a new tab)"
+            class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-white bg-white px-m py-[9px] font-sans text-button font-heavy text-black hover:border-black hover:bg-black hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray font-heavy text-secondary"
+            data-gtm-click=""
+            data-gtm-dl-event="cta_click"
+            href="/"
+            role="link"
+            tabindex="0"
+            target="_blank"
+            title=""
+          >
+            Learn More
+            <span
+              class="ml-xxs"
+            />
+            <span
+              class="sr-only"
+            >
+               (Opens in a new tab)
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

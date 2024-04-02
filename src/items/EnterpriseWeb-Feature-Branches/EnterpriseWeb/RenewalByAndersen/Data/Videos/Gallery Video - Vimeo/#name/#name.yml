@@ -1,0 +1,31 @@
+﻿---
+ID: "85ac2ba2-75fd-4eed-8a3d-0c5f9c6351b2"
+Parent: "4bd9183c-4d27-45e9-8b18-08c187d5ede4"
+Template: "396f8987-9ec8-4916-9b38-7d9f8499e3f6"
+Path: "/sitecore/templates/Branches/Feature/EnterpriseWeb/RenewalByAndersen/Data/Videos/Gallery Video - Vimeo/$name/$name"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230620T152358Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "397ef354-59fe-4a21-a384-b335397cf70f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230620T152358Z

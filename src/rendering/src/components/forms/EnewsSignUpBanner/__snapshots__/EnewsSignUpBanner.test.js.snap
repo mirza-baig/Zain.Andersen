@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="forms/enewssignupbanner"
+  id="id1695242607"
+>
+  <div
+    class="my-8 w-full theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12 mx-[calc(50%-50vw)] flex min-h-[94px] items-center bg-light-gray p-m"
+      >
+        <div
+          class="mx-auto w-full max-w-screen-lg"
+        >
+          <div
+            class="flex ml:w-full ml:flex-row ml:justify-between"
+          >
+            <div
+              class="flex-grow [&_.pages_.grid]:!gap-x-xxxs"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

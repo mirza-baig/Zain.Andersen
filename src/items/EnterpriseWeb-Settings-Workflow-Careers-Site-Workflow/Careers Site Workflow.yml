@@ -1,0 +1,39 @@
+﻿---
+ID: "d452a9bb-52ed-4bdb-a20d-108252a275d7"
+Parent: "05592656-56d7-4d85-aacf-30919ee494f9"
+Template: "1c0acc50-37be-4742-b43c-96a07a7410a5"
+Path: /sitecore/system/Workflows/Careers Site Workflow
+SharedFields:
+- ID: "b5166b38-e4bf-4410-953c-2037f2bf6a56"
+  Hint: Initial state
+  Value: "{C9A4831C-0D21-4662-B417-163B3652E5CF}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|rba\Affiliate|pe|+item:read|pd|+item:read|ar|rba\Site Admin|pe|+item:write|pd|+item:write|ar|sitecore\TASiteContentAuthor|pe|+item:read|+item:write|pd|+item:read|+item:write|ar|sitecore\RbA Approver|pe|^*|+item:create|+workflowState:write|+workflowCommand:execute|+item:rename|+item:admin|+item:write|+item:delete|+item:read|+workflowState:delete|pd|+item:create|+workflowState:write|+workflowCommand:execute|+item:rename|+item:admin|+item:write|+item:delete|+workflowState:delete|+item:read|^*|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210419T115956Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\ttalafous
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\ttalafous
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "157ce489-4ed6-4232-97a4-f462fa661115"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240321T061257Z

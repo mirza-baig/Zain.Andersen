@@ -1,0 +1,26 @@
+﻿---
+ID: "1c9992d1-7a8d-4694-990b-8a1bd7cc9273"
+Parent: "53695f23-6375-4838-a038-d14299c5dd21"
+Template: "6f0f9b58-daec-4c55-a519-36b3207d109c"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenWindows/Settings/Facets/Home Style
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230717T062120Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8131cf13-ca69-4a51-a68e-e46a28b362b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c5c5443e-ae24-4a7e-8691-4238d55e5494"
+      Hint: queryIdentifier
+      Value: "home-style"
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231030T202031Z

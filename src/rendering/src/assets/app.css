@@ -1,0 +1,267 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+@import './utilities/_utilities.theme.css';
+
+@import './slider/slick.css';
+@import './slider/slick-theme.css';
+@import './slider/before-after-compare-slider.css';
+@import './tabs/react-tabs.css';
+
+@import './bazaarvoice/bazaarvoice-question-answer.css';
+@import './bazaarvoice/bazaarvoice-reviews.css';
+@import './bazaarvoice/bazaarvoice-review-submission.css';
+
+@import './legacy/responsive-table.css';
+
+@import './product-design-tool/product-design-tool.css';
+@import  './appointment-calendar/AppointmentCalendar.css';
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+    scroll-padding-top: 300px; /* Added this padding to handle offset with the header's height */
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
+
+  body {
+    font-family: open-sans, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  /* Styling for RTE blocks */
+  .body-copy {
+    font-size: theme('fontSize.body');
+  }
+  .body-copy ol {
+    list-style: decimal;
+    margin: 10px 0;
+  }
+
+  .body-copy ul {
+    margin: 20px;
+  }
+
+  .body-copy ol li::marker {
+    font-size: inherit;
+  }
+
+  .aw .body-copy a:link,
+  .aw .body-copy a:visited {
+    font-family: theme('fontFamily.serif');
+    color: theme('colors.darkprimary');
+    cursor: pointer;
+    text-underline-offset: 4px;
+  }
+
+  .aw .body-copy a:hover,
+  .aw .body-copy a:focus {
+    text-decoration-line: underline;
+  }
+
+  .aw .body-copy ul li {
+    color: inherit;
+  }
+
+  .aw .body-copy ul {
+    color: inherit;
+    list-style-type: disc;
+  }
+
+  .aw .body-copy ul ul {
+    margin-left: 20px;
+    list-style-type: circle;
+  }
+
+  .aw .theme-black .body-copy ul li::before {
+    background-color: theme('colors.white');
+  }
+
+  .aw [data-component='general/socialimagecarousel'] .body-copy a {
+    display: inline-block;
+  }
+
+  .aw .caption a:link,
+  .aw .caption a:visited {
+    font-family: inherit;
+    color: theme('colors.darkprimary');
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+
+  .aw .caption a span.svg-icon {
+    margin-top: -0.25rem;
+  }
+
+  .rba .body-copy a:link,
+  .rba .body-copy a:visited {
+    font-family: theme('fontFamily.serif');
+    color: theme('colors.darkprimary');
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .rba .body-copy a:hover,
+  .rba .body-copy a:focus {
+    text-decoration-line: underline;
+  }
+
+  .rba .body-copy ul li {
+    color: inherit;
+    padding-left: 8px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .body-copy p {
+    margin-bottom: 1rem;
+  }
+
+  .rba .body-copy ul li::before {
+    content: '';
+    position: absolute;
+    top: calc((1.5em - 4px) / 2);
+    left: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: theme('colors.dark-gray');
+  }
+
+  .rba .theme-black .body-copy ul li::before {
+    background-color: theme('colors.white');
+  }
+
+  .rba .theme-black .body-copy a:link,
+  .rba .theme-black .body-copy a:visited {
+    color: theme('colors.primary');
+  }
+
+  .rba .caption a:link,
+  .rba .caption a:visited {
+    font-family: inherit;
+    color: theme('colors.darkprimary');
+    cursor: pointer;
+    text-decoration-line: underline;
+    font-weight: 700;
+  }
+
+  .awfooter .accordion-item {
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+  }
+
+  .awfooter .accordion-item.collapsed {
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  }
+
+  .rba-ta-searchbox .standaloneSearchBoxWrapper,
+  .rba-ta-searchbox .standaloneSearchBoxWrapper input {
+    background: theme('colors.light-gray');
+  }
+
+  .legal-copy {
+    font-size: theme('fontSize.legal');
+  }
+
+  @media only screen and (max-width: 1007px) {
+    header {
+      position: relative;
+    }
+  }
+  header a:hover,
+  header a:focus,
+  header a:active:hover,
+  header a:active:focus,
+  header a:visited:hover,
+  header a:visited:focus {
+    text-decoration: underline;
+  }
+}
+
+/* Hide horizontal scrollbars of the comparison tables */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.ta-header-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: theme('colors.white');
+  width: 100%;
+  z-index: 999;
+}
+
+/* scrollbar design for VideoGallery component in rba */
+.rba .rba-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rba .rba-scrollbar::-webkit-scrollbar-track {
+  background-color: theme('colors.light-gray');
+}
+
+.rba .rba-scrollbar.bg-white-scrollbar::-webkit-scrollbar-track {
+  background-color: theme('colors.white');
+}
+
+.rba .rba-scrollbar::-webkit-scrollbar-thumb {
+  background-color: theme('colors.black');
+}
+
+#breadcrumb .horizontal-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+#breadcrumb .before-shadow {
+  background: linear-gradient(270deg, #ffffff 50%, rgba(255, 255, 255, 0) 148.48%);
+}
+#breadcrumb .after-shadow {
+  background: linear-gradient(270deg, #ffffff 50%, rgba(255, 255, 255, 0) 148.48%);
+}
+
+.scroll-container {
+  scroll-margin: 80px;
+}
+
+/* CSS to remove highlight from input type date   */
+section[data-component='forms/formcontainer'] input::-webkit-datetime-edit-day-field:focus,
+section[data-component='forms/formcontainer'] input::-webkit-datetime-edit-month-field:focus,
+section[data-component='forms/formcontainer'] input::-webkit-datetime-edit-year-field:focus {
+  background-color: #fff;
+  outline: none;
+  color: theme('colors.black');
+}
+section[data-component='forms/formcontainer']
+  input[type='date']::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}

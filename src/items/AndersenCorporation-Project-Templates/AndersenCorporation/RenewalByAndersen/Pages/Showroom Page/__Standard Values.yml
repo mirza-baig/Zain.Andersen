@@ -1,0 +1,77 @@
+﻿---
+ID: "5fcb95ae-9852-4fc5-a350-268f45e93658"
+Parent: "94a9901c-0489-44f3-a476-c988b53bc138"
+Template: "94a9901c-0489-44f3-a476-c988b53bc138"
+Path: /sitecore/templates/Project/AndersenCorporation/RenewalByAndersen/Pages/Showroom Page/__Standard Values
+SharedFields:
+- ID: "ca9b9f52-4fb0-4f87-a79f-24dea62cda65"
+  Hint: __Default workflow
+  Value: "{A149F6AE-49EA-49CD-8EFF-4CBF693E5435}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{DD2C902A-D7D2-4DB9-8538-C7748DAB080D}">
+        <r
+          ds="local:/Data/Hero Simple"
+          id="{EEE84920-F7A4-42BA-9A72-6CCDD7C8F933}"
+          par="personalizationRules"
+          ph="headless-hero"
+          uid="{04846B59-EBFF-4B8A-90D8-A9720A79A1FB}"
+          ccb="Clear on publish" />
+        <r
+          id="{DD6FA138-670D-4B61-B007-9389860EA82E}"
+          par="CacheClearingBehavior=Clear%20on%20publish"
+          ph="headless-main"
+          uid="{BC4FE11B-CADD-486B-96C1-10215D050714}" />
+        <r
+          ds="local:/Data/Content Block"
+          id="{9DAFF515-C692-4D7B-956D-0A2F14EF8ABC}"
+          par="personalizationRules"
+          ph="headless-main"
+          uid="{E1927624-AB12-46D2-94C6-6B845722B6D7}"
+          ccb="Clear on publish" />
+        <r
+          ds="local:/Data/HTML Block"
+          id="{04467CFB-98D5-4EDF-BC31-961E1FBC9EBB}"
+          par=""
+          ph="headless-main"
+          uid="{036BC060-9857-4812-8098-3CB05CFF5EA9}"
+          ccb="Clear on publish" />
+        <r
+          ds="/sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Data/Components/Retailer/OffersXup"
+          id="{289FFDF1-6A0B-4F08-9F4F-7883C32B08D4}"
+          par=""
+          ph="headless-main"
+          uid="{383C5314-C485-4AB2-9CDD-1537D3AB1E59}"
+          ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T193713Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "309d9a98-70e6-46a8-b4a9-f5fcd88d33c5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240319T075820Z

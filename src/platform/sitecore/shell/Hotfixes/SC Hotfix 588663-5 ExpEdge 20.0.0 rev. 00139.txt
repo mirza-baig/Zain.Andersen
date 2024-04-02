@@ -1,0 +1,23 @@
+543509  Layout service queries are not publishing to edge
+548859  Publish from root sitecore item yields 0 published items
+554432  Publishing failing in XM Cloud instance
+540599  [Edge][Publishing] Language Parse exception during CheckDeltaPublishBlock
+534060  Partial Design items cannot be published
+577271  Errors for item version not registered under Languages
+576718  The "Publish to 'master'" job is created when publishing to Experience Edge
+579372  [Exp Edge Connector] Improve the error handling
+577397  Experience Edge Connector should send invariant culture when deleting MediaItems
+582256  Send EntityBatch based on size or count
+585524  [SXE] Improve performance of AddLanguageDependenciesBlock
+580776  [SXE] Improve performance of ResolveDependenciesForUpdatedItemBlock
+587004  Token Expiration causes GRPC connection error
+586631  Implementing Single SiteInfo Solution
+584715  Reduce TPL speed and stop related items publishing
+588451  Smart Publishing with sub item but without related item will not able to publish all datasource item that related under the same page
+587469  Cleanup expired ack messages
+588640  [SXE] BatchBlock should have set BoundedCapacity
+589870  [SXE] Add timeout logic to ack send/receive.
+589873  [SXE] Prevent multiple calculations of dependencies for same item
+589447  [SXE] Set restrict memory consumption in InputAggregatorBlock
+589629  Improve handling of 520 and 524 errors
+590340  Publishing can get stuck

@@ -1,0 +1,30 @@
+﻿---
+ID: "99d93e27-958f-4e33-b2b4-2dc7cafc9bfb"
+Parent: "1233c395-5e60-4446-a0cc-c32243940f74"
+Template: "fc1eb258-5764-44b9-a4cf-d0a24ffc8da7"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/Global
+SharedFields:
+- ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
+  Hint: __Read Only
+  Value: 1
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230322T103626Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ee8a1b81-1f17-45d0-8ffb-8d7e22c665d5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240103T142858Z

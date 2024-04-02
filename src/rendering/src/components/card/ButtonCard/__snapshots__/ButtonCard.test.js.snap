@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="theme-white m-0 flex h-full flex-col md:max-w-screen-lg lg:mx-auto transition-all duration-200 ease-in-out md:hover:scale-105 !my-s ml-[11px] ml:!mt-25px ml:!ml-[20px] hover:!ml-[20px] md:hover:shadow-xl group !w-[95%] !h-[98%]"
+  data-component="card/buttoncard"
+>
+  <div
+    class="flex grow flex-col cursor-pointer md:p-2"
+    tabindex="0"
+  >
+    <span
+      style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+    >
+      <span
+        style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2780%27%20height=%2780%27/%3e"
+          style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+        />
+      </span>
+      <img
+        alt="Icon"
+        class="h-[80px] w-[80px] mx-auto !h-[80px] !min-h-0 !w-[80px] !min-w-0"
+        data-nimg="intrinsic"
+        decoding="async"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-position: left;"
+      />
+      <noscript />
+    </span>
+    <div
+      class="flex grow flex-col"
+    >
+      <div
+        class="flex grow flex-col mt-s text-center"
+      >
+        <div
+          class="text-sm-xs md:text-xs uppercase text-dark-gray mb-s font-regular"
+        >
+          <h4>
+            Eyebrow
+          </h4>
+        </div>
+        <div
+          class="items-top font-sans [&_a:hover]:underline mb-xxs text-sm-s md:text-s font-heavy justify-center"
+        >
+          <h3>
+            Headline
+          </h3>
+        </div>
+        <div
+          class="font-sans mb-xxs text-sm-xs md:text-xs font-medium"
+        >
+          <p>
+            SubHeadline
+          </p>
+        </div>
+        <div
+          class="text-theme-body text-body font-regular mb-s"
+        >
+          <div
+            class="body-copy"
+          >
+            <div>
+              Lorem Ipsum dolor sit amet,Lorem Ipsum dolor sit amet
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="mb-s flex items-start flex-col space-y-4 mb-m col-span-12 flex flex-col md:justify-center items-center"
+      >
+        <a
+          aria-label="Read More"
+          class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed id url name displayName fields templateId templateName md:whitespace-pre-wrap	md:w-lg buttonCardCta group-hover:bg-primary group-hover:text-black"
+          data-gtm-click=""
+          data-gtm-dl-event="cta_click"
+          href="/"
+          role="link"
+          tabindex="0"
+          target=""
+          title=""
+        >
+          Read More
+          <span
+            class="ml-xxs"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

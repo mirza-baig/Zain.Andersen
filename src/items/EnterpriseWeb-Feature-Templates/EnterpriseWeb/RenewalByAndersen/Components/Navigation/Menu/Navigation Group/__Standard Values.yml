@@ -1,0 +1,40 @@
+﻿---
+ID: "cf35b8f7-c0ad-4120-b238-e20a7c7e0f9e"
+Parent: "5f46fc87-1acc-460c-8ff2-ba018441a7da"
+Template: "5f46fc87-1acc-460c-8ff2-ba018441a7da"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Navigation/Menu/Navigation Group/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {68DB4E89-FCF0-4858-ADF0-A67945650DE0}
+    {0A3F014A-F0AE-48D9-AC2E-5C78FA7D034C}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230625T172557Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6d133a4a-efda-497f-ba8a-56b44971fa11"
+      Hint: navigationGroupTitle
+      Value: $name
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2bd0832a-c107-474e-8f97-ffb6c00e725f"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230626T111352Z

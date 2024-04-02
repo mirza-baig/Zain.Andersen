@@ -1,0 +1,6 @@
+﻿---
+Role: |
+  sitecore\Stormdoors Webmaster
+MemberOf:
+  Role: |
+    sitecore\EntWeb Master

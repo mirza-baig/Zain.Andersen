@@ -1,0 +1,35 @@
+﻿---
+ID: "1ecd8b0a-4adb-4972-9c04-9073d8a5ca44"
+Parent: "a4215e60-8f9f-44e6-b445-bf7f313aaee3"
+Template: "d2923fee-da4e-49be-830c-e27764dfa269"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Enums/Search/Result Type/Enterprise/Video
+SharedFields:
+- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
+  Hint: Value
+  Value: 5DABD9C59C7346B0A2F141A0491A322E|A3A3CA99D5354E53AAB9C05FDEB02F3D|B1156C6A0B3E476BAEE41F87201AA750
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231214T130344Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4eb755ff-275e-4342-9bb8-aa504f64cbb7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231229T091737Z

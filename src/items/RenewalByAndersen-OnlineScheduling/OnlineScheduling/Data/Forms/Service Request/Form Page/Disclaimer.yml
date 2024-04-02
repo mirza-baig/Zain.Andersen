@@ -1,0 +1,31 @@
+﻿---
+ID: "7a7d94bb-5b25-43b4-baa7-26a0ca94716f"
+Parent: "d624c21f-d095-47aa-98f3-35694903eb41"
+Template: "b1547b3c-2d27-41cb-ae05-58198f49e2dc"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Service Request/Form Page/Disclaimer
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1400
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240117T115656Z
+    - ID: "51857603-00af-415e-a296-3d94a7aaa351"
+      Hint: disclaimerText
+      Value: |
+        <span style="color: #50565a; background-color: #f8f9ff; text-align: center;">*I want to learn more about Renewal by Andersen and schedule an in-home price quote. By submitting this form, which I agree is my signature, I consent to receive recurring informational and advertising calls, texts, and emails from Renewal by Andersen and its affiliates and retailers, including by automated technology or prerecorded voice. I understand consent is not required for purchase and that I can opt out at any time, including (for texts) by replying &ldquo;STOP.&rdquo; I understand any Renewal by Andersen calls may be recorded. Renewal by Andersen collects certain categories of personal information and uses this information in various ways, including order fulfillment and providing product information and services, as further described in our Privacy Policy. I agree to Renewal by Andersen&rsquo;s&nbsp;</span><a rel="noopener noreferrer" target="_blank" href="https://www.andersenwindows.com/support/privacy/?_ga=2.117400070.1604903625.1655825151-1712057851.1655313809" style="color: #50565a; background-color: #f8f9ff; margin: 0px; padding: 0px; border: 0px; text-align: center; line-height: inherit;">Privacy Policy</a><span style="color: #50565a; background-color: #f8f9ff; text-align: center;">&nbsp;and&nbsp;</span><a rel="noopener noreferrer" target="_blank" href="https://www.renewalbyandersen.com/about/terms-of-use" style="color: #50565a; background-color: #f8f9ff; margin: 0px; padding: 0px; border: 0px; text-align: center; line-height: inherit;">Terms and Conditions</a><span style="color: #50565a; background-color: #f8f9ff; text-align: center;">&nbsp;. Message and data rates apply. California residents, click&nbsp;</span><a rel="noopener noreferrer" target="_blank" href="https://www.andersenwindows.com/support/privacy-california/?_ga=2.85378585.1604903625.1655825151-1712057851.1655313809" style="color: #50565a; background-color: #f8f9ff; margin: 0px; padding: 0px; border: 0px; text-align: center; line-height: inherit;">here</a><span style="color: #50565a; background-color: #f8f9ff; text-align: center;">&nbsp;for more information about the information we collect.</span>
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c32b9c1-02cb-453a-8886-45486fc7c523"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240117T115713Z

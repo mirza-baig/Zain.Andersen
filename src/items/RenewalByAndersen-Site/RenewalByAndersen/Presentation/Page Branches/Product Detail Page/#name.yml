@@ -1,0 +1,108 @@
+﻿---
+ID: "26b41b8a-450b-4fa6-9244-fb0c4dc53ec4"
+Parent: "1f29f9f9-b61a-480c-a9ce-2eca6423e1f7"
+Template: "79c7f0af-3f65-49ca-8211-80f33eff62ee"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Product Detail Page/$name
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:p="p" xmlns:s="s"
+      p:p="1">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+        <r
+          uid="{E333FF6A-6404-4992-8314-91DB67C1759A}"
+          p:before="*"
+          s:ds="local:/Data/Hero Product Tabs"
+          s:id="{D8F94CB6-5199-4B5B-A027-03ADD2E52971}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{8ADE996F-6EC6-4B5B-8F0F-CF3BDB661AC3}"
+          p:after="r[@uid='{E333FF6A-6404-4992-8314-91DB67C1759A}']"
+          s:ds="{A24A91E7-8CE4-4EF7-A18C-E57B258A2C03}"
+          s:id="{38836F8C-2EE0-4AB9-B599-5DCA56021558}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{5D565EF3-2547-4187-B639-6E83863EDFD7}"
+          p:after="r[@uid='{8ADE996F-6EC6-4B5B-8F0F-CF3BDB661AC3}']"
+          s:ds="{33CC1408-E9EF-4C66-A107-5DB267F15456}"
+          s:id="{77B2FC25-36FB-4800-ABAD-22BF212A1DED}"
+          s:par="personalizationRules"
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{EF67C57C-CF27-4380-91CC-A13666D163D9}"
+          p:after="r[@uid='{5D565EF3-2547-4187-B639-6E83863EDFD7}']"
+          s:ds="{2FA8DCE6-C79B-4419-B0FE-60717F24F82D}"
+          s:id="{B9EDD850-FAE7-4484-8F1A-C718BB62FFC0}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{671424DA-3668-49B7-9332-33DB3261B216}"
+          p:after="r[@uid='{EF67C57C-CF27-4380-91CC-A13666D163D9}']"
+          s:ds="{91702979-6ABB-491C-A535-9A7D50788B9C}"
+          s:id="{04467CFB-98D5-4EDF-BC31-961E1FBC9EBB}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{57AC536F-F3CB-42D9-A5DE-5A6DBF1DDA17}"
+          p:after="r[@uid='{671424DA-3668-49B7-9332-33DB3261B216}']"
+          s:ds="local:/Data/Video Gallery Dynamic"
+          s:id="{4EE3D2D1-E50F-4FE1-B38E-AC88CD508F17}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{F7D383F3-DD34-4C45-B5F3-7430F41CA6DA}"
+          p:after="r[@uid='{57AC536F-F3CB-42D9-A5DE-5A6DBF1DDA17}']"
+          s:ds="{AE5B756D-C255-4F67-9246-BC16CA19B55B}"
+          s:id="{289FFDF1-6A0B-4F08-9F4F-7883C32B08D4}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{B2361B19-8BAB-42DF-A51B-8CBFD43D0C8F}"
+          p:after="r[@uid='{F7D383F3-DD34-4C45-B5F3-7430F41CA6DA}']"
+          s:ds="{9C8CF887-3779-4BE1-9E81-453E2B806A06}"
+          s:id="{5CC3BC76-E26C-4854-9BBD-DC6857DCA2FB}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+        <r
+          uid="{5500DE8D-A24A-411D-8661-435709C07E82}"
+          p:after="*[1=2]"
+          s:ds="{5EEBA1B9-331A-45A6-B25D-8C810C7F8C5B}"
+          s:id="{289FFDF1-6A0B-4F08-9F4F-7883C32B08D4}"
+          s:par=""
+          s:ph="headless-main"
+          s:ccb="Clear on publish" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240312T094034Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dec80622-9c20-4998-9501-1ff78b4e6af5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240312T110740Z
+    - ID: "e79cbfcf-c9b3-4c05-91d9-ff8412215bf8"
+      Hint: lastUpdated
+      Value: 20240312T110740Z

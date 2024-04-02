@@ -1,0 +1,84 @@
+name: $(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)
+
+trigger:
+  branches:
+    include:
+    - main
+  paths: # TODO: Have a better way of doing this
+    include:
+    - azure-pipelines/id-main.yml
+    - azure-pipelines/templates/id/*
+    - azure-pipelines/build/id/*
+    - azure-pipelines/deployt/RolloutID.ps1
+
+
+resources:
+  repositories:
+  - repository: enterprise-deployment
+    type: git
+    name: enterprise-deployment
+
+pool:
+  vmImage: windows-latest
+
+variables:
+- group: Web - Build Deploy - Global
+- name: buildConfiguration
+  value: Debug
+- name: containerRegistry
+  value: prodentwb1acr1
+- name: repository
+  value: enterpriseweb/enterpriseweb-id
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildDocker
+    displayName: Build and Publish Identity Docker
+    pool:
+      name: Enterprise Web
+    steps:
+    - template: templates\id\build-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository)
+        latestTag: latest
+    - template: templates\publish-docker.yml
+      parameters:
+        containerRegistry: $(containerRegistry)
+        repository: $(repository)
+        latestTag: latest
+
+- stage: UAT
+  dependsOn: Build
+  displayName: UAT
+  jobs:
+  - template: templates\id\deploy-docker.yml
+    parameters:
+      devopsEnvironment: CM-UAT
+      azureSubscription: DEV_ENTWB1
+      aksSubscription: AKS - ARM
+      aksClusterName: AKS-Cluster1
+      aksClusterResourceGroup: AKS_Cluster1a
+      aksPodName: id-uat
+      aksNamespace: sitecore
+      sitecoreEnvironment: uat
+      sitecoreIdUrl: https://id.uat.ew.andersencorp.com
+      repository: $(repository)
+
+- stage: Production
+  dependsOn: UAT
+  displayName: Production
+  jobs:
+  - template: templates\id\deploy-docker.yml
+    parameters:
+      devopsEnvironment: CM-Prod
+      azureSubscription: PROD_ENTWB1
+      aksSubscription: AKS - ARM
+      aksClusterName: AKS-Cluster1
+      aksClusterResourceGroup: AKS_Cluster1a
+      aksPodName: id-prod
+      aksNamespace: sitecore-prod
+      sitecoreEnvironment: prod
+      sitecoreIdUrl: https://id.prod.ew.andersencorp.com
+      repository: $(repository)

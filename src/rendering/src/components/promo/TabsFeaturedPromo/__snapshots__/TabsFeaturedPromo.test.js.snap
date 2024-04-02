@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  data-component="promo/tabsfeaturedpromo"
+  id="id1695242607"
+>
+  <div
+    class="my-8 lg:mx-auto md:max-w-screen-lg theme-white"
+  >
+    <div
+      class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
+    >
+      <div
+        class="col-span-12"
+      >
+        <div
+          class="items-top font-sans [&_a:hover]:underline text-s ml:text-m font-bold"
+        >
+          <h2>
+            The right solution for any project
+          </h2>
+        </div>
+      </div>
+      <div
+        class="col-span-12 mb-ml"
+      >
+        <div
+          class="flex flex-col ml:flex-row min-h-[542px]"
+        >
+          <div
+            class="w-full ml:w-1/4 ml:pr-s flex flex-col ml:inline-block"
+          >
+            <div
+              class="order-2 max-w-[70%]"
+            />
+            <div
+              class="flex items-center border-t pt-s mb-xxs uppercase"
+            >
+              <span
+                class="mr-xxxs"
+              />
+              <div
+                class="items-top font-sans [&_a:hover]:underline text-xs font-heavy"
+              >
+                <h2>
+                  Doors by Type
+                </h2>
+              </div>
+            </div>
+            <div
+              class="relative flex order-3 ml:order-none pr-s pl-s"
+            >
+              <div
+                class="absolute right-full top-1/2 -translate-y-1/2 cursor-pointer bg-white before:absolute before:left-full before:inline-block before:h-[30px] before:w-[30px] before:bg-gradient-to-r before:from-white before:content-[""] ml:hidden"
+              >
+                <span />
+              </div>
+              <ul
+                class="order-3 flex ml:inline-block overflow-auto snap-x ml:snap-none"
+              >
+                <li
+                  class="break-words text-body ml:text-xs text-dark-gray cursor-pointer mx-xxs ml:mx-0 py-xxxs ml:px-xxs ml:border-l-2 my-s snap-start"
+                  id="awning"
+                  tabindex="0"
+                >
+                  <h4>
+                    Awning windows
+                  </h4>
+                </li>
+                <li
+                  class="break-words text-body ml:text-xs text-dark-gray cursor-pointer mx-xxs ml:mx-0 py-xxxs ml:px-xxs ml:border-l-2 my-s snap-start !text-secondary font-heavy border-b-2 ml:border-b-0 border-primary"
+                  id="bay-bow"
+                  tabindex="0"
+                >
+                  <h4>
+                    Bay & bow windows
+                  </h4>
+                </li>
+                <li
+                  class="break-words text-body ml:text-xs text-dark-gray cursor-pointer mx-xxs ml:mx-0 py-xxxs ml:px-xxs ml:border-l-2 my-s snap-start"
+                  id="big-doors"
+                  tabindex="0"
+                >
+                  <h4>
+                    Big doors
+                  </h4>
+                </li>
+              </ul>
+              <div
+                class="absolute left-full top-1/2 -translate-y-1/2 cursor-pointer bg-white before:absolute before:right-full before:inline-block before:h-[30px] before:w-[30px] before:bg-gradient-to-l before:from-white before:content-[""] ml:hidden"
+              >
+                <span />
+              </div>
+            </div>
+            <div
+              class="flex items-center border-t pt-s mb-xxs uppercase"
+            >
+              <span
+                class="mr-xxxs"
+              />
+              <div
+                class="items-top font-sans [&_a:hover]:underline text-xs font-heavy"
+              >
+                <h2>
+                  Test Tab section
+                </h2>
+              </div>
+            </div>
+            <div
+              class="relative flex order-3 ml:order-none pr-s pl-s"
+            >
+              <div
+                class="absolute right-full top-1/2 -translate-y-1/2 cursor-pointer bg-white before:absolute before:left-full before:inline-block before:h-[30px] before:w-[30px] before:bg-gradient-to-r before:from-white before:content-[""] ml:hidden"
+              >
+                <span />
+              </div>
+              <ul
+                class="order-3 flex ml:inline-block overflow-auto snap-x ml:snap-none"
+              />
+            </div>
+            <div
+              class="flex items-center border-t pt-s mb-xxs uppercase"
+            >
+              <span
+                class="mr-xxxs"
+              />
+              <div
+                class="items-top font-sans [&_a:hover]:underline text-xs font-heavy"
+              >
+                <h2>
+                  Types of Windows
+                </h2>
+              </div>
+            </div>
+            <div
+              class="relative flex order-3 ml:order-none pr-s pl-s"
+            >
+              <div
+                class="absolute right-full top-1/2 -translate-y-1/2 cursor-pointer bg-white before:absolute before:left-full before:inline-block before:h-[30px] before:w-[30px] before:bg-gradient-to-r before:from-white before:content-[""] ml:hidden"
+              >
+                <span />
+              </div>
+              <ul
+                class="order-3 flex ml:inline-block overflow-auto snap-x ml:snap-none"
+              >
+                <li
+                  class="break-words text-body ml:text-xs text-dark-gray cursor-pointer mx-xxs ml:mx-0 py-xxxs ml:px-xxs ml:border-l-2 my-s snap-start"
+                  id="casement"
+                  tabindex="0"
+                >
+                  <h4>
+                    Casement windows
+                  </h4>
+                </li>
+                <li
+                  class="break-words text-body ml:text-xs text-dark-gray cursor-pointer mx-xxs ml:mx-0 py-xxxs ml:px-xxs ml:border-l-2 my-s snap-start"
+                  id="entry"
+                  tabindex="0"
+                >
+                  <h4>
+                    Entry doors
+                  </h4>
+                </li>
+                <li
+                  class="break-words text-body ml:text-xs text-dark-gray cursor-pointer mx-xxs ml:mx-0 py-xxxs ml:px-xxs ml:border-l-2 my-s snap-start"
+                  id="small-doors"
+                  tabindex="0"
+                >
+                  <h4>
+                    Small doors
+                  </h4>
+                </li>
+              </ul>
+              <div
+                class="absolute left-full top-1/2 -translate-y-1/2 cursor-pointer bg-white before:absolute before:right-full before:inline-block before:h-[30px] before:w-[30px] before:bg-gradient-to-l before:from-white before:content-[""] ml:hidden"
+              >
+                <span />
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full ml:w-3/4"
+          >
+            <div
+              class="theme-gray relative bg-theme-bg h-full flex flex-col ml:flex-row items-center justify-between p-m ml:px-xl ml:py-l before:content-[""] before:absolute before:w-screen before:h-full before:bg-theme-bg before:top-0 before:-z-10 ml:before:hidden"
+            >
+              <div
+                class="w-full ml:w-3/5 mb-xxs ml:mb-0"
+              >
+                <div
+                  class="relative hidden md:block aspect-picture   "
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 133.33333333333331% 0px 0px 0px;"
+                    />
+                    <img
+                      alt=""
+                      data-nimg="responsive"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div
+                  class="relative w-full md:hidden"
+                >
+                  <span
+                    style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 133.33333333333331% 0px 0px 0px;"
+                    />
+                    <img
+                      alt=""
+                      data-nimg="responsive"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover; object-position: center;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+              </div>
+              <div
+                class="w-full ml:w-2/6"
+              >
+                <div
+                  class="items-top font-sans [&_a:hover]:underline text-s ml:text-m text-theme-text font-bold mb-s"
+                >
+                  <h2>
+                    Bay & bow windows
+                  </h2>
+                </div>
+                <div
+                  class="text-body text-dark-gray mb-m"
+                >
+                  <div
+                    class="body-copy"
+                  >
+                    <div>
+                      <strong>
+                        What: 
+                      </strong>
+                      The cozy nook with at least three windows
+                      <br />
+                      
+
+                      <strong>
+                        Where:
+                      </strong>
+                       Most often used in living rooms and bedrooms
+                      <br />
+                      
+
+                      <strong>
+                        Fun Fact:
+                      </strong>
+                       Angled out beyond the house wall, for extra space inside
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="mb-s flex items-start md:flex-row md:items-center"
+                >
+                  <a
+                    aria-label="Learn More"
+                    class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed"
+                    data-gtm-click=""
+                    data-gtm-dl-event="cta_click"
+                    href="/"
+                    role="link"
+                    tabindex="0"
+                    target=""
+                    title=""
+                  >
+                    Learn More
+                    <span
+                      class="ml-xxs"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

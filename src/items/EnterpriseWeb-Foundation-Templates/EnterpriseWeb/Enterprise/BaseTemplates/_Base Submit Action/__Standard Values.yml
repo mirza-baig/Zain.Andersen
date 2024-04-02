@@ -1,0 +1,37 @@
+﻿---
+ID: "d73f9621-09f5-4eba-b3bd-a8bc95c96a33"
+Parent: "fcb94d7d-dd69-4ad9-9996-47f372f2c6dc"
+Template: "fcb94d7d-dd69-4ad9-9996-47f372f2c6dc"
+Path: /sitecore/templates/Foundation/EnterpriseWeb/Enterprise/BaseTemplates/_Base Submit Action/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0fb050e1-3324-467f-af67-a0429c7c28f5"
+      Hint: stopOnError
+      Value: 1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230907T091907Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "9e637e40-4a10-4b98-8cb4-faf8bec62812"
+    - ID: "b9f2e3f6-1995-40be-a48f-00862ee8dc6c"
+      Hint: errorMessage
+      Value: <p>Error while processing your request.</p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230907T092030Z

@@ -1,0 +1,28 @@
+﻿---
+ID: "58fab7cf-1a66-452d-8cfe-af9dc08a10e7"
+Parent: "4768c08f-0f03-4b88-87f5-947a11428eb7"
+Template: "854ba861-63ea-4a0c-8c7b-541e9a7ec4c1"
+Path: "/sitecore/system/Settings/Rules/Definitions/Elements/EW - Request/Tags/Default"
+BranchID: "9a72c539-dbf8-4dad-96d3-a298fc04add6"
+SharedFields:
+- ID: "42f77151-098f-496a-94cf-590b7edeeabe"
+  Hint: Tags
+  Value: "{811CFF5B-4850-47D4-8858-515635500843}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20130906T201712Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "8bdc1f8d-753b-4a3d-a00a-93915c00eed7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240304T002354Z

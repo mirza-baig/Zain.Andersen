@@ -1,0 +1,41 @@
+﻿---
+ID: "e7cb93a1-ff7e-459e-b251-7a127a3779ce"
+Parent: "9011447f-6895-4d78-a160-a707c7da41a6"
+Template: "9011447f-6895-4d78-a160-a707c7da41a6"
+Path: /sitecore/templates/Feature/EnterpriseWeb/Enterprise/Components/Product/Product Carousel/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/photo_scenery.png
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{E4D4AA1B-80F1-49B5-997D-9C9A8CB748FD}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{6BF7B148-C10B-475F-A051-12CD650EE808}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230428T182912Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "138a43fe-bc1e-45dd-8b57-ace115040682"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231122T160450Z

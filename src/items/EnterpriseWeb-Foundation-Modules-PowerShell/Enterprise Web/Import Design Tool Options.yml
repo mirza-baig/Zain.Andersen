@@ -1,0 +1,73 @@
+﻿---
+ID: "c411c8e2-dbbc-4ba8-97b6-fa0761d99e3b"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Design Tool Options
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $importRows = Import-CSV "c:\inetpub\wwwroot\app_data\packages\dtoptions.csv"
+    Write-Host "start"
+    $optionTemplateId = "{8547B7A7-9887-4402-B764-973A09B8906C}"
+    
+    foreach ($row in $importRows){
+        $destFolderPath = $row.ItemPath
+        Write-Host $destFolderPath
+        Write-Host "master:$destFolderPath"
+        $existingItem = Get-Item -Path "master:/$destFolderPath"
+        if ($existingItem -eq $null) {
+            Write-Host "New Item"
+            New-Item -Path $destFolderPath -ItemType $optionTemplateId
+        } else {
+            Write-Host $item.Name
+        }
+        
+        $item = Get-Item -Path "master:$destFolderPath"
+        Write-Host "the new item - " $item.Name
+        $item.Editing.BeginEdit()
+        $item["ctaText"] = $row."CTA Text"
+        $item["optionHeading"] = $row."Option Heading"
+        $item["optionImage"] = $row."Option Image"
+        $item["optionIcon"] = $row."Option Icon"
+        $item["stepHeading"] = $row."StepHeading"
+        $item["stepSubhead"] = $row."Step Subhead"
+        $item["stepCopy"] = $row."Step Copy"
+        $item["sortOrder"] = $row."Sort Order"
+        $item["helpCtaText"] = $row."Help Cta Text"
+        $item["helpText"] = $row."Help Text"
+        $item["helpImage1"] = $row."Help Image 1"
+        $item["helpImage2"] = $row."Help Image 2"
+        $item["helpImage3"] = $row."Help Image 3"
+        $item["helpImage4"] = $row."Help Image 4"
+        $item["helpImage5"] = $row."Help Image 5"
+        $item.Editing.EndEdit()
+        
+        Write-Host "#############"
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231207T142146Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0a6a5bc5-4111-419c-a5a1-3014edd02ac0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231207T142155Z

@@ -1,0 +1,68 @@
+﻿---
+ID: "7ce72a45-1e55-4e59-8079-a6ada944133e"
+Parent: "7ada0849-d18a-4338-94ba-84304e9eb956"
+Template: "7ada0849-d18a-4338-94ba-84304e9eb956"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/Tool/Sizing Tool/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{0F99F8F9-397D-4F50-A873-1CD1C6ACBF2B}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18aa022d-6232-46c5-9ad8-9a298f84f937"
+      Hint: widthLabel
+      Value: Width
+    - ID: "223d5610-a705-4c0f-b4da-b1e3097267de"
+      Hint: sizingDocumentsCTAText
+      Value: Sizing Documents
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230529T094546Z
+    - ID: "2a1b598d-bfc7-4377-b26a-f295274bc554"
+      Hint: resetLabel
+      Value: Reset
+    - ID: "300d6871-ec94-4200-8b57-8c6719ec92ca"
+      Hint: heightPlaceholderText
+      Value: Select
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "53a249ab-9d33-41c1-8710-12fbb1f0dcc4"
+      Hint: productDimensionsHeading
+      Value: Select Size
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a4536e2f-47dd-43f8-b4ba-3400fc6fe5a4"
+    - ID: "b18738d8-c726-49d3-9ae8-5e44242077c6"
+      Hint: productDetailsPageCTAText
+      Value: Product Details
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "cd92c10e-c237-47e7-9b79-e9c85fab5336"
+      Hint: widthPlaceholderText
+      Value: Select
+    - ID: "ce1b13cd-8b44-4529-a97c-13abbeb307ed"
+      Hint: resultsLabel
+      Value: Results
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230530T062739Z
+    - ID: "e4c13c00-d9f8-4676-87fd-5cb86d0f6cb1"
+      Hint: heightLabel
+      Value: Height
+    - ID: "fc993cdc-aaae-487c-ba5d-47b07a6f45d1"
+      Hint: productTypeHeading
+      Value: Select Door or Window

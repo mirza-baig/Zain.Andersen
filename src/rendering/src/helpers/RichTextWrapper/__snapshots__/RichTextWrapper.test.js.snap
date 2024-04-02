@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`handles various attributes, invalid attributes, and character types in <a> tags appropriately and nested tags in <a> tags 1`] = `
+<div
+  class="body-copy"
+>
+  <div>
+    <p>
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+      <a
+        class="overlay-source"
+        href="https://www.google.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        blanditiis praesentium
+      </a>
+       voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    </p>
+     
+    <ul>
+       
+      <li>
+        Et harum quidem rerum facilis 
+        <a
+          href="https://www.google.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          est et expedita
+        </a>
+         distinctio.
+      </li>
+       
+      <li>
+        Nam libero tempore, cum soluta nobis est eligendi optio cumque.
+      </li>
+       
+    </ul>
+     
+    <p>
+      Nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et
+
+    </p>
+    <p>
+      voluptatum
+
+      <a
+        href="adfdf"
+        rel="adfd"
+        target="_blank"
+      >
+        molestiae non recusandae
+      </a>
+      .
+    </p>
+    
+
+    <a
+      bb="dafa"
+      crazy="crazy"
+      target="_blank"
+    >
+      foobar 
+      <span>
+        foobar
+      </span>
+      &lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;&gt;&gt;&gt;&gt;&gt;&lt;&lt;&lt;#*)#(*Q$)JALKJFLKJALKSFJ
+    </a>
+    
+
+    <a
+      bb="lakdfjl"
+      target="_blank"
+      zz="adlkfjalaldkfj"
+    />
+    
+
+    <a
+      bb="lakdfjl"
+      data-foo="adlkfjalaldkfj"
+      target="_blank"
+    >
+      adfadfadf 
+      <span>
+        afadfd
+      </span>
+    </a>
+    
+
+    <a
+      dababd="zzzz"
+      target="_blank"
+    />
+    
+
+    <a
+      dababd="zzzz"
+    />
+    
+
+    <a
+      11111="zzzz"
+      target="_blank"
+    />
+    
+
+    <a
+      #%%#)(*)(%*="zzz"
+      target="_blank"
+    >
+      <div>
+        foobarbaz
+      </div>
+    </a>
+    
+
+    <a
+      #%%#)(*)(%*="zzz"
+      target="_blank"
+    >
+      
+
+      <div>
+        foobarbaz
+      </div>
+      
+
+    </a>
+    <a
+      #%%#)(*)(%*="zzz"
+    >
+      
+
+      <div>
+        foobarbaz
+      </div>
+      
+
+    </a>
+    <a
+      #%%#)(*)(%*="zzz"
+      target="_blank"
+    >
+      
+
+      <div>
+        foobarbaz
+      </div>
+      
+
+    </a>
+    
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+    <p />
+    -
+  </div>
+</div>
+`;
+
+exports[`renders common usage correctly 1`] = `
+<div
+  class="body-copy"
+>
+  <div>
+    <p>
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui 
+      <a
+        class="overlay-source"
+        href="https://www.google.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        blanditiis praesentium
+      </a>
+       voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    </p>
+     
+    <ul>
+       
+      <li>
+        Et harum quidem rerum facilis 
+        <a
+          href="https://www.google.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          est et expedita
+        </a>
+         distinctio.
+      </li>
+       
+      <li>
+        Nam libero tempore, cum soluta nobis est eligendi optio cumque.
+      </li>
+       
+    </ul>
+     
+    <p>
+      Nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
+      <a
+        href="https://www.google.com"
+      >
+        molestiae non recusandae
+      </a>
+      . Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+    </p>
+  </div>
+</div>
+`;

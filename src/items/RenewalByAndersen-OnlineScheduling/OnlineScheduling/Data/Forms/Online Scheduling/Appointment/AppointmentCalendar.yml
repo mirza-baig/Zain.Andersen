@@ -1,0 +1,27 @@
+﻿---
+ID: "2b5ab422-2071-46bf-9c7d-7917337cb731"
+Parent: "acb095d7-7c7a-434c-94bc-f032eef61ac1"
+Template: "e1a3aa6a-1267-428e-a51f-48cc73ba96f0"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Appointment/AppointmentCalendar
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 312
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240305T155729Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cc7529aa-7338-49d7-99d7-7dc8d12c411a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240305T155737Z

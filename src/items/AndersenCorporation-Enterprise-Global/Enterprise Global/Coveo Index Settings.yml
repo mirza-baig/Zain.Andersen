@@ -1,0 +1,43 @@
+﻿---
+ID: "ed06d165-6750-4053-97f2-fd13a7b165fb"
+Parent: "d2931197-d6e8-458c-b8cf-beb0cad88230"
+Template: "e7f70863-c1f4-4a9a-8324-a02adc7f1c2b"
+Path: /sitecore/content/AndersenCorporation/Enterprise Global/Coveo Index Settings
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230921T172332Z
+    - ID: "42781496-f52a-4ec4-98fc-0dea3d617f1d"
+      Hint: foldersToIndexSubFolders
+      Value: "{993088EA-514A-43CD-A9B3-0925195372DC}"
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6e79dd36-d749-40d1-b4d5-6defb1665245"
+    - ID: "a62adc55-8639-486c-b9ab-8219ca5510c9"
+      Hint: foldersToIndex
+      Value: |
+        {E1DD87CB-CEBB-4902-A0B1-859C15365FD2}
+        {58204FAE-4DB8-4261-AEF5-C4F58A4F3DB8}
+        {6BB32758-D223-484A-B7C8-0AE22613C318}
+        {1F5AB56B-F49F-4148-94FF-25E6867D7434}
+        {3B66D70E-94D0-45FD-8C28-4880F718BD36}
+        {256D8805-AAD6-4255-8E8D-996E0EC6C94A}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230929T104423Z

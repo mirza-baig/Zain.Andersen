@@ -1,0 +1,31 @@
+﻿---
+ID: "ae700d5a-d07e-42e8-a5c7-23d9d706467b"
+Parent: "00f0f442-7399-44e0-b515-c71cb3ec4a15"
+Template: "66882e97-c8aa-4e37-8901-7a8aa35ed2ed"
+Path: /sitecore/system/Workflows/Affiliate Workflow/Review/Approve/Approval Notification
+SharedFields:
+- ID: "a291a22b-99e2-46bb-a27b-8ec744275396"
+  Hint: Type
+  Value: Platform.Foundation.Core.Workflow.Actions.NotifyApproval, Platform
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20171221T143416Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2bce832f-f90b-4e55-a062-73ec56dd41b6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240321T060709Z

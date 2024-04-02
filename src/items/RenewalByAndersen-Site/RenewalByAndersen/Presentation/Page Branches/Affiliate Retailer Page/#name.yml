@@ -1,0 +1,26 @@
+﻿---
+ID: "323177b6-f5f6-4bc9-9103-7651b5ee2a52"
+Parent: "69dd9914-5306-4fcc-930a-836602af6b50"
+Template: "f6161117-87fd-42bc-82de-37d44e896a47"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/RenewalByAndersen/Presentation/Page Branches/Affiliate Retailer Page/$name
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240222T095823Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1b6ffe2e-df48-4e5b-a365-5a8f26073f05"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240313T055826Z
+    - ID: "e79cbfcf-c9b3-4c05-91d9-ff8412215bf8"
+      Hint: lastUpdated
+      Value: 20240313T055826Z

@@ -1,0 +1,33 @@
+﻿---
+ID: "904f984f-b6ac-4aab-9bcc-60cf7d21be50"
+Parent: "155bbe23-5388-482d-9019-1f815d928547"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenLuminaire/Settings/Insert Options/Components Folder/Component/Tool
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230417T182850Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "38c2b06d-6d6e-4f14-aa4d-4d5bf31aef17"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {9249C619-06E7-4449-A0A4-7907BEFAD1AB}
+        {A738D85D-53F1-4AED-A9BD-FEA93ED9ECCD}
+        {6EB80001-837B-4E7F-91A8-7B7CA7A9470B}
+        {FAC5E8A2-CA68-4C8D-905C-03EE7C1D6A01}
+        {BD1F33A1-5976-4112-BBFC-9313C389F0CB}
+        {7ADA0849-D18A-4338-94BA-84304E9EB956}
+        {DC54A8C7-97BD-4641-92AB-72AA143A8E24}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230707T124034Z

@@ -1,0 +1,37 @@
+﻿---
+ID: "c6887e68-660e-4c0c-a532-1218c20194a9"
+Parent: "d19d02c6-ac1f-4145-8670-3941af45ed2f"
+Template: "d70d43e4-aef9-43bf-89e5-b49f22675f43"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Settings/Insert Options/Forms Folder/Online Scheduling Form Fields
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240305T170717Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "4c81e82f-e243-47cf-b37b-afe28931a46b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240305T181208Z
+    - ID: "f0c111ff-f7dd-405f-8703-432cdc877f9b"
+      Hint: Rules
+      Value: |
+        <ruleset>
+          <rule
+            uid="{3DAEA858-7924-45D0-8435-4B5833613F6E}">
+            <conditions>
+              <condition
+                id="{D0810F9D-734C-452D-BBB6-4730368D68F1}"
+                uid="A51EB133CFEE4BE9AD524AE84BEE9CE1"
+                templateid="{C4442680-1100-4626-A469-ACC318E25CBF}" />
+            </conditions>
+          </rule>
+        </ruleset>

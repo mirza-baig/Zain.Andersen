@@ -1,0 +1,38 @@
+﻿---
+ID: "91df3a92-4dc5-42a6-bcf6-015b0424e50f"
+Parent: "490104e2-2fe9-4b2c-8074-8bb42b86a1f7"
+Template: "490104e2-2fe9-4b2c-8074-8bb42b86a1f7"
+Path: /sitecore/templates/Feature/EnterpriseWeb/AndersenWindows/Components/General/Generic Chart/GenericChart/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{19DADBBA-95AC-4F1E-867A-C64D778B90C6}"
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{120AD31C-0E1E-41B5-881D-D5C2916B4E90}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231212T001322Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\jhuynh
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\jhuynh
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "df9772ce-ceec-4b51-8ef2-edb8fb39f8ee"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\jhuynh
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231212T222713Z

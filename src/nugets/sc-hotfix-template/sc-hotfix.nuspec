@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>SC-Hotfix-602286-1</id>
+    <version>1.0.0</version>
+    <description>SC Hotfix 602286-1 ExpEdge 20.0.0 rev. 00139</description>
+    <authors>Sitecore</authors>
+  </metadata>
+  <files>
+    <file src="lib\*" target="lib" exclude="**\.gitkeep" />
+    <file src="content\**\*" target="content" exclude="**\.gitkeep" />
+  </files>
+</package>

@@ -1,0 +1,29 @@
+﻿---
+ID: "7793843f-3581-4a37-a1d9-80dca0b835ac"
+Parent: "772ee767-ed32-4dea-93ed-4cfeb8c3e4b2"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Settings/Insert Options/Components Folder/Component/Form
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230908T110612Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "793ad3e9-538e-49ea-a8f4-8da1874a4787"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {442A4C78-999E-4AE7-AD6E-416A8E087506}
+        {CCC9B986-2C42-4852-905F-76BB4C342C46}
+        {5DB8BAAD-B0F2-4F63-80DF-BD797D257A1E}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231215T180406Z

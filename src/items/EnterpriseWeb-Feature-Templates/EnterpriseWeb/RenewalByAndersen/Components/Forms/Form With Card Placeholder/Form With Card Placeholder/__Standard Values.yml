@@ -1,0 +1,38 @@
+﻿---
+ID: "59114b30-f0db-47f2-90d8-03d398688485"
+Parent: "ccc9b986-2c42-4852-905f-76bb4c342c46"
+Template: "ccc9b986-2c42-4852-905f-76bb4c342c46"
+Path: /sitecore/templates/Feature/EnterpriseWeb/RenewalByAndersen/Components/Forms/Form With Card Placeholder/Form With Card Placeholder/__Standard Values
+SharedFields:
+- ID: "b03569b1-1534-43f2-8c83-bd064b7d782c"
+  Hint: __Renderers
+  Value: "{A0BCB20C-E0E5-4200-87AA-3AA62854085B}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231206T102544Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "29d51c5e-03d2-495d-a767-5928b647d0f9"
+    - ID: "b799b7d4-3d12-491e-a7cb-d27583debb0a"
+      Hint: backgroundColor
+      Value: "{473218B3-5DA3-4C82-9A19-D8D069C66CCF}"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231211T081717Z

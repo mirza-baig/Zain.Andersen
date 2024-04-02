@@ -1,0 +1,77 @@
+﻿---
+ID: "33d4e5be-d7a8-4dac-afb5-ec4b2100df08"
+Parent: "eef2a43f-bc59-4016-a77d-10e37bc5158f"
+Template: "dd22f1b3-bd87-4db2-9e7d-f7a496888d43"
+Path: /sitecore/system/Modules/PowerShell/Script Library/Enterprise Web/Import Perfect Match Options
+SharedFields:
+- ID: "b1a94ff0-6897-47c0-9c51-aa6acb80b1f0"
+  Hint: Script
+  Value: |
+    $importRows = Import-CSV "c:\inetpub\wwwroot\app_data\packages\options.csv"
+    Write-Host "start"
+    $optionTemplateId = "{4B6E95C0-1E77-47C7-B1D3-59FF6396697A}"
+    
+    foreach ($row in $importRows){
+        $destFolderPath = $row.ItemPath
+        Write-Host $destFolderPath
+        Write-Host "master:$destFolderPath"
+        $existingItem = Get-Item -Path "master:/$destFolderPath"
+        if ($existingItem -eq $null) {
+            Write-Host "New Item"
+            New-Item -Path $destFolderPath -ItemType $optionTemplateId
+        } else {
+            Write-Host $item.Name
+        }
+        
+        $item = Get-Item -Path "master:$destFolderPath"
+        Write-Host "the new item - " $item.Name
+        $item.Editing.BeginEdit()
+        $item["ctaText"] = $row."CTA Text"
+        $item["optionHeading"] = $row."Option Heading"
+        $item["optionImage"] = $row."Option Image"
+        $item["sortOrder"] = $row."Sort Order"
+        $item["gtmLabelOverride"] = $row."GTM Label Override"
+        $item["helpCtaText"] = $row."Help Cta Text"
+        $item["helpText"] = $row."Help Text"
+        $item["helpImage1"] = $row."Help Image 1"
+        $item["helpImage2"] = $row."Help Image 2"
+        $item["helpImage3"] = $row."Help Image 3"
+        $item["helpImage4"] = $row."Help Image 4"
+        $item["helpImage5"] = $row."Help Image 5"
+        $item["helpImageMobile1"] = $row."Help Image Mobile 1"
+        $item["helpImageMobile2"] = $row."Help Image Mobile 2"
+        $item["helpImageMobile3"] = $row."Help Image Mobile 3"
+        $item["helpImageMobile4"] = $row."Help Image Mobile 4"
+        $item["helpImageMobile5"] = $row."Help Image Mobile 5"
+        $item["introImage"] = $row."Intro Image"
+        $item["introCopy"] = $row."Intro Copy"
+        $item.Editing.EndEdit()
+        
+        Write-Host "#############"
+    }
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20231205T193355Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3dfbadb3-02af-4013-b1d8-657a26a59042"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231206T142934Z

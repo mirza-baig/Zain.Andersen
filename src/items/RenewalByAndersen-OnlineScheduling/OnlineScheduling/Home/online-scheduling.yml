@@ -1,0 +1,53 @@
+﻿---
+ID: "fa06e347-25e4-4438-9cbf-7d9112e72216"
+Parent: "832dd811-7d7d-4c8f-ac93-236426891210"
+Template: "79c7f0af-3f65-49ca-8211-80f33eff62ee"
+Path: "/sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Home/online-scheduling"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: "online-scheduling"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{D277C90D-EC17-4420-98F7-46734F41340A}"
+              s:ds="{3F53969C-7227-4DF6-A910-FB6921BC148E}"
+              s:id="{029B74CD-11B8-4045-80C1-7C033630A696}"
+              s:par=""
+              s:ph="headless-main"
+              s:ccb="Clear on publish" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240111T174123Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5aa59553-79a5-4261-8789-052314d2df2c"
+    - ID: "b1857852-6eb3-4e22-9f06-fef8012abf73"
+      Hint: pageTitle
+      Value: Online Scheduling
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240223T123809Z
+    - ID: "e79cbfcf-c9b3-4c05-91d9-ff8412215bf8"
+      Hint: lastUpdated
+      Value: 20240223T123809Z

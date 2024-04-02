@@ -1,0 +1,29 @@
+﻿---
+ID: "15ebb3e7-1160-4dcc-a7e9-1b0a83dc540d"
+Parent: "8a9382b0-079f-4ca3-8881-613a09684b3d"
+Template: "57314660-99fe-4363-9aa4-16e701dc4e54"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Settings/Insert Options/Forms Folder/Online Scheduling Forms Submit Actions/OS Forms Submit Actions
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240217T173000Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "72841e6a-ce64-4f2f-bbd9-0d01e380e652"
+    - ID: "9ac18edf-76b4-46f8-afbe-56a079e13e35"
+      Hint: Templates
+      Value: |
+        {DF32E792-C185-4FCB-AFBF-ADFA82A86C6F}
+        {BA892992-9790-4F60-8990-5B3BB9E3CC80}
+        {7498225D-5689-4D3E-A653-53B4A41FBC96}
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240314T133406Z

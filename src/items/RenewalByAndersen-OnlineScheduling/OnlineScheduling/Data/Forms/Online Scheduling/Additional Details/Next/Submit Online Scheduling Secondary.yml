@@ -1,0 +1,29 @@
+﻿---
+ID: "140fedc2-933d-4d91-95c7-fd7d0692dab3"
+Parent: "60c9690f-4ff7-474f-ba69-09dc9726b3ef"
+Template: "ba892992-9790-4f60-8990-5b3bb9e3cc80"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Online Scheduling/Additional Details/Next/Submit Online Scheduling Secondary
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240223T123335Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e89b3d98-62f7-41dd-8161-2b28f27dcbaf"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240228T215505Z
+    - ID: "fd3543c9-9016-4cbb-aef3-9c20ba22447c"
+      Hint: noAppointmentsPage
+      Value: "{0F302051-B24F-4188-AA82-407AAE1E9E43}"
+    - ID: "ff3b590b-ca76-470c-8115-ea246b59ac8f"
+      Hint: appointmentSetPage
+      Value: "{8A9FD90A-952C-4D03-824C-4E9AD1ACA40E}"

@@ -1,0 +1,20 @@
+﻿---
+Role: |
+  sitecore\EntWeb Master
+MemberOf:
+  Role: |
+    sitecore\Sitecore Client Advanced Publishing
+  Role: |
+    sitecore\Forms Publisher
+  Role: |
+    sitecore\Author
+  Role: |
+    sitecore\Sitecore Client Bucket Management
+  Role: |
+    sitecore\Sitecore Client Publishing
+  Role: |
+    sitecore\Forms Editor
+  Role: |
+    sitecore\Designer
+  Role: |
+    sitecore\Sitecore Client Translating

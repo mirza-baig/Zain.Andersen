@@ -1,0 +1,48 @@
+﻿---
+ID: "dae5bd54-92fe-42c5-a6b7-fe3744113dc5"
+Parent: "d624c21f-d095-47aa-98f3-35694903eb41"
+Template: "1107f99a-cc75-44ce-be55-8318199d91bd"
+Path: /sitecore/content/AndersenCorporation/RenewalByAndersen/OnlineScheduling/Data/Forms/Service Request/Form Page/State
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1000
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240112T194155Z
+    - ID: "28bb8b2f-eca4-4087-8339-ed17a6bfa5d8"
+      Hint: width
+      Value: "{E2CA3D6C-A791-4AB1-B8DB-CB4D52AB712C}"
+    - ID: "48be9f32-290e-4476-ac26-51b466819b57"
+      Hint: defaultDisplay
+      Value: Select State
+    - ID: "77c6887b-22dd-4724-86b4-e02bab525fbb"
+      Hint: datasource
+      Value: "{66F692EF-AB7B-4423-931F-35558DAF9150}"
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e2c14031-d04d-4b52-90a5-f3842967c82a"
+    - ID: "ad4c0ef3-c5d0-49fc-aea4-f44e3108d489"
+      Hint: fieldName
+      Value: state
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c08ff4e0-a54f-425d-afdd-e4a2accbc8ef"
+      Hint: displayFieldName
+      Value: FullName
+    - ID: "ca2e3318-c230-415e-b055-163be5542fa3"
+      Hint: valueFieldName
+      Value: Abbreviation
+    - ID: "d75d14d3-1a4e-47f1-a2d4-496cc1d09c0c"
+      Hint: label
+      Value: 
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240117T115700Z

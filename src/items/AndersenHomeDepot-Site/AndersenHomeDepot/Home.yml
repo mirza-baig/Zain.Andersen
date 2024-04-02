@@ -1,0 +1,48 @@
+﻿---
+ID: "d41a195d-4c91-46d6-a0e5-bbd4c78e7d51"
+Parent: "e1dd87cb-cebb-4902-a0b1-859c15365fd2"
+Template: "6af8b67c-1137-4b57-a0e4-9eeeb1dfccfa"
+Path: /sitecore/content/AndersenCorporation/AndersenWindows/AndersenHomeDepot/Home
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/home.png
+- ID: "24171bf1-c0e1-480e-be76-4c0a1876f916"
+  Hint: Page Design
+  Value: 
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
+  Hint: __Originator
+  Value: "{F558BEC9-C602-4D7A-B9A1-D0411C946EA4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221018T193826Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6a8fcc5d-2d08-47c7-9020-9004144f40a2"
+    - ID: "b1857852-6eb3-4e22-9f06-fef8012abf73"
+      Hint: pageTitle
+      Value: Home | Andersen Home Depot
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20231121T134952Z
+    - ID: "e79cbfcf-c9b3-4c05-91d9-ff8412215bf8"
+      Hint: lastUpdated
+      Value: 20231121T134952Z
