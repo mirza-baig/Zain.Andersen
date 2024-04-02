@@ -552,6 +552,8 @@ const ContactUs = (props: ContactUsProps) => {
                     />
                   </div>
 
+                  {/* change starts here */}
+
                   <DisclaimerText
                     fields={props.fields?.disclaimerText}
                     disclaimerClasses={themeData.classes.disclaimerText}

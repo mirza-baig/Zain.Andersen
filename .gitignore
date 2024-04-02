@@ -50,7 +50,7 @@ _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
 #Nuget packages folder
-packages/
+src/nugets/
 
 #Mac file custom attributes
 .DS_Store
