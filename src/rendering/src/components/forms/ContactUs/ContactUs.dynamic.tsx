@@ -553,11 +553,13 @@ const ContactUs = (props: ContactUsProps) => {
                   </div>
 
                   {/* change starts here */}
-
+                    <div className='col-span-12 p-0 py-4 '>
                   <DisclaimerText
                     fields={props.fields?.disclaimerText}
                     disclaimerClasses={themeData.classes.disclaimerText}
                   />
+
+                </div>
 
                   <div className="col-span-12">
                     <NavigationButton
