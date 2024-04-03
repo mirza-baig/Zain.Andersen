@@ -21,6 +21,7 @@ import SearchVideoItem from './Search.VideoItem.helper';
 import { useTheme } from 'lib/context/ThemeContext';
 import { useRef } from 'react';
 import { isSvgUrl } from 'lib/utils/string-utils';
+import { LinkWrapper } from 'src/helpers/LinkWrapper';
 
 const GridTemplate = (
   resultItems: Feature.EnterpriseWeb.Enterprise.Elements.Search.GridResultItem[],
@@ -240,26 +241,49 @@ const GridItemTemplateMarkup = ({
         gridStyle !== 'photo-gallery' ? templateClasses?.gridItem : 'cursor-pointer'
       )}
     >
-      {!result?.raw['ew_videoid'] && renderingFields.thumbnailImage && (
-        <div className={templateClasses?.imageWrapper}>
-          <Image
-            src={`${renderingFields.thumbnailImage}`}
-            layout="responsive"
-            width={`${renderingFields.thumbnailImageWidth || 300}`}
-            height={`${renderingFields.thumbnailImageHeight || 300}`}
-            alt={`${renderingFields.thumbnailImageAlt}`}
-            objectFit="cover"
-            unoptimized={isSvgUrl(renderingFields.thumbnailImage)}
-          />
-          {/* Render icon if gridLayout is photo-gallery */}
-          {gridStyle === 'photo-gallery' && (
-            <SvgIcon
-              className="-translate-t-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 rounded-full bg-black bg-opacity-[.65] p-l text-white opacity-0 transition-all ease-linear group-hover:-translate-y-1/2 group-hover:opacity-100"
-              icon="zoom-pinch"
+      {!result?.raw['ew_videoid'] &&
+        renderingFields.thumbnailImage &&
+        (renderingFields.cta?.fields?.cta1Link ? (
+          <LinkWrapper field={renderingFields.cta?.fields?.cta1Link}>
+            <div className={templateClasses?.imageWrapper}>
+              <Image
+                src={`${renderingFields.thumbnailImage}`}
+                layout="responsive"
+                width={`${renderingFields.thumbnailImageWidth || 300}`}
+                height={`${renderingFields.thumbnailImageHeight || 300}`}
+                alt={`${renderingFields.thumbnailImageAlt}`}
+                objectFit="cover"
+                unoptimized={isSvgUrl(renderingFields.thumbnailImage)}
+              />
+              {/* Render icon if gridLayout is photo-gallery */}
+              {gridStyle === 'photo-gallery' && (
+                <SvgIcon
+                  className="-translate-t-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 rounded-full bg-black bg-opacity-[.65] p-l text-white opacity-0 transition-all ease-linear group-hover:-translate-y-1/2 group-hover:opacity-100"
+                  icon="zoom-pinch"
+                />
+              )}
+            </div>
+          </LinkWrapper>
+        ) : (
+          <div className={templateClasses?.imageWrapper}>
+            <Image
+              src={`${renderingFields.thumbnailImage}`}
+              layout="responsive"
+              width={`${renderingFields.thumbnailImageWidth || 300}`}
+              height={`${renderingFields.thumbnailImageHeight || 300}`}
+              alt={`${renderingFields.thumbnailImageAlt}`}
+              objectFit="cover"
+              unoptimized={isSvgUrl(renderingFields.thumbnailImage)}
             />
-          )}
-        </div>
-      )}
+            {/* Render icon if gridLayout is photo-gallery */}
+            {gridStyle === 'photo-gallery' && (
+              <SvgIcon
+                className="-translate-t-3/4 absolute top-1/2 left-1/2 -translate-x-1/2 rounded-full bg-black bg-opacity-[.65] p-l text-white opacity-0 transition-all ease-linear group-hover:-translate-y-1/2 group-hover:opacity-100"
+                icon="zoom-pinch"
+              />
+            )}
+          </div>
+        ))}
 
       {result?.raw['ew_videoid'] && (
         <SearchVideoItem
