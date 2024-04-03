@@ -552,15 +552,6 @@ const ContactUs = (props: ContactUsProps) => {
                     />
                   </div>
 
-                  {/* change starts here */}
-                    <div className='col-span-12 p-0 py-4 '>
-                  <DisclaimerText
-                    fields={props.fields?.disclaimerText}
-                    disclaimerClasses={themeData.classes.disclaimerText}
-                  />
-
-                </div>
-
                   <div className="col-span-12">
                     <NavigationButton
                       className="mx-auto md:mx-0"
@@ -592,6 +583,11 @@ const ContactUs = (props: ContactUsProps) => {
               );
             }}
           </Formik>
+
+          <DisclaimerText
+            fields={props.fields?.disclaimerText}
+            disclaimerClasses={themeData.classes.disclaimerText}
+          />
         </>
       )}
     </section>
