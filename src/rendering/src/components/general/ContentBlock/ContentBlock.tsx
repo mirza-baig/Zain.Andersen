@@ -51,20 +51,13 @@ const ContentBlock = (props: ContentBlockProps): JSX.Element => {
               wrapper: themeData.classes.buttonGroupClass.wrapper,
               cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
               cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
+              cta3Classes: themeData.classes.buttonGroupClass.cta3Classes,
               ctaAlignment: props.fields.ctaAlignment?.displayName == 'Stack',
             }}
             {...props}
           />
 
-          {props.fields?.cta3Link && (
-            <Button
-              field={props.fields?.cta3Link}
-              variant={props.fields?.cta3Style}
-              icon={props.fields?.cta3Icon}
-              classes={classNames(props.classes?.cta3Classes)}
-              ariaLabel={props.fields.cta3AriaLabel}
-            />
-          )}
+
         </div>
       </div>
     </Component>

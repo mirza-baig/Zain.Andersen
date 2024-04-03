@@ -4,7 +4,8 @@ import { Button } from '../Button';
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 
 export type ButtonGroupProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta1 &
-  Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta2 & {
+  Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta2 &
+  Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta3 & {
     classes: {
       wrapper: string;
       cta1Classes: string;
@@ -15,13 +16,15 @@ export type ButtonGroupProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta
   };
 
 const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
+  // console.log('ButtonGroup', fields);
+
   return (
     <div
       className={classNames(
         classes?.wrapper,
         classes?.ctaAlignment
-          ? 'md:flex-column mt-3 mb-m flex items-start space-y-5 md:mb-0 md:space-y-4'
-          : 'mb-s flex items-start md:flex-row md:items-center md:space-x-4'
+          ? 'md:flex-column mt-3 mb-m  flex items-start justify-evenly space-y-5 md:mb-0 md:space-y-4'
+          : 'mb-s flex items-start md:flex-row md:items-center md:space-x-4 '
       )}
     >
       {fields?.cta1Link && (
@@ -35,7 +38,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
             )?.fields?.modalId?.value
           }
           modalLinkText={fields?.cta1ModalLinkText}
-          classes={classNames(classes?.cta1Classes, 'mr-m')}
+          classes={classNames(classes?.cta1Classes)}
           ariaLabel={fields.cta1AriaLabel}
         />
       )}
@@ -50,8 +53,24 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
             )?.fields?.modalId?.value
           }
           modalLinkText={fields?.cta2ModalLinkText}
-          classes={classes?.cta2Classes}
+          classes={classNames(classes?.cta1Classes, 'mr-m')}
           ariaLabel={fields.cta2AriaLabel}
+        />
+      )}
+
+      {fields?.cta3Link && (
+        <Button
+          field={fields?.cta3Link}
+          variant={fields?.cta3Style}
+          icon={fields?.cta3Icon}
+          modalId={
+            (
+              fields?.cta3Modal as unknown as Feature.EnterpriseWeb.Enterprise.Components.Modal.GenericModal.GenericModal
+            )?.fields?.modalId?.value
+          }
+          modalLinkText={fields?.cta3ModalLinkText}
+          classes={classNames(classes?.cta1Classes)}
+          ariaLabel={fields.cta3AriaLabel}
         />
       )}
     </div>

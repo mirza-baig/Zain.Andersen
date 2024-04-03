@@ -41,6 +41,7 @@ const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element =
       : {};
 
   const focusArea = 'top center';
+  console.log('ContentBlockWithMedia', props);
 
   return (
     <Component variant="lg" dataComponent="general/contentblockwithmedia" {...props}>
@@ -75,7 +76,7 @@ const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element =
           <div
             className={
               props.fields.ctaAlignment?.displayName == 'Stack'
-                ? 'flex flex-col items-start md:space-y-4'
+                ? 'flex flex-col items-start justify-evenly md:space-y-4'
                 : 'flex flex-col items-start md:flex-row'
             }
           >
@@ -84,25 +85,13 @@ const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element =
                 wrapper: themeData.classes.buttonGroupClass.wrapper,
                 cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
                 cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
+                cta3Classes: themeData.classes.buttonGroupClass.cta3Classes,
                 ctaAlignment: props.fields.ctaAlignment?.displayName == 'Stack',
               }}
               {...props}
             />
 
-            {props.fields?.cta2Link && (
-              <Button
-                field={props.fields?.cta2Link}
-                variant={props.fields?.cta2Style}
-                icon={props.fields?.cta2Icon}
-                classes={classNames(
-                  props.classes?.cta2Classes,
-                  props.fields.ctaAlignment?.displayName == 'Stack'
-                    ? ''
-                    : 'mt-2 ml-0 md:ml-10 md:mt-0'
-                )}
-                ariaLabel={props.fields.cta2AriaLabel}
-              />
-            )}
+
           </div>
         </div>
       </div>
