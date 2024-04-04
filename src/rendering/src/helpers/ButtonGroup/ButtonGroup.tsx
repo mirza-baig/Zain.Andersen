@@ -16,7 +16,6 @@ export type ButtonGroupProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta
   };
 
 const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
-
   return (
     <div
       className={classNames(
