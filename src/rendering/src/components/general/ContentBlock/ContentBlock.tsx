@@ -7,9 +7,9 @@ import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 import { getEnum } from 'lib/utils';
 import { Headline } from 'src/helpers/Headline';
 import { useTheme } from 'lib/context/ThemeContext';
-import { Button, ButtonVariants } from 'src/helpers/Button';
 import classNames from 'classnames';
 import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ButtonVariants } from 'src/helpers/Button';
 
 export type ContentBlockProps =
   Feature.EnterpriseWeb.Enterprise.Components.General.ContentBlock.ContentBlock;
@@ -39,26 +39,15 @@ const ContentBlock = (props: ContentBlockProps): JSX.Element => {
           refer={legalCopyFont ? 'legal-copy' : 'body-copy'}
           {...props}
         />
-        <div
-          className={
-            props.fields.ctaAlignment?.displayName == 'Stack'
-              ? 'flex flex-col items-start  md:space-y-4'
-              : 'flex flex-col items-start  md:flex-row md:space-x-10'
-          }
-        >
-          <ButtonGroup
-            classes={{
-              wrapper: themeData.classes.buttonGroupClass.wrapper,
-              cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
-              cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
-              cta3Classes: themeData.classes.buttonGroupClass.cta3Classes,
-              ctaAlignment: props.fields.ctaAlignment?.displayName == 'Stack',
-            }}
-            {...props}
-          />
-
-
-        </div>
+        <ButtonGroup
+          classes={{
+            wrapper: themeData.classes.buttonGroupClass.wrapper,
+            cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
+            cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
+            ctaAlignment: props.fields?.ctaAlignment?.displayName == 'Stack',
+          }}
+          {...props}
+        />
       </div>
     </Component>
   );
