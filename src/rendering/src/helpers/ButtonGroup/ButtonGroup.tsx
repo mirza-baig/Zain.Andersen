@@ -16,6 +16,7 @@ export type ButtonGroupProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta
   };
 
 const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
+
   return (
     <div
       className={classNames(
@@ -52,7 +53,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
             )?.fields?.modalId?.value
           }
           modalLinkText={fields?.cta2ModalLinkText}
-          classes={classes?.cta2Classes}
+          classes={classNames(classes?.cta2Classes,'mb-4 md:mb-0')}
           ariaLabel={fields.cta2AriaLabel}
         />
       )}
@@ -69,7 +70,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
               )?.fields?.modalId?.value
             }
             modalLinkText={fields?.cta3ModalLinkText}
-            classes={classNames(classes?.cta3Classes)}
+            classes={classNames(classes?.cta3Classes, 'md:ml-5', 'mt-2 md:mt-0')}
             ariaLabel={fields.cta3AriaLabel}
           />
         </div>

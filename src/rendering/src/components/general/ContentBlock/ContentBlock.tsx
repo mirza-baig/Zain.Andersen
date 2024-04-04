@@ -17,6 +17,7 @@ export type ContentBlockProps =
 export type BackgroundColor = 'black' | 'gray' | 'white';
 
 const ContentBlock = (props: ContentBlockProps): JSX.Element => {
+  console.log('ContentBlock', props);
   const backgroundColor = getEnum<BackgroundColor>(props.fields?.backgroundColor) || 'white';
   const legalCopyFont = props?.fields?.useLegalCopyFont?.value || false;
   const { themeData } = useTheme(
@@ -44,6 +45,7 @@ const ContentBlock = (props: ContentBlockProps): JSX.Element => {
             wrapper: themeData.classes.buttonGroupClass.wrapper,
             cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
             cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
+            cta3Classes: themeData.classes.buttonGroupClass.cta3Classes,
             ctaAlignment: props.fields?.ctaAlignment?.displayName == 'Stack',
           }}
           {...props}

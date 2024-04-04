@@ -17,6 +17,7 @@ export type ContentBlockWithMediaProps =
   Feature.EnterpriseWeb.Enterprise.Components.General.ContentBlockWithMedia.ContentBlockWithMedia;
 
 const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element => {
+  console.log('ContentBlockWithMedia', props);
   const isEE = useExperienceEditor();
   const { themeData } = useTheme(
     ContentBlockWithMediaTheme(props, getEnum<ButtonVariants>(props.fields?.cta2Style) || 'link')
@@ -41,7 +42,7 @@ const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element =
       : {};
 
   const focusArea = 'top center';
-  console.log('ContentBlockWithMedia', props);
+  // console.log('ContentBlockWithMedia', props);
 
   return (
     <Component variant="lg" dataComponent="general/contentblockwithmedia" {...props}>
