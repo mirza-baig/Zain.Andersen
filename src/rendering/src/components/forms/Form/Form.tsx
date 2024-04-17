@@ -32,6 +32,7 @@ export type FormProps = ComponentProps & {
 };
 
 const Form = (props: FormProps): JSX.Element => {
+  console.log('FormMain', props.fields.children);
   const steps = props.fields?.children;
   //#region states
   const [pageIndex, setPageIndex] = useState(0);
@@ -56,6 +57,7 @@ const Form = (props: FormProps): JSX.Element => {
   // const [skippedSteps, setSkippedSteps] = useState([]);
 
   const { themeData } = useTheme(FormTheme());
+  console.log('theme data', themeData.classes.form);
   const defaultValues: Record<string, string> = {};
 
   function initializeInitialValues(
@@ -142,7 +144,7 @@ const Form = (props: FormProps): JSX.Element => {
     const inputElements = formRef.current?.querySelectorAll('input') || [];
     const dropdownElements = formRef.current?.querySelectorAll('select') || [];
     const textAreaElements = formRef.current?.querySelectorAll('textarea') || [];
-
+    console.log('fetchFormFieldElements', textAreaElements);
     return [...inputElements, ...dropdownElements, ...textAreaElements];
   };
 

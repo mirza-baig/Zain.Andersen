@@ -18,6 +18,7 @@ export type rightSectionStatus = 'middle';
 export type MobileWidthStatus = 'top' | 'bottom';
 
 const FormContainer = (props: FormContainerProps): JSX.Element => {
+  console.log('FormContainer', props.rendering);
   if (!props.fields) {
     return <></>;
   }

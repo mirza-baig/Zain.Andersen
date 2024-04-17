@@ -12,6 +12,7 @@ export type PageProps = Feature.EnterpriseWeb.Enterprise.Forms.Structure.Page &
   };
 
 const Page = (props: PageProps) => {
+  console.log('Page', props.classes);
   const { isErrorOnSubmit } = useContext(FormsContext);
   const { formProps } = useContext(FormsContext);
   const paddingGap =

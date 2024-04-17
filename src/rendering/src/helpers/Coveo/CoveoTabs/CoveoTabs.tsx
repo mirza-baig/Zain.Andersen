@@ -14,6 +14,7 @@ type CoveoTabsProps = {
 };
 
 export const CoveoTabs = (props: CoveoTabsProps): React.ReactElement => {
+  // console.log('CoveoTabs', props);
   const { tabs } = props;
   const { themeData } = useTheme(CoveoTabsTheme);
   const engine = useContext(CoveoEngineContext);

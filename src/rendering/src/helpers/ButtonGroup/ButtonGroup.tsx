@@ -52,7 +52,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
             )?.fields?.modalId?.value
           }
           modalLinkText={fields?.cta2ModalLinkText}
-          classes={classNames(classes?.cta2Classes,'mb-4 md:mb-0')}
+          classes={classNames(classes?.cta2Classes, 'mb-4 md:mb-0')}
           ariaLabel={fields.cta2AriaLabel}
         />
       )}
