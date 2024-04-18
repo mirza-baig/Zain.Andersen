@@ -15,7 +15,7 @@ export const FormFieldsTheme: ThemeFile = {
       textareaCharCount: 'font-serif text-small font-regular mt-xxs',
       headline: 'md:text-m font-medium text-sm-s',
       description: 'font-serif text-body font-regular text-dark-gray',
-      disclaimerText: 'font-serif text-legal text-regular text-dark-gray body-copy',
+      disclaimerText: 'font-serif text-legal text-regular text-dark-gray',
       errorOutline: 'border-error-outline !border-2 focus:border-error-outline ',
       errorTextColor: 'text-error-outline',
       errorMessage: 'text-small font-regular flex mt-xxxs',
@@ -26,7 +26,7 @@ export const FormFieldsTheme: ThemeFile = {
       bodyText: 'font-serif text-body font-regular',
       radio:
         'flex border-dark-gray border-[2px] focus:text-black text-black checked:!ring-black checked:!outline-offset-0 checked:!ring-offset-[2px] focus:ring-offset-[2px] checked:!ring-offset-2 checked:!ring-offset-white checked:!ring-black checked:bg-none',
-      consentText: 'font-serif text-body font-regular body-copy',
+      consentText: 'font-serif text-body font-regular',
     },
   },
   rba: {
