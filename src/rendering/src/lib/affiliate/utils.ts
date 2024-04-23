@@ -3,6 +3,7 @@ import { affiliateBasePath, AffiliateGraphQLQueries } from 'lib/constants/affili
 
 import { Affiliate, Showroom } from 'lib/context/AffiliateContext';
 import { ProgramOptIns, ProgramOptInsIds } from './program-optins';
+
 export const AFFILIATE_PREFIX = '_affiliate_';
 
 /**

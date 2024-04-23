@@ -31,7 +31,7 @@ const TwoColumnHeadline = (props: TwoColumnHeadlineProps) => {
       <div className="col-span-12 md:col-span-6">
         <Subheadline
           classes={classNames(themeData.classes.subheadlineClass, {
-            'mb-xxs': !props.fields?.body.value,
+            'mb-s': !props.fields?.body.value,
           })}
           {...props}
         />

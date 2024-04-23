@@ -1,3 +1,4 @@
+import { extractURLParts } from 'lib/coveo';
 import { SitecoreIds } from 'lib/constants';
 import { ItemData, MashupStyle, PageStyle, ResultItem } from './Mashup.Types';
 import { ImagePrimaryProps } from 'src/helpers/Media/ImagePrimary';
@@ -40,14 +41,11 @@ export const getItemData = (
   const ctaProps = {
     cta1Link: {
       value: {
-        href: url,
+        ...extractURLParts(url),
         text: 'Read More',
-        anchor: '',
-        linktype: 'internal',
         class: '',
         title: '',
         target: '',
-        querystring: '',
         id: '{7FB335D2-8E99-458E-9EF9-562A78CCB821}',
       },
     },

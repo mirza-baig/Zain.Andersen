@@ -10,6 +10,7 @@ import { SvgIcon } from 'src/helpers/SvgIcon';
 import ImageWrapper from 'src/helpers/Media/ImageWrapper';
 import { StandaloneSearchBox } from 'src/helpers/Coveo';
 import { currentAccessToken } from 'lib/coveo';
+import { useScrollDirection } from 'lib/utils/use-scroll-direction';
 
 // @TODO: Clean this up
 const organizationId = process.env.NEXT_PUBLIC_EW_COVEO_ORGANIZATION_ID || '';
@@ -307,8 +308,9 @@ const TAHeader = (props: TAHeaderProps) => {
   const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
   const dropdownRef: MutableRefObject<HTMLUListElement | null> = useRef(null);
 
-  const [isStickyTAHeader, setIsStickyTAHeader] = useState(false);
-  const prevScrollPosRef = useRef(0);
+  const [isStickyTAHeader, setIsStickyTAHeader] = useState(true);
+
+  const scrollDirection = useScrollDirection(0);
 
   const [coveoAccessToken, setCoveoAccessToken] = useState<string>();
   useEffect(() => {
@@ -318,12 +320,6 @@ const TAHeader = (props: TAHeaderProps) => {
       setCoveoAccessToken(_coveoAccessToken);
     })();
   }, []);
-
-  const handleScrollTAHeader = () => {
-    const currentScrollPos = window.scrollY;
-    setIsStickyTAHeader(currentScrollPos < prevScrollPosRef.current);
-    prevScrollPosRef.current = currentScrollPos;
-  };
 
   const toggleDropdown = (dropdownId: string) => {
     setOpenDropdownId(dropdownId === openDropdownId ? null : dropdownId);
@@ -336,31 +332,35 @@ const TAHeader = (props: TAHeaderProps) => {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      if (scrollDirection === 'UP') {
+        setIsStickyTAHeader(true); // Make header sticky when scrolling up
+        setOpenDropdownId(null); // Close any opened dropdown when scrolling up
+      } else if (scrollDirection === 'DOWN') {
+        setIsStickyTAHeader(false); // Remove the sticky class on downward scroll
+      } else {
+        setIsStickyTAHeader(true); // Reset to default state when at top or bottom
+      }
+    };
+
     document.addEventListener('click', handleOutsideClickTAHeader);
-    window.addEventListener('scroll', handleScrollTAHeader);
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
       document.removeEventListener('click', handleOutsideClickTAHeader);
-      window.removeEventListener('scroll', handleScrollTAHeader);
+      window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
-
-  useEffect(() => {
-    // Access the <header> element and add/remove the 'ta-header-sticky' class based on isStickyTAHeader
-    const headerElement = document.querySelector('header');
-    if (headerElement) {
-      if (isStickyTAHeader) {
-        headerElement.classList.add('ta-header-sticky');
-      } else {
-        headerElement.classList.remove('ta-header-sticky');
-      }
-    }
-  }, [isStickyTAHeader]);
+  }, [isStickyTAHeader, scrollDirection]);
 
   props.fields.componentSpacing = { fields: { Value: { value: 'none' } } };
   return (
     <Component
       // wrapping header component with 'headerBottomPosElement' class to adjust sliding modals
-      sectionWrapperClasses="headerBottomPosElement"
+      sectionWrapperClasses={classNames(
+        'headerBottomPosElement bg-white w-full transition-all ease-out',
+        isStickyTAHeader ? 'sticky duration-0 top-0' : 'fixed -top-[131px] duration-500',
+        openDropdownId ? 'z-[1004]' : 'z-[999] ml:z-[1001]' // z-index for the open dropdown should be higher
+      )}
       variant="full"
       gap="gap-x-0"
       padding="px-0"

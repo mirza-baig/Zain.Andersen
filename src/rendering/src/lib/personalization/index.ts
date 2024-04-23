@@ -1,14 +1,14 @@
-export { PersonalizationMiddleware } from './personalization-middleware';
-export { GraphQLPersonalizationService } from './graphql-personalization-service';
+export { PageVariantMiddleware } from './pagevariant-middleware';
+export { GraphQLPageVariantService } from './graphql-pagevariant-service';
 export type {
-  PersonalizationInfo,
-  PageVariantInfo,
-  GraphQLPersonalizationServiceConfig,
-} from './graphql-personalization-service';
+  AppliedPageVariants,
+  PageVariant,
+  GraphQLPageVariantServiceConfig,
+} from './graphql-pagevariant-service';
 //﻿export { personalizeLayout } from './layout-personalizer';
 export {
-  getPersonalizationRewrite,
-  getPersonalizationRewriteData,
-  normalizePersonalizationRewrite,
+  getPageVariantRewrite,
+  getPageVariantRewriteData,
+  normalizePageVariantRewrite,
 } from './utils';
-export type { PersonalizationRewriteData } from './utils';
+export type { PageVariantRewriteData } from './utils';

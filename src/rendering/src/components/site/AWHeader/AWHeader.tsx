@@ -720,7 +720,11 @@ const AWHeader = (props: AWHeaderProps) => {
         </nav>
       </div>
 
-      <AWMobileHeader fields={fields} favoriteProductsCount={favoriteProductsCount} />
+      <AWMobileHeader
+        fields={fields}
+        favoriteProductsCount={favoriteProductsCount}
+        coveoAccessToken={coveoAccessToken}
+      />
     </>
   );
 };

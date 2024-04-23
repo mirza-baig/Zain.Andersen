@@ -14,7 +14,7 @@ const VideoPlayer = ({
   return (
     <>
       <div className={videoPlayerClasses?.videoWrapper}>
-        <MediaPrimary {...(video as unknown as ImagePrimaryProps)} />
+        <MediaPrimary {...(video as unknown as ImagePrimaryProps)} includeSEOSchema={true} />
       </div>
       <VideoDetails
         isVideoPlayerItem={true}

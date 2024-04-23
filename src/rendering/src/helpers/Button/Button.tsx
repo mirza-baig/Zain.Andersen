@@ -25,7 +25,6 @@ export type ButtonProps = {
   classes: string;
   modalId?: string | undefined;
   modalLinkText?: Field<string>;
-  videoModal?: string | undefined; //video modal
 };
 
 const Button = (props: ButtonProps) => {

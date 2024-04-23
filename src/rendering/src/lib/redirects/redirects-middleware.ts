@@ -157,8 +157,8 @@ export class RedirectsMiddleware extends MiddlewareBase {
         url.pathname = newUrl;
       }
 
-      const redirectUrl = decodeURIComponent(url.href);
-
+      const redirectUrl = decodeURIComponent(existsRedirect.target);
+      console.log(redirectUrl);
       /** return Response redirect with http code of redirect type **/
       switch (existsRedirect.redirectType.toUpperCase()) {
         case REDIRECT_TYPE_301:

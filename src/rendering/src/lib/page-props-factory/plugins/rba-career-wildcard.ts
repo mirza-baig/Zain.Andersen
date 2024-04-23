@@ -7,7 +7,7 @@ import { GraphQLRequestClient } from '@sitecore-jss/sitecore-jss-nextjs';
 import { graphQLJobDetailsByJobIdService } from 'lib/utils/rba-career-utils';
 import config from 'temp/config';
 import { convertToSitecoreGuid } from 'lib/utils/string-utils';
-import { SITE_NAMES } from 'lib/constants/sitenames';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 
 class RbACareerWildcardPlugin implements Plugin {
   // Need to run after the normal processing but before the component props
@@ -23,8 +23,10 @@ class RbACareerWildcardPlugin implements Plugin {
 
   async exec(props: SitecorePageProps, context: GetServerSidePropsContext | GetStaticPropsContext) {
     // If the Site is AW then skip the flow.
-    const siteNameArray = Object.values(SITE_NAMES);
-    if (!siteNameArray.includes(props?.site?.name) || !props.notFound) {
+    if (
+      (props.site as EwSiteInfo)?.hasAffiliatePersonalization?.toLowerCase() !== 'true' ||
+      !props.notFound
+    ) {
       return props;
     }
     // Regex to find the RbA job details wild card page format - http://localhost:3000/careers/{Job_GUID}}/{Job_Item_Name}}/

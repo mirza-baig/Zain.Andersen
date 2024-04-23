@@ -90,8 +90,8 @@ const ChatButton: React.FC<ChatButtonProps> = (props) => {
   };
 
   // Check if current day and time fall within operating hours
-  const showChatButton =
-    showChat && props.fields?.onlineHours
+  const isOnlineChatEnabled =
+    showChat && props.fields?.onlineHours && !userAffiliate.programOptIns.LocaliQChatOnly
       ? isOperatingHours(props.fields.onlineHours.value)
       : false;
   const constructChatUrl = () => {
@@ -155,12 +155,12 @@ const ChatButton: React.FC<ChatButtonProps> = (props) => {
   return (
     <Component variant="lg" dataComponent="general/chatbutton" {...props}>
       <div className="hidden ml:block">
-        {showChatButton ? (
+        {isOnlineChatEnabled ? (
           <div className="fixed bottom-8 right-8 z-[99] col-span-12 flex flex-col justify-end">
             {showCollapsedButton ? (
               <div className="flex justify-end">
                 <button
-                  className="flex h-[64px] w-[156px] cursor-pointer rounded-[100px] border-[1px] border-primary bg-white py-2 px-4"
+                  className="flex h-[64px] w-[156px] cursor-pointer rounded-[100px] border-[1px] border-primary bg-white py-2 px-[10px]"
                   onClick={handleChatButtonClick}
                 >
                   <div className="mr-2 flex h-12 w-12 justify-center self-end rounded-full bg-primary text-center">
@@ -173,7 +173,7 @@ const ChatButton: React.FC<ChatButtonProps> = (props) => {
                   <Text
                     tag="span"
                     field={{ value: props.fields?.chatButtonText?.value }}
-                    className="flex self-center text-center text-xs font-bold text-black"
+                    className="flex w-auto self-center text-center text-xs font-bold text-black"
                   />
                 </button>
               </div>

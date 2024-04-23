@@ -5,8 +5,7 @@ import { Link, LinkField, Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import useExperienceEditor from 'lib/utils/use-experience-editor';
 import { useModalIdContext } from 'lib/context/GenericModalIDContext';
 import { Children, MouseEvent } from 'react';
-import VideoModal from 'components/modal/VideoModal/VideoModal';
-import { useState } from 'react';
+
 /**
  * This component adds some needed accessibility
  * updates to the JSS Link component
@@ -20,7 +19,6 @@ export interface LinkWrapperProps extends LinkProps {
   modalLinkText?: Field<string>;
   ariaLabel?: Field<string>;
   ctaSection?: CTASection;
-  videoModal?: string | undefined;
 }
 
 const INTERNAL_LINK_REGEX = /^\//g;
@@ -33,13 +31,11 @@ const LinkWrapper = ({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   suppressNewTabIcon,
   modalId,
-  videoModal,
   modalLinkText,
   ariaLabel,
   ctaSection,
   ...props
 }: LinkWrapperProps): JSX.Element => {
-  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   // Format field as LinkField for consistency
   const asLinkField = !field?.value ? { value: { ...field } } : (field as LinkField);
   // Sitecore doesn't do tel: links correctly, it appends http to it.  Remove that.
@@ -60,16 +56,11 @@ const LinkWrapper = ({
   const { setSelectedModalId, prevFocusedElementRef } = useModalIdContext();
 
   const handleModalClick = (e: MouseEvent) => {
-    console.log('videoModal', videoModal);
     if (modalId) {
       setSelectedModalId(modalId);
       prevFocusedElementRef &&
         (prevFocusedElementRef.current = e.currentTarget as HTMLButtonElement);
     }
-  };
-  const handleVideoModalClick = () => {
-    console.log('videoModal', videoModal);
-    setIsVideoModalOpen(true);
   };
 
   const gtmProps = ((): Record<string, string | null> => {
@@ -94,34 +85,10 @@ const LinkWrapper = ({
 
   // if modalId is provided, then act as ModalCta
   if (modalId) {
-    console.log('modalId', modalLinkText?.value);
     return (
       <button onClick={(e) => handleModalClick(e)} className={props.className}>
         {modalLinkText?.value} {children}
       </button>
-    );
-  }
-
-  if (videoModal) {
-    console.log('videoModal', videoModal);
-    return (
-      <>
-        <button onClick={handleVideoModalClick} className={props.className}>
-          {modalLinkText?.value}
-          {children}
-        </button>
-        {isVideoModalOpen && (
-          <VideoModal
-            backgroundColor={null}
-            hideByDefault={false}
-            iframeAttributes={{ value: 'height=314&width=100' }}
-            iframeResizerOptions={''}
-            iframeTitle={'100 Series'}
-            iframeUrl={'https://www.youtube.com/embed/uRnhcPfLm3Q?si=M0LmJNfgArTscUaM'}
-            onClose={() => setIsVideoModalOpen(false)}
-          />
-        )}
-      </>
     );
   }
 

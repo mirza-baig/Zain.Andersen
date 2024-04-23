@@ -23,13 +23,13 @@ export const StandaloneSearchBoxTheme: ThemeFile = {
     classes: {
       standaloneFocusedClasses: '',
       standaloneSearchBoxContainer:
-        'w-full ml:max-w-[996px] mx-auto my-xs bg-white rounded-[20px] relative z-10',
+        'w-full ml:max-w-[996px] mx-auto my-xs bg-white rounded-[20px] relative',
       standaloneSearchBoxWrapper:
-        'w-full flex items-center justify-center rounded-[100px] px-xs py-xxs standaloneSearchBoxWrapper z-10',
-      searchBox: 'flex items-center w-full ml-xxs z-10',
-      searchBoxInput: 'w-full text-xxs outline-0 z-10',
-      closeIconWrapper: 'cursor-pointer closeIconWrapper z-10',
-      searchIconWrapper: 'cursor-pointer z-10',
+        'w-full flex items-center justify-center rounded-[100px] px-xs py-xxs standaloneSearchBoxWrapper',
+      searchBox: 'flex items-center w-full ml-xxs',
+      searchBoxInput: 'w-full text-xxs outline-0',
+      closeIconWrapper: 'cursor-pointer closeIconWrapper',
+      searchIconWrapper: 'cursor-pointer',
       omniResultsWrapper:
         'bg-white pt-xs pb-m px-s text-xxs text-dark-gray absolute w-full omniResultsWrapper left-0 top-0 shadow-[0_4px_14px_3px_rgba(0,0,0,0.1)] rounded-2xl pt-[40px]',
       suggestionsWrapper: '',

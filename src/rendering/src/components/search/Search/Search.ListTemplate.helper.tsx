@@ -66,15 +66,12 @@ type ListTemplateMarkup = {
 };
 
 const ListTemplateMarkup = ({ result, resultItems, templateClasses }: ListTemplateMarkup) => {
-  // console.log('ListTemplateMarkup', resultItems);
   const listItemRef = useRef<HTMLLIElement>(null);
   const { currentScreenWidth } = useCurrentScreenType();
 
   const resultItemIndex = getResultItemIndex(resultItems, result.raw.sc_templateid as string);
 
   const resultItemToConsider = resultItems[resultItemIndex];
-  console.log('resultItemToConsider', resultItemToConsider);
-  // console.log('resultItemToConsider', resultItemToConsider.fields?.descriptionField);
 
   const videoItem = result?.raw['ew_videoid'] && getVideoItemProps(result, resultItemToConsider);
 
@@ -88,7 +85,6 @@ const ListTemplateMarkup = ({ result, resultItems, templateClasses }: ListTempla
     icon: resultItemToConsider.fields?.icon?.value?.src || '',
     videoItem,
   };
-  console.log('renderingFields', renderingFields);
 
   return (
     <li

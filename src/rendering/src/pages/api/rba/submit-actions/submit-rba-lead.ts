@@ -9,7 +9,7 @@ const submitrbaLead = async (
   res: NextApiResponse
 ): Promise<NextApiResponse | void> => {
   if (req.method !== 'POST') {
-    return res.status(405);
+    return res.status(405).end();
   }
 
   const requestOptions = {

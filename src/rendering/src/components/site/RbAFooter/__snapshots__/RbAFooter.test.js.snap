@@ -128,11 +128,11 @@ exports[`renders correctly 1`] = `
           class="order-1 col-span-12 text-white ml:order-none ml:col-span-4"
         >
           <div
-            class="-ml-[10px] flex flex-row gap-x-xxs ml:ml-0 ml:gap-x-s"
+            class="-ml-[10px] flex w-fit flex-row gap-x-xxs ml:ml-0 ml:gap-x-s"
           >
             <a
               aria-label="LOGO-RbA-Horizontal-white"
-              class="flex  justify-center"
+              class="flex w-[90%] justify-center"
               data-gtm-click=""
               data-gtm-dl-event="nav_click"
               data-gtm-dl-nav-section="footer"
@@ -168,7 +168,7 @@ exports[`renders correctly 1`] = `
             </a>
             <a
               aria-label="ANDERSEN_Logo_TM_Rectangle_RGB_white"
-              class="flex  justify-center -mt-m"
+              class="flex w-[90%] justify-center -mt-m"
               data-gtm-click=""
               data-gtm-dl-event="nav_click"
               data-gtm-dl-nav-section="footer"
@@ -208,11 +208,11 @@ exports[`renders correctly 1`] = `
           class="order-6 col-span-12 text-white ml:order-none ml:col-span-4"
         >
           <div
-            class="mt-xxs flex flex-wrap gap-y-s ml:flex-nowrap"
+            class="mt-xxs flex h-full w-full flex-wrap gap-y-s ml:flex-nowrap"
           >
             <a
               aria-label="Footer Logo"
-              class="flex  justify-center pr-s"
+              class="flex w-[90%] justify-center"
               data-gtm-click=""
               data-gtm-dl-event="nav_click"
               data-gtm-dl-nav-section="footer"
@@ -232,7 +232,7 @@ exports[`renders correctly 1`] = `
                   <img
                     alt=""
                     aria-hidden="true"
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27120%27%20height=%2756%27/%3e"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27120%27%20height=%2748%27/%3e"
                     style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
                 </span>
@@ -248,7 +248,7 @@ exports[`renders correctly 1`] = `
             </a>
             <a
               aria-label="Footer Logo"
-              class="flex  justify-center"
+              class="flex w-[90%] justify-center"
               data-gtm-click=""
               data-gtm-dl-event="nav_click"
               data-gtm-dl-nav-section="footer"
@@ -268,7 +268,7 @@ exports[`renders correctly 1`] = `
                   <img
                     alt=""
                     aria-hidden="true"
-                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27120%27%20height=%2756%27/%3e"
+                    src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27120%27%20height=%2748%27/%3e"
                     style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
                   />
                 </span>
@@ -405,7 +405,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="order-8 col-span-12 text-white ml:order-none ml:col-span-8 ml:-mt-l"
+          class="order-8 col-span-12 text-white ml:order-none ml:col-span-8 ml:-mt-[18px]"
         >
           <div
             class="flex flex-col"

@@ -17,7 +17,6 @@ export type PromoGenericProps =
   Feature.EnterpriseWeb.Enterprise.Components.Promo.PromoGeneric.PromoGeneric;
 
 const PromoGeneric = (props: PromoGenericProps): JSX.Element => {
-  console.log('PromoGeneric', props.fields);
   const { themeData } = useTheme(
     PromoGenericTheme(
       props?.fields?.imgPosition,

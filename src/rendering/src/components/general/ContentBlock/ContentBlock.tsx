@@ -7,9 +7,9 @@ import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 import { getEnum } from 'lib/utils';
 import { Headline } from 'src/helpers/Headline';
 import { useTheme } from 'lib/context/ThemeContext';
+import { Button, ButtonVariants } from 'src/helpers/Button';
 import classNames from 'classnames';
 import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { ButtonVariants } from 'src/helpers/Button';
 
 export type ContentBlockProps =
   Feature.EnterpriseWeb.Enterprise.Components.General.ContentBlock.ContentBlock;
@@ -17,7 +17,6 @@ export type ContentBlockProps =
 export type BackgroundColor = 'black' | 'gray' | 'white';
 
 const ContentBlock = (props: ContentBlockProps): JSX.Element => {
-  console.log('ContentBlock', props);
   const backgroundColor = getEnum<BackgroundColor>(props.fields?.backgroundColor) || 'white';
   const legalCopyFont = props?.fields?.useLegalCopyFont?.value || false;
   const { themeData } = useTheme(
@@ -40,16 +39,33 @@ const ContentBlock = (props: ContentBlockProps): JSX.Element => {
           refer={legalCopyFont ? 'legal-copy' : 'body-copy'}
           {...props}
         />
-        <ButtonGroup
-          classes={{
-            wrapper: themeData.classes.buttonGroupClass.wrapper,
-            cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
-            cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
-            cta3Classes: themeData.classes.buttonGroupClass.cta3Classes,
-            ctaAlignment: props.fields?.ctaAlignment?.displayName == 'Stack',
-          }}
-          {...props}
-        />
+        <div
+          className={
+            props.fields?.ctaAlignment?.displayName == 'Stack'
+              ? 'flex flex-col items-start  md:space-y-4'
+              : 'flex flex-col items-start  md:flex-row md:space-x-10'
+          }
+        >
+          <ButtonGroup
+            classes={{
+              wrapper: themeData.classes.buttonGroupClass.wrapper,
+              cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
+              cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
+              ctaAlignment: props.fields?.ctaAlignment?.displayName == 'Stack',
+            }}
+            {...props}
+          />
+
+          {props.fields?.cta3Link && (
+            <Button
+              field={props.fields?.cta3Link}
+              variant={props.fields?.cta3Style}
+              icon={props.fields?.cta3Icon}
+              classes={classNames(props.classes?.cta3Classes)}
+              ariaLabel={props.fields.cta3AriaLabel}
+            />
+          )}
+        </div>
       </div>
     </Component>
   );

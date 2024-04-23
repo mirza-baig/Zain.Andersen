@@ -50,53 +50,59 @@ const HeroWithFormFill: React.FC<HeroWithFormFillProps> = (props) => {
         ></div>
       )}
 
-      <div
-        className={classNames(themeData.classes.contentWrapper, themeData.classes.alignmentClass)}
-        style={imageStyles}
-      >
-        {/* content */}
+      {primaryImage.src || fields?.body?.value || renderForm > 0 || fields?.headlineText?.value ? (
         <div
-          className={classNames(
-            themeData.classes.contentContainer,
-            themeData.classes.contentAlignmentClass
-          )}
+          className={classNames(themeData.classes.contentWrapper, themeData.classes.alignmentClass)}
+          style={imageStyles}
         >
-          <Headline
-            classes={classNames(themeData.classes.headline, themeData.classes.contentwidth)}
-            {...props}
-          />
-          <RichTextWrapper
-            classes={classNames(
-              themeData.classes.bodyClass,
-              themeData.classes.contentwidth,
-              'ml:[&>div]:!text-white'
+          {/* content */}
+          <div
+            className={classNames(
+              themeData.classes.contentContainer,
+              themeData.classes.contentAlignmentClass
             )}
-            field={fields?.body}
-          />
-        </div>
-
-        {/* primaryImage in mobile */}
-        <MediaPrimary
-          imageLayout="fill"
-          ratio="hero"
-          additionalDesktopClasses="ml:!hidden"
-          additionalMobileClasses="!block md:!block min-h-[280px] mt-l ml:!hidden"
-          priority
-          {...props}
-        />
-        {/* vertical or horizontal Form */}
-        {renderForm && formAlignment !== 'horizontalSpillover' && (
-          <div className={classNames('z-[1] p-s', themeData.classes.formWrapperClass, formBGClass)}>
-            <Placeholder
-              name="form"
-              rendering={rendering}
-              isHorizontalForm={formAlignment === 'horizontal'}
+          >
+            <Headline
+              classes={classNames(themeData.classes.headline, themeData.classes.contentwidth)}
+              {...props}
+            />
+            <RichTextWrapper
+              classes={classNames(
+                themeData.classes.bodyClass,
+                themeData.classes.contentwidth,
+                'ml:[&>div]:!text-white'
+              )}
+              field={fields?.body}
             />
           </div>
-        )}
-      </div>
+
+          {/* primaryImage in mobile */}
+          <MediaPrimary
+            imageLayout="fill"
+            ratio="hero"
+            additionalDesktopClasses="ml:!hidden"
+            additionalMobileClasses="!block md:!block min-h-[280px] mt-l ml:!hidden"
+            priority
+            {...props}
+          />
+          {/* vertical or horizontal Form */}
+          {renderForm > 0 && formAlignment !== 'horizontalSpillover' && (
+            <div
+              className={classNames('z-[1] p-s', themeData.classes.formWrapperClass, formBGClass)}
+            >
+              <Placeholder
+                name="form"
+                rendering={rendering}
+                isHorizontalForm={formAlignment === 'horizontal'}
+              />
+            </div>
+          )}
+        </div>
+      ) : (
+        <></>
+      )}
       {/* horizontalSpillover Form */}
-      {renderForm && formAlignment === 'horizontalSpillover' && (
+      {renderForm > 0 && formAlignment === 'horizontalSpillover' && (
         <div className={classNames('z-[1] p-s', themeData.classes.formWrapperClass, formBGClass)}>
           <Placeholder name="form" rendering={rendering} isHorizontalForm={true} />
         </div>

@@ -18,6 +18,11 @@ export class AffiliateProgramOptIn<T extends RuleContext> extends WhenCondition<
 
   execute(ruleContext: T): boolean {
     const userAffiliate = ruleContext.parameters['userAffiliate'] as Affiliate;
+
+    if (!userAffiliate) {
+      return false;
+    }
+
     const programOptIns = userAffiliate.programOptIns;
 
     // Find the matched program based on the provided ProgramOptInsIds

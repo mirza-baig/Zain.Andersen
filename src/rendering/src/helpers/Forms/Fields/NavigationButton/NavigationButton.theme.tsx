@@ -5,11 +5,27 @@ import { ButtonPrimaryClasses } from 'src/helpers/Button/buttons/btn--primary';
 import { ButtonSecondaryClasses } from 'src/helpers/Button/buttons/btn--secondary';
 import { ButtonTertiaryClasses } from 'src/helpers/Button/buttons/btn--tertiary';
 
-export const getNavigationButtonTheme = (startWithIcon = false) => {
+const ButtonFormLinkClasses = (themeName: string) => {
+  if (themeName === 'aw') {
+    return {
+      btnClass:
+        'flex w-fit items-center whitespace-normal font-sans text-text-link text-theme-text underline disabled:border-gray disabled:text-gray',
+    };
+  } else {
+    return {
+      btnClass:
+        'group relative flex w-fit items-center text-darkprimary font-serif underline disabled:text-gray',
+    };
+  }
+};
+
+export const getNavigationButtonTheme = (startWithIcon = false, linkTheme = false) => {
   return {
     aw: {
       classes: {
-        button: startWithIcon
+        button: linkTheme
+          ? ButtonFormLinkClasses('aw').btnClass
+          : startWithIcon
           ? ButtonTertiaryClasses('aw').btnClass
           : ButtonPrimaryClasses('aw').btnClass,
         icon: classNames(
@@ -22,7 +38,9 @@ export const getNavigationButtonTheme = (startWithIcon = false) => {
     },
     rba: {
       classes: {
-        button: startWithIcon
+        button: linkTheme
+          ? ButtonFormLinkClasses('rba').btnClass
+          : startWithIcon
           ? ButtonSecondaryClasses('rba').btnClass
           : ButtonPrimaryClasses('rba').btnClass,
         icon: classNames(

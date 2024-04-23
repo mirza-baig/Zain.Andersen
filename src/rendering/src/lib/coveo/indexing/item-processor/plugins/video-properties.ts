@@ -17,6 +17,8 @@ export class VideoProperties {
       return siteMapItem;
     }
 
+    siteMapItem.loc = siteMapItem.itemUri;
+
     const lastUpdated = indexableItem.fields.getDateField('lastUpdated');
     if (lastUpdated && lastUpdated.value) {
       const normalized = normalizeSitecoreDateString(lastUpdated.value);
@@ -78,6 +80,22 @@ export class VideoProperties {
 
       if (videoId) {
         siteMapItem.metaData[videoId.name] = videoId.value;
+
+        const videoName = primaryVideo.targetItem.fields.getTextField('videoName');
+        if (videoName) {
+          siteMapItem.metaData[videoName.name] = videoName.value;
+        }
+
+        const videoDescription = primaryVideo.targetItem.fields.getTextField('videoDescription');
+        if (videoDescription) {
+          siteMapItem.metaData[videoDescription.name] = videoDescription.value;
+        }
+
+        const lastUpdated = primaryVideo.targetItem.fields.getDateField('lastUpdated');
+        if (lastUpdated && lastUpdated.value) {
+          const normalized = normalizeSitecoreDateString(lastUpdated.value);
+          siteMapItem.metaData[lastUpdated.name] = new Date(normalized);
+        }
 
         siteMapItem.metaData['videotype'] = primaryVideo.targetItem.template?.id;
 

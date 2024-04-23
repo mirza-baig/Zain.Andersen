@@ -13,6 +13,8 @@ import { FormikValues, useFormikContext } from 'formik';
 import { formActionFactory } from 'temp/formActionFactory';
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 import { OnlineSchedulingConstants } from 'lib/constants/online-scheduling';
+import { sendMessageToParentPage } from 'lib/forms/OnlineScheduling/OnlineSchedulingUtils';
+import { getFieldData } from 'lib/forms/FormFieldUtils';
 
 export type OSInitialPageLoadProps =
   Feature.EnterpriseWeb.RenewalByAndersen.Forms.Events.OnlineSchedulingInitialPageLoad &
@@ -43,6 +45,13 @@ const OnlineSchedulingInitialPageLoadComponent = (props: OSInitialPageLoadProps)
         };
       });
     }
+    const messageData = {
+      type: OnlineSchedulingConstants.events.onReady,
+      description: 'Online Scheduling Experience is ready.',
+      pageIndex: pageIndex,
+      leadData: leadData,
+    };
+    sendMessageToParentPage(messageData);
   }
 
   function onlineSchedulingMessageHandler(message: OnlineSchedulingMessage) {
@@ -51,7 +60,7 @@ const OnlineSchedulingInitialPageLoadComponent = (props: OSInitialPageLoadProps)
     }
     switch (message.type) {
       case 'initializeLeadData': {
-        return initializeLeadData(message.data);
+        return initializeLeadData(message.leadData as Record<string, string>);
       }
       default: {
         return;
@@ -72,10 +81,7 @@ const OnlineSchedulingInitialPageLoadComponent = (props: OSInitialPageLoadProps)
           onlineSchedulingMessageHandler(message);
         },
         onReady: function () {
-          if ('parentIFrame' in window) {
-            // @ts-ignore https://github.com/davidjbradshaw/iframe-resizer/blob/master/docs/iframed_page/methods.md#iframe-page-methods
-            window.parentIFrame.sendMessage('ready');
-          }
+          sendMessageToParentPage({ type: 'ready' });
         },
       };
     }
@@ -85,37 +91,48 @@ const OnlineSchedulingInitialPageLoadComponent = (props: OSInitialPageLoadProps)
 
   useEffect(() => {
     if (onlineSchedulingContext.isLoading && hasPageBeenRendered.current) {
-      (async () => {
-        // validate form
-        const errors = await validateForm(initialValues);
-        if (Object.keys(errors).length === 0) {
-          const submitActions = props.fields?.children;
-          if (submitActions?.length > 0) {
-            for (let i = 0; i < submitActions.length; i++) {
-              const action: FormFieldProps = submitActions[i];
-              const actionHandler = formActionFactory(
-                action,
-                values, // move trimStringValues
-                formProps,
-                props,
-                onlineSchedulingContext
-              );
-              // add error handling
-              const result = await actionHandler?.executeAction();
-              if (!!result?.result) {
-                onlineSchedulingDispatch(result.result); // after executing the submit action, dispatch an event to the onineSchedulingReducer to update the OnlineSchedulingContext
-                if (result.nextPageIndex && result.nextPageIndex > -1) {
-                  updatePageIndex(result.nextPageIndex);
-                } else {
-                  updatePageIndex(pageIndex + 1);
+      try {
+        (async () => {
+          // validate form
+          const errors = await validateForm(initialValues);
+          if (Object.keys(errors).length === 0) {
+            const submitActions = props.fields?.children;
+            if (submitActions?.length > 0) {
+              for (let i = 0; i < submitActions.length; i++) {
+                const action: FormFieldProps = submitActions[i];
+                const actionHandler = formActionFactory(
+                  action,
+                  values, // move trimStringValues
+                  formProps,
+                  props,
+                  onlineSchedulingContext
+                );
+                // add error handling
+                const result = await actionHandler?.executeAction();
+                if (!!result?.result) {
+                  onlineSchedulingDispatch(result.result); // after executing the submit action, dispatch an event to the onineSchedulingReducer to update the OnlineSchedulingContext
+                  if (result.nextPageIndex && result.nextPageIndex > -1) {
+                    updatePageIndex(result.nextPageIndex);
+                  } else {
+                    updatePageIndex(pageIndex + 1);
+                  }
                 }
               }
             }
           }
-        }
-      })().then(() => {
-        onlineSchedulingDispatch({ type: OnlineSchedulingConstants.setIsLoading, result: false });
-      });
+        })().then(() => {
+          onlineSchedulingDispatch({ type: OnlineSchedulingConstants.setIsLoading, result: false });
+        });
+      } catch (e: unknown) {
+        console.error(e);
+        const messageData = {
+          type: OnlineSchedulingConstants.events.onError,
+          description: e instanceof Error ? e.message : 'Unknown error',
+          pageIndex: pageIndex,
+          leadData: getFieldData(formProps, values),
+        };
+        sendMessageToParentPage(messageData);
+      }
     }
     hasPageBeenRendered.current = true;
     // only run after the formik values have completely updated

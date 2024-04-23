@@ -1,5 +1,5 @@
 
-function createIframe(elementId, data, isValidData) {
+function createIframe(elementId, data, isValidData, events) {
   const element = document.getElementById(elementId);
   if (element && element instanceof HTMLElement){
     const iframe = document.createElement('iframe');
@@ -17,8 +17,11 @@ function createIframe(elementId, data, isValidData) {
           log: false,
           onMessage: function (messageData) {
             console.log(messageData);
-            if (messageData.message === 'ready'){ 
-              iframe.iFrameResizer.sendMessage({ type: 'initializeLeadData', data: data});
+            if (messageData?.message?.type === 'ready'){ 
+              iframe.iFrameResizer.sendMessage({ type: 'initializeLeadData', leadData: data});
+            }
+            else if (events instanceof Object && events[messageData?.message?.type] instanceof Function) {
+                events[messageData?.message?.type](messageData.message);
             }
           },
         },
@@ -30,9 +33,6 @@ function createIframe(elementId, data, isValidData) {
   else {
     console.error(`elementId: ${elementId} is not found in the DOM. Cannot create Online Scheduling Experience.`);
   }
-  
-
-
 }
 
 
@@ -46,10 +46,11 @@ class OnlineSchedulingExperience{
     return false;
   }
 
-  constructor(elementId, data) { // define data type
+  constructor(elementId, data, events) { // define data type
     this.elementId = elementId;
     this.data = data; // add some validation?
-    this.iframe = createIframe(elementId, data, this.#isValidData(data));
+    this.events = events;
+    this.iframe = createIframe(elementId, data, this.#isValidData(data), events);
   }
 
   sendMessage(message) { // define message type

@@ -24,7 +24,7 @@ export const ButtonPrimaryClasses = (themeName: string) => {
 
 const ButtonPrimary = (props: ButtonProps): JSX.Element => {
   const { themeName } = useTheme();
-  const { field, icon, classes, modalId, modalLinkText, ariaLabel, videoModal } = props;
+  const { field, icon, classes, modalId, modalLinkText, ariaLabel } = props;
   const _icon = getEnum<IconTypes>(icon);
 
   if (field) {
@@ -32,7 +32,6 @@ const ButtonPrimary = (props: ButtonProps): JSX.Element => {
       <LinkWrapper
         field={field}
         modalId={modalId}
-        // videoModal={videoModal}
         modalLinkText={modalLinkText}
         ariaLabel={ariaLabel}
         className={classNames(ButtonPrimaryClasses(themeName).btnClass, classes)}

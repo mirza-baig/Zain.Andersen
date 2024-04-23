@@ -17,7 +17,7 @@ import VideoCard from './GenericCardVideo.helper';
 import { DesktopVideoDisplayStyleType } from 'components/listing/XupCardCollection/XupCardCollection';
 import { LinkWrapper } from 'src/helpers/LinkWrapper';
 import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
-import VideoModal from 'src/components/modal/VideoModal/VideoModal';
+
 export type GenericCardProps = Feature.EnterpriseWeb.Enterprise.Cards.GenericCard & {
   desktopVideoDisplayStyle: DesktopVideoDisplayStyleType;
 };
@@ -25,19 +25,8 @@ export type GenericCardProps = Feature.EnterpriseWeb.Enterprise.Cards.GenericCar
 export type TextAlignment = 'left' | 'center';
 
 const GenericCard = (props: GenericCardProps): JSX.Element => {
-  // console.log('GenericCard', props);
-  console.log('props', props.fields);
-  // console.log(
-  //   'video modal',
-  //   (
-  //     props.fields
-  //       ?.cta1Modal as unknown as Feature.EnterpriseWeb.Enterprise.Components.Modal.VideoModal.VideoModal
-  //   ).fields?.iframeUrl?.value
-  // );
-  // console.log('generic', props.fields?.cta1Modal);
   const alignment = getEnum<TextAlignment>(props.fields?.alignment) || 'left';
   const { themeData } = useTheme(GenericCardTheme(alignment));
-  const test = VideoModal;
 
   const showVideo = !!props.fields?.primaryVideo;
 
@@ -104,7 +93,7 @@ const GenericCard = (props: GenericCardProps): JSX.Element => {
             <BodyCopy classes={themeData.classes.body} {...props} />
           </div>
           <div className={themeData.classes.buttonGroupClass.wrapper}>
-            <Button //this is modal buton component
+            <Button
               field={props.fields?.cta1Link}
               variant={props.fields?.cta1Style}
               icon={props.fields?.cta1Icon}
@@ -113,19 +102,6 @@ const GenericCard = (props: GenericCardProps): JSX.Element => {
                   props.fields
                     ?.cta1Modal as unknown as Feature.EnterpriseWeb.Enterprise.Components.Modal.GenericModal.GenericModal
                 )?.fields?.modalId?.value
-              }
-              videoModal={
-
-                'test'                // (
-                //   props.fields
-                //     ?.cta1Modal as unknown as Feature.EnterpriseWeb.Enterprise.Components.Modal.VideoModal.VideoModal
-                // ).fields?.iframeUrl.value
-                // test
-                // console.log(test);
-                // (
-                //   props.fields
-                //     ?.cta1Modal as unknown as Feature.EnterpriseWeb.Enterprise.Components.Modal.VideoModal.VideoModal
-                // )?.fields?.value
               }
               modalLinkText={props.fields?.cta1ModalLinkText}
               classes={classNames(props.fields?.cta1Style, 'md:whitespace-pre-wrap	md:w-lg')}

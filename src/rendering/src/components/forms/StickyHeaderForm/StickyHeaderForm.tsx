@@ -1,7 +1,11 @@
 // Global
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
-import { Placeholder, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
-import { getCookie, setCookie } from 'cookies-next';
+import {
+  Placeholder,
+  useSitecoreContext,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
+import { getCookie } from 'cookies-next';
 // Components
 import React from 'react';
 import { Component } from 'src/helpers/Component';
@@ -16,21 +20,23 @@ import { LinkWrapper } from 'src/helpers/LinkWrapper';
 import ImageWrapper from 'src/helpers/Media/ImageWrapper';
 import { useOfferCards, offerProps } from 'lib/utils/useOfferCards';
 
-const CONSULTATION_FORM_SUBMIT_STATUS_COOKIE_NAME = 'isConsultationRequested';
-
 export type StickyHeaderFormProps =
   Feature.EnterpriseWeb.RenewalByAndersen.Components.Forms.StickyHeaderForm.StickyHeaderForm;
 const StickyHeaderForm = (props: StickyHeaderFormProps) => {
   const { rendering, fields } = props;
   const { isLoading, offerData } = useOfferCards();
 
-  const displayOfferChecked = fields?.displayOffer?.value;
-
   const [isFormSticky, setIsFormSticky] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [stickyOfferData, setStickyOfferData] = useState('' as unknown as offerProps);
   const [endDateString, setEndDateString] = useState('');
+
+  const { sitecoreContext } = useSitecoreContext();
+
+  const visibileCookieName = fields?.visibilityCookie?.fields?.cookieName?.value;
+  const displayOfferChecked = fields?.displayOffer?.value;
+  const isDisabledFromPage = sitecoreContext.route?.fields?.hideStickyHeaderForm?.value;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,17 +64,9 @@ const StickyHeaderForm = (props: StickyHeaderFormProps) => {
     }
   }, [offerData]);
 
-  if (!fields || getCookie(CONSULTATION_FORM_SUBMIT_STATUS_COOKIE_NAME)) {
+  if (!fields || isDisabledFromPage || getCookie(visibileCookieName)) {
     return <></>;
   }
-
-  const handleAfterSuccessfullSubmit = () => {
-    const date = new Date();
-    date.setTime(date.getTime() + 60 * 24 * 60 * 60 * 1000);
-
-    // set flag in cookies that consultation request form is submited for 60 days
-    setCookie(CONSULTATION_FORM_SUBMIT_STATUS_COOKIE_NAME, true, { expires: date });
-  };
 
   const RenderUtilityNav = () => {
     const year = endDateString?.substring(0, 4);
@@ -211,12 +209,7 @@ const StickyHeaderForm = (props: StickyHeaderFormProps) => {
 
             {/* Form Fields */}
             <div className="flex-grow [&_.pages_.grid]:!gap-x-xxxs">
-              <Placeholder
-                name="form"
-                rendering={rendering}
-                isHorizontalForm={true}
-                callbackAfterSubmit={handleAfterSuccessfullSubmit}
-              />
+              <Placeholder name="form" rendering={rendering} isHorizontalForm={true} />
             </div>
           </div>
         </div>

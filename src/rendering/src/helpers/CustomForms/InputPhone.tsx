@@ -4,7 +4,6 @@ import { BodyCopy } from '../BodyCopy';
 import { useTheme } from 'lib/context/ThemeContext';
 import { FormFieldsTheme } from '../Forms/Fields/FormFields.Theme';
 import ReactInputMask from 'react-input-mask';
-import { ChangeEvent, useState } from 'react';
 import { CustomErrorMessage } from './CustomErrorMessage';
 
 type InputPhoneProps = Partial<HTMLInputElement> & {
@@ -14,21 +13,8 @@ type InputPhoneProps = Partial<HTMLInputElement> & {
 
 export const InputPhone = (props: InputPhoneProps): JSX.Element => {
   const { id, name, label, subLabel } = props;
-
-  const { themeData, themeName } = useTheme(FormFieldsTheme);
-
+  const { themeData } = useTheme(FormFieldsTheme);
   const { errors, touched, values } = useFormikContext<FormikValues>();
-
-  const [isElevenDigitNumberAllowed, setIsElevenDigitNumberAllowed] = useState(false);
-
-  const handlePhoneNumberChange = (event: ChangeEvent<HTMLInputElement>) => {
-    if (themeName == 'aw') {
-      const phoneNumberValue = event.target.value;
-      setIsElevenDigitNumberAllowed(
-        phoneNumberValue.startsWith('(1') || phoneNumberValue.startsWith('1')
-      );
-    }
-  };
 
   if (!name) {
     return <></>;
@@ -55,7 +41,7 @@ export const InputPhone = (props: InputPhoneProps): JSX.Element => {
         {({ field }: FieldProps) => (
           <ReactInputMask
             {...field}
-            mask={`${isElevenDigitNumberAllowed ? '1 ' : ''}(999) 999-9999`}
+            mask={'(999) 999-9999'}
             maskChar="_"
             placeholder={'(###) ###-####'}
             type="tel"
@@ -65,7 +51,6 @@ export const InputPhone = (props: InputPhoneProps): JSX.Element => {
               values[name as string] ? 'border-black' : ''
             )}
             onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-              handlePhoneNumberChange(event);
               field.onChange(event);
             }}
           />

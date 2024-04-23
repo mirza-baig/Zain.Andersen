@@ -1,3 +1,6 @@
+import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getCookie } from 'cookies-next';
+
 /**
  * Normalizes a guid format so they can be compared as strings.
  */
@@ -53,6 +56,48 @@ export const normalizeSitecoreDateStringFormatted = (date: string): string => {
     return formattedDate;
   }
   return date;
+};
+
+export const normalizeSitecoreDateStringFormattedWithTime = (date: string): string => {
+  const isValid = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z$/.test(date);
+  if (!isValid) {
+    console.warn(
+      `Invalid date provided: ${date}. Valid Sitecore date string format: 20211112T203919Z.`
+    );
+    return 'Invalid Date';
+  }
+
+  const year = date.slice(0, 4);
+  const month = date.slice(4, 6);
+  const day = date.slice(6, 8);
+  const hour = date.slice(9, 11);
+  const minute = date.slice(11, 13);
+  const second = date.slice(13, 15);
+
+  // Convert the date string into a JavaScript Date object
+  const parsedDate = new Date(
+    Date.UTC(
+      parseInt(year),
+      parseInt(month) - 1,
+      parseInt(day),
+      parseInt(hour),
+      parseInt(minute),
+      parseInt(second)
+    )
+  );
+
+  // Get the localized date string
+  const formattedDate = parsedDate.toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'numeric',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: true,
+  });
+
+  return formattedDate;
 };
 
 export const createUUID = () => {
@@ -196,3 +241,38 @@ export function isSvgUrl(src: string | undefined) {
     return false;
   }
 }
+
+export function convertHexToGUID(guidString: string) {
+  return guidString.replace(
+    /([0-z]{8})([0-z]{4})([0-z]{4})([0-z]{4})([0-z]{12})/,
+    '$1-$2-$3-$4-$5'
+  );
+}
+
+export const getSiteSwitcherLink = (): LinkField | null => {
+  if (typeof window !== 'undefined') {
+    const urlObject = new URL(window.location.href);
+
+    urlObject.host = urlObject.host.replace(/\.(com|ca)/g, (_: string, domain: string) =>
+      domain === 'com' ? '.ca' : '.com'
+    );
+
+    const _currentZip = getCookie('currentZip');
+
+    if (!urlObject.searchParams.has('currentZip') && _currentZip) {
+      urlObject.searchParams.append('currentZip', _currentZip.toString());
+    }
+
+    const linkField = {
+      value: {
+        href: urlObject.toString(),
+        linktype: 'external',
+        url: urlObject.toString(),
+      },
+    };
+
+    return linkField;
+  }
+
+  return null;
+};

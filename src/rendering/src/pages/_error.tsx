@@ -3,6 +3,7 @@ import { AffiliateContextProvider } from 'lib/context/AffiliateContext';
 import { FastSitecoreContext } from 'lib/overrides/FastSitecoreContext';
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 import { NextPage } from 'next';
 import FallbackServerError from 'src/FallbackServerError';
 import Layout from 'src/Layout';
@@ -15,7 +16,12 @@ import { componentFactory } from 'temp/componentFactory';
  * Rendered for 500 errors on both server and client. Used only in Production mode.
  * @link https://nextjs.org/docs/advanced-features/custom-error-page#more-advanced-error-page-customizing
  */
-const ErrorPage: NextPage<SitecorePageProps> = ({ componentProps, layoutData, userAffiliate }) => {
+const ErrorPage: NextPage<SitecorePageProps> = ({
+  componentProps,
+  layoutData,
+  userAffiliate,
+  site,
+}) => {
   // If we don't have "_500" page defined in Sitecore
   if (!layoutData?.sitecore?.route) {
     return <FallbackServerError />;
@@ -25,7 +31,7 @@ const ErrorPage: NextPage<SitecorePageProps> = ({ componentProps, layoutData, us
     <ComponentPropsContext value={componentProps}>
       <AffiliateContextProvider userAffiliate={userAffiliate} pageAffiliate={null}>
         <FastSitecoreContext componentFactory={componentFactory} layoutData={layoutData}>
-          <Layout layoutData={layoutData} />
+          <Layout layoutData={layoutData} site={site as EwSiteInfo} />
         </FastSitecoreContext>
       </AffiliateContextProvider>
     </ComponentPropsContext>

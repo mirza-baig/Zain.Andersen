@@ -12,7 +12,7 @@ const offerByStoreIdApi = async (req: NextApiRequest, res: NextApiResponse) => {
   const storeId = req.body;
 
   if (storeId.length <= 0 || Array.isArray(storeId)) {
-    return res.status(400);
+    return res.status(400).end();
   }
 
   const results = await getOfferByStoreId(storeId);

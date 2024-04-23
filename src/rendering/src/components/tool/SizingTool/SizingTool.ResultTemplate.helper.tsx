@@ -2,6 +2,7 @@ import { Result } from '@coveo/headless';
 import { Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import classNames from 'classnames';
 import { SizingToolProps } from 'components/tool/SizingTool/SizingTool';
+import { extractURLParts } from 'lib/coveo';
 import { Foundation } from 'src/.generated/Foundation.EnterpriseWeb.model';
 import { ButtonGroup } from 'src/helpers/ButtonGroup';
 import { Eyebrow } from 'src/helpers/Eyebrow';
@@ -81,7 +82,7 @@ const SizingToolTemplate = (props: SizingToolProps) => {
             value:
               _result.raw.ew_productdetailpagelink !== undefined
                 ? {
-                    href: _result.raw.ew_productdetailpagelink,
+                    ...extractURLParts(_result.raw.ew_productdetailpagelink as string),
                     title: props.fields?.productDetailsPageCTAText.value,
                     text: props.fields?.productDetailsPageCTAText.value,
                   }
@@ -105,7 +106,7 @@ const SizingToolTemplate = (props: SizingToolProps) => {
             value:
               _result.raw.ew_sizingdocumentspagelink !== undefined
                 ? {
-                    href: _result.raw.ew_sizingdocumentspagelink,
+                    ...extractURLParts(_result.raw.ew_sizingdocumentspagelink as string),
                     title: props.fields?.sizingDocumentsCTAText.value,
                     text: props.fields?.sizingDocumentsCTAText.value,
                   }

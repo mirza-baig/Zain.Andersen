@@ -115,7 +115,7 @@ const TabsFeaturedPromo = (props: TabsFeaturedPromoProps) => {
       selectedItem?.fields?.contentId.value || `tab-${normalizeGuid(selectedItem?.id)}`;
 
     if (shouldUpdateURL && currentIndex >= 0) {
-      history.pushState(null, window.location.href, `#${selectedItemId}`);
+      history.pushState(history.state, window.location.href, `#${selectedItemId}`);
       setShouldUpdateURL(false);
     }
 

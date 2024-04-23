@@ -1,12 +1,12 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { groupBy } from 'lodash';
 import xml from 'xmlbuilder';
-import { GraphQLSitemapXmlService, SitemapPath } from 'lib/sitemap-xml';
 import { normalizeSitecoreDateString } from 'lib/utils/string-utils';
-import appConfig from 'temp/config';
 import { siteResolver } from 'lib/site-resolver';
 import { EwSiteInfo } from 'lib/site/ew-site-info';
 import { getHostHeader } from 'lib/utils/api-request-utils';
+import { sitemapXmlPathFetcher } from 'lib/sitemap-xml';
+import { SitemapPath } from 'lib/sitemap-xml';
 
 export const config = {
   api: {
@@ -37,13 +37,8 @@ const sitemapApi = async (
 
   const site = siteResolver.getByHost(hostName) as EwSiteInfo;
 
-  // create sitemap graphql service
-  const sitemapXmlService = new GraphQLSitemapXmlService({
-    endpoint: appConfig.graphQLEndpoint,
-    apiKey: appConfig.sitecoreApiKey,
-    siteName: site.name,
-    language: site.language,
-  });
+  // Get the sitemap paths
+  const paths = await sitemapXmlPathFetcher.fetch(site);
 
   const root = xml
     .create('urlset', { encoding: 'UTF-8' })
@@ -54,8 +49,6 @@ const sitemapApi = async (
       'xsi:schemaLocation',
       'http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/TR/xhtml11/xhtml11_schema.html http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd'
     );
-
-  const paths = await sitemapXmlService.fetchPaths();
 
   // Combine both and group them by path, so we eliminate duplicates
   const pagesGroupedByUrl = groupBy(paths, (x) => x.path);

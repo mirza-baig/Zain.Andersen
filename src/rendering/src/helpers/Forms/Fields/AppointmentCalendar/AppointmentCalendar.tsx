@@ -4,6 +4,12 @@ import { FormFieldExport } from 'lib/forms';
 import { Calendar } from 'primereact/calendar';
 import { useOnlineScheduling } from 'lib/forms/OnlineScheduling/OnlineSchedulingContext';
 import { useEffect, useState } from 'react';
+import * as yup from 'yup';
+import { getValidatonSchema, replacePlaceholders } from 'lib/forms/FormFieldUtils';
+import { Field, FormikValues, useFormikContext } from 'formik';
+import { useTheme } from 'lib/context/ThemeContext';
+import { FieldWrapperTheme } from '../../Structure/FieldWrapper/FieldWrapper.Theme';
+import classNames from 'classnames';
 
 export type AppointmentCalendarProps =
   Feature.EnterpriseWeb.RenewalByAndersen.Forms.Fields.AppointmentCalendar & FormFieldProps;
@@ -13,20 +19,46 @@ type ApptProps = {
   times: any | Array<any>;
 };
 
-const CalendarComponent = (): JSX.Element => {
+const getAppointmentCalendarInitialValue = () => {
+  return '';
+};
+
+const getApptCalendarValidationSchema = (
+  props: AppointmentCalendarProps,
+  schema: yup.AnyObject
+) => {
+  const { validations } = props?.fields;
+  if (!validations) {
+    return schema;
+  }
+
+  const validator = getValidatonSchema('string', props);
+  if (!validator) {
+    return schema;
+  }
+
+  schema[props?.fields?.fieldName?.value] = (validator as yup.StringSchema).trim();
+
+  return schema;
+};
+
+const CalendarComponent = (props: AppointmentCalendarProps): JSX.Element => {
   const { secondarySubmissionResponse } = useOnlineScheduling();
   const appointments = secondarySubmissionResponse?.data?.territoryBasedAppointments;
   const [apptTimeSlots, setApptTimeSlots] = useState<any[]>([]);
-  const [selectedDate, setDate] = useState<Date>();
+  const [selectedDate, setSelectedDate] = useState<Date>();
+  const { touched, errors, setFieldValue } = useFormikContext<FormikValues>();
+  const { themeData } = useTheme(FieldWrapperTheme);
 
-  console.log('-----OS Data----');
-  console.log(appointments);
+  const placeholders: Record<string, string> = {
+    fieldLabel: props.name,
+  };
 
   const getApptDateTimes = (appts: string[] | undefined) => {
     let apptsDateTimes: Array<ApptProps> = [];
 
     if (appts) {
-      //sort date/times asc and group times by date
+      //sort date/times asc and group times by dates
       const groupedApptDateTimes = appts
         .map((date) => new Date(date))
         .sort((a, b) => a.getTime() - b.getTime())
@@ -52,24 +84,22 @@ const CalendarComponent = (): JSX.Element => {
   const mappedAppointments = getApptDateTimes(appointments);
   const highlightedDates = mappedAppointments.map((appt) => new Date(appt.date));
 
-  console.log('-----Mapped Data----');
-  console.log(mappedAppointments);
-
-  const setSelectedDateTimes = (dateSelected: Date | null) => {
-    setDate(dateSelected!);
+  const setSelectedDateTimes = (userSelectedDate: Date | null) => {
+    setFieldValue(props?.fields?.fieldName?.value, '', false);
+    setSelectedDate(userSelectedDate!);
     setApptTimeSlots(
       mappedAppointments
-        .filter((_id, idx, arr) => {
-          if (arr[idx].date == dateSelected?.toLocaleDateString()) {
-            return true;
-          }
-          return false;
-        })
+        .filter((_id, idx, arr) => arr[idx].date == userSelectedDate?.toLocaleDateString())
         .map((appt) =>
           appt.times.map((times: string, index: number) => (
             <li
               key={index}
               tabIndex={index}
+              onClick={(e) => {
+                const apptSlot =
+                  userSelectedDate?.toLocaleDateString() + ' ' + e.currentTarget.innerText;
+                setFieldValue(props?.fields?.fieldName?.value, apptSlot, true);
+              }}
               className="w-[124px] rounded-[100px] border-[2px] border-gray bg-light-gray px-6 py-1 font-sans font-medium text-black hover:cursor-pointer hover:border-black focus:border-black"
             >
               {times}
@@ -80,7 +110,6 @@ const CalendarComponent = (): JSX.Element => {
   };
 
   useEffect(() => {
-    console.log('running useEffect');
     setSelectedDateTimes(highlightedDates[0]);
   }, [secondarySubmissionResponse]);
 
@@ -92,7 +121,7 @@ const CalendarComponent = (): JSX.Element => {
   };
 
   return (
-    <div className="col-span-3 flex pt-4">
+    <div className="col-span-12 flex flex-col pt-4 md:col-span-6 md:flex-row">
       <Calendar
         enabledDates={highlightedDates}
         onChange={(e) => {
@@ -120,7 +149,7 @@ const CalendarComponent = (): JSX.Element => {
           },
         }}
       ></Calendar>
-      <div id="timeSlots" className="flex min-h-min w-[300px] flex-col pl-4">
+      <div id="timeSlots" className="flex h-fit min-h-min w-[300px] flex-col pt-4 pl-4  md:pt-0">
         <span className="w-max font-sans text-black">
           Available times for{' '}
           {selectedDate?.toLocaleDateString('en-us', {
@@ -130,7 +159,22 @@ const CalendarComponent = (): JSX.Element => {
           })}
           :
         </span>
-        <ul className="flex flex-col items-center gap-4 py-4">{apptTimeSlots!}</ul>
+        <ul className="flex w-[300px] flex-col items-center gap-4 py-4 md:w-[250px] ">
+          {apptTimeSlots!}
+        </ul>
+        <Field id={props.id} name={props?.fields?.fieldName?.value || props.id} type="hidden" />
+        {touched[props?.fields?.fieldName?.value] && errors[props?.fields?.fieldName?.value] && (
+          <>
+            <span
+              className={classNames(
+                themeData.classes.errorMessage,
+                themeData.classes.errorTextColor
+              )}
+            >
+              {replacePlaceholders(errors[props?.fields?.fieldName?.value] as string, placeholders)}
+            </span>
+          </>
+        )}
       </div>
     </div>
   );
@@ -138,6 +182,8 @@ const CalendarComponent = (): JSX.Element => {
 
 const AppointmentCalendar: FormFieldExport = {
   reactComponent: CalendarComponent,
+  getInitialValue: getAppointmentCalendarInitialValue,
+  getValidationSchema: getApptCalendarValidationSchema,
 };
 
 export default AppointmentCalendar;

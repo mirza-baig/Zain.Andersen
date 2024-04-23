@@ -29,7 +29,7 @@ const FieldWrapper = (props: FieldWrapperProps) => {
   const { errors, touched } = useFormikContext<FormikValues>();
   const { formProps } = useContext(FormsContext);
 
-  const IS_HORIZONTAL_FORM = formProps.isHorizontalForm;
+  const IS_HORIZONTAL_FORM = formProps?.isHorizontalForm ? formProps.isHorizontalForm : false;
 
   const isInvalid =
     (touched as FormikTouched<FormikValues>)[fields.fieldName.value] &&

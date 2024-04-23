@@ -67,7 +67,7 @@ const Tooltip = (props: TooltipProps) => {
           left: tooltipLocation.left,
         }}
         className={classNames(
-          'absolute z-[1000] hidden w-max min-w-[86px] max-w-[288px] break-all rounded-[8px] bg-white p-xxs text-body text-black opacity-0 shadow-[0_2px_5px_0px_rgba(0,0,0,0.25)] group-hover:block group-hover:opacity-100'
+          'absolute z-[1000] hidden w-max min-w-[86px] max-w-[288px] rounded-[8px] bg-white p-xxs text-body text-black opacity-0 shadow-[0_2px_5px_0px_rgba(0,0,0,0.25)] group-hover:block group-hover:opacity-100'
         )}
       >
         <RichTextWrapper field={props.fields?.tooltipText} />

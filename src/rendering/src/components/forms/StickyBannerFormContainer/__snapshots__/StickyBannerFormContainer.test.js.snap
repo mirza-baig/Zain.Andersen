@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <section
-  class="ml:top-[64px] ml:top-[80px] transition-all ease-in-out duration-300 fixed ml:sticky bottom-0 left-0 right-0 block z-[1000] h-[64px] "
+  class="fixed ml:sticky left-0 right-0 h-[49px] transition-all ease-out bottom-0 ml:bottom-full ml:top-[80px] z-[1002] duration-500"
   data-component="forms/stickybannerformcontainer"
   id="id1695242607"
 >
@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
       class="section-grid grid grid-cols-2 md:grid-cols-12 px-m gap-s md:gap-s "
     >
       <div
-        class="ml:hover:h-[72px] col-span-12 mx-[calc(50%-50vw)] flex min-h-[64px] cursor-pointer items-center bg-primary"
+        class="ml:transition-height h-[49px] ml:duration-500 ml:ease-in-out ml:hover:h-[55px] col-span-12 mx-[calc(50%-50vw)] flex min-h-[49px] cursor-pointer items-center bg-primary"
       >
         <div
           class="mx-auto w-full max-w-screen-lg"
@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
               </h2>
             </div>
             <button
-              class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed !h-[48px] !bg-white !text-black hover:!bg-white hover:!text-black"
+              class="flex w-fit items-center whitespace-normal rounded-lg border-4 border-theme-btn-border bg-theme-btn-bg px-m py-[9px] font-sans text-button font-heavy text-theme-btn-text hover:border-theme-btn-border-hover hover:bg-theme-btn-bg-hover hover:text-theme-btn-text-hover disabled:border-gray disabled:text-gray disabled:hover:bg-theme-btn-bg disabled:cursor-not-allowed !h-[35px] !bg-white !text-black hover:!bg-white hover:!text-black"
             >
               <div
                 class="font-sans !text-button !font-serif font-bold"

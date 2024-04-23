@@ -4,7 +4,9 @@ import {
   Placeholder,
   //VisitorIdentification,
   LayoutServiceData,
+  Field,
 } from '@sitecore-jss/sitecore-jss-nextjs';
+import TagManager, { TagManagerArgs } from 'react-gtm-module';
 import { ThemeName, useTheme } from 'lib/context/ThemeContext';
 import MetaData from './helpers/Meta/MetaData';
 import { useRecentlyViewed } from './lib/utils/useRecentlyViewed';
@@ -13,12 +15,15 @@ import FixLinks from './helpers/FixLinks/FixLinks';
 import HeadScripts from './helpers/HeadScripts/HeadScripts';
 import { useRouter } from 'next/router';
 import ReactHtmlParser from 'react-html-parser';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
+import { Feature } from './.generated/Feature.EnterpriseWeb.model';
+
 // Prefix public assets with a public URL to enable compatibility with Sitecore editors.
 // If you're not supporting Sitecore editors, you can remove this.
 interface LayoutProps {
   layoutData: LayoutServiceData;
   requestedPath?: string;
-  hostName?: string;
+  site: EwSiteInfo;
 }
 
 const FontLinks: Record<ThemeName, string> = {
@@ -26,7 +31,7 @@ const FontLinks: Record<ThemeName, string> = {
   rba: 'https://use.typekit.net/shy7gxo.css',
 };
 
-const Layout = ({ layoutData, requestedPath, hostName }: LayoutProps): JSX.Element => {
+const Layout = ({ layoutData, requestedPath, site }: LayoutProps): JSX.Element => {
   const { route } = layoutData.sitecore;
 
   const { themeName } = useTheme();
@@ -90,7 +95,133 @@ const Layout = ({ layoutData, requestedPath, hostName }: LayoutProps): JSX.Eleme
       setFontStyleLoaded(true);
     }
   }, []);
-  const siteName = layoutData.sitecore?.context.site?.name;
+
+  // GTM
+  // See https://andersenwindows.atlassian.net/wiki/spaces/EW/pages/3275096077/Local+Google+Tag+Manager+Development for Developer information
+
+  useEffect(() => {
+    if (!site.gtmId) {
+      return;
+    }
+
+    /* Bold Orange datalayer use  for MCP */
+    const extractAndCombineTitleValues = (data: Field | undefined): string | undefined => {
+      if (!data) {
+        return undefined;
+      }
+
+      const field = data as unknown as Feature.EnterpriseWeb.Enterprise.Data.Search.FacetTag[];
+
+      if (field?.length > 0) {
+        return field.map((item) => item?.fields?.title?.value).join(',');
+      }
+
+      return undefined;
+    };
+
+    const gtmInitData: TagManagerArgs = {
+      gtmId: site.gtmId as string,
+      auth: site.gtmAuth as string,
+      preview: site.gtmEnvironment as string,
+    };
+
+    /* Bold Orange datalayer use  for MCP */
+    if (site.name === 'AndersenWindows' && themeName === 'aw') {
+      gtmInitData['dataLayer'] = {
+        pageType: layoutData.sitecore.route?.fields?.pageType?.value,
+        product: layoutData.sitecore.route?.fields?.breadcrumbTitle?.value,
+        doorType: extractAndCombineTitleValues(layoutData.sitecore.route?.fields?.doorType),
+        productType: extractAndCombineTitleValues(layoutData.sitecore.route?.fields?.productType),
+        windowType: extractAndCombineTitleValues(layoutData.sitecore.route?.fields?.windowType),
+        productSeries: extractAndCombineTitleValues(
+          layoutData.sitecore.route?.fields?.productSeries
+        ),
+      };
+    }
+
+    TagManager.initialize(gtmInitData);
+
+    const handleDocumentClick = (event: Event) => {
+      if (event.target instanceof Element) {
+        const target = event.target;
+
+        // Handle click for authored CTAs
+        if (target.hasAttribute('data-gtm-click')) {
+          const dataLayer: Record<string, string | null> = {};
+
+          for (const name of target.getAttributeNames()) {
+            if (name.startsWith('data-gtm-dl-')) {
+              const key = name.replace('data-gtm-dl-', '').replaceAll('-', '_');
+              dataLayer[key] = target.getAttribute(name);
+            }
+          }
+
+          TagManager.dataLayer({ dataLayer });
+          return;
+        }
+
+        // Handle click for RTE CTAs
+        // Note: We don't need to handle nav_click gtm event as its not likely to have the RTE in navigation components
+        else if (target instanceof HTMLAnchorElement && target.closest('div.body-copy')) {
+          TagManager.dataLayer({
+            dataLayer: {
+              event: target.href.startsWith('tel:') ? 'click_to_call' : 'cta_click',
+            },
+          });
+        }
+      }
+    };
+
+    document.addEventListener('click', handleDocumentClick);
+
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, [site, layoutData, themeName]);
+
+  useEffect(() => {
+    if (!site.gtmId) {
+      return;
+    }
+
+    pushGTMDataOnLoad(); //Push data to gtm on load of the page
+
+    // "pushGTMDataOnLoad" function is not going to be changed.
+    // We can ignore react-hooks/exhaustive-deps warning for this useEffect.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [site?.gtmId, router?.asPath]);
+
+  const pushGTMDataOnLoad = () => {
+    const pageLevels = (layoutData.sitecore.context?.itemPath as string)
+      ?.replace(/^\/+|\/+$/g, '')
+      ?.split('/');
+
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'fireTags',
+        pageInformation: {
+          ...(() => {
+            const _levels = {};
+            if (pageLevels?.length === 0) {
+              return {};
+            }
+
+            pageLevels?.forEach((level, index) => {
+              if (level) {
+                //@ts-ignore We can index _levels with `page_level_${index}`. We can ignore ts error
+                _levels[`page_level_${index + 1}`] = level.toLowerCase() || '';
+              }
+            });
+            return _levels;
+          })(),
+        },
+        siteInformation: {
+          brand: site.name,
+        },
+      },
+    });
+  };
+
   return (
     <>
       <Head>
@@ -102,7 +233,7 @@ const Layout = ({ layoutData, requestedPath, hostName }: LayoutProps): JSX.Eleme
         <link rel="icon" href={favicon?.url} />
 
         {urlPath === '/' &&
-          siteName === 'AndersenWindows' &&
+          site.name === 'AndersenWindows' &&
           themeName === 'aw' &&
           ReactHtmlParser(
             '<script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","@id":"https://www.andersenwindows.com/","url":"https://www.andersenwindows.com","email":"Example@example.com","name":"Andersen Windows","telephone":"+1-800-426-4261","logo":"https://techpub1.andersenwindows.com//Publications/Images/AW_Logo.png","sameAs":["https://www.facebook.com/AndersenWindows","https://www.pinterest.com/andersenwindows/","https://www.instagram.com/andersen_windows/","https://www.houzz.com/photos/andersen-windowsphbr0lbl-bl~l_8256","https://www.youtube.com/user/AndersenWindow","https://www.wikidata.org/wiki/Q4753960","https://twitter.com/andersenwindow/123"]}</script>'
@@ -120,7 +251,7 @@ const Layout = ({ layoutData, requestedPath, hostName }: LayoutProps): JSX.Eleme
           <link rel="stylesheet" href={FontLinks[themeName]} />
         </noscript>
       </Head>
-      <MetaData requestedPath={requestedPath} hostName={hostName} />
+      <MetaData requestedPath={requestedPath} hostName={site.canonicalHostName} />
       <HeadScripts />
       {/*
         VisitorIdentification is necessary for Sitecore Analytics to determine if the visitor is a robot.

@@ -8,7 +8,7 @@ import { FiCheck } from 'react-icons/fi';
 import { ProgressBar } from 'src/helpers/ProgressBar';
 import { getBreakpoint, useCurrentScreenType } from 'lib/utils/get-screen-type';
 
-type BackgroundVariant = 'gray' | 'white';
+export type BackgroundVariant = 'gray' | 'white';
 
 export type StepsProps = {
   steps: Array<FormStep>;

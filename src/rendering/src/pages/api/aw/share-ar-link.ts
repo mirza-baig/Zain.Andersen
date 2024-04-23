@@ -10,7 +10,7 @@ const shareARLink = async (
   const bodyRequest = JSON.stringify(req.body);
   console.log(bodyRequest);
   if (req.method !== 'POST') {
-    return res.status(405);
+    return res.status(405).end();
   }
   const requestOptions = {
     method: 'POST',
