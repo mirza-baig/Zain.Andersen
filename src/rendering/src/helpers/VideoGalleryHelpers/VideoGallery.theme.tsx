@@ -94,7 +94,7 @@ export const VideoListingTheme: ThemeFile = {
           videoCardsList: baseSideScrollStyle.videoCardsList,
         },
         sidescrollwithoutvideo: {
-          headlineText: 'text-body font-bold !font-serif',
+          headlineText: 'text-sm-m ml:text-l font-extra-light',
           videoPlayer: {
             videoWrapper: 'col-span-12 ml:col-span-8 px-xxs ml:px-m mt-xxs ml:mt-0 mb-s ml:mb-s',
             videoDetailsWrapper: 'col-span-12 ml:col-span-4 px-xxs ml:px-m',

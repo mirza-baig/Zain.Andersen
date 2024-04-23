@@ -59,6 +59,9 @@ const getPrimaryVideoProps = (result: Result) => {
         videoId: { value: result.raw['ew_videoid'] },
         videoLazyLoad: { value: false },
         videoWidth: { value: result.raw['ew_videothumbnail_width'] || 600 },
+        videoName: { value: result.raw['ew_videoname'] },
+        videoDescription: { value: result.raw['ew_videodescription'] },
+        lastUpdated: { value: result.raw['ew_lastupdated'] },
       };
       break;
 
@@ -138,6 +141,9 @@ const getPrimaryVideoProps = (result: Result) => {
         videoWidth: {
           value: result.raw['ew_videothumbnail_width'] || 600,
         },
+        videoName: { value: result.raw['ew_videoname'] },
+        videoDescription: { value: result.raw['ew_videodescription'] },
+        lastUpdated: { value: result.raw['ew_lastupdated'] },
       };
   }
 

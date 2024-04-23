@@ -14,7 +14,6 @@ export type GenericModalProps =
     };
   } & ComponentProps;
 const GenericModal = (props: GenericModalProps) => {
-  console.log('GenericModal', props.fields);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { selectedModalId, setSelectedModalId, prevFocusedElementRef } = useModalIdContext();
 

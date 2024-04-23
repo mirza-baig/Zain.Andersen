@@ -10,6 +10,7 @@ import PhotoItemWithDetail, {
 import GenericResultCardMarkup from './XupCardMarkups/GenericResultCardMarkup.helper';
 import EventCardMarkup from './XupCardMarkups/EventCardMarkup.helper';
 import ShowroomLocationMarkup from './XupCardMarkups/ShowroomLocationMarkup.helper';
+import { extractURLParts } from 'lib/coveo';
 
 export type XupDynamicResultItem =
   | Feature.EnterpriseWeb.Enterprise.Components.Listing.XupCardCollectionDynamic.ResultItem
@@ -132,7 +133,7 @@ const XupCardTemplate = (
         fields: {
           cta1Link: {
             value: {
-              href: _result.clickUri,
+              ...extractURLParts(_result.clickUri),
               title: _resultItemToConsider?.fields?.ctaText.value,
               text: _resultItemToConsider?.fields?.ctaText.value,
             },
@@ -251,7 +252,7 @@ const XupCardTemplate = (
         fields: {
           cta1Link: {
             value: {
-              href: _result.raw?.['ew_eventcta'] || '',
+              ...extractURLParts(_result.raw?.['ew_eventcta'] as string),
               title: _resultItemToConsider?.fields?.ctaText.value,
               text: _resultItemToConsider?.fields?.ctaText.value,
               target: '_blank',
@@ -303,7 +304,7 @@ const XupCardTemplate = (
         fields: {
           cta1Link: {
             value: {
-              href: _result.raw?.['ew_award_cta'] || '',
+              ...extractURLParts(_result.raw?.['ew_award_cta'] as string),
               title: _resultItemToConsider?.fields?.ctaText.value,
               text: _result.raw?.['ew_award_cta']
                 ? _resultItemToConsider?.fields?.ctaText.value
@@ -406,12 +407,13 @@ const XupCardTemplate = (
           fields: {
             cta1Link: {
               value: {
-                href:
+                ...extractURLParts(
                   _result.raw[
                     getEnum<string>(
                       _resultItemToConsider?.fields?.['showroomPageUrl' as keyof unknown]
                     ) || ''
-                  ] || '',
+                  ] as string
+                ),
                 title: _resultItemToConsider?.fields?.ctaText.value,
                 text: _resultItemToConsider?.fields?.ctaText.value,
               },

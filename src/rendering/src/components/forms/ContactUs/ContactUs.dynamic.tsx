@@ -238,6 +238,7 @@ const ContactUs = (props: ContactUsProps) => {
     mappedValues[FIELD_IDS.PROCESSSTATE] = 'New';
     mappedValues[FIELD_IDS.CONTACTME] = '0';
     mappedValues[FIELD_IDS.PREFERREDMETHOD] = values['contact'];
+    mappedValues[FIELD_IDS.SMSOPTINID] = '1';
     mappedValues[FIELD_IDS.ORIGINALSOURCE] = ORIGINALSOURCE_VALUE;
     mappedValues[FIELD_IDS.INTERACTIONDATE] =
       ('0' + (today.getMonth() + 1)).slice(-2) +
@@ -551,6 +552,12 @@ const ContactUs = (props: ContactUsProps) => {
                       label="Message"
                     />
                   </div>
+                  <div className="col-span-12 p-0 pb-3 ">
+                    <DisclaimerText
+                      fields={props.fields?.disclaimerText}
+                      disclaimerClasses={themeData.classes.disclaimerText}
+                    />
+                  </div>
 
                   <div className="col-span-12">
                     <NavigationButton
@@ -583,11 +590,6 @@ const ContactUs = (props: ContactUsProps) => {
               );
             }}
           </Formik>
-
-          <DisclaimerText
-            fields={props.fields?.disclaimerText}
-            disclaimerClasses={themeData.classes.disclaimerText}
-          />
         </>
       )}
     </section>

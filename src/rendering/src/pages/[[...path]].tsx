@@ -1,11 +1,5 @@
 import { useEffect } from 'react';
-import {
-  GetStaticPaths,
-  GetStaticPathsContext,
-  GetStaticProps,
-  GetStaticPropsContext,
-  PreviewData,
-} from 'next';
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext, PreviewData } from 'next';
 import FallbackNotFound from 'src/FallbackNotFound';
 import Layout from 'src/Layout';
 import {
@@ -23,6 +17,7 @@ import { ParsedUrlQuery } from 'querystring';
 import { AffiliateContextProvider } from 'lib/context/AffiliateContext';
 import { useSourcingCookies } from 'lib/sourcing-cookies';
 import { FastSitecoreContext } from 'lib/overrides/FastSitecoreContext';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 
 const SitecorePage = ({
   site,
@@ -60,11 +55,7 @@ const SitecorePage = ({
           componentFactory={isEditing ? editingComponentFactory : componentFactory}
           layoutData={layoutData}
         >
-          <Layout
-            layoutData={layoutData}
-            requestedPath={requestedPath}
-            hostName={site.canonicalHostName as string}
-          />
+          <Layout layoutData={layoutData} requestedPath={requestedPath} site={site as EwSiteInfo} />
         </FastSitecoreContext>
       </AffiliateContextProvider>
     </ComponentPropsContext>
@@ -96,7 +87,11 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
 
   if (process.env.NODE_ENV !== 'development' && !process.env.DISABLE_SSG_FETCH) {
     try {
-      paths = await getPathsWithLanguageFallback(context);
+      /* *
+      * Removed the language fallback during SSG, as the AW sites are not having en-CA lanugage we do not need SSG for en-CA pages
+      For RBA we are curretnly generating SSG only for the Home page through graphql-affiliate-service plugin, and rest of the pages are ISR. 
+      **/
+      paths = await sitemapFetcher.fetch(context);
     } catch (error) {
       console.log('Error occurred while generating static paths');
       console.log(error);
@@ -143,34 +138,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default SitecorePage;
-
-/**
- * Item language fallbacks.  We can make this more dynamic in the future if needed.
- */
-const itemLanguageFallbacks = [{ language: 'en-CA', fallbackTo: 'en' }];
-
-async function getPathsWithLanguageFallback(context: GetStaticPathsContext) {
-  // If we enable item language fallback for SSG
-  const SSG_FALLBACK_ENABLED = process.env.SSG_FALLBACK_ENABLED === 'true';
-
-  // Note: Next.js runs export in production mode
-  let paths = await sitemapFetcher.fetch(context);
-
-  if (SSG_FALLBACK_ENABLED) {
-    itemLanguageFallbacks.forEach((fallback) => {
-      // For each fallback, find the routes that match the fallbackTo language (e.g. 'en')
-      const fallbackPaths = paths
-        .filter((x) => fallback.fallbackTo === x.locale)
-        // And create a copy of the routes in the source language (e.g. 'en-CA')
-        .map((x) => ({ ...x, locale: fallback.language }));
-
-      // Add these to the original path
-      paths = [...paths, ...fallbackPaths];
-    });
-  }
-
-  return paths;
-}
 
 /**
  * Update the context locale to remove the "default" language since it's not a real language

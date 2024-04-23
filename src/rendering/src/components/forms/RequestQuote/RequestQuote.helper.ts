@@ -74,8 +74,12 @@ export const requestQuoteValidationSchema = {
   address1: Yup.string().when('about', ([about], schema) => {
     return about === 'professional' ? schema.required('This field is required') : schema;
   }),
-  city: Yup.string().required('This field is required'),
-  state: Yup.string().required('This field is required'),
+  city: Yup.string().when('about', ([about], schema) => {
+    return about === 'professional' ? schema.required('This field is required') : schema;
+  }),
+  state: Yup.string().when('about', ([about], schema) => {
+    return about === 'professional' ? schema.required('This field is required') : schema;
+  }),
   zip: Yup.string().when('country', ([country], schema) => {
     if (country !== 'Other') {
       return schema
@@ -165,7 +169,17 @@ export const requestQuoteFlow = {
         name: 'mobile_number',
         id: 'requestQuote-mobile-number',
         type: 'tel',
-        columnClasses: 'col-span-12 md:col-span-10 md:col-start-2',
+        columnClasses: 'col-span-6 md:col-span-5 md:col-start-2',
+      },
+      // adding a hidden country field for validation purposes
+      {
+        label: '',
+        placeholder: '',
+        name: 'country',
+        id: 'requestQuote-country',
+        type: 'hidden',
+        columnClasses: 'hidden',
+        value: 'USA',
       },
     ],
   },
@@ -372,7 +386,7 @@ export const fieldsToValidatePerPage = {
   homeowner: {
     0: ['about'],
     1: ['project_type'],
-    2: ['first_name', 'last_name', 'email', 'mobile_number', 'zip', 'city', 'state'],
+    2: ['first_name', 'last_name', 'email', 'mobile_number', 'zip'],
   },
   professional: {
     0: ['about'],

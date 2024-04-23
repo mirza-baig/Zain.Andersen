@@ -9,7 +9,6 @@ export type BodyCopyProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.BodyCo
 };
 
 const BodyCopy = ({ fields, classes, refer }: BodyCopyProps): JSX.Element => {
-
   const isEE = useExperienceEditor();
 
   if (fields?.body?.value == '' && !isEE) {

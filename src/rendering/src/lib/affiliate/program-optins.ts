@@ -8,6 +8,7 @@ export type ProgramOptIns = {
   VirtualConsultations: boolean;
   CoastalImpact: boolean;
   EntryDoors: boolean;
+  LocaliQChatOnly: boolean;
 };
 
 // Add new Program Opt-In item IDs here
@@ -20,4 +21,5 @@ export const ProgramOptInsIds = {
   VirtualConsultations: '22AE95CF-2A01-474A-9AFE-0AEEB2B56F8C',
   CoastalImpact: '57E45C8A-495F-4000-9553-5E392C36BC5F',
   EntryDoors: '9D7D5FE1-347E-44D6-B7EB-3FDE0D0DA73F',
+  LocaliQChatOnly: 'E414A916-9B41-4E83-829C-A68ECAB5C36F',
 };

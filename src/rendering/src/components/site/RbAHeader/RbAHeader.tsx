@@ -470,7 +470,7 @@ const RbAHeader = (props: RbAHeaderProps) => {
   const renderMainNav = () => {
     return (
       <>
-        <div className="sticky top-0 z-[998] col-span-12 bg-white ml:static ml:col-span-3">
+        <div className="sticky top-0 z-[996] col-span-12 bg-white ml:static ml:col-span-3">
           <div className="flex justify-between border-b border-gray py-xxs px-m ml:border-none ml:p-0">
             <div className="w-[173px]">
               <LinkWrapper
@@ -619,17 +619,19 @@ const RbAHeader = (props: RbAHeaderProps) => {
               </div>
             </div>
             {/* Consultation CTA */}
-            <div className="group fixed bottom-0 z-[910] col-span-12 flex w-full items-center justify-center bg-primary py-s hover:cursor-pointer ml:static ml:z-0 ml:col-span-2 ml:!col-start-11">
-              <LinkWrapper
-                ctaSection={getSectionType('header')}
-                className="relative flex w-fit items-center justify-center text-sm font-bold leading-4 !no-underline after:absolute after:bottom-[-4px] after:hidden after:h-[3px] after:w-full after:bg-secondary group-hover:after:inline-block ml:leading-[22px]"
-                field={{ ...fields.cta1Link.value }}
-                modalId={(fields.cta1Modal?.fields.modalId as Field<string>)?.value}
-                modalLinkText={fields.cta1ModalLinkText}
-                ariaLabel={{ value: fields?.cta1AriaLabel.value || 'Consultation CTA' }}
-              >
-                <SvgIcon className="ml-[6px]" icon="arrow" size="sm" />
-              </LinkWrapper>
+            <div className="group fixed bottom-0 z-[910] col-span-12 flex w-full items-center hover:cursor-pointer ml:static ml:z-0 ml:col-span-3 ml:ml-auto ml:w-max">
+              <div className="flex h-full w-full items-center justify-center bg-primary px-s py-s ml:py-0">
+                <LinkWrapper
+                  ctaSection={getSectionType('header')}
+                  className="relative flex w-fit items-center justify-center text-sm font-bold leading-4 !no-underline after:absolute after:bottom-[-4px] after:hidden after:h-[3px] after:w-full after:bg-secondary group-hover:after:inline-block ml:leading-[22px]"
+                  field={{ ...fields.cta1Link.value }}
+                  modalId={(fields.cta1Modal?.fields.modalId as Field<string>)?.value}
+                  modalLinkText={fields.cta1ModalLinkText}
+                  ariaLabel={{ value: fields?.cta1AriaLabel.value || 'Consultation CTA' }}
+                >
+                  <SvgIcon className="ml-[6px]" icon="arrow" size="sm" />
+                </LinkWrapper>
+              </div>
             </div>
             {/* Overlay */}
             {!isMobile &&

@@ -114,36 +114,6 @@ export const getButtonGroupData = (props: DesignProps): Partial<ButtonGroupProps
       cta2AriaLabel: {
         value: '',
       },
-      cta3Style: {
-        name: '',
-        url: '',
-        id: '',
-        fields: {
-          Value: {
-            value: 'link',
-          },
-        },
-      },
-      cta3Link: {
-        value: {},
-      },
-      cta3Icon: {
-        id: '50590edc-7ea7-4436-9a3e-701c87a07db2',
-        url: '',
-        name: 'Arrow',
-        displayName: 'Arrow',
-        fields: {
-          Value: {
-            value: 'arrow',
-          },
-        },
-        templateId: 'd2923fee-da4e-49be-830c-e27764dfa269',
-        templateName: 'Enum',
-      },
-      cta3ModalLinkText: { value: '' },
-      cta3AriaLabel: {
-        value: '',
-      },
     },
   };
 };

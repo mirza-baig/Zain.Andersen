@@ -12,7 +12,7 @@ const getBorderClasses = (
   }
 
   let baseClasses = classNames(
-    'after:absolute after:content-[""] after:-top-s lg:after:-top-m after:w-l md:after:w-[64px] after:h-[1px]'
+    '!mt-m md:mt-l after:absolute after:content-[""] after:-top-s lg:after:-top-m after:w-l md:after:w-[64px] after:h-[1px]'
   );
 
   if (hasImage) {
@@ -92,9 +92,9 @@ const getAWCopyContainerClass = (
     );
 
     if (ctaCount > 1) {
-      copyContainerClass = classNames(copyContainerClass, 'md:col-span-8', 'pb-0');
+      copyContainerClass = classNames(copyContainerClass, 'md:col-span-8');
     } else if (ctaCount > 0) {
-      copyContainerClass = classNames(copyContainerClass, 'md:col-span-8', 'pb-0');
+      copyContainerClass = classNames(copyContainerClass, 'md:col-span-8');
     }
   } else {
     copyContainerClass = classNames(
@@ -119,7 +119,7 @@ const getRBACopyContainerClass = (
 ): string => {
   let copyContainerClass = 'col-span-12';
 
-  copyContainerClass = classNames(copyContainerClass, 'lg:px-l');
+  copyContainerClass = classNames(copyContainerClass, 'lg:px-l !py-ml ml:py-l');
 
   if (ctaRightAlign) {
     copyContainerClass = classNames(copyContainerClass, 'md:-order-1');

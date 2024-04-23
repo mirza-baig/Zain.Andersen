@@ -1,7 +1,12 @@
 // Global
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 import { useTheme } from 'lib/context/ThemeContext';
-import { Placeholder, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  Placeholder,
+  useSitecoreContext,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
+import { CookieValueTypes, getCookie } from 'cookies-next';
 // Components
 import { Component } from 'src/helpers/Component';
 import classNames from 'classnames';
@@ -12,7 +17,6 @@ import { ButtonPrimaryClasses } from 'src/helpers/Button/buttons/btn--primary';
 import { SvgIcon } from 'src/helpers/SvgIcon';
 import ModalWrapper from 'src/helpers/ModalWrapper/ModalWrapper';
 import { getBreakpoint, useCurrentScreenType } from 'lib/utils/get-screen-type';
-import { getCookie } from 'cookies-next';
 import { Subheadline } from 'src/helpers/Subheadline';
 import { useScrollDirection } from 'lib/utils/use-scroll-direction';
 
@@ -23,19 +27,20 @@ const StickyBannerFormContainer = (props: StickyBannerFormContainerProps) => {
   const { themeName } = useTheme();
   const { currentScreenWidth } = useCurrentScreenType();
   const scrollDirection = useScrollDirection(0);
+  const { sitecoreContext } = useSitecoreContext();
 
   // Access the cookie value
-  const JOB_INQUIRY_SUBMITTED_COOKIE_NAME = 'JobInquirySubmitted';
+  const visibileCookieName = fields?.visibilityCookie?.fields?.cookieName?.value;
 
   const isMobile = currentScreenWidth < getBreakpoint('md');
 
   const [isFormSticky, setIsFormSticky] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isCookieAvailable, setIsCookieAvailable] = useState(false);
+  const [isCookieAvailable, setIsCookieAvailable] = useState<CookieValueTypes>(false);
+
+  const isDisabledFromPage = sitecoreContext.route?.fields?.hideJobStickyBanner?.value;
 
   useEffect(() => {
-    setIsCookieAvailable(() => (getCookie(JOB_INQUIRY_SUBMITTED_COOKIE_NAME) ? true : false));
-
     const handleScroll = () => {
       if (
         window.scrollY > 3 ||
@@ -56,9 +61,15 @@ const StickyBannerFormContainer = (props: StickyBannerFormContainerProps) => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isFormSticky, isMobile, isModalOpen]);
+  }, [isFormSticky, isMobile, isModalOpen, scrollDirection]);
 
-  if (!fields || isCookieAvailable) {
+  useEffect(() => {
+    setIsCookieAvailable(getCookie(visibileCookieName));
+    // we can ignore this as 'visibileCookieName' coming from layout data this will not change
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (!fields || isDisabledFromPage || isCookieAvailable) {
     return <></>;
   }
 
@@ -73,18 +84,20 @@ const StickyBannerFormContainer = (props: StickyBannerFormContainerProps) => {
       dataComponent="forms/stickybannerformcontainer"
       variant="full"
       sectionWrapperClasses={classNames(
-        isFormSticky ? 'ml:top-0 transition-all ease-in-out duration-500' : 'ml:top-[64px]',
-        isModalOpen && '!fixed !top-0 transition-none',
-        scrollDirection === 'UP' && 'ml:top-[80px] transition-all ease-in-out duration-300',
-        'fixed ml:sticky bottom-0 left-0 right-0 block z-[1000] h-[64px] '
+        'fixed ml:sticky left-0 right-0 h-[49px] transition-all ease-out',
+        isModalOpen && '!fixed !top-0 transition-none z-[1002]', // stickybanner should be on top of TAHeader when modal is open
+        scrollDirection === 'UP' && 'bottom-0 ml:bottom-full ml:top-[80px] z-[1002] duration-500', // Added smooth scrolling effect when going up
+        scrollDirection === 'DOWN' && 'bottom-0 ml:bottom-full ml:top-0 z-[1002] duration-0', // Added smooth scrolling effect when going down
+        getCookie(visibileCookieName) === true && 'hidden' // hide sticky banner when cookie is present
       )}
       id="stickybannerformcontainer"
       {...props}
     >
       <div
         className={classNames(
-          !isModalOpen && 'ml:hover:h-[72px]',
-          'col-span-12 mx-[calc(50%-50vw)] flex min-h-[64px] cursor-pointer items-center bg-primary'
+          !isModalOpen &&
+            'ml:transition-height h-[49px] ml:duration-500 ml:ease-in-out ml:hover:h-[55px]',
+          'col-span-12 mx-[calc(50%-50vw)] flex min-h-[49px] cursor-pointer items-center bg-primary'
         )}
         onClick={handleCloseModal}
       >
@@ -99,7 +112,7 @@ const StickyBannerFormContainer = (props: StickyBannerFormContainerProps) => {
               onClick={handleCloseModal}
               className={classNames(
                 ButtonPrimaryClasses(themeName).btnClass,
-                '!h-[48px] !bg-white !text-black hover:!bg-white hover:!text-black'
+                '!h-[35px] !bg-white !text-black hover:!bg-white hover:!text-black'
               )}
             >
               <Subheadline
@@ -126,14 +139,14 @@ const StickyBannerFormContainer = (props: StickyBannerFormContainerProps) => {
       {/* rename existing customWrapperClass -> customOverlayclass */}
       {isModalOpen && (
         <ModalWrapper
-          customOverlayclass={'mt-[64px]'}
+          customOverlayclass={'mt-[48px]'}
           customContentWrapperclass={'!bg-light-gray'}
           isModalOpen={isModalOpen}
           handleClose={handleCloseModal}
           size="extra-large"
           closeIconClasses="mt-xs mb-xxxs mr-s !bg-light-gray text-black"
         >
-          <div className="col-span-12 mx-[calc(50%-50vw)] flex min-h-[64px] cursor-pointer items-center bg-light-gray">
+          <div className="col-span-12 mx-[calc(50%-50vw)] flex min-h-[49px] cursor-pointer items-center bg-light-gray">
             <div className="mx-auto w-full max-w-screen-lg">
               <div className="flex h-full w-full flex-row !items-center justify-center">
                 <div className="z-[2] -mb-s flex flex-col items-center justify-evenly gap-y-s overflow-x-scroll bg-light-gray px-m py-s !text-black">

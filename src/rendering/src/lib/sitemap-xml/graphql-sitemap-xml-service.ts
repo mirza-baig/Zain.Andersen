@@ -1,11 +1,12 @@
 import {
   GraphQLClient,
   GraphQLRequestClient,
-  SearchServiceConfig,
-  SearchQueryService,
   getAppRootId,
 } from '@sitecore-jss/sitecore-jss/graphql';
 import { Debug, Errors, SitecoreIds } from 'lib/constants';
+import { SitemapPath } from '.';
+import { SearchQueryService } from 'lib/graphql';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 
 // The default query for request sitemaps
 const defaultQuery = /* GraphQL */ `
@@ -74,7 +75,7 @@ const defaultQuery = /* GraphQL */ `
   }
 `;
 
-export interface GraphQLSitemapXmlServiceConfig extends SearchServiceConfig {
+export interface GraphQLSitemapXmlServiceConfig {
   /**
    * Your Graphql endpoint
    */
@@ -84,18 +85,10 @@ export interface GraphQLSitemapXmlServiceConfig extends SearchServiceConfig {
    */
   apiKey: string;
   /**
-   * The JSS application name
+   * Optional. How many result items to fetch in each GraphQL call. This is needed for pagination.
+   * @default 100
    */
-  siteName: string;
-  /**
-   * The site language
-   */
-  language: string;
-  /**
-   * Optional. The template ID of a JSS App to use when searching for the appRootId.
-   * @default '061cba1554744b918a0617903b102b82' (/sitecore/templates/Foundation/JavaScript Services/App)
-   */
-  jssAppTemplateId?: string;
+  pageSize?: number;
 }
 
 /**
@@ -114,18 +107,6 @@ export type SitemapQueryResult = {
   };
   sitemapPriority: { targetItem?: { field: { value: string } } };
   sitemapChangeFrequency: { targetItem?: { field: { value: string } } };
-};
-
-/**
- * The schema of data returned in response to sitemaps request
- */
-export type SitemapPath = {
-  siteName: string;
-  language: string;
-  path: string;
-  lastUpdated?: string;
-  priority: string;
-  changeFrequency: string;
 };
 
 /**
@@ -150,20 +131,11 @@ export class GraphQLSitemapXmlService {
 
   /**
    * Fetch sitemap paths for generation of a sitemap
+   * @param {EwSiteInfo} site the site to get the sitemap paths for
    * @returns an array of @see SitemapResult objects
    */
-  async fetchPaths(): Promise<SitemapPath[]> {
-    // If the caller does not specify a root item ID, then we try to figure it out
-    const rootItemId =
-      this.options.rootItemId ||
-      (await getAppRootId(
-        // @ts-ignore We want to use the searchService method from the SDK even though
-        // it's private, it really shouldn't be. We do not want to override this.
-        this.graphQLClient,
-        this.options.siteName,
-        this.options.language,
-        this.options.jssAppTemplateId
-      ));
+  async fetchPaths(site: EwSiteInfo): Promise<SitemapPath[]> {
+    const rootItemId = await getAppRootId(this.graphQLClient, site.name, site.language);
 
     if (!rootItemId) {
       throw new Error(Errors.rootItemIdError);
@@ -173,7 +145,7 @@ export class GraphQLSitemapXmlService {
     const paths = await this.searchService
       .fetch(this.query, {
         rootItemId,
-        language: this.options.language,
+        language: site.language,
         pageSize: this.options.pageSize,
       })
       .then((results: SitemapQueryResult[]) => {

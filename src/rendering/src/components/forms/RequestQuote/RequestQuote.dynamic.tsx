@@ -36,6 +36,7 @@ import { CustomTextArea } from 'src/helpers/CustomForms/CustomTextArea';
 import { formActionFactory } from 'temp/formActionFactory';
 import { useTheme } from 'lib/context/ThemeContext';
 import { FormFieldsTheme } from 'src/helpers/Forms/Fields/FormFields.Theme';
+import ZippopotamusZipCode from 'src/helpers/Forms/Fields/ZippopotamusZIPCode';
 
 export type RequestQuoteProps = Feature.EnterpriseWeb.AndersenWindows.Forms.RequestAQuote &
   ComponentProps;
@@ -203,54 +204,28 @@ const RequestQuote = (props: RequestQuoteProps) => {
                 </div>
               );
             })}
-            <AddressGroup
-              address1={{
-                id: 'requestQuote-address1',
-                name: 'address1',
-                label: 'Street Address',
-                placeholder: 'Enter Street Address',
-                classes: 'col-span-12 md:col-span-10 md:col-start-2 hidden',
-                required: false,
-              }}
-              country={{
-                id: 'requestQuote-country',
-                name: 'country',
-                label: 'Country',
-                classes: 'col-span-12 md:col-span-10 md:col-start-2 hidden',
-                required: false,
-              }}
-              city={{
-                id: 'requestQuote-city',
-                name: 'city',
-                label: 'City',
-                placeholder: 'City',
-                classes: 'col-span-12 md:col-span-10 md:col-start-2',
-                required: true,
-              }}
-              state={{
-                id: 'requestQuote-state',
-                name: 'state',
-                label: 'State',
-                classes: 'col-span-12 md:col-span-5 md:col-start-2',
-                required: true,
-              }}
-              location={{
-                id: 'requestQuote-location',
-                name: 'location',
-                label: 'Location',
-                placeholder: 'Location',
-                classes: 'col-span-12 md:col-span-5 md:col-start-2 hidden',
-                required: false,
-              }}
-              zipCode={{
-                id: 'requestQuote-zipCode',
-                name: 'zip',
-                label: 'Zip Code',
-                placeholder: 'Zip Code',
-                classes: 'col-span-12 md:col-span-5',
-                required: true,
-              }}
-            />
+            <div className="col-span-6 md:col-span-5">
+              <ZippopotamusZipCode.reactComponent
+                fields={{
+                  id: 'requestQuote-zip',
+                  fieldName: { value: 'zip' },
+                  placeholderText: { value: 'Zip Code' },
+                  label: { value: 'Zip Code *' },
+                  cityField: {
+                    fields: {
+                      id: 'requestQuote-city',
+                      fieldName: { value: 'city' },
+                    },
+                  },
+                  stateField: {
+                    fields: {
+                      id: 'requestQuote-state',
+                      fieldName: { value: 'state' },
+                    },
+                  },
+                }}
+              />
+            </div>
             <div className="col-span-12 md:col-span-8 md:col-start-2">
               <Checkbox
                 options={[

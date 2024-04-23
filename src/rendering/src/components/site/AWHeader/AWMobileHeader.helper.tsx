@@ -11,16 +11,13 @@ import { RichTextWrapper } from 'src/helpers/RichTextWrapper';
 import classNames from 'classnames';
 import { getEnum } from 'lib/utils';
 import { StandaloneSearchBox } from 'src/helpers/Coveo';
-import { currentAccessToken } from 'lib/coveo';
 import Image from 'next/image';
 import { isSvgUrl } from 'lib/utils/string-utils';
-
-// @TODO: Clean this up
-const organizationId = process.env.NEXT_PUBLIC_EW_COVEO_ORGANIZATION_ID || '';
 
 export type AWHeaderProps = Feature.EnterpriseWeb.AndersenWindows.Components.Navigation.AWHeader;
 const AWMobileHeader = (props: AWHeaderProps) => {
   const fields = props.fields;
+  const coveoAccessToken = props.coveoAccessToken;
   const favoriteProductsCount = props.favoriteProductsCount;
   const favoriteProductsCountText = `(${favoriteProductsCount})`;
   const [showSearchBox, setShowSearchBox] = useState(false);
@@ -31,15 +28,6 @@ const AWMobileHeader = (props: AWHeaderProps) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const wrapperMHRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
-
-  const [coveoAccessToken, setCoveoAccessToken] = useState<string>();
-  useEffect(() => {
-    (async () => {
-      const _coveoAccessToken = await currentAccessToken(organizationId);
-
-      setCoveoAccessToken(_coveoAccessToken);
-    })();
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = showMobileMenu ? 'hidden' : 'auto';

@@ -33,7 +33,8 @@ export class SitecoreProperties {
 
   async exec(siteMapItem: SitemapItem, indexableItem: IndexableItem) {
     const item = `database/${this.source}/ItemId/${indexableItem.id}/Language/${indexableItem.language}/Version/${indexableItem.version}`;
-    let loc = `${process.env.PUBLIC_URL}/coveo-sitemap.xml?item=${item}`;
+    const itemUri = `${process.env.PUBLIC_URL}/coveo-sitemap.xml?item=${item}`;
+    let loc = itemUri;
     let url = '';
 
     if (indexableItem.siteName && indexableItem.siteName != 'system') {
@@ -52,6 +53,7 @@ export class SitecoreProperties {
     }
     siteMapItem.loc = loc;
     siteMapItem.source = this.source;
+    siteMapItem.itemUri = itemUri;
 
     siteMapItem.id = indexableItem.id;
     siteMapItem.name = indexableItem.name;

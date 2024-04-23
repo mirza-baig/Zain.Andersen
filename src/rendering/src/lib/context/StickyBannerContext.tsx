@@ -1,49 +1,83 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
+export type BANNER_VISIBILITY_SETTING = 'desktop-mobile' | 'desktop' | 'mobile';
+
 // Define the banner type
-type BannerType = string;
+type BannerType = {
+  bannerId: string;
+  visibilityType: BANNER_VISIBILITY_SETTING;
+};
+
+type BannerList = {
+  mobileBannerList: Array<BannerType>;
+  desktopBannerList: Array<BannerType>;
+};
 
 // Create the StickyBannerContext
 interface StickyBannerContextType {
   addBanner: (banner: BannerType) => void;
   removeBanner: (banner: BannerType) => void;
-  closeCurrentBanner: () => void;
-  bannerList: BannerType[];
+  bannerList: BannerList;
 }
 
 const StickyBannerContext = createContext<StickyBannerContextType | undefined>(undefined);
 
 // Create the StickyBannerProvider component
 const StickyBannerProvider: React.FC = ({ children }) => {
-  const [bannerList, setBannerList] = useState<BannerType[]>([]);
+  const [bannerList, setBannerList] = useState<BannerList>({
+    mobileBannerList: [],
+    desktopBannerList: [],
+  });
 
   useEffect(() => {
     // Cleanup function when component unmounts
     return () => {
-      setBannerList([]);
+      setBannerList({
+        mobileBannerList: [],
+        desktopBannerList: [],
+      });
     };
   }, []);
 
   const addBanner = (banner: BannerType) => {
-    setBannerList((prevList) => [...prevList, banner]);
+    setBannerList((prevList) => {
+      switch (banner.visibilityType) {
+        case 'desktop':
+          prevList.desktopBannerList.push(banner);
+          break;
+        case 'mobile':
+          prevList.mobileBannerList.push(banner);
+          break;
+        default:
+          prevList.desktopBannerList.push(banner);
+          prevList.mobileBannerList.push(banner);
+      }
+      return { ...prevList };
+    });
   };
 
   const removeBanner = (banner: BannerType) => {
-    setBannerList((prevList) => prevList.filter((item) => item !== banner));
-  };
+    const filterBanners = (bannerList: Array<BannerType>): Array<BannerType> =>
+      bannerList.filter((item) => item.bannerId !== banner.bannerId);
 
-  const closeCurrentBanner = () => {
-    if (bannerList.length > 0) {
-      const currentBanner = bannerList[0];
-      removeBanner(currentBanner);
-    }
+    setBannerList((prevList) => {
+      switch (banner.visibilityType) {
+        case 'desktop':
+          prevList.desktopBannerList = filterBanners(prevList.desktopBannerList);
+        case 'mobile':
+          prevList.mobileBannerList = filterBanners(prevList.mobileBannerList);
+        default:
+          prevList.desktopBannerList = filterBanners(prevList.desktopBannerList);
+          prevList.mobileBannerList = filterBanners(prevList.mobileBannerList);
+      }
+      return { ...prevList };
+    });
   };
 
   const contextValue: StickyBannerContextType = {
     addBanner,
     removeBanner,
     bannerList,
-    closeCurrentBanner,
   };
 
   return (

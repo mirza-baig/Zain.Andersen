@@ -42,7 +42,7 @@ const DisclaimerComponent = (props: DisclaimerProps) => {
   return (
     <DisclaimerText
       fields={props.fields?.disclaimerText}
-      disclaimerLayoutClasses="relative col-span-12 body-copy"
+      disclaimerLayoutClasses="relative col-span-12"
       disclaimerClasses={classNames(
         disclaimerAlignment[getEnum<alignmentStatus>(props?.fields?.alignment) || 'left'],
         themeData.classes.disclaimerText,

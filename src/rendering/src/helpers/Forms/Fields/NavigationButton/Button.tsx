@@ -164,8 +164,8 @@ const ButtonComponent = (props: ButtonProps) => {
 
     botCheckerFieldName && delete values[botCheckerFieldName];
 
-    // Validate the current step's fields
-    const errors = await validateForm();
+    // Validate the current step's fields if skip validation is not checked
+    const errors = props?.fields?.skipValidation?.value ? [] : await validateForm();
     if (Object.keys(errors).length === 0 || navigationStep === -1) {
       setIsErrorOnSubmit(false);
       setIsButtonEnabled(false);
@@ -225,6 +225,7 @@ const ButtonComponent = (props: ButtonProps) => {
       : '';
 
   const _icon = getEnum<IconTypes>(props?.fields?.icon);
+  const linkTheme = props?.fields?.icon?.fields?.Value?.value === 'form-link';
 
   const buttonAlignment: Record<Alignment, string> = {
     left: 'mr-auto',
@@ -253,6 +254,7 @@ const ButtonComponent = (props: ButtonProps) => {
           type="button"
           disabled={!isButtonEnabled}
           startWithIcon={navigationStep === -1}
+          linkTheme={linkTheme}
           onClick={(e) => handleButtonClick(e)}
           className={classNames(
             buttonAlignment[getEnum<Alignment>(props?.fields?.alignment) || 'left'],

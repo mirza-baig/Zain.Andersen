@@ -396,7 +396,7 @@ exports[`right align renders correctly 1`] = `
         class="col-span-12 grid grid-cols-2 md:grid-cols-12 bg-primary text-white"
       >
         <div
-          class="col-span-12 px-[15px] py-m flex flex-col md:-order-1 text-center lg:p-[32px] items-center md:items-start md:col-span-8 pb-0 bg-theme-bg text-theme-text"
+          class="col-span-12 px-[15px] py-m flex flex-col md:-order-1 text-center lg:p-[32px] items-center md:items-start md:col-span-8 bg-theme-bg text-theme-text"
         >
           <div
             class="items-top font-sans [&_a:hover]:underline text-s md:text-m font-heavy text-theme-text text-center md:text-start"

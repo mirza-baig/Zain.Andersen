@@ -249,13 +249,30 @@ const ProductPreviewCard = (props: ProductPreviewCardProps) => {
 
         {/* ratings */}
         <div className={themeData.classes.ratingsAndPriceWrapper}>
-          {bazaarvoiceProductId && (
+          {bazaarvoiceProductId && themeName === 'aw' && (
             <div
               className="review flex-[0_0_auto]"
               data-bv-show="inline_rating"
               data-bv-product-id={bazaarvoiceProductId}
               data-bv-seo="false"
             ></div>
+          )}
+          {themeName === 'rba' && (
+            <>
+              {/* Placeholder for ratings icons RbA */}
+              <div className={themeData.classes.ratingsIconsList}>
+                <SvgIcon icon="star" className={'text-primary'} />
+                <SvgIcon icon="star" className={'text-primary'} />
+                <SvgIcon icon="star" className={'text-primary'} />
+                <SvgIcon icon="star" className={'text-primary'} />
+                <SvgIcon icon="star" className="text-gray" />
+              </div>
+
+              {/* Placeholder for ratings RbA */}
+              <div className={themeData.classes.ratingsText}>
+                <Text tag="h5" field={{ editable: '5.0', value: '5.0' }} />
+              </div>
+            </>
           )}
           {/* Price Level */}
           {priceLevel && priceLevel > 0 && (

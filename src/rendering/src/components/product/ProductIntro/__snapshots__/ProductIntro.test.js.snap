@@ -355,7 +355,7 @@ exports[`renders correctly 1`] = `
           </h2>
         </div>
         <div
-          class="mb-s text-dark-gray"
+          class="mb-s text-dark-gray overflow-x-auto"
         >
           <div
             class="body-copy"
@@ -409,7 +409,9 @@ exports[`renders correctly 1`] = `
         >
           <div
             class="flex items-center"
-          />
+          >
+            
+          </div>
         </div>
         <div
           class="flex-none md:flex md:flex-wrap"

@@ -43,6 +43,9 @@ export const SitecoreIds = {
         Search: {
           _SearchFieldsets: '88B2F728-B5A0-44C4-BE3F-677F33204F5D',
         },
+        Affiliates: {
+          _BaseJob: '55D56C2E-0478-4511-8CF4-2E10DACB41B2',
+        },
       },
     },
   },

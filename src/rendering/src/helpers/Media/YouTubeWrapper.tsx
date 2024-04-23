@@ -1,6 +1,7 @@
 // Global
 import { ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { CSSProperties, useEffect, useState, useRef } from 'react';
+import Head from 'next/head';
 // Local
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 import Image from './Image';
@@ -8,6 +9,7 @@ import { SvgIcon } from '../SvgIcon';
 import classNames from 'classnames';
 import { playStopVideo } from './VideoUtils';
 import { getBreakpoint, useCurrentScreenType } from 'lib/utils/get-screen-type';
+import { normalizeSitecoreDateStringFormattedWithTime } from 'lib/utils/string-utils';
 
 const container: CSSProperties = {
   position: 'relative',
@@ -28,14 +30,15 @@ const iframestyle: CSSProperties = {
 
 export type YouTubeProps = Feature.EnterpriseWeb.Enterprise.Elements.Media.YouTubeVideo & {
   videoThumbnailImage?: ImageField;
+  includeSEOSchemaForVimeoYouTube?: boolean;
 };
 
 const YoutubeWrapper = (videoItem: YouTubeProps): JSX.Element => {
   const [showThumbnail, setShowThumbnail] = useState(
     Boolean(videoItem?.videoThumbnailImage?.value?.src)
   );
-
   const { currentScreenWidth } = useCurrentScreenType();
+
   const {
     videoHeight,
     videoWidth,
@@ -83,6 +86,28 @@ const YoutubeWrapper = (videoItem: YouTubeProps): JSX.Element => {
       }
     };
   }, []);
+  const formattedDate =
+    videoItem?.fields?.lastUpdated?.value &&
+    videoItem.fields.lastUpdated.value != '0001-01-01T00:00:00Z' &&
+    normalizeSitecoreDateStringFormattedWithTime(videoItem.fields.lastUpdated.value);
+
+  const ldJsonScriptYouTube = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    contentURL: videoItem.fields.videoId
+      ? `https://www.youtube.com/watch?v=${videoItem.fields.videoId.value}`
+      : '',
+    description: videoItem?.fields?.videoDescription?.value || '',
+    embedUrl: videoItem.fields.videoId
+      ? `https://www.youtube.com/embed/${videoItem.fields.videoId.value}`
+      : '',
+    name: videoItem?.fields?.videoName?.value || '',
+    thumbnailUrl:
+      videoItem?.videoThumbnailImage?.value?.src ||
+      `https://i.ytimg.com/vi/${videoItem.fields.videoId.value}/sddefault.jpg` ||
+      '',
+    uploadDate: formattedDate || '',
+  };
 
   // If the video has no value, return nothing - not sure if videoId is the best way to check this currently
   if (!videoItem.fields?.videoId) {
@@ -96,6 +121,14 @@ const YoutubeWrapper = (videoItem: YouTubeProps): JSX.Element => {
 
   return (
     <>
+      {videoItem.includeSEOSchemaForVimeoYouTube && (
+        <Head>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJsonScriptYouTube) }}
+          />
+        </Head>
+      )}
       <div className="relative">
         {showThumbnail && !youTubeAutoPlay.value && (
           <div className="relative z-[10] bg-white">

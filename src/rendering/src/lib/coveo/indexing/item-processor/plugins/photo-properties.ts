@@ -26,6 +26,8 @@ export class PhotoProperties {
       siteMapItem.lastmod = new Date(normalized);
     }
 
+    siteMapItem.loc = siteMapItem.itemUri;
+
     siteMapItem.metaData['siteLanguage'] = indexableItem.language;
 
     siteMapItem.metaData['siteName'] = indexableItem.siteName;

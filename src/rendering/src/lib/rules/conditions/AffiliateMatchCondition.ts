@@ -22,9 +22,14 @@ export class AffiliateMatchCondition<T extends RuleContext> extends WhenConditio
   execute(ruleContext: T): boolean {
     const userAffiliate = ruleContext.parameters['userAffiliate'] as Affiliate;
 
-    return (
-      !!userAffiliate &&
-      performStringComparison(userAffiliate.affiliateId, IS_EQUAL_TO, this._params.affiliateIdValue)
+    if (!userAffiliate) {
+      return false;
+    }
+
+    return performStringComparison(
+      userAffiliate.affiliateId,
+      IS_EQUAL_TO,
+      this._params.affiliateIdValue
     );
   }
 }

@@ -514,7 +514,10 @@ const ProductIntro = (props: ProductIntroProps) => {
         )}
 
         {fields.body?.value ? (
-          <BodyCopy classes={themeData.classes.bodyClass} {...props} />
+          <BodyCopy
+            classes={classNames(themeData.classes.bodyClass, 'overflow-x-auto')}
+            {...props}
+          />
         ) : fields.productItem?.fields.productDescription ? (
           <RichTextWrapper
             field={{ value: fields.productItem.fields.productDescription.value }}
@@ -528,12 +531,29 @@ const ProductIntro = (props: ProductIntroProps) => {
         {/* ratings */}
         <div className={themeData.classes.ratingsAndPriceWrapper}>
           <div className={themeData.classes.ratingsWrapper}>
-            {bazaarvoiceProductId && (
+            {bazaarvoiceProductId && themeName === 'aw' && (
               <div
                 className="review flex-[0_0_auto]"
                 data-bv-show="rating_summary"
                 data-bv-product-id={bazaarvoiceProductId}
               ></div>
+            )}
+            {themeName === 'rba' && (
+              <>
+                {/* Placeholder for ratings icons RbA */}
+                <div className={themeData.classes.ratingsIconsList}>
+                  <SvgIcon icon="star" className="text-primary" />
+                  <SvgIcon icon="star" className="text-primary" />
+                  <SvgIcon icon="star" className="text-primary" />
+                  <SvgIcon icon="star" className="text-primary" />
+                  <SvgIcon icon="star" className="text-gray" />
+                </div>
+
+                {/* Placeholder for ratings RbA */}
+                <div className={themeData.classes.ratingsText}>
+                  <Text tag="h5" field={{ editable: '5.0(12)', value: '5.0(12)' }} />
+                </div>
+              </>
             )}
           </div>
           {/* Placeholder for price */}

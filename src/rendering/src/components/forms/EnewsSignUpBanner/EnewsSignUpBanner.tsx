@@ -1,15 +1,18 @@
 // Global
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 import { Placeholder, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { getCookie } from 'cookies-next';
 // Components
 import { Component } from 'src/helpers/Component';
 
 export type EnewsSignUpBannerProps =
   Feature.EnterpriseWeb.RenewalByAndersen.Components.Forms.EnewsSignUpBanner.EnewsSignUpBanner;
 const EnewsSignUpBanner = (props: EnewsSignUpBannerProps) => {
-  const { rendering } = props;
+  const { fields, rendering } = props;
 
-  if (!rendering) {
+  const visibileCookieName = fields?.visibilityCookie?.fields?.cookieName?.value;
+
+  if (!rendering || getCookie(visibileCookieName)) {
     return <></>;
   }
 

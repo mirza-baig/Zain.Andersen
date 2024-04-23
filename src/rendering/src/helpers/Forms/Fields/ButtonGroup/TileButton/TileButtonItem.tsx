@@ -26,7 +26,7 @@ const TileButtonItem = ({
       setTimeout(() => {
         const nextPageIndex = pageIndex + 1;
         updatePageIndex(nextPageIndex);
-      }, 800);
+      }, 500);
     }
   };
 

@@ -138,7 +138,7 @@ export const getFieldsToInclude = (
     case 'video':
     case 'video-gallery-dynamic':
       resultEntities?.forEach((item) => {
-        for (const searchField in item.fields) {
+        for (const searchField in item?.fields) {
           const field = getEnum<string>(item.fields[searchField as keyof unknown]);
           if (field && !fields?.includes(field)) {
             fields.push(field);

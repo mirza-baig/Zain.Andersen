@@ -22,9 +22,11 @@ export class AffiliateFieldCondition<T extends RuleContext> extends WhenConditio
     // Casting to any because the field name is dynamic
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const userAffiliate = ruleContext.parameters['userAffiliate'] as any;
-    return (
-      !!userAffiliate &&
-      performStringComparison(userAffiliate[this.fieldName], this.operatorid, this.value)
-    );
+
+    if (!userAffiliate) {
+      return false;
+    }
+
+    return performStringComparison(userAffiliate[this.fieldName], this.operatorid, this.value);
   }
 }

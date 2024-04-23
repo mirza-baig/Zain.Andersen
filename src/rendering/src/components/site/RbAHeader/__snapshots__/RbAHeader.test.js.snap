@@ -51,7 +51,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="sticky top-0 z-[998] col-span-12 bg-white ml:static ml:col-span-3"
+        class="sticky top-0 z-[996] col-span-12 bg-white ml:static ml:col-span-3"
       >
         <div
           class="flex justify-between border-b border-gray py-xxs px-m ml:border-none ml:p-0"
@@ -241,24 +241,28 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="group fixed bottom-0 z-[910] col-span-12 flex w-full items-center justify-center bg-primary py-s hover:cursor-pointer ml:static ml:z-0 ml:col-span-2 ml:!col-start-11"
+        class="group fixed bottom-0 z-[910] col-span-12 flex w-full items-center hover:cursor-pointer ml:static ml:z-0 ml:col-span-3 ml:ml-auto ml:w-max"
       >
-        <a
-          aria-label="Consultation CTA"
-          class="relative flex w-fit items-center justify-center text-sm font-bold leading-4 !no-underline after:absolute after:bottom-[-4px] after:hidden after:h-[3px] after:w-full after:bg-secondary group-hover:after:inline-block ml:leading-[22px]"
-          data-gtm-click=""
-          data-gtm-dl-event="nav_click"
-          data-gtm-dl-nav-section="header"
-          href="https://www.renewalbyandersen.com/forms/schedule-a-consultation"
-          role="link"
-          tabindex="0"
-          target=""
+        <div
+          class="flex h-full w-full items-center justify-center bg-primary px-s py-s ml:py-0"
         >
-          Free Consultation
-          <span
-            class="ml-[6px]"
-          />
-        </a>
+          <a
+            aria-label="Consultation CTA"
+            class="relative flex w-fit items-center justify-center text-sm font-bold leading-4 !no-underline after:absolute after:bottom-[-4px] after:hidden after:h-[3px] after:w-full after:bg-secondary group-hover:after:inline-block ml:leading-[22px]"
+            data-gtm-click=""
+            data-gtm-dl-event="nav_click"
+            data-gtm-dl-nav-section="header"
+            href="https://www.renewalbyandersen.com/forms/schedule-a-consultation"
+            role="link"
+            tabindex="0"
+            target=""
+          >
+            Free Consultation
+            <span
+              class="ml-[6px]"
+            />
+          </a>
+        </div>
       </div>
       <div
         class="rba-scrollbar bg-white-scrollbar fixed top-0 left-0 z-[998] h-screen w-full origin-left transform overflow-y-auto bg-light-gray transition-transform ease-linear ml:w-[360px] -translate-x-full"

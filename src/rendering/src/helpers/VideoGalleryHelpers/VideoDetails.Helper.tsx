@@ -73,7 +73,10 @@ const VideoDetails = ({
           {currentScreenWidth < getBreakpoint('md') &&
           displayStyle === 'sidescroll' &&
           isSelectedVideo ? (
-            <MediaPrimary {...(videoItem as unknown as ImagePrimaryProps)} />
+            <MediaPrimary
+              {...(videoItem as unknown as ImagePrimaryProps)}
+              includeSEOSchema={true}
+            />
           ) : (
             <>
               <ImageWrapper

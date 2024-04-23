@@ -8,20 +8,13 @@ import { useTheme } from 'lib/context/ThemeContext';
 import { ContentBlockWithMediaTheme } from './ContentBlockWithMedia.theme';
 import { useExperienceEditor } from 'lib/utils';
 import { getBreakpoint, useCurrentScreenType } from 'lib/utils/get-screen-type';
-import { getEnum } from 'lib/utils';
-import { ButtonVariants, Button } from 'src/helpers/Button';
-import { ButtonGroup } from 'src/helpers/ButtonGroup';
-import classNames from 'classnames';
 
 export type ContentBlockWithMediaProps =
   Feature.EnterpriseWeb.Enterprise.Components.General.ContentBlockWithMedia.ContentBlockWithMedia;
 
 const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element => {
-  console.log('ContentBlockWithMedia', props);
   const isEE = useExperienceEditor();
-  const { themeData } = useTheme(
-    ContentBlockWithMediaTheme(props, getEnum<ButtonVariants>(props.fields?.cta2Style) || 'link')
-  );
+  const { themeData } = useTheme(ContentBlockWithMediaTheme(props));
   const { currentScreenWidth } = useCurrentScreenType();
 
   // Fail out if we don't have any fields
@@ -42,7 +35,6 @@ const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element =
       : {};
 
   const focusArea = 'top center';
-  // console.log('ContentBlockWithMedia', props);
 
   return (
     <Component variant="lg" dataComponent="general/contentblockwithmedia" {...props}>
@@ -71,29 +63,6 @@ const ContentBlockWithMedia = (props: ContentBlockWithMediaProps): JSX.Element =
             classes={themeData.classes.bodyContainer}
             field={props.fields?.bottomCopy}
           />
-        </div>
-
-        <div className={themeData.classes.contentWrapper}>
-          <div
-            className={
-              props.fields.ctaAlignment?.displayName == 'Stack'
-                ? 'flex flex-col items-start justify-evenly md:space-y-4'
-                : 'flex flex-col items-start md:flex-row'
-            }
-          >
-            <ButtonGroup
-              classes={{
-                wrapper: themeData.classes.buttonGroupClass.wrapper,
-                cta1Classes: themeData.classes.buttonGroupClass.cta1Classes,
-                cta2Classes: themeData.classes.buttonGroupClass.cta2Classes,
-                cta3Classes: themeData.classes.buttonGroupClass.cta3Classes,
-                ctaAlignment: props.fields.ctaAlignment?.displayName == 'Stack',
-              }}
-              {...props}
-            />
-
-
-          </div>
         </div>
       </div>
     </Component>

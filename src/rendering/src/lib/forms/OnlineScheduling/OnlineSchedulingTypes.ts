@@ -10,7 +10,9 @@ export type PrimarySubmissionData = {
 
 export type OnlineSchedulingMessage = {
   type?: string;
-  data: Record<string, string>;
+  leadData?: Record<string, string>;
+  description?: string;
+  pageIndex?: number;
 };
 
 export type CRMResponse = {

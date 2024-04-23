@@ -97,11 +97,11 @@ export function bindUrlManager(engine: SearchEngine, searchStatusController?: Se
 
       // `replaceState` instead replaces the current state of the browser history with a new state, effectively updating the URL without adding a new entry to the history stack.
       // See https://docs.coveo.com/en/headless/latest/usage/synchronize-search-parameters-with-the-url/
-      history.replaceState(null, document.title, hash);
+      history.replaceState(history.state, document.title, hash);
       return;
     }
 
-    history.pushState(null, document.title, hash);
+    history.pushState(history.state, document.title, hash);
   });
 
   return () => {

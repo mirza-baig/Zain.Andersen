@@ -25,6 +25,10 @@ export class SubmitRbaLead extends BaseSubmitAction {
       requestOptions
     );
 
+    if (response.status === 200) {
+      super.setActionCookie(true);
+    }
+
     return new Promise<ExecutionResult>((resolve) => {
       resolve({
         success: response.status === 200,

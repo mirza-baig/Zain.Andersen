@@ -3,6 +3,7 @@ import { AffiliateContextProvider } from 'lib/context/AffiliateContext';
 import { FastSitecoreContext } from 'lib/overrides/FastSitecoreContext';
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 import { GetStaticProps, NextPage } from 'next';
 import FallbackServerError from 'src/FallbackServerError';
 import Layout from 'src/Layout';
@@ -32,11 +33,7 @@ const ServerErrorPage: NextPage<SitecorePageProps> = ({
     <ComponentPropsContext value={componentProps}>
       <AffiliateContextProvider userAffiliate={userAffiliate} pageAffiliate={null}>
         <FastSitecoreContext componentFactory={componentFactory} layoutData={layoutData}>
-          <Layout
-            layoutData={layoutData}
-            requestedPath={requestedPath}
-            hostName={site.canonicalHostName as string}
-          />
+          <Layout layoutData={layoutData} requestedPath={requestedPath} site={site as EwSiteInfo} />
         </FastSitecoreContext>
       </AffiliateContextProvider>
     </ComponentPropsContext>

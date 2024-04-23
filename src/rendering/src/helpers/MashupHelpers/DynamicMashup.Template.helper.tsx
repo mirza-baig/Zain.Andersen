@@ -9,6 +9,7 @@ import { ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ImagePrimaryProps } from '../Media/ImagePrimary';
 import { EnumField } from 'lib/utils/get-enum';
 import { convertToDate } from 'lib/utils/string-utils';
+import { extractURLParts } from 'lib/coveo';
 
 const DynamicMashupTemplate = (
   resultItems: Feature.EnterpriseWeb.Enterprise.Components.General.PageMashupDynamic.ResultItem[],
@@ -95,14 +96,11 @@ const DynamicMashupTemplate = (
           fields: {
             cta1Link: {
               value: {
-                href: result.clickUri,
+                ...extractURLParts(result.clickUri),
                 text: resultItemToConsider?.fields?.ctaText.value || 'Read More',
-                anchor: '',
-                linktype: 'internal',
                 class: '',
                 title: '',
                 target: '',
-                querystring: '',
                 id: '{7FB335D2-8E99-458E-9EF9-562A78CCB821}',
               },
             },

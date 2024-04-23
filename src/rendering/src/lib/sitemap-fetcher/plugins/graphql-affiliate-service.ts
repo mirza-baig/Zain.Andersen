@@ -8,7 +8,7 @@ import { AffiliateGraphQLQueries } from 'lib/constants/affiliates';
 import { SearchQueryService } from 'lib/graphql';
 import { getAffiliateRewrite } from 'lib/affiliate/utils';
 import { getSiteRewrite } from 'lib/jss21.2.1/site/utils';
-import { SITE_NAMES } from 'lib/constants/sitenames';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 
 declare type affId = {
   affiliateId: { value: string };
@@ -17,10 +17,17 @@ declare type affId = {
 class GraphqlAffilaiteServicePlugin implements SitemapFetcherPlugin {
   private graphQLClient: GraphQLClient;
   private searchService: SearchQueryService<affId>;
+  private _sites: EwSiteInfo[];
 
   constructor() {
+    // Get the list of sites
+    this._sites = JSON.parse(config.sites) as EwSiteInfo[];
+
     this.graphQLClient = this.getGraphQLClient();
     this.searchService = new SearchQueryService<affId>(this.graphQLClient);
+
+    // We only want to run this for sites with affiliate personalization
+    this._sites = this._sites.filter((x) => x.hasAffiliatePersonalization);
   }
 
   /**
@@ -33,8 +40,6 @@ class GraphqlAffilaiteServicePlugin implements SitemapFetcherPlugin {
   async exec(context?: GetStaticPathsContext): Promise<StaticPath[]> {
     const paths: StaticPath[] = [];
     if (
-      // Affiliates only applicable to RbA
-      process.env.JSS_APP_NAME !== SITE_NAMES.RenewalbyAndersen ||
       // Disconnected Export mode
       process.env.JSS_MODE === 'disconnected'
     ) {
@@ -44,19 +49,27 @@ class GraphqlAffilaiteServicePlugin implements SitemapFetcherPlugin {
     // Code to get Affiliate pages
     const result = await this.searchService.fetch(AffiliateGraphQLQueries.affiliateListQuery, {});
 
-    result.forEach((aff) => {
-      const pathParams = {
-        path: getSiteRewrite(getAffiliateRewrite('/', aff.affiliateId?.value), {
-          // Affiliates only applicable to RbA
-          siteName: SITE_NAMES.RenewalbyAndersen,
-        })
-          // Remove the leading slash because we don't want it in the paths
-          .replace(/^\//, '')
-          .split('/'),
-      };
+    // Dedupe affiliate ids
+    const affiliateIds = [...new Set(result.map((x) => x.affiliateId.value))];
 
-      context?.locales?.forEach((loc) => {
-        paths.push({ params: pathParams, locale: loc });
+    this._sites.map((site) => {
+      affiliateIds.forEach((affiliateId) => {
+        const pathParams = {
+          path: getAffiliateRewrite(
+            getSiteRewrite('/', {
+              // Affiliates only applicable to RbA
+              siteName: site.name,
+            }),
+            affiliateId
+          )
+            // Remove the leading slash because we don't want it in the paths
+            .replace(/^\//, '')
+            .split('/'),
+        };
+
+        context?.locales?.forEach((loc) => {
+          paths.push({ params: pathParams, locale: loc });
+        });
       });
     });
 

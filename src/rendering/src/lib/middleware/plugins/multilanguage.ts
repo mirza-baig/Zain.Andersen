@@ -53,13 +53,18 @@ export class MultilanguageMiddleware extends MiddlewareBase {
       return response;
     }
 
+    const pathname = req.nextUrl.pathname;
+
+    if (this.excludeRoute(pathname)) {
+      Debug.multilanguage('skipped (route excluded)');
+      return response;
+    }
+
     const localeCookie = req.cookies.get('NEXT_LOCALE');
 
     const site = this.getSite(req, res);
 
     const locale = localeCookie || site.language || pkg.config.language;
-
-    const pathname = req.nextUrl.pathname;
 
     // Path can be rewritten by previously executed middleware
     const basePath = res?.headers.get('x-sc-rewrite') || pathname;

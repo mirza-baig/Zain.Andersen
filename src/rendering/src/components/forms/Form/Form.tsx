@@ -4,7 +4,7 @@ import { ComponentProps } from 'lib/types/component-props';
 import { FormFieldProps } from 'lib/forms/FormFieldProps';
 import { useCallback, useState } from 'react';
 import Page from 'src/helpers/Forms/Structure/Page';
-import Steps from 'src/helpers/Forms/Structure/Steps';
+import Steps, { BackgroundVariant } from 'src/helpers/Forms/Structure/Steps';
 import { FormsContext } from 'lib/forms/FormContext';
 import { FormTheme } from './Form.theme';
 import { useTheme } from 'lib/context/ThemeContext';
@@ -32,7 +32,6 @@ export type FormProps = ComponentProps & {
 };
 
 const Form = (props: FormProps): JSX.Element => {
-  console.log('FormMain', props.fields.children);
   const steps = props.fields?.children;
   //#region states
   const [pageIndex, setPageIndex] = useState(0);
@@ -56,8 +55,7 @@ const Form = (props: FormProps): JSX.Element => {
   // todo: update below for the skip button for the multistep forms
   // const [skippedSteps, setSkippedSteps] = useState([]);
 
-  const { themeData } = useTheme(FormTheme());
-  console.log('theme data', themeData.classes.form);
+  const { themeData, themeName } = useTheme(FormTheme());
   const defaultValues: Record<string, string> = {};
 
   function initializeInitialValues(
@@ -144,7 +142,7 @@ const Form = (props: FormProps): JSX.Element => {
     const inputElements = formRef.current?.querySelectorAll('input') || [];
     const dropdownElements = formRef.current?.querySelectorAll('select') || [];
     const textAreaElements = formRef.current?.querySelectorAll('textarea') || [];
-    console.log('fetchFormFieldElements', textAreaElements);
+
     return [...inputElements, ...dropdownElements, ...textAreaElements];
   };
 
@@ -189,7 +187,14 @@ const Form = (props: FormProps): JSX.Element => {
               <form ref={formRef} className="scroll-container">
                 {steps.filter((step) => step?.fields?.includeInSteps?.value).length > 1 &&
                   !steps[pageIndex]?.fields?.hideStepper?.value && (
-                    <Steps steps={steps} backgroundVariant="gray" />
+                    <Steps
+                      steps={steps}
+                      backgroundVariant={
+                        themeName === 'aw'
+                          ? 'gray'
+                          : (props.stepperBackground as BackgroundVariant) || 'white'
+                      }
+                    />
                   )}
                 <div className="pages">
                   {props.fields?.children[pageIndex] && (

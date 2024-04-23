@@ -69,7 +69,6 @@ export const HeroWithFormFillTheme = (alignment: FormAlignment): ThemeFile => {
         contentContainer: 'flex flex-col z-[1] ml:ml-auto  max-ml:px-m  ',
         headline: 'my-xxxs text-sm-m ml:text-xxl ml:!text-white font-medium',
         bodyClass: 'my-xxxs text-body text-dark-gray ml:text-white ml:text-large-body',
-        formWrapper: 'p-s z-[1]',
         formWrapperClass: getFormWrapperClass(alignment),
         alignmentClass: getAlignmentClass(alignment),
         contentAlignmentClass: getContentAlignmentClass(alignment),

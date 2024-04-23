@@ -6,7 +6,7 @@ import { BreadcrumbTheme } from './Breadcrumb.theme';
 import { SvgIcon } from 'src/helpers/SvgIcon';
 import { LinkWrapper } from 'src/helpers/LinkWrapper';
 import debounce from 'lodash/debounce';
-
+import classNames from 'classnames';
 import Head from 'next/head';
 
 export type BreadcrumbItem = {
@@ -198,7 +198,10 @@ const Breadcrumb = () => {
       </Head>
       {breadcrumb && breadcrumb.length > 1 && (
         <div
-          className="mt-m px-m md:max-w-screen-xl ml:mb-0 ml:mt-8 ml:px-l lg:mx-auto"
+          className={classNames(
+            themeData.classes.breadcrumbMargin,
+            'mt-m px-m md:max-w-screen-xl ml:mb-0 ml:mt-8 ml:px-l lg:mx-auto'
+          )}
           id="breadcrumb"
         >
           <div className={themeData.classes.breadcrumbContainer}>

@@ -19,7 +19,7 @@ import { IconTypes, SvgIcon } from 'src/helpers/SvgIcon';
 import { Subheadline } from 'src/helpers/Subheadline';
 import { ReactElement, useEffect, useState } from 'react';
 import { Item } from '@sitecore-jss/sitecore-jss-nextjs';
-import { isSvgUrl } from 'lib/utils/string-utils';
+import { getSiteSwitcherLink, isSvgUrl } from 'lib/utils/string-utils';
 
 export type TAFooterProps =
   Feature.EnterpriseWeb.RenewalByAndersen.Components.Navigation.TAFooter & {
@@ -32,29 +32,6 @@ const TAFooter = (props: TAFooterProps) => {
   const isEE = useExperienceEditor();
 
   const [siteSwitcherLink, setSiteSwticherLink] = useState<null | LinkField>(null);
-
-  const getSiteSwitcherLink = (): LinkField | null => {
-    // Check if running on the client side
-    if (typeof window !== 'undefined') {
-      // Determine the current domain and switch it
-      const switchedUrl: string = window.location.href.replace(
-        /\.(com|ca)/g,
-        (_: string, domain: string) => (domain === 'com' ? '.ca' : '.com')
-      );
-
-      const linkField = {
-        value: {
-          href: switchedUrl,
-          linktype: 'external',
-          url: switchedUrl,
-        },
-      };
-
-      return linkField;
-    }
-
-    return null;
-  };
 
   useEffect(() => {
     setSiteSwticherLink(getSiteSwitcherLink());
@@ -199,8 +176,8 @@ const TAFooter = (props: TAFooterProps) => {
                 <Image
                   src={props.fields.siteSwitcherFlag.value?.src}
                   alt={(props.fields.siteSwitcherFlag.value?.alt as string) || ''}
-                  height={props.fields.siteSwitcherFlag.value?.height as string}
-                  width={props.fields.siteSwitcherFlag.value?.width as string}
+                  height={(props.fields.siteSwitcherFlag.value?.height as string) || '15px'}
+                  width={(props.fields.siteSwitcherFlag.value?.width as string) || '20px'}
                   layout="intrinsic"
                   unoptimized={isSvgUrl(props.fields.siteSwitcherFlag.value?.src)}
                 />
@@ -247,6 +224,7 @@ const FooterLogo = (props: FooterLogoProps): ReactElement => {
           height={props.logoImg.value?.height as string}
           width={props.logoImg.value?.width as string}
           layout="intrinsic"
+          unoptimized={isSvgUrl(props.logoImg.value?.src)}
         />
       </LinkWrapper>
     );

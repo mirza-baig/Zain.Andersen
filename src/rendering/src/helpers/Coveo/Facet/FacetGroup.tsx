@@ -29,7 +29,6 @@ interface ShowFacetState {
 }
 
 export const FacetGroup = (props: SearchProps | (SizingToolProps & FacetGroupProps)) => {
-  console.log('FacetGroup', props);
   const {
     fields,
     themeData,
@@ -42,7 +41,6 @@ export const FacetGroup = (props: SearchProps | (SizingToolProps & FacetGroupPro
   );
 
   const [showFacet, setShowFacet] = useState<ShowFacetState>({});
-  // console.log('showFacet', showFacet);
   const { currentScreenWidth } = useCurrentScreenType();
 
   useEffect(() => {

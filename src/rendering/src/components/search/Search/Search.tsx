@@ -102,10 +102,8 @@ const getVisiblePagerNumbers = (
 };
 
 const Search = (props: SearchProps) => {
-  // console.log('Facets', props.fields);
   const { themeName, themeData } = useTheme(SearchTheme);
   const { fields } = props;
-  console.log('Search', fields.listResultItems);
   const { sitecoreContext } = useSitecoreContext();
 
   const resultTemplatesManager = useRef<ResultTemplatesManager<(result: Result) => JSX.Element>>();
@@ -139,7 +137,6 @@ const Search = (props: SearchProps) => {
   };
 
   const isFacetsAvailable = fields?.facets.length > 0;
-  // console.log('isFacetsAvailable', isFacetsAvailable);
 
   const subscribeToStateChangesAndReturnCleanup = (
     unsubscribers: Array<Unsubscribe | undefined>

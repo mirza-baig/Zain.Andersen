@@ -28,7 +28,8 @@ export function onlineSchedulingReducer(
     case OnlineSchedulingConstants.primarySubmission: {
       return {
         ...onlineSchedulingContextProps,
-        primarySubmissionResponse: action.result,
+        primarySubmissionResponse: action.result?.submissionResponse,
+        primarySubmissionData: action.result?.submissionData,
       };
     }
     case OnlineSchedulingConstants.secondarySubmission: {

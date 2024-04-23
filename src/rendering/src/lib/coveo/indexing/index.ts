@@ -145,6 +145,7 @@ export class SitemapItem {
   public ancestors = '';
   public source = '';
   public siteName = '';
+  public itemUri = '';
 
   public serialize(node: xml.XMLElement) {
     // Sitemap Fields

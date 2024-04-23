@@ -25,7 +25,7 @@ import ButtonSecondary from 'src/helpers/Button/buttons/btn--secondary';
 import ButtonLink from 'src/helpers/Button/buttons/btn--link';
 import { useFlyoutStore } from 'src/helpers/Flyout/flyout.store';
 import { parseAffiliateURL } from 'lib/affiliate/utils';
-import { isSvgUrl } from 'lib/utils/string-utils';
+import { getSiteSwitcherLink, isSvgUrl } from 'lib/utils/string-utils';
 
 export type RbAFooterProps =
   Feature.EnterpriseWeb.RenewalByAndersen.Components.Navigation.RbAFooter & {
@@ -40,29 +40,6 @@ const RbAFooter = (props: RbAFooterProps) => {
   const { setFlyoutVisibility } = useFlyoutStore();
 
   const [siteSwitcherLink, setSiteSwticherLink] = useState<null | LinkField>(null);
-
-  const getSiteSwitcherLink = (): LinkField | null => {
-    // Check if running on the client side
-    if (typeof window !== 'undefined') {
-      // Determine the current domain and switch it
-      const switchedUrl: string = window.location.href.replace(
-        /\.(com|ca)/g,
-        (_: string, domain: string) => (domain === 'com' ? '.ca' : '.com')
-      );
-
-      const linkField = {
-        value: {
-          href: switchedUrl,
-          linktype: 'external',
-          url: switchedUrl,
-        },
-      };
-
-      return linkField;
-    }
-
-    return null;
-  };
 
   useEffect(() => {
     setSiteSwticherLink(getSiteSwitcherLink());
@@ -108,7 +85,7 @@ const RbAFooter = (props: RbAFooterProps) => {
     value: {
       ...props.fields?.logo1?.value,
       width: props.fields?.logo1?.value?.width,
-      height: '56',
+      height: '48',
     },
   };
 
@@ -116,7 +93,7 @@ const RbAFooter = (props: RbAFooterProps) => {
     value: {
       ...props.fields?.logo2?.value,
       width: props.fields?.logo2?.value?.width,
-      height: '56',
+      height: '48',
     },
   };
 
@@ -124,7 +101,7 @@ const RbAFooter = (props: RbAFooterProps) => {
     value: {
       ...props.fields?.logo3?.value,
       width: props.fields?.logo3?.value?.width,
-      height: '56',
+      height: '48',
     },
   };
 
@@ -390,7 +367,7 @@ const RbAFooter = (props: RbAFooterProps) => {
         <div className="border-none ml:col-span-12 ml:border-b ml:border-solid ml:border-b-dark-gray"></div>
         {/* 5. Site Logo Section */}
         <div className="order-1 col-span-12 text-white ml:order-none ml:col-span-4">
-          <div className="-ml-[10px] flex flex-row gap-x-xxs ml:ml-0 ml:gap-x-s">
+          <div className="-ml-[10px] flex w-fit flex-row gap-x-xxs ml:ml-0 ml:gap-x-s">
             {props.fields?.rbaLogo && (
               <FooterLogo logoImg={rbaLogo} logoLink={props.fields?.rbaLogoLink} />
             )}
@@ -401,15 +378,15 @@ const RbAFooter = (props: RbAFooterProps) => {
         </div>
         {/* 6. Other Award Logos */}
         <div className="order-6 col-span-12 text-white ml:order-none ml:col-span-4">
-          <div className="mt-xxs flex flex-wrap gap-y-s ml:flex-nowrap">
+          <div className="mt-xxs flex h-full w-full flex-wrap gap-y-s ml:flex-nowrap">
             {props.fields?.logo1?.value?.src && (
-              <FooterLogo classes="pr-s" logoImg={logo1} logoLink={props.fields?.logo1Link} />
+              <FooterLogo logoImg={logo1} logoLink={props.fields?.logo1Link} />
             )}
             {props.fields?.logo2?.value?.src && (
               <FooterLogo logoImg={logo2} logoLink={props.fields?.logo2Link} />
             )}
             {props.fields?.logo3?.value?.src && (
-              <FooterLogo classes="ml:pl-s" logoImg={logo3} logoLink={props.fields?.logo3Link} />
+              <FooterLogo logoImg={logo3} logoLink={props.fields?.logo3Link} />
             )}
           </div>
         </div>
@@ -489,7 +466,7 @@ const RbAFooter = (props: RbAFooterProps) => {
           </div>
         )}
         {/* 10. Legal Links Section */}
-        <div className="order-8 col-span-12 text-white ml:order-none ml:col-span-8 ml:-mt-l">
+        <div className="order-8 col-span-12 text-white ml:order-none ml:col-span-8 ml:-mt-[18px]">
           <div className="flex flex-col">
             <Subheadline
               fields={{ subheadlineText: props.fields?.legalText }}
@@ -519,7 +496,7 @@ const RbAFooter = (props: RbAFooterProps) => {
                         }}
                       >
                         <Text
-                          tag=""
+                          // tag=""
                           field={(legalLink.fields?.linkTitle as Field<string>) || { value: '' }}
                         />
                       </LinkWrapper>
@@ -546,21 +523,37 @@ interface FooterLogoProps {
 const FooterLogo = (props: FooterLogoProps): ReactElement => {
   if (props.logoImg?.value?.src) {
     return (
-      <LinkWrapper
-        ctaSection="footer"
-        field={props.logoLink}
-        className={classNames('flex  justify-center', props.classes)}
-        title={(props.logoImg.value?.alt as string) || 'Footer Logo'}
-        ariaLabel={{ value: (props.logoImg.value?.alt as string) || 'Footer Logo' }}
-      >
-        <Image
-          src={props.logoImg.value?.src}
-          alt={(props.logoImg.value?.alt as string) || ''}
-          height={props.logoImg.value?.height as string}
-          width={props.logoImg.value?.width as string}
-          layout="intrinsic"
-        />
-      </LinkWrapper>
+      <>
+        {props.logoLink?.value.href ? (
+          <LinkWrapper
+            ctaSection="footer"
+            field={props.logoLink}
+            className={classNames('flex w-[90%] justify-center', props.classes)}
+            title={(props.logoImg.value?.alt as string) || 'Footer Logo'}
+            ariaLabel={{ value: (props.logoImg.value?.alt as string) || 'Footer Logo' }}
+          >
+            <Image
+              src={props.logoImg.value?.src}
+              alt={(props.logoImg.value?.alt as string) || ''}
+              height={props.logoImg.value?.height as string}
+              width={props.logoImg.value?.width as string}
+              layout="intrinsic"
+              unoptimized={isSvgUrl(props.logoImg.value?.src)}
+            />
+          </LinkWrapper>
+        ) : (
+          <div className="w-[90%]">
+            <Image
+              src={props.logoImg.value?.src}
+              alt={(props.logoImg.value?.alt as string) || ''}
+              height={props.logoImg.value?.height as string}
+              width={props.logoImg.value?.width as string}
+              layout="intrinsic"
+              unoptimized={isSvgUrl(props.logoImg.value?.src)}
+            />
+          </div>
+        )}
+      </>
     );
   }
   return <></>;

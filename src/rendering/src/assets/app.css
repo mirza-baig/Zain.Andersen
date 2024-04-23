@@ -201,14 +201,6 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-.ta-header-sticky {
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: theme('colors.white');
-  width: 100%;
-  z-index: 999;
-}
 
 /* scrollbar design for VideoGallery component in rba */
 .rba .rba-scrollbar::-webkit-scrollbar {

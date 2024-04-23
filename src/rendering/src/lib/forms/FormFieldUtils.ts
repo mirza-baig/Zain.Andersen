@@ -177,3 +177,18 @@ export const getFieldData = (
 
   return fieldData;
 };
+
+export const removeDuplicateEntries = (
+  baseObject: Record<string, any>,
+  objectWithDuplicateProperties: Record<string, any>
+): Record<string, any> => {
+  const newObj: Record<string, any> = {};
+
+  Object.keys(baseObject).forEach((field) => {
+    if (baseObject[field] !== objectWithDuplicateProperties[field]) {
+      newObj[field] = baseObject[field];
+    }
+  });
+
+  return newObj;
+};

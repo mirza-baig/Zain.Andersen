@@ -8,6 +8,7 @@ import { Spinner } from 'src/helpers/Spinner';
 type NavigationButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   icon?: IconTypes;
   startWithIcon?: boolean;
+  linkTheme?: boolean;
   children: React.ReactNode;
 };
 
@@ -15,13 +16,14 @@ const NavigationButton = ({
   children,
   icon,
   startWithIcon = false,
+  linkTheme = false,
   className,
   ...props
 }: NavigationButtonProps) => {
-  const { themeData } = useTheme(getNavigationButtonTheme(startWithIcon));
+  const { themeData } = useTheme(getNavigationButtonTheme(startWithIcon, linkTheme));
 
   const renderIcon = () => {
-    if (!icon) {
+    if (!icon || linkTheme) {
       return null;
     }
 

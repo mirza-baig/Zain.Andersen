@@ -17,12 +17,32 @@ export type ImagePrimaryProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Im
     maxW?: maxwTypes;
     focusArea?: string;
     priority?: boolean;
+    rendering?: {
+      componentName?: string;
+    };
+    includeSEOSchema?: boolean;
   };
 
+// need to include SEO Schema For Vimeo and YouTube Videos for - ContentBlockWithMedia HeroHalfMedia PromoFeaturedMedia PromoGeneric PromoReviewContentAuthored
+// PromoSwatches GenericCard Video Gallery Video Gallery Dynamic components
+
 const MediaPrimary = (props: ImagePrimaryProps): JSX.Element => {
+  const componentName = props?.rendering?.componentName as string;
+  const includeSEOSchemaForVimeoYouTube =
+    props.includeSEOSchema === true ||
+    [
+      'ContentBlockWithMedia',
+      'HeroHalfMedia',
+      'PromoFeaturedMedia',
+      'PromoGeneric',
+      'PromoReviewContentAuthored',
+      'PromoSwatches',
+      'GenericCard',
+    ].includes(componentName);
   if (props.fields?.primaryVideo) {
     return (
       <VideoWrapper
+        includeSEOSchemaForVimeoYouTube={includeSEOSchemaForVimeoYouTube}
         videoItem={props.fields?.primaryVideo}
         videoThumbnailImage={props?.videoThumbnailImage}
       />

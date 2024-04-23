@@ -3,17 +3,21 @@ import config from 'temp/config';
 import { SitemapFetcherPlugin } from '..';
 import { GetStaticPathsContext } from 'next';
 import { StaticPath } from '@sitecore-jss/sitecore-jss-nextjs';
-import { SiteInfo } from 'lib/jss21.2.1/site';
 import { getSiteRewrite } from 'lib/jss21.2.1/site/utils';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 
 class GraphqlSitemapServicePlugin implements SitemapFetcherPlugin {
   // _graphqlSitemapService: GraphQLSitemapService;
   // To support multi-site, we have a service per site
   private _graphqlSitemapServices: Record<string, GraphQLSitemapService>;
-  private _sites: SiteInfo[];
+  private _sites: EwSiteInfo[];
   constructor() {
     // Get the list of sites
-    this._sites = JSON.parse(config.sites) as SiteInfo[];
+    this._sites = JSON.parse(config.sites) as EwSiteInfo[];
+
+    // We only want to run this for sites without affiliate personalization
+    // Sites with affilate personalization (e.g. RbA) uses the `graphql-affiliate-service` plugin.
+    this._sites = this._sites.filter((x) => !x.hasAffiliatePersonalization);
 
     this._graphqlSitemapServices = {};
 
@@ -62,7 +66,7 @@ class GraphqlSitemapServicePlugin implements SitemapFetcherPlugin {
           // Filter out the "Presentation", the sitemap service also gets partial designs
           .filter((x) => x.params.path[0] !== 'Presentation')
           // Filter out the Page Variants, since they live in the content tree and have layout
-          .filter((x) => x.params.path.some((xx) => xx === 'Page Variant'))
+          .filter((x) => !x.params.path.some((xx) => xx === 'Page Variant'))
           // Not sure why some paths have the full domain...
           .filter((x) => x.params.path[0].indexOf('http') !== 0)
           .map((x) => {

@@ -2,6 +2,7 @@ import { ComponentParams } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Rule } from 'src/lib/personalization/personalization-types';
 import { BreadcrumbItem } from 'src/components/site/Breadcrumb/Breadcrumb';
 import { JobDetails } from 'lib/utils/rba-career-utils';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 
 declare module '@sitecore-jss/sitecore-jss-nextjs' {
   export interface ComponentParams {
@@ -19,6 +20,7 @@ declare module '@sitecore-jss/sitecore-jss-nextjs' {
     favIcon: { url: string };
     pageAffiliateId: string;
     jobDetails?: JobDetails;
+    ewSiteInfo?: EwSiteInfo;
   }
 
   export interface Item {

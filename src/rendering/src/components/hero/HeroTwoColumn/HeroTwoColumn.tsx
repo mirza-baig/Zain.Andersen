@@ -36,7 +36,7 @@ const HeroTwoColumn = (props: HeroTwoColumnProps) => {
         <Subheadline
           useTag="h2"
           classes={classNames(themeData.classes.subheadlineClass, {
-            'mb-xxs': !props.fields?.body.value,
+            'mb-s': !props.fields?.body.value,
           })}
           {...props}
         />

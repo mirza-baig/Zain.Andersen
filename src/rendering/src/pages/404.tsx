@@ -4,6 +4,7 @@ import { FastSitecoreContext } from 'lib/overrides/FastSitecoreContext';
 import { SitecorePageProps } from 'lib/page-props';
 import { sitecorePagePropsFactory } from 'lib/page-props-factory';
 import { siteResolver } from 'lib/site-resolver';
+import { EwSiteInfo } from 'lib/site/ew-site-info';
 import { GetStaticProps, NextPage } from 'next';
 import { useEffect, useState } from 'react';
 import FallbackNotFound from 'src/FallbackNotFound';
@@ -67,7 +68,7 @@ const NotFoundPage: NextPage<AllErrorPages> = (allErrorPageProps) => {
           <Layout
             layoutData={props.layoutData}
             requestedPath={requestedPath}
-            hostName={props.site.canonicalHostName as string}
+            site={props.site as EwSiteInfo}
           />
         </FastSitecoreContext>
       </AffiliateContextProvider>

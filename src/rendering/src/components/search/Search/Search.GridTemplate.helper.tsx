@@ -22,6 +22,7 @@ import { useTheme } from 'lib/context/ThemeContext';
 import { useRef } from 'react';
 import { isSvgUrl } from 'lib/utils/string-utils';
 import { LinkWrapper } from 'src/helpers/LinkWrapper';
+import { extractURLParts } from 'lib/coveo';
 
 const GridTemplate = (
   resultItems: Feature.EnterpriseWeb.Enterprise.Elements.Search.GridResultItem[],
@@ -175,7 +176,7 @@ const GridItemTemplateMarkup = ({
           fields: {
             cta1Link: {
               value: {
-                href: _result.clickUri,
+                ...extractURLParts(_result.clickUri),
                 title: _resultItemToConsider.fields?.ctaText?.value,
                 text: _resultItemToConsider.fields?.ctaText?.value,
               },
@@ -243,8 +244,8 @@ const GridItemTemplateMarkup = ({
     >
       {!result?.raw['ew_videoid'] &&
         renderingFields.thumbnailImage &&
-        (renderingFields.cta?.fields?.cta1Link ? (
-          <LinkWrapper field={renderingFields.cta?.fields?.cta1Link}>
+        renderingFields.cta?.fields?.cta1Link && (
+          <LinkWrapper suppressLinkText={true} field={renderingFields.cta?.fields?.cta1Link}>
             <div className={templateClasses?.imageWrapper}>
               <Image
                 src={`${renderingFields.thumbnailImage}`}
@@ -264,7 +265,10 @@ const GridItemTemplateMarkup = ({
               )}
             </div>
           </LinkWrapper>
-        ) : (
+        )}
+      {!result?.raw['ew_videoid'] &&
+        renderingFields.thumbnailImage &&
+        !renderingFields.cta?.fields?.cta1Link && (
           <div className={templateClasses?.imageWrapper}>
             <Image
               src={`${renderingFields.thumbnailImage}`}
@@ -283,8 +287,7 @@ const GridItemTemplateMarkup = ({
               />
             )}
           </div>
-        ))}
-
+        )}
       {result?.raw['ew_videoid'] && (
         <SearchVideoItem
           result={result}

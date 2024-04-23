@@ -27,6 +27,10 @@ const OnlineScheduling = (props: OnlineSchedulingProps) => {
     }
   }, []);
 
+  if (!props.fields) {
+    return <></>;
+  }
+
   return (
     <OnlineSchedulingProvider>
       <Script src="/iframe-resizer/iframeResizer.contentWindow.min.js" />

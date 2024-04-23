@@ -1,31 +1,28 @@
 export const DEFAULT_PAGE_VARIANT = '_default';
 export const PAGE_VARIANT_PREFIX = '_pageVariantId_';
 
-export type PersonalizationRewriteData = {
+export type PageVariantRewriteData = {
   pageVariantId: string;
 };
 
 /**
- * Get a personalization rewrite path for given pathname
+ * Get a page variant rewrite path for given pathname
  * @param {string} pathname the pathname
- * @param {PersonalizationRewriteData} data the personalization data to include in the rewrite
+ * @param {PageVariantRewriteData} data the page variant data to include in the rewrite
  * @returns {string} the rewrite path
  */
-export function getPersonalizationRewrite(
-  pathname: string,
-  data: PersonalizationRewriteData
-): string {
+export function getPageVariantRewrite(pathname: string, data: PageVariantRewriteData): string {
   const path = pathname.startsWith('/') ? pathname : '/' + pathname;
   return `/${PAGE_VARIANT_PREFIX}${data.pageVariantId}${path}`;
 }
 
 /**
- * Get personalization data from the rewrite path
+ * Get page variant data from the rewrite path
  * @param {string} pathname the pathname
- * @returns {PersonalizationRewriteData} the personalization data from the rewrite
+ * @returns {PageVariantRewriteData} the personalization data from the rewrite
  */
-export function getPersonalizationRewriteData(pathname: string): PersonalizationRewriteData {
-  const data: PersonalizationRewriteData = {
+export function getPageVariantRewriteData(pathname: string): PageVariantRewriteData {
+  const data: PageVariantRewriteData = {
     pageVariantId: DEFAULT_PAGE_VARIANT,
   };
   const path = pathname.endsWith('/') ? pathname : pathname + '/';
@@ -37,11 +34,11 @@ export function getPersonalizationRewriteData(pathname: string): Personalization
 }
 
 /**
- * Normalize a personalization rewrite path (remove personalization data)
+ * Normalize a page varia rewrite path (remove page variant data)
  * @param {string} pathname the pathname
- * @returns {string} the pathname with personalization data removed
+ * @returns {string} the pathname with page variant data removed
  */
-export function normalizePersonalizationRewrite(pathname: string): string {
+export function normalizePageVariantRewrite(pathname: string): string {
   if (!pathname.includes(PAGE_VARIANT_PREFIX)) {
     return pathname;
   }
