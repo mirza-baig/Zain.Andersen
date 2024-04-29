@@ -20,7 +20,7 @@ export interface LinkWrapperProps extends LinkProps {
   modalLinkText?: Field<string>;
   ariaLabel?: Field<string>;
   ctaSection?: CTASection;
-  videoModal?: string | undefined;
+  videoModal?: boolean | undefined;
 }
 
 const INTERNAL_LINK_REGEX = /^\//g;
@@ -39,6 +39,8 @@ const LinkWrapper = ({
   ctaSection,
   ...props
 }: LinkWrapperProps): JSX.Element => {
+  console.log('linkwrapper new props', props);
+  console.log('children', children);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   // Format field as LinkField for consistency
   const asLinkField = !field?.value ? { value: { ...field } } : (field as LinkField);
@@ -60,16 +62,18 @@ const LinkWrapper = ({
   const { setSelectedModalId, prevFocusedElementRef } = useModalIdContext();
 
   const handleModalClick = (e: MouseEvent) => {
-    console.log('videoModal', videoModal);
+    // console.log('videoModal', videoModal);
     if (modalId) {
       setSelectedModalId(modalId);
+      console.log('modal ID', modalId);
       prevFocusedElementRef &&
         (prevFocusedElementRef.current = e.currentTarget as HTMLButtonElement);
     }
   };
-  const handleVideoModalClick = () => {
-    console.log('videoModal', videoModal);
+  const handleVideoModalClick = (e: MouseEvent) => {
+    console.log('videoModal over LinkWrapper', videoModal);
     setIsVideoModalOpen(true);
+    prevFocusedElementRef && (prevFocusedElementRef.current = e.currentTarget as HTMLButtonElement);
   };
 
   const gtmProps = ((): Record<string, string | null> => {
@@ -94,7 +98,6 @@ const LinkWrapper = ({
 
   // if modalId is provided, then act as ModalCta
   if (modalId) {
-    console.log('modalId', modalLinkText?.value);
     return (
       <button onClick={(e) => handleModalClick(e)} className={props.className}>
         {modalLinkText?.value} {children}
@@ -103,7 +106,6 @@ const LinkWrapper = ({
   }
 
   if (videoModal) {
-    console.log('videoModal', videoModal);
     return (
       <>
         <button onClick={handleVideoModalClick} className={props.className}>
@@ -112,13 +114,16 @@ const LinkWrapper = ({
         </button>
         {isVideoModalOpen && (
           <VideoModal
-            backgroundColor={null}
-            hideByDefault={false}
-            iframeAttributes={{ value: 'height=314&width=100' }}
-            iframeResizerOptions={''}
-            iframeTitle={'100 Series'}
-            iframeUrl={'https://www.youtube.com/embed/uRnhcPfLm3Q?si=M0LmJNfgArTscUaM'}
             onClose={() => setIsVideoModalOpen(false)}
+            hideByDefault={videoModal.fields.hideByDefault}
+            videoHeadline={videoModal.fields.videoHeadline}
+            videoUrl={videoModal.fields.videoUrl}
+            videoDescription={videoModal.fields.videoDescription}
+            videoHeight={videoModal.fields.videoHeight}
+            videoId={videoModal.fields.videoId}
+            videoLazyLoad={videoModal.fields.videoLazyLoad}
+            videoName={videoModal.fields.videoName}
+            videoWidth={videoModal.fields.videoWidth}
           />
         )}
       </>

@@ -106,6 +106,7 @@ const Search = (props: SearchProps) => {
   const { themeName, themeData } = useTheme(SearchTheme);
   const { fields } = props;
   console.log('Search', fields.listResultItems);
+  console.log('ctaWrapper', themeData.classes.ctaWrapper);
   const { sitecoreContext } = useSitecoreContext();
 
   const resultTemplatesManager = useRef<ResultTemplatesManager<(result: Result) => JSX.Element>>();
@@ -361,7 +362,7 @@ const Search = (props: SearchProps) => {
       {engine && (
         <CoveoEngineContext.Provider value={engine}>
           <div className="col-span-12">
-            <div className={themeName === 'rba' ? 'mx-[calc(50%-50vw)] bg-secondary px-m' : ''}>
+            <div className={themeName === 'rba' ? ' mx-[calc(50%-50vw)] bg-secondary px-m' : ''}>
               <div className={heroSearchContentWrapperClass()}>
                 <Headline classes={themeData.classes.headline} {...props} />
                 <div className={themeData.classes.ctaWrapper}>

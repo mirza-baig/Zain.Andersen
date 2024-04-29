@@ -25,10 +25,11 @@ export type ButtonProps = {
   classes: string;
   modalId?: string | undefined;
   modalLinkText?: Field<string>;
-  videoModal?: string | undefined; //video modal
+  videoModal?: boolean | undefined; //video modal
 };
 
 const Button = (props: ButtonProps) => {
+  console.log('button props video', props.videoModal);
   const _variant = getEnum<ButtonVariants>(props.variant) ?? 'primary';
 
   switch (_variant) {

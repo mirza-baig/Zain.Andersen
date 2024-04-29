@@ -18,7 +18,19 @@ export type rightSectionStatus = 'middle';
 export type MobileWidthStatus = 'top' | 'bottom';
 
 const FormContainer = (props: FormContainerProps): JSX.Element => {
-  console.log('FormContainer', props.rendering);
+  const temp = props.rendering.placeholders.form; //saving the props to a temp location to extract the array which contains form data
+  // @ts-ignore since we are filtering the array, we can assume that the first element exists
+  const contactUsForms = temp.filter((form) => form.componentName === 'ContactUs');
+
+  let firstComponentName = null;
+  if (contactUsForms.length > 0) {
+    firstComponentName = contactUsForms[0].componentName;
+  } else {
+    console.log('No ContactUs forms found.');
+  }
+
+  console.log('ContactUs found?', firstComponentName);
+
   if (!props.fields) {
     return <></>;
   }
@@ -79,7 +91,7 @@ const FormContainer = (props: FormContainerProps): JSX.Element => {
         dataComponent="forms/formcontainer"
         {...props}
       >
-        <div className="col-span-12 -mr-m">
+        <div className={`col-span-12 ${firstComponentName === 'ContactUs' ? 'mr-l' : '-mr-m'} `}>
           <div className={classNames(containerVariants[containerWidth])}>
             {/* Left section */}
             <div

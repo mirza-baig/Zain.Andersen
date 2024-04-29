@@ -15,6 +15,7 @@ export const SearchTheme: ThemeFile = {
         'flex flex-col items-center relative mb-xxs before:absolute before:content-[""] before:w-[48px] before:h-[6px] before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:bg-primary',
       heroSearchContentWrapperWithOutBar: 'flex flex-col items-center relative mb-xxs',
       headline: 'text-sm-l md:text-l font-heavy mb-s',
+      ctaWrapper: 'w-[220px]',
       searchBoxClasses: getSearchBoxTheme('aw'),
       listTemplateClasses: getListTemplateTheme('aw'),
       tableTemplateClasses: getTableTemplateTheme('aw'),

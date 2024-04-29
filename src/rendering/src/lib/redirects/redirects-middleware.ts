@@ -13,6 +13,7 @@ import {
   REDIRECT_TYPE_SERVER_TRANSFER,
   RedirectInfo,
 } from '@sitecore-jss/sitecore-jss/site';
+import { a } from 'msw/lib/glossary-de6278a9';
 // import { MiddlewareBase, MiddlewareBaseConfig } from './middleware';
 // import { SiteInfo } from '../site';
 
@@ -56,6 +57,8 @@ export class RedirectsMiddleware extends MiddlewareBase {
   public getHandler(): (req: NextRequest, res?: NextResponse) => Promise<NextResponse> {
     return async (req, res) => {
       try {
+        console.log('middleware started');
+        // console.log(await this.handler(req, res));
         return await this.handler(req, res);
       } catch (error) {
         console.log('Redirect middleware failed:');
