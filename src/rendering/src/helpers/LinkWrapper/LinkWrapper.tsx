@@ -7,20 +7,36 @@ import { useModalIdContext } from 'lib/context/GenericModalIDContext';
 import { Children, MouseEvent } from 'react';
 import VideoModal from 'components/modal/VideoModal/VideoModal';
 import { useState } from 'react';
+
 /**
  * This component adds some needed accessibility
  * updates to the JSS Link component
  */
 export type CTASection = 'header' | 'footer' | 'utility' | 'mobile';
+// import { VideoModalProps } from 'path/to/VideoModalProps'; // Replace 'path/to/VideoModalProps' with the actual path to the VideoModalProps type
+
+export type VideoModalProps = {
+  onClose: () => void;
+  hideByDefault: { value: boolean };
+  videoHeadline: { value: string };
+  videoUrl: { value: string };
+  videoDescription: { value: string };
+  videoHeight: { value: number };
+  videoId: { value: string };
+  videoLazyLoad: { value: boolean };
+  videoName: { value: string };
+  videoWidth: { value: number };
+};
+
 export interface LinkWrapperProps extends LinkProps {
   srOnlyText?: string;
   suppressLinkText?: boolean;
   suppressNewTabIcon?: boolean;
-  modalId?: string | undefined;
+  modalId?: string;
   modalLinkText?: Field<string>;
   ariaLabel?: Field<string>;
   ctaSection?: CTASection;
-  videoModal?: boolean | undefined;
+  videoModal?: { fields: VideoModalProps };
 }
 
 const INTERNAL_LINK_REGEX = /^\//g;
@@ -61,19 +77,15 @@ const LinkWrapper = ({
   const target = asLinkField?.value?.target;
   const { setSelectedModalId, prevFocusedElementRef } = useModalIdContext();
 
-  const handleModalClick = (e: MouseEvent) => {
-    // console.log('videoModal', videoModal);
+  const handleModalClick = (e: MouseEvent<HTMLButtonElement>) => {
     if (modalId) {
       setSelectedModalId(modalId);
-      console.log('modal ID', modalId);
-      prevFocusedElementRef &&
-        (prevFocusedElementRef.current = e.currentTarget as HTMLButtonElement);
+      prevFocusedElementRef && (prevFocusedElementRef.current = e.currentTarget);
     }
   };
-  const handleVideoModalClick = (e: MouseEvent) => {
-    console.log('videoModal over LinkWrapper', videoModal);
+
+  const handleVideoModalClick = () => {
     setIsVideoModalOpen(true);
-    prevFocusedElementRef && (prevFocusedElementRef.current = e.currentTarget as HTMLButtonElement);
   };
 
   const gtmProps = ((): Record<string, string | null> => {
@@ -99,7 +111,7 @@ const LinkWrapper = ({
   // if modalId is provided, then act as ModalCta
   if (modalId) {
     return (
-      <button onClick={(e) => handleModalClick(e)} className={props.className}>
+      <button onClick={handleModalClick} className={props.className}>
         {modalLinkText?.value} {children}
       </button>
     );

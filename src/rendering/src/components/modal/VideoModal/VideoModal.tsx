@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import IconClose from 'src/helpers/SvgIcon/icons/icon--close'; // Assuming IconClose component is defined in a separate file
 
-interface VideoModalProps {
-  onClose: () => void; // Function to handle closing the modal
+export type VideoModalProps = {
+  onClose: () => void;
   hideByDefault: { value: boolean };
   videoHeadline: { value: string };
   videoUrl: { value: string };
@@ -12,21 +12,14 @@ interface VideoModalProps {
   videoLazyLoad: { value: boolean };
   videoName: { value: string };
   videoWidth: { value: number };
-}
+};
 
-const VideoModal: React.FC<VideoModalProps> = ({
-  onClose,
-  hideByDefault,
-  videoHeadline,
-  videoUrl,
-  // videoDescription,
-  videoHeight,
-  // videoId,
-  // videoLazyLoad,
-  // videoName,
-  videoWidth,
-}) => {
+const VideoModal = (props: VideoModalProps): JSX.Element => {
+  const { onClose, hideByDefault, videoHeadline, videoUrl, videoHeight, videoWidth } = props;
+
   const [isDesktop, setIsDesktop] = useState(false);
+
+  console.log('isDesktop', isDesktop);
 
   useEffect(() => {
     const setScreenSize = () => {
@@ -59,17 +52,19 @@ const VideoModal: React.FC<VideoModalProps> = ({
             'md:mt-30 mt-10'
           }`}
         >
-          <div
-            className={`relative mb-4 flex items-center justify-between ${
-              isDesktop ? 'w-1099px h-523px' : 'h-full w-full'
-            }`}
-          >
+          <div className="relative mb-4 flex items-center justify-between">
             <h2 className="text-lg font-semibold">{videoHeadline.value}</h2>
             <button onClick={handleClose} className="bg-gray-200 text-gray-800 h-4 w-4">
               <IconClose /> {/* Use the IconClose component here */}
             </button>
           </div>
-          <iframe title={videoHeadline} src={videoUrl} width={videoWidth} height={videoHeight} />
+          <iframe
+            title={videoHeadline.value}
+            src={videoUrl.value}
+            //width={'800'}  Assuming a default width of 800px for visibilty can be fixed through sitecore
+            width={videoWidth.value}
+            height={videoHeight.value}
+          />
         </div>
       </div>
     </div>

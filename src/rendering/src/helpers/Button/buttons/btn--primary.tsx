@@ -34,7 +34,7 @@ const ButtonPrimary = (props: ButtonProps): JSX.Element => {
       <LinkWrapper
         field={field}
         modalId={modalId}
-        videoModal={videoModal}
+        videoModal={videoModal as any}
         modalLinkText={modalLinkText}
         ariaLabel={ariaLabel}
         className={classNames(ButtonPrimaryClasses(themeName).btnClass, classes)}
