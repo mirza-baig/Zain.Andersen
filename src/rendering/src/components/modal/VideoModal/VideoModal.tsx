@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import IconClose from 'src/helpers/SvgIcon/icons/icon--close'; // Assuming IconClose component is defined in a separate file
+import IconClose from 'src/helpers/SvgIcon/icons/icon--close'; 
 
 export type VideoModalProps = {
   onClose: () => void;
