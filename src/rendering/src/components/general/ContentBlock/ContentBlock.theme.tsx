@@ -16,7 +16,7 @@ export const ContentBlockTheme = (
   cta2Style: ButtonVariants
 ): ThemeFile => {
   return {
-    aw: {
+    rba: {
       classes: {
         contentWrapper: classNames(
           backgroundColor != 'white' ? 'py-l' : '',
@@ -35,11 +35,11 @@ export const ContentBlockTheme = (
             getDynamicButtonStyles(backgroundColor),
             getSecondCTAPadding(cta2Style)
           ),
-          cta3Classes: ' mb-m md:mb-0',
+          cta3Classes: ' mt-6 md:mt-0',
         },
       },
     },
-    rba: {
+    aw: {
       classes: {
         contentWrapper: classNames(
           backgroundColor != 'white' ? 'py-l' : '',
@@ -55,6 +55,7 @@ export const ContentBlockTheme = (
           wrapper: 'flex-col md:items-center',
           cta1Classes: classNames(getDynamicButtonStyles(backgroundColor), 'mr-2'),
           cta2Classes: classNames(getDynamicButtonStyles(backgroundColor), 'my-s md:my-0'),
+          cta3Classes: ' md:mt-0',
         },
       },
     },
