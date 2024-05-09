@@ -1,7 +1,7 @@
 import { Foundation } from 'src/.generated/Foundation.EnterpriseWeb.model';
 import ImageWrapper from './ImageWrapper';
-import VideoWrapper from './VideoWrapper';
-import { LayoutValue, RatioTypes, maxhTypes, maxwTypes } from '.';
+import VideoWrapper, { getStaticProps as getVideoStaticProps } from './VideoWrapper';
+import { LayoutValue, MediaStaticProps, RatioTypes, maxhTypes, maxwTypes } from '.';
 import { ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export type ImagePrimaryProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.ImagePrimary &
@@ -17,14 +17,37 @@ export type ImagePrimaryProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Im
     maxW?: maxwTypes;
     focusArea?: string;
     priority?: boolean;
+    rendering?: {
+      componentName?: string;
+    };
+    includeSEOSchema?: boolean;
+    staticProps?: MediaStaticProps;
   };
 
+// need to include SEO Schema For Vimeo and YouTube Videos for - ContentBlockWithMedia HeroHalfMedia PromoFeaturedMedia PromoGeneric PromoReviewContentAuthored
+// PromoSwatches GenericCard Video Gallery Video Gallery Dynamic components
+
 const MediaPrimary = (props: ImagePrimaryProps): JSX.Element => {
+  console.log('MediaPrimary props', props);
+  const componentName = props?.rendering?.componentName as string;
+  const includeSEOSchemaForVimeoYouTube =
+    props.includeSEOSchema === true ||
+    [
+      'ContentBlockWithMedia',
+      'HeroHalfMedia',
+      'PromoFeaturedMedia',
+      'PromoGeneric',
+      'PromoReviewContentAuthored',
+      'PromoSwatches',
+      'GenericCard',
+    ].includes(componentName);
   if (props.fields?.primaryVideo) {
     return (
       <VideoWrapper
+        includeSEOSchemaForVimeoYouTube={includeSEOSchemaForVimeoYouTube}
         videoItem={props.fields?.primaryVideo}
         videoThumbnailImage={props?.videoThumbnailImage}
+        staticProps={props.staticProps?.videoStaticProps}
       />
     );
   }
@@ -46,6 +69,16 @@ const MediaPrimary = (props: ImagePrimaryProps): JSX.Element => {
   };
 
   return <ImageWrapper {...params} />;
+};
+
+export const getStaticProps = async (props: ImagePrimaryProps): Promise<MediaStaticProps> => {
+  const result: MediaStaticProps = {};
+
+  if (props.fields?.primaryVideo) {
+    result.videoStaticProps = await getVideoStaticProps(props.fields?.primaryVideo);
+  }
+
+  return result;
 };
 
 export default MediaPrimary;

@@ -24,6 +24,7 @@ export type DesktopVideoDisplayStyleType = 'in-line' | 'in-modal';
 const XupCardCollection = (props: XupCardCollectionProps): JSX.Element => {
   const { currentScreenWidth } = useCurrentScreenType();
   const { themeData } = useTheme(XupCardCollectionTheme);
+  console.log('XupCardCollection', props?.rendering);
 
   const desktopDisplayStyle =
     getEnum<XupDisplayStyle>(props?.fields?.desktopDisplayStyle) || 'grid';
@@ -107,7 +108,7 @@ const XupCardCollection = (props: XupCardCollectionProps): JSX.Element => {
       buttons={[{ ...DefaultEditFrameButton.edit, fields: ['ph-cards'] }]}
     >
       <Component variant="lg" dataComponent="listing/xupcardcollection" {...props}>
-        <div className={classNames('col-span-12')}>
+        <div className={classNames('col-span-12 bg-red-600')}>
           <Headline classes={themeData.classes.headlineClass} {...props} />
           <BodyCopy classes={themeData.classes.bodyClass} {...props} />
           <ButtonGroup classes={themeData.classes.buttonGroupClass} {...props} />

@@ -1,4 +1,3 @@
-// Global
 import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 import classNames from 'classnames';
 import { useTheme } from 'lib/context/ThemeContext';
@@ -17,6 +16,7 @@ import { MediaPrimary } from 'src/helpers/Media';
 import RichTextWrapper from 'src/helpers/RichTextWrapper/RichTextWrapper';
 import { SvgIcon } from 'src/helpers/SvgIcon';
 import { HeroMediaBackgroundTheme } from './HeroMediaBackground.theme';
+import { cta1ToButtonProps, cta2ToButtonProps } from 'src/helpers/Button';
 
 export type HeroMediaBackgroundProps =
   Feature.EnterpriseWeb.Enterprise.Components.Hero.HeroMediaBackground & ComponentProps;
@@ -89,7 +89,7 @@ const HeroMediaBackground = (props: HeroMediaBackgroundProps) => {
       <div className={themeData.classes.mediaContainer}>
         <MediaPrimary
           imageLayout="fill"
-          ratio="hero"
+          ratio="video"
           additionalDesktopClasses="h-[280px] md:h-[620px]"
           additionalMobileClasses="h-[280px]"
           priority
@@ -121,7 +121,11 @@ const HeroMediaBackground = (props: HeroMediaBackgroundProps) => {
             field={props.fields?.body}
           />
           {fields.cta1Link && fields.cta1Link.value.href && (
-            <ButtonGroup classes={themeData.classes.buttonGroupClass} {...props} />
+            <ButtonGroup
+              cta1={cta1ToButtonProps(props, themeData.classes.buttonGroupClass.cta1Classes)}
+              cta2={cta2ToButtonProps(props, themeData.classes.buttonGroupClass.cta2Classes)}
+              wrapperClasses={themeData.classes.buttonGroupClass.wrapper}
+            />
           )}
         </div>
       </div>

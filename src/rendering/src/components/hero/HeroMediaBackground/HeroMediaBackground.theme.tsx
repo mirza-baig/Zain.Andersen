@@ -5,11 +5,11 @@ export const HeroMediaBackgroundTheme: ThemeFile = {
   aw: {
     classes: {
       /** Theme classes **/
-      mediaContainer: 'relative max-md:mb-s',
-      overlay: 'absolute z-[1] w-full h-full bg-[rgba(0,0,0,0.5)] left-0 top-0',
+      mediaContainer: 'relative max-md:mb-s ',
+      overlay: 'absolute z-[0] w-full h-full bg-[rgba(0,0,0,0.5)] left-0 top-0 bottom-20',
       iconWrapper: 'mr-s mb-s md:mr-l md:mb-l',
-      contentWrapper: 'max-md:px-m md:absolute w-full h-full z-[1] flex items-center md:top-0',
-      contentContainer: 'max-w-screen-xl md:ml-[8%] 2xl:ml-auto flex flex-col basis-full mx-auto',
+      contentWrapper: 'max-md:px-m md:absolute w-full h-full z-[1] flex items-center md:top-0 ',
+      contentContainer: 'max-w-screen-xl md:ml-[8%] 2xl:ml-auto flex flex-col basis-full mx-auto ',
       eyebrow: 'my-xxxs md:max-w-[585px] texy-sm-xs md:text-xs font-medium uppercase font-sans',
       headline: 'my-xxxs md:max-w-[585px] text-sm-l md:text-l font-heavy',
       bodyClass: 'my-xxxs md:max-w-[585px] text-body',

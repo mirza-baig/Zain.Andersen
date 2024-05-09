@@ -64,6 +64,7 @@ const GenericCard = (props: GenericCardProps): JSX.Element => {
     );
   };
   const imageCTAObject = getImageCTAObject(props.fields);
+  console.log('imageCTAObject', imageCTAObject);
   const CTAUrlExist = imageCTAObject?.value.href && imageCTAObject.value.href.length > 0;
 
   return (
