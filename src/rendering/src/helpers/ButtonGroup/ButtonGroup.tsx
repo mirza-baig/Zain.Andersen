@@ -4,8 +4,7 @@ import { Button } from '../Button';
 import { Feature } from 'src/.generated/Feature.EnterpriseWeb.model';
 
 export type ButtonGroupProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta1 &
-  Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta2 &
-  Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta3 & {
+  Foundation.EnterpriseWeb.Enterprise.FieldSets.Cta2 & {
     classes: {
       wrapper: string;
       cta1Classes: string;
@@ -21,7 +20,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
       className={classNames(
         classes?.wrapper,
         classes?.ctaAlignment
-          ? ' md:flex-column mb-m flex items-start md:mb-0 md:gap-y-4'
+          ? 'md:flex-column mt-3 mb-m flex items-start space-y-5 md:mb-0 md:space-y-4'
           : 'mb-s flex items-start md:flex-row md:items-center md:space-x-4'
       )}
     >
@@ -40,7 +39,6 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
           ariaLabel={fields.cta1AriaLabel}
         />
       )}
-
       {fields?.cta2Link && (
         <Button
           field={fields?.cta2Link}
@@ -52,7 +50,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
             )?.fields?.modalId?.value
           }
           modalLinkText={fields?.cta2ModalLinkText}
-          classes={classNames(classes?.cta2Classes, 'mb-4 md:mb-0')}
+          classes={classNames(classes?.cta2Classes, 'mr-m')}
           ariaLabel={fields.cta2AriaLabel}
         />
       )}
@@ -69,7 +67,7 @@ const ButtonGroup = ({ fields, classes }: ButtonGroupProps): JSX.Element => {
               )?.fields?.modalId?.value
             }
             modalLinkText={fields?.cta3ModalLinkText}
-            classes={classNames(classes?.cta3Classes, 'md:ml-5', 'mt-2 md:mt-0')}
+            classes={classNames(classes?.cta3Classes, 'mr-m')}
             ariaLabel={fields.cta3AriaLabel}
           />
         </div>
