@@ -39,7 +39,7 @@ export const GridDisplay = ({
       desktopVideoDisplayStyle={desktopVideoDisplayStyle}
       render={(cards) =>
         cards.map((card, index) => (
-          console.log('card', card),
+          // console.log('card', card),
           <div
             key={index}
             className={classNames(
