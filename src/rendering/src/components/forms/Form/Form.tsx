@@ -194,7 +194,7 @@ const Form = (props: FormProps): JSX.Element => {
                   )}
                 <div className="pages">
                   {props.fields?.children[pageIndex] && (
-                    <CustomForm {...props.fields?.children[pageIndex]} classes="" />
+                    <CustomForm {...props.fields?.children[pageIndex]} classes="" /> //change
                   )}
                 </div>
               </form>
