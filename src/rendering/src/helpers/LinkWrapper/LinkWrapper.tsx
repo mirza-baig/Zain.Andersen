@@ -55,6 +55,8 @@ const LinkWrapper = ({
   ctaSection,
   ...props
 }: LinkWrapperProps): JSX.Element => {
+  console.log('modal id', modalId);
+  console.log('video modal', videoModal);
   console.log('linkwrapper new props', props);
   console.log('children', children);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -75,7 +77,7 @@ const LinkWrapper = ({
 
   const text = suppressLinkText ? '' : asLinkField?.value?.text;
   const target = asLinkField?.value?.target;
-  const { setSelectedModalId, prevFocusedElementRef } = useModalIdContext();
+  const { selectedModalId, setSelectedModalId, prevFocusedElementRef } = useModalIdContext();
 
   const handleModalClick = (e: MouseEvent<HTMLButtonElement>) => {
     if (modalId) {
@@ -84,9 +86,23 @@ const LinkWrapper = ({
     }
   };
 
-  const handleVideoModalClick = () => {
-    setIsVideoModalOpen(true);
+  const handleVideoModalClick = (e: MouseEvent<HTMLButtonElement>) => {
+    if (videoModal) {
+      setSelectedModalId(videoModal.id); // Set the modal ID from videoModal
+      prevFocusedElementRef && (prevFocusedElementRef.current = e.currentTarget);
+    }
   };
+
+  // const handleVideoModalClick = (e: MouseEvent<HTMLButtonElement>) => {
+  //   if (videoModal) {
+  //     console.log('video modal 2', videoModal);
+  //     setSelectedModalId(videoModal.fields.videoId.value);
+  //     prevFocusedElementRef && (prevFocusedElementRef.current = e.currentTarget);
+  //   }
+  // };
+  // const handleVideoModalClick = () => {
+  //   setIsVideoModalOpen(true);
+  // };
 
   const gtmProps = ((): Record<string, string | null> => {
     if (asLinkField.value.href?.includes('tel:')) {
@@ -117,16 +133,17 @@ const LinkWrapper = ({
     );
   }
 
+
   if (videoModal) {
     return (
       <>
         <button onClick={handleVideoModalClick} className={props.className}>
-          {modalLinkText?.value}
-          {children}
+          {modalLinkText?.value} {children}
         </button>
-        {isVideoModalOpen && (
+
+        {videoModal.id === selectedModalId && (
           <VideoModal
-            onClose={() => setIsVideoModalOpen(false)}
+            onClose={() => setSelectedModalId('')}
             hideByDefault={videoModal.fields.hideByDefault}
             videoHeadline={videoModal.fields.videoHeadline}
             videoUrl={videoModal.fields.videoUrl}
@@ -141,6 +158,55 @@ const LinkWrapper = ({
       </>
     );
   }
+
+  // if (videoModal) {
+  //   return (
+  //     <>
+  //       <button onClick={handleVideoModalClick} className={props.className}>
+  //         {modalLinkText?.value}
+  //         {children}
+  //       </button>
+
+  //       <VideoModal
+  //         onClose={() => setIsVideoModalOpen(false)}
+  //         hideByDefault={videoModal.fields.hideByDefault}
+  //         videoHeadline={videoModal.fields.videoHeadline}
+  //         videoUrl={videoModal.fields.videoUrl}
+  //         videoDescription={videoModal.fields.videoDescription}
+  //         videoHeight={videoModal.fields.videoHeight}
+  //         videoId={videoModal.fields.videoId}
+  //         videoLazyLoad={videoModal.fields.videoLazyLoad}
+  //         videoName={videoModal.fields.videoName}
+  //         videoWidth={videoModal.fields.videoWidth}
+  //       />
+  //     </>
+  //   );
+  // }
+
+  // if (videoModal) {
+  //   return (
+  //     <>
+  //       <button onClick={handleVideoModalClick} className={props.className}>
+  //         {modalLinkText?.value}
+  //         {children}
+  //       </button>
+  //       {isVideoModalOpen && (
+  //         <VideoModal
+  //           onClose={() => setIsVideoModalOpen(false)}
+  //           hideByDefault={videoModal.fields.hideByDefault}
+  //           videoHeadline={videoModal.fields.videoHeadline}
+  //           videoUrl={videoModal.fields.videoUrl}
+  //           videoDescription={videoModal.fields.videoDescription}
+  //           videoHeight={videoModal.fields.videoHeight}
+  //           videoId={videoModal.fields.videoId}
+  //           videoLazyLoad={videoModal.fields.videoLazyLoad}
+  //           videoName={videoModal.fields.videoName}
+  //           videoWidth={videoModal.fields.videoWidth}
+  //         />
+  //       )}
+  //     </>
+  //   );
+  // }
 
   // In experience editor, do not pass any children but retain basic styling
   // so that double components do not appear when using <Link>

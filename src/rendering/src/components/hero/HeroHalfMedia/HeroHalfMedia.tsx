@@ -1,5 +1,9 @@
 // Global
-import { withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  GetStaticComponentProps,
+  useComponentProps,
+  withDatasourceCheck,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 // Components
 import { Component } from 'src/helpers/Component';
 import { HeroHalfMediaTheme } from './HeroHalfMedia.theme';
@@ -10,15 +14,20 @@ import { useTheme } from 'lib/context/ThemeContext';
 import { Headline } from 'src/helpers/Headline';
 import { BodyCopy } from 'src/helpers/BodyCopy';
 import { ButtonGroup } from 'src/helpers/ButtonGroup';
-import { ButtonVariants } from 'src/helpers/Button';
+import { ButtonVariants, cta1ToButtonProps, cta2ToButtonProps } from 'src/helpers/Button';
 import { Eyebrow } from 'src/helpers/Eyebrow';
-import { MediaPrimary } from 'src/helpers/Media';
+import {
+  MediaPrimary,
+  MediaPrimaryStaticProps,
+  getMediaPrimaryStaticProps,
+} from 'src/helpers/Media';
 import { ComponentBackgroundVariants } from 'src/helpers/Component/Component';
 
 export type ImagePosition = 'right' | 'left';
 export type HeroHalfMediaProps = Feature.EnterpriseWeb.Enterprise.Components.Hero.HeroHalfMedia;
 
 const HeroHalfMedia = (props: HeroHalfMediaProps) => {
+  console.log('bleed', props.fields?.containerWidth);
   const imagePosition = getEnum<ButtonVariants>(props.fields?.imgPosition) ?? 'right';
   const ctaRightAlign = imagePosition === 'right';
   const style = getEnum<ComponentBackgroundVariants>(props.fields?.backgroundColor) ?? 'white';
@@ -26,7 +35,11 @@ const HeroHalfMedia = (props: HeroHalfMediaProps) => {
     getEnum<'full-bleed' | 'full-width'>(props.fields?.containerWidth) ?? 'full-bleed';
 
   const { themeData } = useTheme(HeroHalfMediaTheme(ctaRightAlign, !!props.fields?.body?.value));
+
+  const componentProps = useComponentProps<MediaPrimaryStaticProps>(props.rendering.uid);
+
   const copyContainerClass = () => {
+    console.log('containerWidth', props?.ratio);
     if (containerWidth === 'full-bleed') {
       return themeData.classes.contentClasses.copyContainerClass;
     } else {
@@ -37,13 +50,24 @@ const HeroHalfMedia = (props: HeroHalfMediaProps) => {
     <Component
       variant={containerWidth === 'full-bleed' ? 'full' : 'lg'}
       gap={containerWidth === 'full-bleed' ? 'gap-x-0' : '!gap-xxxs md:gap-s'}
-      padding={containerWidth === 'full-bleed' ? 'px-0' : 'px-m'}
+      padding={
+        containerWidth === 'full-bleed'
+          ? 'px-0'
+          : containerWidth === 'full-width'
+          ? 'px-0 '
+          : 'px-m '
+      }
       backgroundVariant={style}
       dataComponent="hero/herohalfmedia"
       {...props}
     >
       <div className={themeData.classes.contentClasses.imageContainerClass}>
-        <MediaPrimary maxH={'w-full'} {...props} priority />
+        <MediaPrimary
+          maxH={'w-full'}
+          {...props}
+          priority
+          staticProps={componentProps?.mediaPrimary}
+        />
       </div>
       <div className={copyContainerClass()}>
         <Eyebrow
@@ -59,12 +83,30 @@ const HeroHalfMedia = (props: HeroHalfMediaProps) => {
         {props.fields?.body && (
           <BodyCopy classes={themeData.classes.contentClasses?.body} {...props} />
         )}
-        {props.fields?.cta1Link?.value?.href && (
-          <ButtonGroup classes={themeData.classes.buttonGroupClass} {...props} />
-        )}
+        {/* {props.fields?.cta1Link?.value?.href && (
+          <ButtonGroup
+            cta1={cta1ToButtonProps(props, themeData.classes.buttonGroupClass.cta1Classes)}
+            cta2={cta2ToButtonProps(props, themeData.classes.buttonGroupClass.cta2Classes)}
+            wrapperClasses={themeData.classes.buttonGroupClass.wrapper}
+          />
+        )} */}
       </div>
     </Component>
   );
+};
+
+export const getStaticProps: GetStaticComponentProps = async (rendering) => {
+  const datasource = rendering as HeroHalfMediaProps;
+
+  const mediaStaticProps: MediaPrimaryStaticProps = {};
+
+  if (!datasource) {
+    return mediaStaticProps;
+  }
+
+  mediaStaticProps.mediaPrimary = await getMediaPrimaryStaticProps(datasource);
+
+  return mediaStaticProps;
 };
 
 export default withDatasourceCheck()<HeroHalfMediaProps>(HeroHalfMedia);

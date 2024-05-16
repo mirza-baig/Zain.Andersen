@@ -3,7 +3,8 @@ import classNames from 'classnames';
 import { ComponentProps } from 'lib/types/component-props';
 import { FormFieldProps } from 'lib/forms/FormFieldProps';
 import { useCallback, useState } from 'react';
-import Page from 'src/helpers/Forms/Structure/Page';
+// import Page from 'src/helpers/Forms/Structure/Page';
+import CustomForm from 'src/helpers/Forms/Structure/customForm';
 import Steps from 'src/helpers/Forms/Structure/Steps';
 import { FormsContext } from 'lib/forms/FormContext';
 import { FormTheme } from './Form.theme';
@@ -96,7 +97,7 @@ const Form = (props: FormProps): JSX.Element => {
       let isInitialHiddenFieldExists = false;
 
       const _formPageFields = props?.fields?.children?.[pageIndex]?.fields?.children;
-
+      console.log('initialValues', initialValues);
       for (let i = 0; i < _formPageFields.length; i++) {
         if (_formPageFields[i]?.fields.hideFieldOnLoad) {
           isInitialHiddenFieldExists = true;
@@ -193,7 +194,7 @@ const Form = (props: FormProps): JSX.Element => {
                   )}
                 <div className="pages">
                   {props.fields?.children[pageIndex] && (
-                    <Page {...props.fields?.children[pageIndex]} classes="" />
+                    <CustomForm {...props.fields?.children[pageIndex]} classes="" />
                   )}
                 </div>
               </form>

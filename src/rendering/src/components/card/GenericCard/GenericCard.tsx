@@ -138,7 +138,6 @@ const GenericCard = (props: GenericCardProps): JSX.Element => {
                 props.fields.cta1Modal.templateName === 'Video Modal'
                   ? props.fields.cta1Modal
                   : undefined
-
                 // props.fields !== null && props.fields !== undefined && props.fields.cta1Modal !== null && props.fields.cta1Modal !== undefined
                 // ? props.fields.cta1Modal
                 // : ""

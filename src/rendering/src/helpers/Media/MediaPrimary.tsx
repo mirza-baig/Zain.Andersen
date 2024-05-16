@@ -28,7 +28,7 @@ export type ImagePrimaryProps = Foundation.EnterpriseWeb.Enterprise.FieldSets.Im
 // PromoSwatches GenericCard Video Gallery Video Gallery Dynamic components
 
 const MediaPrimary = (props: ImagePrimaryProps): JSX.Element => {
-  console.log('MediaPrimary props', props);
+  console.log('MediaPrimary props', props.ratio);
   const componentName = props?.rendering?.componentName as string;
   const includeSEOSchemaForVimeoYouTube =
     props.includeSEOSchema === true ||

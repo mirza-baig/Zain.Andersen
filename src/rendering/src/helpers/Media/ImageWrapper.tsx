@@ -82,7 +82,9 @@ const ImageWrapper = ({
   if (imageLayout === 'responsive' || imageLayout === 'intrinsic') {
     return (
       <>
+
         <div className={classNames('relative hidden md:block', imageCss, additionalDesktopClasses)}>
+
           {isNormalMode ? (
             <NextImage
               src={`${imageValue?.src}`}

@@ -38,7 +38,7 @@ export type YouTubeProps = Feature.EnterpriseWeb.Enterprise.Elements.Media.YouTu
 const YoutubeWrapper = (videoItem: YouTubeProps): JSX.Element => {
   // let x = True;
   // let y = True;
-  console.log('yotobe props', videoItem.fields.youTubeShowControls);
+  console.log('yotobe props', videoItem.fields?.youTubeRemoveTopBlackBorder);
   const [showThumbnail, setShowThumbnail] = useState(
     Boolean(videoItem?.videoThumbnailImage?.value?.src)
   );
@@ -156,11 +156,7 @@ const YoutubeWrapper = (videoItem: YouTubeProps): JSX.Element => {
           ref={videoRef}
           style={{
             ...container,
-            paddingTop:
-              videoItem.fields.youTubeShowControls.value &&
-              videoItem.fields.youTubeClosedCaptions.value
-                ? '56.25%'
-                : '30.65%',
+            paddingTop: videoItem.fields.youTubeRemoveTopBlackBorder?.value ? '30.65%' : '56.25%',
           }}
           className={classNames(
             showThumbnail && !youTubeAutoPlay.value ? '!absolute top-0 left-0 right-0 !p-0' : ''
